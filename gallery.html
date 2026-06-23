@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galleria — Spavas Dental Studio Vlorë</title>
+  <meta name="description" content="Galleria fotografica di Spavas Dental Studio a Valona, Albania. Strutture moderne, attrezzature avanzate e sorrisi trasformati.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2" fetchpriority="high">
+  <style>
+    @font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400 800;font-display:swap;src:url('https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+    :root{--cyan:#0891B2;--cyan-mid:#06B6D4;--cyan-light:rgba(8,145,178,0.12);--cyan-pale:rgba(8,145,178,0.06);--dark:#0C1A2E;--dark2:#111F35;--ink:#1E3A5F;--ink-mid:#4A6880;--ink-light:#7A9AB0;--cream:#F5FAFB;--cream2:#EAF4F8;--surface:#EAF4F8;--white:#ffffff;--border:#C8DFE9;--green:#25D366;--max-w:1200px;--gutter:clamp(1rem,5vw,3rem);--nav-h:72px;--radius:10px;--radius-lg:16px;--ease:cubic-bezier(0.25,0.46,0.45,0.94);--ease-out:cubic-bezier(0.16,1,0.3,1);}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}body{background:var(--cream);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:400;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;}img{display:block;width:100%;object-fit:cover;}a{text-decoration:none;color:inherit;}ul{list-style:none;}button{border:none;background:none;cursor:pointer;font-family:inherit;}
+    .container{max-width:var(--max-w);margin:0 auto;padding:0 var(--gutter);}.section-label{display:inline-block;font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:600;padding:6px 14px;border-radius:999px;background:var(--cyan-light);color:#0369A1;margin-bottom:16px;}.section-label--dark{background:rgba(6,182,212,0.12);color:var(--cyan-mid);}
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.65s var(--ease),transform 0.65s var(--ease);}.reveal.active{opacity:1;transform:none;}.reveal-left{opacity:0;transform:translateX(-32px);transition:opacity 0.75s var(--ease),transform 0.75s var(--ease);}.reveal-left.active{opacity:1;transform:none;}.reveal-right{opacity:0;transform:translateX(32px);transition:opacity 0.75s var(--ease),transform 0.75s var(--ease);}.reveal-right.active{opacity:1;transform:none;}.reveal-scale{opacity:0;transform:scale(0.94);transition:opacity 0.65s var(--ease),transform 0.65s var(--ease);}.reveal-scale.active{opacity:1;transform:none;}.d1{transition-delay:0.08s}.d2{transition-delay:0.16s}.d3{transition-delay:0.24s}.d4{transition-delay:0.32s}.d5{transition-delay:0.40s}.d6{transition-delay:0.48s}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:none;}}@keyframes waPulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,0.5);}50%{box-shadow:0 0 0 14px rgba(37,211,102,0);}}@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0);}50%{transform:translateX(-50%) translateY(8px);}}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--nav-h);transition:background 0.3s ease,backdrop-filter 0.3s ease,border-bottom 0.3s ease;}.nav.scrolled{background:rgba(12,26,46,0.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(6,182,212,0.15);}.nav__inner{height:100%;display:flex;align-items:center;justify-content:space-between;max-width:var(--max-w);margin:0 auto;padding:0 var(--gutter);}.nav__logo{display:flex;align-items:center;gap:10px;cursor:pointer;}.nav__logo-text-main{font-size:0.95rem;font-weight:700;color:#fff;line-height:1;}.nav__logo-text-sub{font-size:0.62rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--cyan-mid);}.nav__links{display:flex;align-items:center;gap:32px;}.nav__links a{font-size:0.73rem;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;color:rgba(255,255,255,0.6);transition:color 0.2s ease;}.nav__links a:hover,.nav__links a.active{color:var(--cyan-mid);}.nav__right{display:flex;align-items:center;gap:12px;}.nav__lang{display:flex;border-radius:6px;overflow:hidden;border:1px solid rgba(6,182,212,0.3);}.nav__lang button{padding:4px 10px;font-size:0.63rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5);background:transparent;transition:all 0.2s ease;}.nav__lang button.active{background:#0369A1;color:#fff;}.nav__book{display:none;padding:8px 18px;border-radius:var(--radius);font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;background:#0369A1;color:#fff;transition:transform 0.2s ease,box-shadow 0.2s ease;}.nav__book:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(3,105,161,0.4);}.nav__hamburger{display:flex;flex-direction:column;gap:5px;padding:4px;}.nav__hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;transition:all 0.3s ease;}.nav__mobile{display:none;position:fixed;top:var(--nav-h);left:0;right:0;z-index:49;background:var(--dark);border-bottom:1px solid rgba(6,182,212,0.12);padding:24px var(--gutter);}.nav__mobile.open{display:flex;flex-direction:column;gap:4px;}.nav__mobile a,.nav__mobile button{display:block;padding:12px 0;border-bottom:1px solid rgba(6,182,212,0.08);font-size:0.88rem;color:rgba(255,255,255,0.75);letter-spacing:0.08em;text-transform:uppercase;text-align:left;width:100%;transition:color 0.2s;}.nav__mobile a:hover{color:var(--cyan-mid);}.nav__mobile-book{margin-top:12px;padding:14px;border-radius:var(--radius);background:var(--cyan);color:#fff!important;text-align:center!important;font-weight:700;border:none!important;}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:var(--radius);font-size:0.82rem;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;cursor:pointer;transition:transform 0.25s ease,box-shadow 0.25s ease;border:none;}.btn:hover{transform:translateY(-2px);}.btn--cyan{background:#0369A1;color:#fff;}.btn--cyan:hover{box-shadow:0 12px 40px rgba(3,105,161,0.4);}.btn--wa{background:#15803D;color:#fff;}.btn--wa:hover{box-shadow:0 12px 40px rgba(21,128,61,0.35);}.btn--outline{background:transparent;color:var(--cyan);border:1.5px solid var(--cyan);}.btn--outline:hover{background:var(--cyan-light);}.btn--ghost{background:rgba(6,182,212,0.12);color:var(--cyan-mid);border:1px solid rgba(6,182,212,0.2);}.section-h2{font-size:clamp(2rem,5vw,3rem);font-weight:800;letter-spacing:-0.02em;line-height:1.1;color:var(--dark);}.section-h2 span{color:var(--cyan);}.section-h2--light{color:#fff;}.section-h2--light span{color:var(--cyan-mid);}.card{background:var(--cream2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;transition:transform 0.3s ease,box-shadow 0.3s ease,border-color 0.3s ease;}.card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(8,145,178,0.1);border-color:var(--cyan);}
+    .wa-float{position:fixed;bottom:24px;right:24px;z-index:50;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);opacity:0;transform:scale(0.8);transition:opacity 0.4s ease,transform 0.4s ease;text-decoration:none;}.wa-float.show{opacity:1;transform:scale(1);}.wa-float.pulse{animation:waPulse 2.2s ease-in-out infinite;}
+    .footer{background:#070F1C;border-top:1px solid rgba(6,182,212,0.1);padding:56px var(--gutter) 32px;}.footer__grid{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;margin-bottom:48px;}.footer__brand-name{font-size:0.95rem;font-weight:700;color:#fff;}.footer__brand-sub{font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--cyan-mid);}.footer__tagline{font-size:0.83rem;color:rgba(255,255,255,0.65);line-height:1.8;margin:16px 0 20px;}.footer__socials{display:flex;gap:10px;}.footer__social{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.55);transition:background 0.2s ease;}.footer__social:hover{background:var(--cyan);color:#fff;}.footer__social--wa{background:#25D366;color:#fff;}.footer__col-title{font-size:0.72rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:20px;}.footer__links{display:flex;flex-direction:column;gap:12px;}.footer__links a,.footer__links button{font-size:0.85rem;color:rgba(255,255,255,0.72);transition:color 0.2s ease;text-align:left;width:100%;}.footer__links a:hover,.footer__links button:hover{color:var(--cyan-mid);}.footer__contact-item{display:flex;align-items:flex-start;gap:10px;font-size:0.85rem;color:rgba(255,255,255,0.72);margin-bottom:10px;}.footer__contact-item a{color:rgba(255,255,255,0.72);transition:color 0.2s;}.footer__contact-item a:hover{color:var(--cyan-mid);}.footer__bottom{max-width:var(--max-w);margin:0 auto;border-top:1px solid rgba(255,255,255,0.06);padding-top:24px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}.footer__rights{font-size:0.72rem;color:rgba(255,255,255,0.5);}.footer__crafted{font-size:0.72rem;color:rgba(255,255,255,0.45);}.footer__hours{color:rgba(255,255,255,0.72);}
+    .field{display:flex;flex-direction:column;gap:6px;}.field label{font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mid);}.field input,.field select,.field textarea{width:100%;padding:12px 16px;border-radius:var(--radius);border:1px solid var(--border);background:var(--cream2);color:var(--ink);font-family:inherit;font-size:0.88rem;outline:none;transition:border-color 0.2s ease;}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--cyan);}.field textarea{resize:none;}.page-hero{background:var(--dark);padding:calc(var(--nav-h) + 3rem) var(--gutter) 2.5rem;text-align:center;}.page-hero__label{color:var(--cyan-mid);}.page-hero__h1{font-size:clamp(2.4rem,6vw,4rem);font-weight:800;letter-spacing:-0.03em;color:#fff;line-height:1.05;margin-bottom:16px;}.page-hero__h1 span{color:var(--cyan-mid);}.page-hero__sub{font-size:1rem;color:rgba(255,255,255,0.55);max-width:520px;margin:0 auto;line-height:1.8;}
+    @media(min-width:768px){.nav__book{display:inline-flex;}.nav__hamburger{display:none;}.hide-md{display:none!important;}.nav__logo{margin-left:-90px;}.nav__logo img{height:60px!important;margin-left:-38px;}.nav__logo .nav__logo-text-main{margin-left:38px;}.nav__book{margin-left:95px;}}@media(max-width:767px){.nav__links{display:none;}.nav__logo-text-main{display:none;}.nav__inner{position:relative;}.nav__lang{position:absolute;left:110px;}.nav__book{margin-right:38px;}.show-mobile-only{display:block;}.footer__grid{grid-template-columns:1fr;gap:32px;}}
+    #gallery-main { background:var(--surface); padding:clamp(5rem,9vw,8rem) var(--gutter); }
+    .gallery-filters { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-bottom:48px; }
+    .filter-btn { padding:8px 20px; border-radius:999px; font-size:0.78rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; border:1px solid var(--border); background:transparent; color:var(--ink-mid); cursor:pointer; transition:all 0.2s; font-family:inherit; }
+    .filter-btn.active, .filter-btn:hover { background:var(--cyan); color:#fff; border-color:var(--cyan); }
+    .gallery-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; max-width:var(--max-w); margin:0 auto; }
+    @media(min-width:640px){ .gallery-grid{ grid-template-columns:repeat(3,1fr); gap:16px; } }
+    .gallery-item { position:relative; overflow:hidden; border-radius:14px; border:1px solid var(--border); cursor:pointer; }
+    .gallery-item img { width:100%; height:100%; object-fit:cover; transition:transform 0.7s ease; display:block; }
+    .gallery-item:hover img { transform:scale(1.06); }
+    .gallery-overlay { position:absolute; inset:0; background:rgba(8,145,178,0.18); opacity:0; transition:opacity 0.3s; display:flex; align-items:center; justify-content:center; }
+    .gallery-item:hover .gallery-overlay { opacity:1; }
+    .gallery-overlay-icon { color:#fff; }
+    /* BA section */
+    #ba { background:#fff; padding:clamp(5rem,9vw,8rem) var(--gutter); }
+    .ba-grid { display:grid; grid-template-columns:1fr; gap:24px; max-width:var(--max-w); margin:0 auto; }
+    @media(min-width:768px){ .ba-grid{ grid-template-columns:repeat(3,1fr); } }
+    .ba-card { background:var(--cream); border:1px solid var(--border); border-radius:16px; overflow:hidden; }
+    .ba-img-wrap { position:relative; width:100%; background:#111; }
+    .ba-img-wrap img { width:100%; height:auto; display:block; object-fit:contain; }
+    .ba-labels { position:absolute; bottom:10px; left:0; right:0; display:flex; justify-content:space-between; padding:0 10px; pointer-events:none; }
+    .ba-label { font-size:0.58rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#fff; padding:4px 8px; border-radius:6px; backdrop-filter:blur(4px); }
+    .ba-label--before { background:rgba(0,0,0,0.55); }
+    .ba-label--after { background:rgba(8,145,178,0.8); }
+    .ba-card-footer { padding:14px 20px; display:flex; align-items:center; justify-content:space-between; }
+    .ba-badge { display:flex; align-items:center; gap:5px; padding:4px 10px; border-radius:999px; background:var(--cyan-pale); color:var(--cyan); font-size:0.6rem; font-weight:700; }
+    #cta-strip { background:var(--dark); padding:clamp(4rem,7vw,6rem) var(--gutter); text-align:center; }
+    .cta-strip-inner { max-width:640px; margin:0 auto; }
+    .cta-btns { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:32px; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <img src="assets/logo.png" alt="Spavas Dental Studio" height="48" style="width:auto;display:block;object-fit:contain;">
+      <div class="nav__logo-text-main" style="white-space:nowrap;letter-spacing:0.08em;">Spavas Dental Studio</div>
+    </a>
+    <nav class="nav__links">
+      <a href="services.html" data-t="nav.services">Servizi</a>
+      <a href="about.html" data-t="nav.about">Chi Siamo</a>
+      <a href="gallery.html" data-t="nav.gallery" class="active">Galleria</a>
+      <a href="reviews.html" data-t="nav.reviews">Recensioni</a>
+      <a href="contact.html" data-t="nav.contact">Contatti</a>
+    </nav>
+    <div class="nav__right">
+      <div class="nav__lang">
+        <button onclick="setLang('it')" id="lang-it">IT</button>
+        <button onclick="setLang('sq')" id="lang-sq">AL</button>
+        <button onclick="setLang('en')" id="lang-en">EN</button>
+      </div>
+      <a href="contact.html" class="btn btn--cyan nav__book" data-t="nav.book">Prenota</a>
+      <button class="nav__hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="nav__mobile" id="mobile-menu">
+  <a href="services.html" data-t="nav.services">Servizi</a>
+  <a href="about.html" data-t="nav.about">Chi Siamo</a>
+  <a href="gallery.html" data-t="nav.gallery">Galleria</a>
+  <a href="reviews.html" data-t="nav.reviews">Recensioni</a>
+  <a href="contact.html" data-t="nav.contact">Contatti</a>
+  <a href="contact.html" class="nav__mobile-book" data-t="nav.book">Prenota</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero__inner">
+    <span class="section-label section-label--dark" id="hero-label">Galleria</span>
+    <h1 class="page-hero__h1" id="hero-h1">La Nostra <span>Clinica</span></h1>
+    <p class="page-hero__sub" id="hero-sub">Strutture moderne e attrezzature avanzate per le tue cure dentali a Valona.</p>
+  </div>
+</section>
+
+<!-- GALLERY MAIN -->
+<section id="gallery-main">
+  <div style="max-width:var(--max-w);margin:0 auto;">
+    <div class="gallery-filters reveal">
+      <button class="filter-btn active" id="filter-all" onclick="setFilter(this,'all')">Tutto</button>
+      <button class="filter-btn" id="filter-clinic" onclick="setFilter(this,'clinic')">Clinica</button>
+      <button class="filter-btn" id="filter-smiles" onclick="setFilter(this,'smiles')">Sorrisi</button>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal" style="height:260px" data-cat="clinic">
+        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80" alt="Spavas Dental Studio reception" loading="lazy">
+        <div class="gallery-overlay"><svg class="gallery-overlay-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gallery-item reveal" style="height:300px" data-cat="clinic">
+        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=800&q=80" alt="Studio dentistico moderno" loading="lazy">
+        <div class="gallery-overlay"><svg class="gallery-overlay-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gallery-item reveal" style="height:220px" data-cat="clinic">
+        <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80" alt="Attrezzatura dentale avanzata" loading="lazy">
+        <div class="gallery-overlay"><svg class="gallery-overlay-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gallery-item reveal" style="height:220px" data-cat="clinic">
+        <img src="https://images.unsplash.com/photo-1581594549595-35f6edc7b762?w=800&q=80" alt="Dentista al lavoro" loading="lazy">
+        <div class="gallery-overlay"><svg class="gallery-overlay-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gallery-item reveal" style="height:300px" data-cat="clinic">
+        <img src="https://images.unsplash.com/photo-1728342057953-94bfad8f0e7e?w=800&q=80" alt="Poltrona dentistica moderna" loading="lazy">
+        <div class="gallery-overlay"><svg class="gallery-overlay-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gallery-item reveal" style="height:210px" data-cat="smiles">
+        <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80" alt="Paziente soddisfatto" loading="lazy">
+        <div class="gallery-overlay"><svg class="gallery-overlay-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gallery-item reveal" style="height:260px" data-cat="clinic">
+        <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=800&q=80" alt="Sala trattamenti moderna" loading="lazy">
+        <div class="gallery-overlay"><svg class="gallery-overlay-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gallery-item reveal" style="height:220px" data-cat="smiles">
+        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80" alt="Consulenza dentale" loading="lazy">
+        <div class="gallery-overlay"><svg class="gallery-overlay-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gallery-item reveal" style="height:300px" data-cat="smiles">
+        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&q=80" alt="Dottoressa sorridente" loading="lazy">
+        <div class="gallery-overlay"><svg class="gallery-overlay-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gallery-item reveal" style="height:220px" data-cat="clinic">
+        <img src="https://images.unsplash.com/photo-1722586663955-2f96a4c1f255?w=800&q=80" alt="Sala operatoria dentale" loading="lazy">
+        <div class="gallery-overlay"><svg class="gallery-overlay-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gallery-item reveal" style="height:260px" data-cat="smiles">
+        <img src="https://images.unsplash.com/photo-1489278353717-f64c6ee8a4d2?w=800&q=80" alt="Risultato trattamento estetico" loading="lazy">
+        <div class="gallery-overlay"><svg class="gallery-overlay-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gallery-item reveal" style="height:220px" data-cat="smiles">
+        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=800&q=80" alt="Medico specialista dentale" loading="lazy">
+        <div class="gallery-overlay"><svg class="gallery-overlay-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section id="ba">
+  <div style="max-width:var(--max-w);margin:0 auto;">
+    <div class="section-header reveal" style="text-align:center;margin-bottom:48px;">
+      <span class="section-label" id="ba-label">Risultati Reali</span>
+      <h2 class="section-h2" id="ba-h2">Prima &amp; <span>Dopo</span></h2>
+    </div>
+    <div class="ba-grid">
+      <!-- BA Card 1 -->
+      <div class="ba-card reveal">
+        <div class="ba-img-wrap">
+          <img src="https://res.cloudinary.com/dr63qmw21/image/upload/v1781992997/IMG_6426_hrgy9t.jpg" alt="Prima e Dopo - Impianto Singolo" loading="lazy">
+          <div class="ba-labels">
+            <span class="ba-label ba-label--before" id="ba-before-1">Prima</span>
+            <span class="ba-label ba-label--after" id="ba-after-1">Dopo</span>
+          </div>
+        </div>
+        <div class="ba-card-footer">
+          <div>
+            <div style="font-size:0.8rem;font-weight:600;color:var(--dark)">Impianto Singolo</div>
+            <div style="font-size:0.7rem;color:var(--ink-light);margin-top:2px">Lucia M. · Valona</div>
+          </div>
+          <div class="ba-badge" id="ba-badge-1">&#10003; VERIFICATO REALE</div>
+        </div>
+      </div>
+      <!-- BA Card 2 -->
+      <div class="ba-card reveal">
+        <div class="ba-img-wrap">
+          <img src="https://res.cloudinary.com/dr63qmw21/image/upload/v1781992997/IMG_6425_iox1ho.jpg" alt="Prima e Dopo - Sbiancamento" loading="lazy">
+          <div class="ba-labels">
+            <span class="ba-label ba-label--before" id="ba-before-2">Prima</span>
+            <span class="ba-label ba-label--after" id="ba-after-2">Dopo</span>
+          </div>
+        </div>
+        <div class="ba-card-footer">
+          <div>
+            <div style="font-size:0.8rem;font-weight:600;color:var(--dark)">Sbiancamento LED</div>
+            <div style="font-size:0.7rem;color:var(--ink-light);margin-top:2px">Marco R. · Milano</div>
+          </div>
+          <div class="ba-badge" id="ba-badge-2">&#10003; VERIFICATO REALE</div>
+        </div>
+      </div>
+      <!-- BA Card 3 -->
+      <div class="ba-card reveal">
+        <div class="ba-img-wrap">
+          <img src="https://res.cloudinary.com/dr63qmw21/image/upload/v1781992997/IMG_6427_v9sz23.jpg" alt="Prima e Dopo - Faccette" loading="lazy">
+          <div class="ba-labels">
+            <span class="ba-label ba-label--before" id="ba-before-3">Prima</span>
+            <span class="ba-label ba-label--after" id="ba-after-3">Dopo</span>
+          </div>
+        </div>
+        <div class="ba-card-footer">
+          <div>
+            <div style="font-size:0.8rem;font-weight:600;color:var(--dark)">Faccette in Porcellana</div>
+            <div style="font-size:0.7rem;color:var(--ink-light);margin-top:2px">Arta B. · Valona</div>
+          </div>
+          <div class="ba-badge" id="ba-badge-3">&#10003; VERIFICATO REALE</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section id="cta-strip">
+  <div class="cta-strip-inner reveal">
+    <h2 style="font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:800;color:#fff;line-height:1.25;margin-bottom:12px" id="cta-h2">Vuoi Vedere il Tuo Sorriso Trasformato?</h2>
+    <p style="color:rgba(255,255,255,0.6);font-size:0.95rem;margin-bottom:0" id="cta-sub">Prenota una visita gratuita e scopri cosa possiamo fare per te.</p>
+    <div class="cta-btns">
+      <a href="contact.html" class="btn btn--cyan" id="cta-btn1">Prenota Ora</a>
+      <a href="https://wa.me/355698422428" target="_blank" rel="noopener noreferrer" class="btn btn--outline-white" id="cta-btn2">Scrivi su WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__grid">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <path d="M18 4C14 4 11 7 11 11C11 14 12 16 12 19C12 22 13 28 15 28C16.5 28 17 25 18 25C19 25 19.5 28 21 28C23 28 24 22 24 19C24 16 25 14 25 11C25 7 22 4 18 4Z" fill="#06B6D4" opacity="0.92"/>
+          <path d="M18 27C18 27 14 31 11 30C10 30 10 28 11 27C13 25 16 26 18 27Z" fill="#06B6D4" opacity="0.55"/>
+          <path d="M18 27C18 27 22 31 25 30C26 30 26 28 25 27C23 25 20 26 18 27Z" fill="#06B6D4" opacity="0.55"/>
+          <path d="M18 29C18 29 16 33 18 34C20 33 18 29 18 29Z" fill="#06B6D4" opacity="0.45"/>
+        </svg>
+        <div>
+          <div style="font-weight:700;color:#fff;font-size:0.95rem;line-height:1.2">Spavas</div>
+          <div style="font-size:0.65rem;color:rgba(255,255,255,0.5);letter-spacing:0.12em;text-transform:uppercase">Dental Clinic</div>
+        </div>
+      </div>
+      <p style="font-size:0.82rem;color:rgba(255,255,255,0.5);line-height:1.8;margin-bottom:20px;max-width:220px" data-t="footer.tagline">Cure dentali di eccellenza nel cuore di Valona.</p>
+      <div style="display:flex;gap:10px;">
+        <a href="https://www.instagram.com/spavasdentalstudio/" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/spavasdentalstudio" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Facebook">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://wa.me/355698422428" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:16px" data-t="footer.links">Link Rapidi</div>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <a href="services.html" class="footer__link" data-t="nav.services">Servizi</a>
+        <a href="about.html" class="footer__link" data-t="nav.about">Chi Siamo</a>
+        <a href="gallery.html" class="footer__link" data-t="nav.gallery">Galleria</a>
+        <a href="reviews.html" class="footer__link" data-t="nav.reviews">Recensioni</a>
+        <a href="contact.html" class="footer__link" data-t="nav.contact">Contatti</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:16px" data-t="footer.contact">Contatti</div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <a href="https://wa.me/355698422428" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span style="font-size:0.82rem;color:rgba(255,255,255,0.65)">069 842 2428</span>
+        </a>
+        <div style="display:flex;align-items:flex-start;gap:10px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" style="margin-top:3px;flex-shrink:0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span style="font-size:0.82rem;color:rgba(255,255,255,0.65);line-height:1.6">Di fronte al Bar Rinia,<br>Vlorë 9400, Albania</span>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:10px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" style="margin-top:3px;flex-shrink:0"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span style="font-size:0.82rem;color:rgba(255,255,255,0.65);line-height:1.7">Lun–Ven 08:00–20:00<br>Sab 08:00–14:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span class="footer__rights" data-t="footer.rights">© 2025 Spavas Dental Studio. Tutti i diritti riservati.</span>
+    <span class="footer__crafted" id="footer-crafted">Progettato con cura</span>
+  </div>
+</footer>
+
+<!-- WA FLOAT -->
+<a class="wa-float" id="wa-float" href="https://wa.me/355698422428" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+const T = {
+  it: {
+    nav:{ services:'Servizi', about:'Chi Siamo', gallery:'Galleria', reviews:'Recensioni', contact:'Contatti', book:'Prenota' },
+    footer:{ tagline:'Cure dentali di eccellenza nel cuore di Valona.', rights:'© 2025 Spavas Dental Studio. Tutti i diritti riservati.', links:'Link Rapidi', contact:'Contatti', crafted:'Progettato con cura' },
+    gallery:{ label:'Galleria', h2a:'La Nostra', h2b:'Clinica', sub:'Strutture moderne e attrezzature avanzate per le tue cure dentali a Valona.', filterAll:'Tutto', filterClinic:'Clinica', filterSmiles:'Sorrisi', ba_label:'Risultati Reali', ba_h2a:'Prima &amp;', ba_h2b:'Dopo', badge:'✓ VERIFICATO REALE', before:'Prima', after:'Dopo', cta_h2:'Vuoi Vedere il Tuo Sorriso Trasformato?', cta_sub:'Prenota una visita gratuita e scopri cosa possiamo fare per te.', cta_btn1:'Prenota Ora', cta_btn2:'Scrivi su WhatsApp' }
+  },
+  en: {
+    nav:{ services:'Services', about:'About', gallery:'Gallery', reviews:'Reviews', contact:'Contact', book:'Book Now' },
+    footer:{ tagline:'Advanced dental care in the heart of Vlorë.', rights:'© 2025 Spavas Dental Studio. All rights reserved.', links:'Quick Links', contact:'Contact', crafted:'Designed with care' },
+    gallery:{ label:'Gallery', h2a:'Our', h2b:'Clinic', sub:'Modern facilities and advanced equipment for your dental care in Vlorë.', filterAll:'All', filterClinic:'Clinic', filterSmiles:'Smiles', ba_label:'Real Results', ba_h2a:'Before &amp;', ba_h2b:'After', badge:'✓ VERIFIED REAL', before:'Before', after:'After', cta_h2:'Want to See Your Smile Transformed?', cta_sub:'Book a free visit and discover what we can do for you.', cta_btn1:'Book Now', cta_btn2:'WhatsApp Us' }
+  },
+  sq: {
+    nav:{ services:'Shërbimet', about:'Rreth Nesh', gallery:'Galeria', reviews:'Recensionet', contact:'Kontakt', book:'Rezervo' },
+    footer:{ tagline:'Kujdes dentar i avancuar në zemër të Vlorës.', rights:'© 2025 Spavas Dental Studio. Të gjitha të drejtat e rezervuara.', links:'Lidhje të Shpejta', contact:'Kontakt', crafted:'Dizajnuar me kujdes' },
+    gallery:{ label:'Galeria', h2a:'Klinika', h2b:'Jonë', sub:'Ambiente moderne dhe pajisje të avancuara për kujdesin tuaj dentar në Vlorë.', filterAll:'Gjithçka', filterClinic:'Klinika', filterSmiles:'Buzëqeshje', ba_label:'Rezultate Reale', ba_h2a:'Para &amp;', ba_h2b:'Pas', badge:'✓ VERIFIKUAR REAL', before:'Para', after:'Pas', cta_h2:'Dëshiron të Shohësh Buzëqeshjen Tënde të Transformuar?', cta_sub:'Rezervo një vizitë falas dhe zbulo çfarë mund të bëjmë për ty.', cta_btn1:'Rezervo Tani', cta_btn2:'Shkruaj në WhatsApp' }
+  }
+};
+
+let lang = localStorage.getItem('spavas_lang') || 'it';
+function t(p){ let o=T[lang]; for(const k of p.split('.')){ if(o==null) return ''; o=isNaN(k)?o[k]:o[parseInt(k)]; } return o??''; }
+function setLang(l){ lang=l; localStorage.setItem('spavas_lang',l); applyTranslations(); updateLangBtns(); }
+function updateLangBtns(){ ['it','sq','en'].forEach(l=>{ const b=document.getElementById('lang-'+l); if(b){ b.classList.toggle('active',l===lang); } }); }
+
+function applyTranslations(){
+  document.querySelectorAll('[data-t]').forEach(el=>{ const v=t(el.dataset.t); if(v) el.textContent=v; });
+  // Hero
+  const lbl=document.getElementById('hero-label'); if(lbl) lbl.textContent=t('gallery.label');
+  const h1=document.getElementById('hero-h1'); if(h1) h1.innerHTML=t('gallery.h2a')+' <span>'+t('gallery.h2b')+'</span>';
+  const sub=document.getElementById('hero-sub'); if(sub) sub.textContent=t('gallery.sub');
+  // Filters
+  const fa=document.getElementById('filter-all'); if(fa) fa.textContent=t('gallery.filterAll');
+  const fc=document.getElementById('filter-clinic'); if(fc) fc.textContent=t('gallery.filterClinic');
+  const fs=document.getElementById('filter-smiles'); if(fs) fs.textContent=t('gallery.filterSmiles');
+  // BA
+  const bal=document.getElementById('ba-label'); if(bal) bal.textContent=t('gallery.ba_label');
+  const bah2=document.getElementById('ba-h2'); if(bah2) bah2.innerHTML=t('gallery.ba_h2a')+' <span>'+t('gallery.ba_h2b')+'</span>';
+  [1,2,3].forEach(i=>{
+    const bb=document.getElementById('ba-before-'+i); if(bb) bb.textContent=t('gallery.before');
+    const ba=document.getElementById('ba-after-'+i); if(ba) ba.textContent=t('gallery.after');
+    const bg=document.getElementById('ba-badge-'+i); if(bg) bg.textContent=t('gallery.badge');
+  });
+  // CTA
+  const ch=document.getElementById('cta-h2'); if(ch) ch.textContent=t('gallery.cta_h2');
+  const cs=document.getElementById('cta-sub'); if(cs) cs.textContent=t('gallery.cta_sub');
+  const cb1=document.getElementById('cta-btn1'); if(cb1) cb1.textContent=t('gallery.cta_btn1');
+  const cb2=document.getElementById('cta-btn2'); if(cb2) cb2.textContent=t('gallery.cta_btn2');
+  // Footer crafted
+  const fc2=document.getElementById('footer-crafted'); if(fc2) fc2.textContent=t('footer.crafted');
+}
+
+window.addEventListener('scroll',()=>{ document.getElementById('nav').classList.toggle('scrolled',window.scrollY>40); });
+function toggleMenu(){ document.getElementById('mobile-menu').classList.toggle('open'); }
+
+function setFilter(btn, cat){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.gallery-item').forEach(item=>{
+    if(cat==='all'||item.dataset.cat===cat){ item.style.display=''; } else { item.style.display='none'; }
+  });
+}
+
+document.addEventListener('DOMContentLoaded',()=>{
+  applyTranslations(); updateLangBtns();
+  const obs=new IntersectionObserver(entries=>entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('active'); obs.unobserve(e.target); } }),{rootMargin:'0px 0px -60px 0px'});
+  document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>obs.observe(el));
+  setTimeout(()=>{ const w=document.getElementById('wa-float'); if(w){ w.classList.add('show'); setTimeout(()=>w.classList.add('pulse'),800); } },1200);
+});
+</script>
+</body>
+</html>

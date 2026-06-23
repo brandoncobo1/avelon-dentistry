@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prenota — Spavas Dental Studio Vlorë</title>
+  <meta name="description" content="Prenota la tua visita gratuita a Spavas Dental Studio a Valona, Albania. Risposta entro 24 ore.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2" fetchpriority="high">
+  <style>
+    @font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400 800;font-display:swap;src:url('https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+    :root{--cyan:#0891B2;--cyan-mid:#06B6D4;--cyan-light:rgba(8,145,178,0.12);--cyan-pale:rgba(8,145,178,0.06);--dark:#0C1A2E;--dark2:#111F35;--ink:#1E3A5F;--ink-mid:#4A6880;--ink-light:#7A9AB0;--cream:#F5FAFB;--cream2:#EAF4F8;--surface:#EAF4F8;--white:#ffffff;--border:#C8DFE9;--green:#25D366;--max-w:1200px;--gutter:clamp(1rem,5vw,3rem);--nav-h:72px;--radius:10px;--radius-lg:16px;--ease:cubic-bezier(0.25,0.46,0.45,0.94);--ease-out:cubic-bezier(0.16,1,0.3,1);}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}body{background:var(--cream);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:400;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;}img{display:block;width:100%;object-fit:cover;}a{text-decoration:none;color:inherit;}ul{list-style:none;}button{border:none;background:none;cursor:pointer;font-family:inherit;}
+    .container{max-width:var(--max-w);margin:0 auto;padding:0 var(--gutter);}.section-label{display:inline-block;font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:600;padding:6px 14px;border-radius:999px;background:var(--cyan-light);color:#0369A1;margin-bottom:16px;}.section-label--dark{background:rgba(6,182,212,0.12);color:var(--cyan-mid);}
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.65s var(--ease),transform 0.65s var(--ease);}.reveal.active{opacity:1;transform:none;}.reveal-left{opacity:0;transform:translateX(-32px);transition:opacity 0.75s var(--ease),transform 0.75s var(--ease);}.reveal-left.active{opacity:1;transform:none;}.reveal-right{opacity:0;transform:translateX(32px);transition:opacity 0.75s var(--ease),transform 0.75s var(--ease);}.reveal-right.active{opacity:1;transform:none;}.reveal-scale{opacity:0;transform:scale(0.94);transition:opacity 0.65s var(--ease),transform 0.65s var(--ease);}.reveal-scale.active{opacity:1;transform:none;}.d1{transition-delay:0.08s}.d2{transition-delay:0.16s}.d3{transition-delay:0.24s}.d4{transition-delay:0.32s}.d5{transition-delay:0.40s}.d6{transition-delay:0.48s}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:none;}}@keyframes waPulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,0.5);}50%{box-shadow:0 0 0 14px rgba(37,211,102,0);}}@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0);}50%{transform:translateX(-50%) translateY(8px);}}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--nav-h);transition:background 0.3s ease,backdrop-filter 0.3s ease,border-bottom 0.3s ease;}.nav.scrolled{background:rgba(12,26,46,0.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(6,182,212,0.15);}.nav__inner{height:100%;display:flex;align-items:center;justify-content:space-between;max-width:var(--max-w);margin:0 auto;padding:0 var(--gutter);}.nav__logo{display:flex;align-items:center;gap:10px;cursor:pointer;}.nav__logo-text-main{font-size:0.95rem;font-weight:700;color:#fff;line-height:1;}.nav__logo-text-sub{font-size:0.62rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--cyan-mid);}.nav__links{display:flex;align-items:center;gap:32px;}.nav__links a{font-size:0.73rem;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;color:rgba(255,255,255,0.6);transition:color 0.2s ease;}.nav__links a:hover,.nav__links a.active{color:var(--cyan-mid);}.nav__right{display:flex;align-items:center;gap:12px;}.nav__lang{display:flex;border-radius:6px;overflow:hidden;border:1px solid rgba(6,182,212,0.3);}.nav__lang button{padding:4px 10px;font-size:0.63rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5);background:transparent;transition:all 0.2s ease;}.nav__lang button.active{background:#0369A1;color:#fff;}.nav__book{display:none;padding:8px 18px;border-radius:var(--radius);font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;background:#0369A1;color:#fff;transition:transform 0.2s ease,box-shadow 0.2s ease;}.nav__book:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(3,105,161,0.4);}.nav__hamburger{display:flex;flex-direction:column;gap:5px;padding:4px;}.nav__hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;transition:all 0.3s ease;}.nav__mobile{display:none;position:fixed;top:var(--nav-h);left:0;right:0;z-index:49;background:var(--dark);border-bottom:1px solid rgba(6,182,212,0.12);padding:24px var(--gutter);}.nav__mobile.open{display:flex;flex-direction:column;gap:4px;}.nav__mobile a,.nav__mobile button{display:block;padding:12px 0;border-bottom:1px solid rgba(6,182,212,0.08);font-size:0.88rem;color:rgba(255,255,255,0.75);letter-spacing:0.08em;text-transform:uppercase;text-align:left;width:100%;transition:color 0.2s;}.nav__mobile a:hover{color:var(--cyan-mid);}.nav__mobile-book{margin-top:12px;padding:14px;border-radius:var(--radius);background:var(--cyan);color:#fff!important;text-align:center!important;font-weight:700;border:none!important;}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:var(--radius);font-size:0.82rem;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;cursor:pointer;transition:transform 0.25s ease,box-shadow 0.25s ease;border:none;}.btn:hover{transform:translateY(-2px);}.btn--cyan{background:#0369A1;color:#fff;}.btn--cyan:hover{box-shadow:0 12px 40px rgba(3,105,161,0.4);}.btn--wa{background:#15803D;color:#fff;}.btn--wa:hover{box-shadow:0 12px 40px rgba(21,128,61,0.35);}.btn--outline{background:transparent;color:var(--cyan);border:1.5px solid var(--cyan);}.btn--outline:hover{background:var(--cyan-light);}.btn--ghost{background:rgba(6,182,212,0.12);color:var(--cyan-mid);border:1px solid rgba(6,182,212,0.2);}.section-h2{font-size:clamp(2rem,5vw,3rem);font-weight:800;letter-spacing:-0.02em;line-height:1.1;color:var(--dark);}.section-h2 span{color:var(--cyan);}.section-h2--light{color:#fff;}.section-h2--light span{color:var(--cyan-mid);}.card{background:var(--cream2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;transition:transform 0.3s ease,box-shadow 0.3s ease,border-color 0.3s ease;}.card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(8,145,178,0.1);border-color:var(--cyan);}
+    .wa-float{position:fixed;bottom:24px;right:24px;z-index:50;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);opacity:0;transform:scale(0.8);transition:opacity 0.4s ease,transform 0.4s ease;text-decoration:none;}.wa-float.show{opacity:1;transform:scale(1);}.wa-float.pulse{animation:waPulse 2.2s ease-in-out infinite;}
+    .footer{background:#070F1C;border-top:1px solid rgba(6,182,212,0.1);padding:56px var(--gutter) 32px;}.footer__grid{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;margin-bottom:48px;}.footer__brand-name{font-size:0.95rem;font-weight:700;color:#fff;}.footer__brand-sub{font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--cyan-mid);}.footer__tagline{font-size:0.83rem;color:rgba(255,255,255,0.65);line-height:1.8;margin:16px 0 20px;}.footer__socials{display:flex;gap:10px;}.footer__social{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.55);transition:background 0.2s ease;}.footer__social:hover{background:var(--cyan);color:#fff;}.footer__social--wa{background:#25D366;color:#fff;}.footer__col-title{font-size:0.72rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:20px;}.footer__links{display:flex;flex-direction:column;gap:12px;}.footer__links a,.footer__links button{font-size:0.85rem;color:rgba(255,255,255,0.72);transition:color 0.2s ease;text-align:left;width:100%;}.footer__links a:hover,.footer__links button:hover{color:var(--cyan-mid);}.footer__contact-item{display:flex;align-items:flex-start;gap:10px;font-size:0.85rem;color:rgba(255,255,255,0.72);margin-bottom:10px;}.footer__contact-item a{color:rgba(255,255,255,0.72);transition:color 0.2s;}.footer__contact-item a:hover{color:var(--cyan-mid);}.footer__bottom{max-width:var(--max-w);margin:0 auto;border-top:1px solid rgba(255,255,255,0.06);padding-top:24px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}.footer__rights{font-size:0.72rem;color:rgba(255,255,255,0.5);}.footer__crafted{font-size:0.72rem;color:rgba(255,255,255,0.45);}.footer__hours{color:rgba(255,255,255,0.72);}
+    .field{display:flex;flex-direction:column;gap:6px;}.field label{font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mid);}.field input,.field select,.field textarea{width:100%;padding:12px 16px;border-radius:var(--radius);border:1px solid var(--border);background:var(--cream2);color:var(--ink);font-family:inherit;font-size:0.88rem;outline:none;transition:border-color 0.2s ease;}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--cyan);}.field textarea{resize:none;}.page-hero{background:var(--dark);padding:calc(var(--nav-h) + 3rem) var(--gutter) 2.5rem;text-align:center;}.page-hero__label{color:var(--cyan-mid);}.page-hero__h1{font-size:clamp(2.4rem,6vw,4rem);font-weight:800;letter-spacing:-0.03em;color:#fff;line-height:1.05;margin-bottom:16px;}.page-hero__h1 span{color:var(--cyan-mid);}.page-hero__sub{font-size:1rem;color:rgba(255,255,255,0.55);max-width:520px;margin:0 auto;line-height:1.8;}
+    @media(min-width:768px){.nav__book{display:inline-flex;}.nav__hamburger{display:none;}.hide-md{display:none!important;}.nav__logo{margin-left:-90px;}.nav__logo img{height:60px!important;margin-left:-38px;}.nav__logo .nav__logo-text-main{margin-left:38px;}.nav__book{margin-left:95px;}}@media(max-width:767px){.nav__links{display:none;}.nav__logo-text-main{display:none;}.nav__inner{position:relative;}.nav__lang{position:absolute;left:110px;}.nav__book{margin-right:38px;}.show-mobile-only{display:block;}.footer__grid{grid-template-columns:1fr;gap:32px;}}
+    #booking { background:var(--dark); padding:clamp(2.5rem,4vw,3.5rem) var(--gutter) clamp(4rem,7vw,6rem); }
+    .booking-grid { display:grid; grid-template-columns:1fr; gap:clamp(3rem,6vw,6rem); align-items:start; max-width:var(--max-w); margin:0 auto; }
+    @media(min-width:768px){ .booking-grid{ grid-template-columns:1fr 1.5fr; } }
+    .booking-wa-card { display:flex; align-items:center; gap:14px; background:#25D366; border-radius:14px; padding:16px; text-decoration:none; margin-bottom:20px; transition:opacity 0.2s; cursor:pointer; }
+    .booking-wa-card:hover { opacity:0.9; }
+    .booking-wa-icon { width:40px; height:40px; border-radius:10px; background:rgba(255,255,255,0.2); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .booking-or { font-size:0.7rem; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.35); margin-bottom:12px; }
+    .booking-phone { display:flex; align-items:center; gap:12px; font-size:1rem; font-weight:600; color:var(--cyan-mid); text-decoration:none; margin-bottom:32px; }
+    .booking-phone:hover { opacity:0.8; }
+    .booking-phone-icon { width:40px; height:40px; border-radius:50%; background:rgba(6,182,212,0.12); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .booking-info-cards { display:flex; flex-direction:column; gap:14px; }
+    .booking-info-card { display:flex; align-items:center; gap:12px; padding:14px 16px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:12px; }
+    .booking-info-icon { width:36px; height:36px; border-radius:8px; background:rgba(6,182,212,0.12); color:var(--cyan-mid); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .booking-form-card { background:#fff; border-radius:20px; overflow:hidden; box-shadow:0 20px 60px rgba(0,0,0,0.2); }
+    .booking-form-inner { padding:clamp(24px,5vw,40px); }
+    .form-row { display:grid; grid-template-columns:1fr; gap:16px; margin-bottom:16px; }
+    @media(min-width:480px){ .form-row{ grid-template-columns:1fr 1fr; } }
+    .form-field { display:flex; flex-direction:column; gap:6px; margin-bottom:16px; }
+    .form-field label { font-size:0.7rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-mid); }
+    .form-field input, .form-field select, .form-field textarea { width:100%; padding:12px 16px; border-radius:var(--radius); border:1px solid var(--border); background:var(--cream); color:var(--ink); font-family:inherit; font-size:0.88rem; outline:none; transition:border-color 0.2s; box-sizing:border-box; }
+    .form-field input:focus, .form-field select:focus, .form-field textarea:focus { border-color:var(--cyan); }
+    .form-field textarea { resize:none; }
+    .form-submit { width:100%; padding:16px; border-radius:var(--radius); font-size:0.82rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; background:var(--cyan); color:#fff; border:none; cursor:pointer; transition:transform 0.2s,box-shadow 0.2s,opacity 0.2s; font-family:inherit; }
+    .form-submit:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(8,145,178,0.4); }
+    .form-submit:disabled { opacity:0.6; cursor:not-allowed; transform:none; box-shadow:none; }
+    .booking-success { display:none; flex-direction:column; align-items:center; text-align:center; padding:64px 40px; }
+    .booking-success.show { display:flex; }
+    #location { background:var(--cream); padding:clamp(5rem,9vw,8rem) var(--gutter); }
+    .location-grid { display:grid; grid-template-columns:1fr; gap:32px; max-width:var(--max-w); margin:0 auto; }
+    @media(min-width:768px){ .location-grid{ grid-template-columns:1.5fr 1fr; } }
+    .map-wrap { height:420px; border-radius:16px; overflow:hidden; border:1px solid var(--border); }
+    .info-cards { display:flex; flex-direction:column; gap:14px; }
+    .info-card { padding:20px; border-radius:16px; border:1px solid var(--border); background:#fff; display:flex; align-items:flex-start; gap:14px; }
+    .info-icon { width:36px; height:36px; border-radius:8px; background:var(--surface); color:var(--cyan); display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px; }
+    .info-label { font-size:0.68rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-light); margin-bottom:4px; }
+    .info-body { font-size:0.88rem; color:var(--ink); line-height:1.75; white-space:pre-line; }
+    .info-link { font-size:0.73rem; font-weight:600; color:var(--cyan); letter-spacing:0.08em; text-transform:uppercase; display:inline-block; margin-top:6px; text-decoration:none; }
+    .info-link:hover { opacity:0.7; }
+    #cta-final { background:var(--dark); padding:clamp(4rem,7vw,6rem) var(--gutter); text-align:center; }
+    .cta-strip-inner { max-width:640px; margin:0 auto; }
+    .cta-btns { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:32px; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <img src="assets/logo.png" alt="Spavas Dental Studio" height="48" style="width:auto;display:block;object-fit:contain;">
+      <div class="nav__logo-text-main" style="white-space:nowrap;letter-spacing:0.08em;">Spavas Dental Studio</div>
+    </a>
+    <nav class="nav__links">
+      <a href="services.html" data-t="nav.services">Servizi</a>
+      <a href="about.html" data-t="nav.about">Chi Siamo</a>
+      <a href="gallery.html" data-t="nav.gallery">Galleria</a>
+      <a href="reviews.html" data-t="nav.reviews">Recensioni</a>
+      <a href="contact.html" data-t="nav.contact" class="active">Contatti</a>
+    </nav>
+    <div class="nav__right">
+      <div class="nav__lang">
+        <button onclick="setLang('it')" id="lang-it">IT</button>
+        <button onclick="setLang('sq')" id="lang-sq">AL</button>
+        <button onclick="setLang('en')" id="lang-en">EN</button>
+      </div>
+      <a href="contact.html" class="btn btn--cyan nav__book" data-t="nav.book">Prenota</a>
+      <button class="nav__hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="nav__mobile" id="mobile-menu">
+  <a href="services.html" data-t="nav.services">Servizi</a>
+  <a href="about.html" data-t="nav.about">Chi Siamo</a>
+  <a href="gallery.html" data-t="nav.gallery">Galleria</a>
+  <a href="reviews.html" data-t="nav.reviews">Recensioni</a>
+  <a href="contact.html" data-t="nav.contact">Contatti</a>
+  <a href="contact.html" class="nav__mobile-book" data-t="nav.book">Prenota</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero__inner">
+    <span class="section-label section-label--dark" id="hero-label">Prenota</span>
+    <h1 class="page-hero__h1" id="hero-h1">Prenota il Tuo <span>Appuntamento</span></h1>
+    <p class="page-hero__sub" id="hero-sub">Compila il modulo o scrivici su WhatsApp. Ti risponderemo entro 24 ore per confermare.</p>
+  </div>
+</section>
+
+<!-- BOOKING SECTION -->
+<section id="booking">
+  <div class="booking-grid">
+
+    <!-- LEFT -->
+    <div class="reveal-left">
+      <span class="section-label section-label--dark" id="booking-label">Prenota</span>
+      <h2 style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:#fff;line-height:1.25;margin-bottom:16px;margin-top:12px">
+        <span id="booking-h2a">Prenota il Tuo</span><br>
+        <span style="color:var(--cyan-mid)" id="booking-h2b">Appuntamento</span>
+      </h2>
+      <p style="font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.8;margin-bottom:32px" id="booking-sub">Compila il modulo o scrivici su WhatsApp. Ti risponderemo entro 24 ore.</p>
+
+      <!-- WA Card -->
+      <a class="booking-wa-card" href="https://wa.me/355698422428" target="_blank" rel="noopener noreferrer">
+        <div class="booking-wa-icon">
+          <svg viewBox="0 0 24 24" fill="white" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </div>
+        <div>
+          <div style="font-weight:700;color:#fff;font-size:0.88rem" id="booking-wa-title">Scrivi su WhatsApp</div>
+          <div style="font-size:0.72rem;color:rgba(255,255,255,0.8)" id="booking-wa-sub">Risposta rapida · Sempre disponibili</div>
+        </div>
+      </a>
+
+      <p class="booking-or" id="booking-or-call">Oppure contattaci:</p>
+
+      <a href="tel:+355698422428" class="booking-phone">
+        <div class="booking-phone-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-mid)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        069 842 2428
+      </a>
+
+      <!-- Quick Info Cards -->
+      <div class="booking-info-cards">
+        <div class="booking-info-card">
+          <div class="booking-info-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:3px" id="bic-hours-label">Orari</div>
+            <div style="font-size:0.8rem;color:rgba(255,255,255,0.7);line-height:1.6" id="bic-hours-body">Lun–Ven 08:00–20:00 · Sab 08:00–14:00</div>
+          </div>
+        </div>
+        <div class="booking-info-card">
+          <div class="booking-info-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:3px" id="bic-addr-label">Dove Siamo</div>
+            <div style="font-size:0.8rem;color:rgba(255,255,255,0.7);line-height:1.6" id="bic-addr-body">Di fronte al Bar Rinia, Vlorë</div>
+          </div>
+        </div>
+        <div class="booking-info-card">
+          <div class="booking-info-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div>
+            <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:3px" id="bic-lang-label">Lingue</div>
+            <div style="font-size:0.8rem;color:rgba(255,255,255,0.7);line-height:1.6" id="bic-lang-body">Italiano · Albanese · Inglese</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form Card -->
+    <div class="reveal-right">
+      <div class="booking-form-card">
+
+        <!-- Success State -->
+        <div class="booking-success" id="booking-success">
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="1.5" style="margin-bottom:20px"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h3 style="font-size:1.3rem;font-weight:800;color:var(--dark);margin-bottom:10px" id="success-title">Richiesta inviata!</h3>
+          <p style="font-size:0.88rem;color:var(--ink-mid);line-height:1.8;max-width:280px" id="success-msg">Ti contatteremo entro 24 ore per confermare il tuo appuntamento.</p>
+        </div>
+
+        <!-- Form -->
+        <div class="booking-form-inner" id="booking-form-wrap">
+          <h3 style="font-size:1.1rem;font-weight:700;color:var(--dark);margin-bottom:20px" id="form-title">Richiedi il Tuo Appuntamento</h3>
+          <form id="booking-form" onsubmit="handleSubmit(event)" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="f-name" id="lbl-name">Nome e Cognome</label>
+                <input type="text" id="f-name" name="name" required placeholder="Mario Rossi">
+              </div>
+              <div class="form-field">
+                <label for="f-phone" id="lbl-phone">Telefono</label>
+                <input type="tel" id="f-phone" name="phone" required placeholder="+39 / 069 XXX">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="f-service" id="lbl-service">Servizio</label>
+              <select id="f-service" name="service" required>
+                <option value="" id="opt-placeholder">Seleziona un servizio...</option>
+                <option id="opt-0">Implantologia</option>
+                <option id="opt-1">Sbiancamento LED</option>
+                <option id="opt-2">Faccette in Porcellana</option>
+                <option id="opt-3">All-on-4</option>
+                <option id="opt-4">Invisalign</option>
+                <option id="opt-5">Terapia Dentale</option>
+                <option id="opt-6">Visita Gratuita</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="f-date" id="lbl-date">Data Preferita</label>
+              <input type="date" id="f-date" name="date">
+            </div>
+            <div class="form-field">
+              <label for="f-message" id="lbl-message">Messaggio (opzionale)</label>
+              <textarea id="f-message" name="message" rows="3" placeholder="Descrivi il tuo caso o fai una domanda..."></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="booking-submit">Invia Richiesta</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- LOCATION SECTION -->
+<section id="location">
+  <div style="max-width:var(--max-w);margin:0 auto;">
+    <div class="section-header reveal" style="text-align:center;margin-bottom:48px;">
+      <span class="section-label" id="location-label">Dove Siamo</span>
+      <h2 class="section-h2" id="location-h2">La Nostra <span>Sede</span></h2>
+    </div>
+    <div class="location-grid">
+
+      <!-- Map -->
+      <div class="map-wrap reveal-left">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.0!2d19.490!3d40.455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDI3JzE4LjAiTiAxOcKwMjknMjQuMCJF!5e0!3m2!1sen!2s!4v1234567890!5m2!1sen!2s"
+          width="100%" height="100%" style="border:0;display:block" allowfullscreen loading="lazy" title="Spavas Dental Studio"></iframe>
+      </div>
+
+      <!-- Info Cards -->
+      <div class="info-cards reveal-right">
+
+        <div class="info-card">
+          <div class="info-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="info-label" id="lbl-address">Indirizzo</div>
+            <div class="info-body" id="body-address">Di fronte al Bar Rinia, Vlorë 9400, Albania</div>
+            <a href="https://maps.google.com/?q=Spavas+Dental+Studio+Vlore+Albania" target="_blank" rel="noopener noreferrer" class="info-link" id="link-directions">Indicazioni stradali →</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="info-label" id="lbl-phone">Telefono</div>
+            <div class="info-body">069 842 2428</div>
+            <a href="tel:+355698422428" class="info-link" id="link-call">Chiama ora →</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <div class="info-label" id="lbl-hours">Orari di Apertura</div>
+            <div class="info-body" id="body-hours">Lunedì – Venerdì: 08:00 – 20:00
+Sabato: 08:00 – 14:00
+Domenica: Chiuso</div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div>
+            <div class="info-label" id="lbl-langs">Lingue</div>
+            <div class="info-body" id="body-langs">Italiano · Albanese · Inglese</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="cta-final">
+  <div class="cta-strip-inner reveal">
+    <h2 style="font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:800;color:#fff;line-height:1.25;margin-bottom:12px" id="cta-h2">Hai Domande?</h2>
+    <p style="color:rgba(255,255,255,0.6);font-size:0.95rem;margin-bottom:0" id="cta-sub">Siamo qui per aiutarti. Scrivici su WhatsApp e ti risponderemo subito.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/355698422428" target="_blank" rel="noopener noreferrer" class="btn btn--cyan" id="cta-btn-wa">Scrivi su WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__grid">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <path d="M18 4C14 4 11 7 11 11C11 14 12 16 12 19C12 22 13 28 15 28C16.5 28 17 25 18 25C19 25 19.5 28 21 28C23 28 24 22 24 19C24 16 25 14 25 11C25 7 22 4 18 4Z" fill="#06B6D4" opacity="0.92"/>
+          <path d="M18 27C18 27 14 31 11 30C10 30 10 28 11 27C13 25 16 26 18 27Z" fill="#06B6D4" opacity="0.55"/>
+          <path d="M18 27C18 27 22 31 25 30C26 30 26 28 25 27C23 25 20 26 18 27Z" fill="#06B6D4" opacity="0.55"/>
+          <path d="M18 29C18 29 16 33 18 34C20 33 18 29 18 29Z" fill="#06B6D4" opacity="0.45"/>
+        </svg>
+        <div>
+          <div style="font-weight:700;color:#fff;font-size:0.95rem;line-height:1.2">Spavas</div>
+          <div style="font-size:0.65rem;color:rgba(255,255,255,0.5);letter-spacing:0.12em;text-transform:uppercase">Dental Clinic</div>
+        </div>
+      </div>
+      <p style="font-size:0.82rem;color:rgba(255,255,255,0.5);line-height:1.8;margin-bottom:20px;max-width:220px" data-t="footer.tagline">Cure dentali di eccellenza nel cuore di Valona.</p>
+      <div style="display:flex;gap:10px;">
+        <a href="https://www.instagram.com/spavasdentalstudio/" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/spavasdentalstudio" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Facebook">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://wa.me/355698422428" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:16px" data-t="footer.links">Link Rapidi</div>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <a href="services.html" class="footer__link" data-t="nav.services">Servizi</a>
+        <a href="about.html" class="footer__link" data-t="nav.about">Chi Siamo</a>
+        <a href="gallery.html" class="footer__link" data-t="nav.gallery">Galleria</a>
+        <a href="reviews.html" class="footer__link" data-t="nav.reviews">Recensioni</a>
+        <a href="contact.html" class="footer__link" data-t="nav.contact">Contatti</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:16px" data-t="footer.contact">Contatti</div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <a href="https://wa.me/355698422428" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span style="font-size:0.82rem;color:rgba(255,255,255,0.65)">069 842 2428</span>
+        </a>
+        <div style="display:flex;align-items:flex-start;gap:10px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" style="margin-top:3px;flex-shrink:0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span style="font-size:0.82rem;color:rgba(255,255,255,0.65);line-height:1.6">Di fronte al Bar Rinia,<br>Vlorë 9400, Albania</span>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:10px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" style="margin-top:3px;flex-shrink:0"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span style="font-size:0.82rem;color:rgba(255,255,255,0.65);line-height:1.7">Lun–Ven 08:00–20:00<br>Sab 08:00–14:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span class="footer__rights" data-t="footer.rights">© 2025 Spavas Dental Studio. Tutti i diritti riservati.</span>
+    <span class="footer__crafted" id="footer-crafted">Progettato con cura</span>
+  </div>
+</footer>
+
+<!-- WA FLOAT -->
+<a class="wa-float" id="wa-float" href="https://wa.me/355698422428" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+const SERVICES = {
+  it: ['Implantologia','Sbiancamento LED','Faccette in Porcellana','All-on-4','Invisalign','Terapia Dentale','Visita Gratuita'],
+  en: ['Implantology','LED Whitening','Porcelain Veneers','All-on-4','Invisalign','Dental Therapy','Free Consultation'],
+  sq: ['Implantologji','Zbardhim LED','Faceta Porcelani','All-on-4','Invisalign','Terapi Dentare','Vizitë Falas']
+};
+
+const T = {
+  it: {
+    nav:{ services:'Servizi', about:'Chi Siamo', gallery:'Galleria', reviews:'Recensioni', contact:'Contatti', book:'Prenota' },
+    footer:{ tagline:'Cure dentali di eccellenza nel cuore di Valona.', rights:'© 2025 Spavas Dental Studio. Tutti i diritti riservati.', links:'Link Rapidi', contact:'Contatti', crafted:'Progettato con cura' },
+    booking:{
+      label:'Prenota', h2a:'Prenota il Tuo', h2b:'Appuntamento',
+      sub:'Compila il modulo o scrivici su WhatsApp. Ti risponderemo entro 24 ore.',
+      formTitle:'Richiedi il Tuo Appuntamento',
+      name:'Nome e Cognome', phone:'Telefono', service:'Servizio',
+      selectService:'Seleziona un servizio...',
+      date:'Data Preferita', message:'Messaggio (opzionale)',
+      messagePlaceholder:'Descrivi il tuo caso o fai una domanda...',
+      submit:'Invia Richiesta', submitting:'Invio in corso...',
+      successTitle:'Richiesta inviata!',
+      successMsg:'Ti contatteremo entro 24 ore per confermare il tuo appuntamento.',
+      orCall:'Oppure contattaci:',
+      wa_title:'Scrivi su WhatsApp', wa_sub:'Risposta rapida · Sempre disponibili',
+      bicHoursLabel:'Orari', bicHoursBody:'Lun–Ven 08:00–20:00 · Sab 08:00–14:00',
+      bicAddrLabel:'Dove Siamo', bicAddrBody:'Di fronte al Bar Rinia, Vlorë',
+      bicLangLabel:'Lingue', bicLangBody:'Italiano · Albanese · Inglese'
+    },
+    location:{
+      label:'Dove Siamo', h2a:'La Nostra', h2b:'Sede',
+      addressLabel:'Indirizzo', address:'Di fronte al Bar Rinia, Vlorë 9400, Albania',
+      directions:'Indicazioni stradali →',
+      phoneLabel:'Telefono', callNow:'Chiama ora →',
+      hoursLabel:'Orari di Apertura',
+      hoursDetail:'Lunedì – Venerdì: 08:00 – 20:00\nSabato: 08:00 – 14:00\nDomenica: Chiuso',
+      langsLabel:'Lingue', langsDetail:'Italiano · Albanese · Inglese'
+    },
+    hero:{ label:'Prenota', h2a:'Prenota il Tuo', h2b:'Appuntamento', sub:'Compila il modulo o scrivici su WhatsApp. Ti risponderemo entro 24 ore per confermare.' },
+    cta:{ h2:'Hai Domande?', sub:'Siamo qui per aiutarti. Scrivici su WhatsApp e ti risponderemo subito.', wa:'Scrivi su WhatsApp' }
+  },
+  en: {
+    nav:{ services:'Services', about:'About', gallery:'Gallery', reviews:'Reviews', contact:'Contact', book:'Book Now' },
+    footer:{ tagline:'Advanced dental care in the heart of Vlorë.', rights:'© 2025 Spavas Dental Studio. All rights reserved.', links:'Quick Links', contact:'Contact', crafted:'Designed with care' },
+    booking:{
+      label:'Book Now', h2a:'Book Your', h2b:'Appointment',
+      sub:'Fill out the form or message us on WhatsApp. We\'ll reply within 24 hours.',
+      formTitle:'Request Your Appointment',
+      name:'Full Name', phone:'Phone', service:'Service',
+      selectService:'Select a service...',
+      date:'Preferred Date', message:'Message (optional)',
+      messagePlaceholder:'Describe your case or ask a question...',
+      submit:'Send Request', submitting:'Sending...',
+      successTitle:'Request sent!',
+      successMsg:'We will contact you within 24 hours to confirm your appointment.',
+      orCall:'Or contact us directly:',
+      wa_title:'WhatsApp Us', wa_sub:'Fast reply · Always available',
+      bicHoursLabel:'Hours', bicHoursBody:'Mon–Fri 08:00–20:00 · Sat 08:00–14:00',
+      bicAddrLabel:'Location', bicAddrBody:'Opposite Bar Rinia, Vlorë',
+      bicLangLabel:'Languages', bicLangBody:'Italian · Albanian · English'
+    },
+    location:{
+      label:'Find Us', h2a:'Our', h2b:'Location',
+      addressLabel:'Address', address:'Opposite Bar Rinia, Vlorë 9400, Albania',
+      directions:'Get Directions →',
+      phoneLabel:'Phone', callNow:'Call now →',
+      hoursLabel:'Opening Hours',
+      hoursDetail:'Monday – Friday: 08:00 – 20:00\nSaturday: 08:00 – 14:00\nSunday: Closed',
+      langsLabel:'Languages', langsDetail:'Italian · Albanian · English'
+    },
+    hero:{ label:'Book Now', h2a:'Book Your', h2b:'Appointment', sub:'Fill out the form or message us on WhatsApp. We\'ll reply within 24 hours to confirm.' },
+    cta:{ h2:'Have Questions?', sub:'We\'re here to help. Message us on WhatsApp and we\'ll reply right away.', wa:'WhatsApp Us' }
+  },
+  sq: {
+    nav:{ services:'Shërbimet', about:'Rreth Nesh', gallery:'Galeria', reviews:'Recensionet', contact:'Kontakt', book:'Rezervo' },
+    footer:{ tagline:'Kujdes dentar i avancuar në zemër të Vlorës.', rights:'© 2025 Spavas Dental Studio. Të gjitha të drejtat e rezervuara.', links:'Lidhje të Shpejta', contact:'Kontakt', crafted:'Dizajnuar me kujdes' },
+    booking:{
+      label:'Rezervo', h2a:'Rezervo', h2b:'Takimin Tënd',
+      sub:'Plotëso formularin ose shkruaj në WhatsApp. Do të përgjigjemi brenda 24 orëve.',
+      formTitle:'Kërko Takimin Tënd',
+      name:'Emri dhe Mbiemri', phone:'Telefon', service:'Shërbimi',
+      selectService:'Zgjidh një shërbim...',
+      date:'Data e Preferuar', message:'Mesazh (opsional)',
+      messagePlaceholder:'Përshkruaj rastin tënd ose bëj një pyetje...',
+      submit:'Dërgo Kërkesën', submitting:'Duke dërguar...',
+      successTitle:'Kërkesa u dërgua!',
+      successMsg:'Do të kontaktohesh brenda 24 orëve për të konfirmuar takimin tënd.',
+      orCall:'Ose na kontakto:',
+      wa_title:'Shkruaj në WhatsApp', wa_sub:'Përgjigje e shpejtë · Gjithmonë të disponueshëm',
+      bicHoursLabel:'Orari', bicHoursBody:'Hën–Pre 08:00–20:00 · Sht 08:00–14:00',
+      bicAddrLabel:'Ku Ndodhemi', bicAddrBody:'Përballë Bar Rinia, Vlorë',
+      bicLangLabel:'Gjuhët', bicLangBody:'Italisht · Shqip · Anglisht'
+    },
+    location:{
+      label:'Ku Ndodhemi', h2a:'Selia', h2b:'Jonë',
+      addressLabel:'Adresa', address:'Përballë Bar Rinia, Vlorë 9400, Shqipëri',
+      directions:'Udhëzime →',
+      phoneLabel:'Telefon', callNow:'Telefono tani →',
+      hoursLabel:'Orari i Hapjes',
+      hoursDetail:'E Hënë – E Premte: 08:00 – 20:00\nE Shtunë: 08:00 – 14:00\nE Diel: Mbyllur',
+      langsLabel:'Gjuhët', langsDetail:'Italisht · Shqip · Anglisht'
+    },
+    hero:{ label:'Rezervo', h2a:'Rezervo', h2b:'Takimin Tënd', sub:'Plotëso formularin ose shkruaj në WhatsApp. Do të përgjigjemi brenda 24 orëve për të konfirmuar.' },
+    cta:{ h2:'Ke Pyetje?', sub:'Jemi këtu për të ndihmuar. Shkruaj në WhatsApp dhe do të të përgjigjemi menjëherë.', wa:'Shkruaj në WhatsApp' }
+  }
+};
+
+let lang = localStorage.getItem('spavas_lang') || 'it';
+function t(p){ let o=T[lang]; for(const k of p.split('.')){ if(o==null) return ''; o=isNaN(k)?o[k]:o[parseInt(k)]; } return o??''; }
+function setLang(l){ lang=l; localStorage.setItem('spavas_lang',l); applyTranslations(); updateLangBtns(); }
+function updateLangBtns(){ ['it','sq','en'].forEach(l=>{ const b=document.getElementById('lang-'+l); if(b){ b.classList.toggle('active',l===lang); } }); }
+
+function applyTranslations(){
+  document.querySelectorAll('[data-t]').forEach(el=>{ const v=t(el.dataset.t); if(v) el.textContent=v; });
+
+  // Hero
+  const hl=document.getElementById('hero-label'); if(hl) hl.textContent=t('hero.label');
+  const hh=document.getElementById('hero-h1'); if(hh) hh.innerHTML=t('hero.h2a')+' <span>'+t('hero.h2b')+'</span>';
+  const hs=document.getElementById('hero-sub'); if(hs) hs.textContent=t('hero.sub');
+
+  // Booking left
+  const bl=document.getElementById('booking-label'); if(bl) bl.textContent=t('booking.label');
+  const bh2a=document.getElementById('booking-h2a'); if(bh2a) bh2a.textContent=t('booking.h2a');
+  const bh2b=document.getElementById('booking-h2b'); if(bh2b) bh2b.textContent=t('booking.h2b');
+  const bsub=document.getElementById('booking-sub'); if(bsub) bsub.textContent=t('booking.sub');
+  const bwt=document.getElementById('booking-wa-title'); if(bwt) bwt.textContent=t('booking.wa_title');
+  const bws=document.getElementById('booking-wa-sub'); if(bws) bws.textContent=t('booking.wa_sub');
+  const boc=document.getElementById('booking-or-call'); if(boc) boc.textContent=t('booking.orCall');
+  const bhl=document.getElementById('bic-hours-label'); if(bhl) bhl.textContent=t('booking.bicHoursLabel');
+  const bhb=document.getElementById('bic-hours-body'); if(bhb) bhb.textContent=t('booking.bicHoursBody');
+  const bal=document.getElementById('bic-addr-label'); if(bal) bal.textContent=t('booking.bicAddrLabel');
+  const bab=document.getElementById('bic-addr-body'); if(bab) bab.textContent=t('booking.bicAddrBody');
+  const bll=document.getElementById('bic-lang-label'); if(bll) bll.textContent=t('booking.bicLangLabel');
+  const blb=document.getElementById('bic-lang-body'); if(blb) blb.textContent=t('booking.bicLangBody');
+
+  // Form
+  const ft=document.getElementById('form-title'); if(ft) ft.textContent=t('booking.formTitle');
+  const ln=document.getElementById('lbl-name'); if(ln) ln.textContent=t('booking.name');
+  const lp=document.getElementById('lbl-phone'); if(lp) lp.textContent=t('booking.phone');
+  const ls=document.getElementById('lbl-service'); if(ls) ls.textContent=t('booking.service');
+  const ld=document.getElementById('lbl-date'); if(ld) ld.textContent=t('booking.date');
+  const lm=document.getElementById('lbl-message'); if(lm) lm.textContent=t('booking.message');
+  const fmsg=document.getElementById('f-message'); if(fmsg) fmsg.placeholder=t('booking.messagePlaceholder');
+  const sb=document.getElementById('booking-submit'); if(sb && !sb.disabled) sb.textContent=t('booking.submit');
+
+  // Service options
+  const opts = SERVICES[lang] || SERVICES.it;
+  const ph=document.getElementById('opt-placeholder'); if(ph) ph.textContent=t('booking.selectService');
+  opts.forEach((s,i)=>{ const o=document.getElementById('opt-'+i); if(o) o.textContent=s; });
+
+  // Success
+  const stitle=document.getElementById('success-title'); if(stitle) stitle.textContent=t('booking.successTitle');
+  const smsg=document.getElementById('success-msg'); if(smsg) smsg.textContent=t('booking.successMsg');
+
+  // Location
+  const locL=document.getElementById('location-label'); if(locL) locL.textContent=t('location.label');
+  const locH=document.getElementById('location-h2'); if(locH) locH.innerHTML=t('location.h2a')+' <span>'+t('location.h2b')+'</span>';
+  const adl=document.getElementById('lbl-address'); if(adl) adl.textContent=t('location.addressLabel');
+  const adb=document.getElementById('body-address'); if(adb) adb.textContent=t('location.address');
+  const dir=document.getElementById('link-directions'); if(dir) dir.textContent=t('location.directions');
+  const phl=document.getElementById('lbl-phone'); if(phl) phl.textContent=t('location.phoneLabel');
+  const cal=document.getElementById('link-call'); if(cal) cal.textContent=t('location.callNow');
+  const hrl=document.getElementById('lbl-hours'); if(hrl) hrl.textContent=t('location.hoursLabel');
+  const hrb=document.getElementById('body-hours'); if(hrb) hrb.textContent=t('location.hoursDetail');
+  const lanl=document.getElementById('lbl-langs'); if(lanl) lanl.textContent=t('location.langsLabel');
+  const lanb=document.getElementById('body-langs'); if(lanb) lanb.textContent=t('location.langsDetail');
+
+  // CTA
+  const ch=document.getElementById('cta-h2'); if(ch) ch.textContent=t('cta.h2');
+  const cs=document.getElementById('cta-sub'); if(cs) cs.textContent=t('cta.sub');
+  const cw=document.getElementById('cta-btn-wa'); if(cw) cw.textContent=t('cta.wa');
+
+  // Footer crafted
+  const fc=document.getElementById('footer-crafted'); if(fc) fc.textContent=t('footer.crafted');
+}
+
+function handleSubmit(e){
+  e.preventDefault();
+  const btn = document.getElementById('booking-submit');
+  btn.disabled = true;
+  btn.textContent = t('booking.submitting');
+  setTimeout(()=>{
+    document.getElementById('booking-form-wrap').style.display = 'none';
+    const success = document.getElementById('booking-success');
+    success.classList.add('show');
+  }, 1100);
+}
+
+window.addEventListener('scroll',()=>{ document.getElementById('nav').classList.toggle('scrolled',window.scrollY>40); });
+function toggleMenu(){ document.getElementById('mobile-menu').classList.toggle('open'); }
+
+document.addEventListener('DOMContentLoaded',()=>{
+  applyTranslations(); updateLangBtns();
+
+  // Set date input min to today
+  const dateInput = document.getElementById('f-date');
+  if(dateInput) dateInput.min = new Date().toISOString().split('T')[0];
+
+  const obs=new IntersectionObserver(entries=>entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('active'); obs.unobserve(e.target); } }),{rootMargin:'0px 0px -60px 0px'});
+  document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>obs.observe(el));
+  setTimeout(()=>{ const w=document.getElementById('wa-float'); if(w){ w.classList.add('show'); setTimeout(()=>w.classList.add('pulse'),800); } },1200);
+});
+</script>
+</body>
+</html>

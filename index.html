@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spavas Dental Studio — Implantologia & Estetica Dentale | Vlorë, Albania</title>
+  <meta name="description" content="Spavas Dental Studio a Valona, Albania. Specialisti in implantologia, sbiancamento, faccette e ortodonzia. 293 recensioni 5★ su Google. Visita gratuita.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/hero-desktop.jpeg" media="(min-width:768px)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/hero-mobile.jpeg" media="(max-width:767px)" fetchpriority="high">
+  <style>
+    @font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400 800;font-display:swap;src:url('https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+    /* ── SHARED DESIGN SYSTEM ── */
+    :root{--cyan:#0891B2;--cyan-mid:#06B6D4;--cyan-light:rgba(8,145,178,0.12);--cyan-pale:rgba(8,145,178,0.06);--dark:#0C1A2E;--dark2:#111F35;--ink:#1E3A5F;--ink-mid:#4A6880;--ink-light:#7A9AB0;--cream:#F5FAFB;--cream2:#EAF4F8;--surface:#EAF4F8;--white:#ffffff;--border:#C8DFE9;--green:#25D366;--max-w:1200px;--gutter:clamp(1rem,5vw,3rem);--nav-h:72px;--radius:10px;--radius-lg:16px;--ease:cubic-bezier(0.25,0.46,0.45,0.94);--ease-out:cubic-bezier(0.16,1,0.3,1);}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--cream);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:400;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+    img{display:block;width:100%;object-fit:cover;}
+    a{text-decoration:none;color:inherit;}
+    ul{list-style:none;}
+    button{border:none;background:none;cursor:pointer;font-family:inherit;}
+    .container{max-width:var(--max-w);margin:0 auto;padding:0 var(--gutter);}
+    .section-label{display:inline-block;font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:600;padding:6px 14px;border-radius:999px;background:var(--cyan-light);color:#0369A1;margin-bottom:16px;}
+    .section-label--dark{background:rgba(6,182,212,0.12);color:var(--cyan-mid);}
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.65s var(--ease),transform 0.65s var(--ease);}
+    .reveal.active{opacity:1;transform:none;}
+    .reveal-left{opacity:0;transform:translateX(-32px);transition:opacity 0.75s var(--ease),transform 0.75s var(--ease);}
+    .reveal-left.active{opacity:1;transform:none;}
+    .reveal-right{opacity:0;transform:translateX(32px);transition:opacity 0.75s var(--ease),transform 0.75s var(--ease);}
+    .reveal-right.active{opacity:1;transform:none;}
+    .reveal-scale{opacity:0;transform:scale(0.94);transition:opacity 0.65s var(--ease),transform 0.65s var(--ease);}
+    .reveal-scale.active{opacity:1;transform:none;}
+    .d1{transition-delay:0.08s}.d2{transition-delay:0.16s}.d3{transition-delay:0.24s}.d4{transition-delay:0.32s}.d5{transition-delay:0.40s}.d6{transition-delay:0.48s}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:none;}}
+    @keyframes waPulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,0.5);}50%{box-shadow:0 0 0 14px rgba(37,211,102,0);}}
+    @keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0);}50%{transform:translateX(-50%) translateY(8px);}}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--nav-h);transition:background 0.3s ease,backdrop-filter 0.3s ease,border-bottom 0.3s ease;}
+    .nav.scrolled{background:rgba(12,26,46,0.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(6,182,212,0.15);}
+    .nav__inner{height:100%;display:flex;align-items:center;justify-content:space-between;max-width:var(--max-w);margin:0 auto;padding:0 var(--gutter);}
+    .nav__logo{display:flex;align-items:center;gap:10px;cursor:pointer;}
+    .nav__logo-text-main{font-size:0.95rem;font-weight:700;color:#fff;line-height:1;}
+    .nav__logo-text-sub{font-size:0.62rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--cyan-mid);}
+    .nav__links{display:flex;align-items:center;gap:32px;}
+    .nav__links a{font-size:0.73rem;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;color:rgba(255,255,255,0.6);transition:color 0.2s ease;}
+    .nav__links a:hover,.nav__links a.active{color:var(--cyan-mid);}
+    .nav__right{display:flex;align-items:center;gap:12px;}
+    .nav__lang{display:flex;border-radius:6px;overflow:hidden;border:1px solid rgba(6,182,212,0.3);}
+    .nav__lang button{padding:4px 10px;font-size:0.63rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5);background:transparent;transition:all 0.2s ease;}
+    .nav__lang button.active{background:#0369A1;color:#fff;}
+    .nav__book{display:none;padding:8px 18px;border-radius:var(--radius);font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;background:#0369A1;color:#fff;transition:transform 0.2s ease,box-shadow 0.2s ease;}
+    .nav__book:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(3,105,161,0.4);}
+    .nav__hamburger{display:flex;flex-direction:column;gap:5px;padding:4px;}
+    .nav__hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;transition:all 0.3s ease;}
+    .nav__mobile{display:none;position:fixed;top:var(--nav-h);left:0;right:0;z-index:49;background:var(--dark);border-bottom:1px solid rgba(6,182,212,0.12);padding:24px var(--gutter);}
+    .nav__mobile.open{display:flex;flex-direction:column;gap:4px;}
+    .nav__mobile a,.nav__mobile button{display:block;padding:12px 0;border-bottom:1px solid rgba(6,182,212,0.08);font-size:0.88rem;color:rgba(255,255,255,0.75);letter-spacing:0.08em;text-transform:uppercase;text-align:left;width:100%;transition:color 0.2s;}
+    .nav__mobile a:hover{color:var(--cyan-mid);}
+    .nav__mobile-book{margin-top:12px;padding:14px;border-radius:var(--radius);background:var(--cyan);color:#fff!important;text-align:center!important;font-weight:700;border:none!important;}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:var(--radius);font-size:0.82rem;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;cursor:pointer;transition:transform 0.25s ease,box-shadow 0.25s ease;border:none;}
+    .btn:hover{transform:translateY(-2px);}
+    .btn--cyan{background:#0369A1;color:#fff;}
+    .btn--cyan:hover{box-shadow:0 12px 40px rgba(3,105,161,0.4);}
+    .btn--wa{background:#15803D;color:#fff;}
+    .btn--wa:hover{box-shadow:0 12px 40px rgba(21,128,61,0.35);}
+    .btn--outline{background:transparent;color:var(--cyan);border:1.5px solid var(--cyan);}
+    .btn--outline:hover{background:var(--cyan-light);}
+    .btn--ghost{background:rgba(6,182,212,0.12);color:var(--cyan-mid);border:1px solid rgba(6,182,212,0.2);}
+    .section-h2{font-size:clamp(2rem,5vw,3rem);font-weight:800;letter-spacing:-0.02em;line-height:1.1;color:var(--dark);}
+    .section-h2 span{color:var(--cyan);}
+    .section-h2--light{color:#fff;}
+    .section-h2--light span{color:var(--cyan-mid);}
+    .card{background:var(--cream2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;transition:transform 0.3s ease,box-shadow 0.3s ease,border-color 0.3s ease;}
+    .card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(8,145,178,0.1);border-color:var(--cyan);}
+    .wa-float{position:fixed;bottom:24px;right:24px;z-index:50;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);opacity:0;transform:scale(0.8);transition:opacity 0.4s ease,transform 0.4s ease;text-decoration:none;}
+    .wa-float.show{opacity:1;transform:scale(1);}
+    .wa-float.pulse{animation:waPulse 2.2s ease-in-out infinite;}
+    .footer{background:#070F1C;border-top:1px solid rgba(6,182,212,0.1);padding:56px var(--gutter) 32px;}
+    .footer__grid{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;margin-bottom:48px;}
+    .footer__brand-name{font-size:0.95rem;font-weight:700;color:#fff;}
+    .footer__brand-sub{font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--cyan-mid);}
+    .footer__tagline{font-size:0.83rem;color:rgba(255,255,255,0.65);line-height:1.8;margin:16px 0 20px;}
+    .footer__socials{display:flex;gap:10px;}
+    .footer__social{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.55);transition:background 0.2s ease;}
+    .footer__social:hover{background:var(--cyan);color:#fff;}
+    .footer__social--wa{background:#25D366;color:#fff;}
+    .footer__col-title{font-size:0.72rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:20px;}
+    .footer__links{display:flex;flex-direction:column;gap:12px;}
+    .footer__links a,.footer__links button{font-size:0.85rem;color:rgba(255,255,255,0.72);transition:color 0.2s ease;text-align:left;width:100%;}
+    .footer__links a:hover,.footer__links button:hover{color:var(--cyan-mid);}
+    .footer__contact-item{display:flex;align-items:flex-start;gap:10px;font-size:0.85rem;color:rgba(255,255,255,0.72);margin-bottom:10px;}
+    .footer__contact-item a{color:rgba(255,255,255,0.72);transition:color 0.2s;}
+    .footer__contact-item a:hover{color:var(--cyan-mid);}
+    .footer__bottom{max-width:var(--max-w);margin:0 auto;border-top:1px solid rgba(255,255,255,0.06);padding-top:24px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}
+    .footer__rights{font-size:0.72rem;color:rgba(255,255,255,0.5);}
+    .footer__crafted{font-size:0.72rem;color:rgba(255,255,255,0.45);}
+    .footer__hours{color:rgba(255,255,255,0.72);}
+    .field{display:flex;flex-direction:column;gap:6px;}
+    .field label{font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mid);}
+    .field input,.field select,.field textarea{width:100%;padding:12px 16px;border-radius:var(--radius);border:1px solid var(--border);background:var(--cream2);color:var(--ink);font-family:inherit;font-size:0.88rem;outline:none;transition:border-color 0.2s ease;}
+    .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--cyan);}
+    .field textarea{resize:none;}
+    .page-hero{background:var(--dark);padding:calc(var(--nav-h) + 3rem) var(--gutter) 2.5rem;text-align:center;}
+    .page-hero__label{color:var(--cyan-mid);}
+    .page-hero__h1{font-size:clamp(2.4rem,6vw,4rem);font-weight:800;letter-spacing:-0.03em;color:#fff;line-height:1.05;margin-bottom:16px;}
+    .page-hero__h1 span{color:var(--cyan-mid);}
+    .page-hero__sub{font-size:1rem;color:rgba(255,255,255,0.55);max-width:520px;margin:0 auto;line-height:1.8;}
+    @media(min-width:768px){.nav__book{display:inline-flex;}.nav__hamburger{display:none;}.hide-md{display:none!important;}.nav__logo{margin-left:-90px;}.nav__logo img{height:60px!important;margin-left:-38px;}.nav__logo .nav__logo-text-main{margin-left:38px;}.nav__book{margin-left:95px;}}
+    @media(max-width:767px){.nav__links{display:none;}.nav__logo-text-main{display:none;}.nav__inner{position:relative;}.nav__lang{position:absolute;left:110px;}.nav__book{margin-right:38px;}.show-mobile-only{display:block;}.footer__grid{grid-template-columns:1fr;gap:32px;}}
+    /* ===== HERO ===== */
+    .hero { position:relative; min-height:100vh; display:flex; align-items:center; overflow:hidden; }
+    .hero__bg { position:absolute; inset:0; }
+    .hero__bg img { width:100%; height:100%; object-fit:cover; display:block; }
+    .hero__overlay { position:absolute; inset:0; background:linear-gradient(135deg, rgba(12,26,46,0.88) 0%, rgba(8,145,178,0.18) 100%); }
+    .hero__inner { position:relative; z-index:2; max-width:var(--max-w); margin:0 auto; padding:calc(var(--nav-h) + 3rem) var(--gutter) 5rem; width:100%; display:grid; grid-template-columns:1fr; gap:2.5rem; align-items:center; }
+    @media(min-width:900px){ .hero__inner{ grid-template-columns:1fr 380px; padding-bottom:6rem; } }
+    /* Hero inline quote widget */
+    .hq-card { background:linear-gradient(145deg,rgba(255,255,255,0.10) 0%,rgba(255,255,255,0.05) 100%); backdrop-filter:blur(32px); -webkit-backdrop-filter:blur(32px); border:1px solid rgba(255,255,255,0.16); border-radius:24px; padding:24px; box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 32px 80px rgba(0,0,0,0.4); }
+    .hq-title { font-size:1.1rem; font-weight:800; letter-spacing:-0.01em; color:#fff; margin-bottom:4px; display:flex; align-items:center; gap:8px; }
+    .hq-title::before { content:''; display:inline-block; width:8px; height:8px; border-radius:50%; background:#06B6D4; box-shadow:0 0 8px rgba(6,182,212,0.8); flex-shrink:0; }
+    .hq-subtitle { font-size:0.65rem; font-weight:500; color:rgba(255,255,255,0.4); margin-bottom:18px; padding-left:16px; }
+    .hq-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:16px; }
+    .hq-item { border:1px solid rgba(255,255,255,0.11); border-radius:13px; padding:12px 6px 10px; cursor:pointer; transition:all 0.2s cubic-bezier(0.16,1,0.3,1); background:rgba(255,255,255,0.04); text-align:center; user-select:none; position:relative; }
+    .hq-item:hover { border-color:rgba(6,182,212,0.45); background:rgba(6,182,212,0.09); transform:translateY(-2px); box-shadow:0 6px 20px rgba(6,182,212,0.15); }
+    .hq-item.selected { border-color:rgba(6,182,212,0.8); background:rgba(6,182,212,0.16); box-shadow:0 0 0 3px rgba(6,182,212,0.15),0 6px 24px rgba(6,182,212,0.2); transform:translateY(-1px); }
+    .hq-item-icon { font-size:1.5rem; line-height:1; margin-bottom:7px; }
+    .hq-item-name { font-size:0.58rem; font-weight:600; color:rgba(255,255,255,0.65); line-height:1.3; }
+    .hq-item.selected .hq-item-name { color:#fff; }
+    .hq-item-controls { display:none; align-items:center; gap:5px; justify-content:center; margin-top:7px; }
+    .hq-item.selected .hq-item-controls { display:flex; }
+    .hq-qty-btn { width:20px; height:20px; border-radius:50%; border:1px solid rgba(255,255,255,0.3); background:rgba(255,255,255,0.07); color:#fff; font-size:0.85rem; display:flex; align-items:center; justify-content:center; cursor:pointer; font-family:inherit; line-height:1; padding:0; transition:all 0.15s; }
+    .hq-qty-btn:hover { background:rgba(255,255,255,0.18); border-color:rgba(255,255,255,0.5); }
+    .hq-qty-num { font-size:0.68rem; font-weight:700; color:#fff; min-width:14px; text-align:center; }
+    .hq-result { margin-bottom:16px; }
+    .hq-result-inner { padding:14px 16px; border-radius:14px; background:linear-gradient(135deg,rgba(6,182,212,0.14),rgba(8,145,178,0.08)); border:1px solid rgba(6,182,212,0.25); display:flex; align-items:center; justify-content:space-between; gap:12px; box-shadow:inset 0 1px 0 rgba(6,182,212,0.2); }
+    .hq-est-left { flex:1; }
+    .hq-est-label { font-size:0.56rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.38); margin-bottom:4px; }
+    .hq-est-range { font-size:1.75rem; font-weight:800; color:#fff; line-height:1; letter-spacing:-0.02em; }
+    .hq-est-note { font-size:0.54rem; color:rgba(255,255,255,0.28); margin-top:5px; }
+    .hq-est-icon { width:36px; height:36px; border-radius:10px; background:rgba(6,182,212,0.15); border:1px solid rgba(6,182,212,0.25); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .hq-ctas { display:flex; gap:8px; }
+    .hq-cta { flex:1; display:block; text-align:center; padding:12px 8px; border-radius:12px; font-size:0.67rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; text-decoration:none; transition:all 0.22s cubic-bezier(0.16,1,0.3,1); }
+    .hq-cta--book { background:linear-gradient(135deg,#0EA5E9 0%,#0891B2 100%); color:#fff; box-shadow:0 4px 18px rgba(8,145,178,0.35); }
+    .hq-cta--book:hover { background:linear-gradient(135deg,#22D3EE 0%,#06B6D4 100%); transform:translateY(-2px); box-shadow:0 8px 28px rgba(6,182,212,0.45); }
+    .hq-cta--wa { background:linear-gradient(135deg,#25D366,#1DB954); color:#fff; display:flex; align-items:center; justify-content:center; gap:5px; box-shadow:0 4px 18px rgba(37,211,102,0.25); }
+    .hq-cta--wa:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(37,211,102,0.4); }
+    .hero__mobile-clinic-name { display:none; font-size:1.1rem; font-weight:700; color:#fff; letter-spacing:0.04em; margin-bottom:20px; }
+    @media(max-width:767px){ .hero__mobile-clinic-name { display:block; } }
+    .hero__badge { display:inline-flex; align-items:center; gap:8px; padding:7px 16px; border-radius:999px; border:1px solid rgba(6,182,212,0.35); background:rgba(6,182,212,0.1); margin-bottom:28px; }
+    .hero__badge-dot { width:7px; height:7px; border-radius:50%; background:#06B6D4; animation:pulse-dot 2s ease-in-out infinite; }
+    @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.6;transform:scale(1.3)} }
+    .hero__badge-text { font-size:0.7rem; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.8); }
+    .hero__h1 { font-size:clamp(2.6rem,6.5vw,4.8rem); font-weight:800; line-height:1.05; letter-spacing:-0.03em; color:#fff; margin-bottom:24px; max-width:800px; }
+    .hero__h1 span { color:#06B6D4; }
+    .hero__sub { font-size:clamp(0.95rem,2vw,1.15rem); color:rgba(255,255,255,0.65); line-height:1.8; max-width:520px; margin-bottom:40px; }
+    .hero__actions { display:flex; flex-wrap:wrap; gap:14px; align-items:center; margin-bottom:56px; }
+    .hero__score { display:inline-flex; align-items:center; gap:16px; padding:14px 22px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:14px; backdrop-filter:blur(8px); }
+    .hero__score-stars { display:flex; gap:2px; }
+    .hero__score-num { font-size:1.5rem; font-weight:800; color:#fff; line-height:1; }
+    .hero__score-label { font-size:0.68rem; color:rgba(255,255,255,0.5); margin-top:2px; }
+    .hero__scroll { position:absolute; bottom:32px; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:6px; opacity:0.5; animation:float-y 2.4s ease-in-out infinite; }
+    .hero__scroll-line { width:1px; height:40px; background:linear-gradient(to bottom,transparent,rgba(255,255,255,0.6)); }
+    @keyframes float-y { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(-6px)} }
+
+    /* ===== STATS ===== */
+    #stats { background:var(--dark); border-top:1px solid rgba(6,182,212,0.1); border-bottom:1px solid rgba(6,182,212,0.1); padding:clamp(2.5rem,5vw,3.5rem) var(--gutter); }
+    .stats-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:rgba(6,182,212,0.12); max-width:var(--max-w); margin:0 auto; border-radius:16px; overflow:hidden; }
+    @media(min-width:640px){ .stats-grid{ grid-template-columns:repeat(4,1fr); } }
+    .stat-cell { background:var(--dark); padding:clamp(1.5rem,4vw,2.5rem) 1.5rem; text-align:center; }
+    .stat-num { font-size:clamp(2rem,5vw,3rem); font-weight:800; color:#06B6D4; line-height:1; margin-bottom:6px; }
+    .stat-label { font-size:0.7rem; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.4); }
+
+    /* ===== PROCESS - TIMELINE ===== */
+    #process { background:var(--cream); padding:clamp(5rem,9vw,8rem) var(--gutter); }
+    .process-steps { display:grid; grid-template-columns:1fr; gap:48px; max-width:var(--max-w); margin:0 auto; position:relative; }
+    @media(min-width:768px){ .process-steps{ grid-template-columns:repeat(3,1fr); gap:0; } .process-steps::before{ content:''; position:absolute; top:32px; left:calc(16.67% + 16px); right:calc(16.67% + 16px); height:1px; background:linear-gradient(90deg,transparent,var(--cyan-mid) 20%,rgba(8,145,178,0.35) 50%,var(--cyan-mid) 80%,transparent); } }
+    .process-step { padding:0 32px 32px; text-align:center; background:none; border:none; border-radius:0; }
+    .step-num { width:64px; height:64px; border-radius:50%; background:#fff; border:2px solid var(--border); color:var(--cyan); font-size:1.5rem; font-weight:800; display:flex; align-items:center; justify-content:center; margin:0 auto 28px; position:relative; z-index:1; line-height:1; transition:all 0.3s var(--ease-out); box-shadow:0 2px 12px rgba(0,0,0,0.06); }
+    .process-step:hover .step-num { background:var(--cyan); color:#fff; border-color:var(--cyan); box-shadow:0 0 0 8px rgba(8,145,178,0.1),0 4px 20px rgba(8,145,178,0.3); transform:scale(1.06); }
+    .step-icon { display:none; }
+    .step-title { font-size:1.05rem; font-weight:700; color:var(--dark); margin-bottom:10px; }
+    .step-desc { font-size:0.83rem; color:var(--ink-mid); line-height:1.8; max-width:220px; margin:0 auto; }
+
+    /* ===== SERVICES PREVIEW ===== */
+    #services { background:#fff; padding:clamp(5rem,9vw,8rem) var(--gutter); }
+    .services-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; max-width:var(--max-w); margin:0 auto; }
+    @media(min-width:768px){ .services-grid{ grid-template-columns:repeat(3,1fr); } }
+    .srv-card { background:var(--cream); border:1px solid var(--border); border-radius:16px; padding:28px 24px; transition:all 0.25s var(--ease-out); cursor:pointer; text-decoration:none; display:flex; flex-direction:column; }
+    .srv-card:hover { border-color:var(--cyan); box-shadow:0 8px 32px rgba(8,145,178,0.12); transform:translateY(-3px); }
+    .srv-icon { width:44px; height:44px; border-radius:12px; background:var(--surface); color:var(--cyan); display:flex; align-items:center; justify-content:center; margin-bottom:16px; flex-shrink:0; }
+    .srv-name { font-size:0.95rem; font-weight:700; color:var(--dark); margin-bottom:6px; }
+    .srv-desc { font-size:0.78rem; color:var(--ink-mid); line-height:1.7; margin-bottom:14px; flex:1; }
+    .srv-link { font-size:0.7rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--cyan); }
+
+    /* ===== BEFORE/AFTER ===== */
+    #ba { background:var(--surface); padding:clamp(5rem,9vw,8rem) var(--gutter); }
+    .ba-grid { display:grid; grid-template-columns:1fr; gap:24px; max-width:var(--max-w); margin:0 auto; }
+    @media(min-width:768px){ .ba-grid{ grid-template-columns:repeat(3,1fr); } }
+    .ba-card { background:#fff; border:1px solid var(--border); border-radius:16px; overflow:hidden; }
+    .ba-img-wrap { position:relative; width:100%; background:#111; overflow:hidden; }
+    .ba-img-wrap img { width:100%; height:auto; display:block; object-fit:contain; }
+    .ba-labels { position:absolute; bottom:10px; left:0; right:0; display:flex; justify-content:space-between; padding:0 10px; pointer-events:none; }
+    .ba-label { font-size:0.58rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#fff; padding:4px 8px; border-radius:6px; backdrop-filter:blur(4px); }
+    .ba-label--before { background:rgba(0,0,0,0.55); }
+    .ba-label--after { background:rgba(8,145,178,0.8); }
+    .ba-footer { padding:14px 20px; display:flex; align-items:center; justify-content:space-between; }
+    .ba-title { font-size:0.82rem; font-weight:600; color:var(--dark); }
+    .ba-badge { padding:3px 10px; border-radius:999px; background:var(--surface); color:var(--cyan); font-size:0.6rem; font-weight:700; }
+
+    /* ===== PRICING ===== */
+    #pricing { background:var(--dark); padding:clamp(5rem,9vw,8rem) var(--gutter); }
+    .pricing-grid { display:grid; grid-template-columns:1fr; gap:16px; max-width:var(--max-w); margin:0 auto; }
+    @media(min-width:640px){ .pricing-grid{ grid-template-columns:repeat(2,1fr); } }
+    @media(min-width:1024px){ .pricing-grid{ grid-template-columns:repeat(3,1fr); } }
+    .price-card { padding:28px; border-radius:18px; border:1px solid rgba(255,255,255,0.08); background:rgba(255,255,255,0.04); position:relative; }
+    .price-card--highlight { background:var(--cyan); border-color:var(--cyan); }
+    .price-pop { position:absolute; top:-12px; left:50%; transform:translateX(-50%); white-space:nowrap; padding:4px 14px; border-radius:999px; background:#fff; color:var(--cyan); font-size:0.6rem; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; }
+    .price-name { font-size:0.9rem; font-weight:700; color:rgba(255,255,255,0.9); margin-bottom:4px; }
+    .price-card--highlight .price-name { color:#fff; }
+    .price-desc { font-size:0.75rem; color:rgba(255,255,255,0.45); margin-bottom:20px; }
+    .price-card--highlight .price-desc { color:rgba(255,255,255,0.75); }
+    .price-amount { font-size:2.2rem; font-weight:800; color:#fff; line-height:1; }
+    .price-amount--free { color:#06B6D4; }
+    .price-card--highlight .price-amount { color:#fff; }
+    .price-unit { font-size:0.72rem; font-weight:500; color:rgba(255,255,255,0.4); margin-top:4px; margin-bottom:20px; }
+    .price-cta { display:block; text-align:center; padding:10px; border-radius:10px; font-size:0.72rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; text-decoration:none; transition:all 0.2s; cursor:pointer; }
+    .price-cta--outline { border:1px solid rgba(255,255,255,0.2); color:rgba(255,255,255,0.7); }
+    .price-cta--outline:hover { border-color:var(--cyan-mid); color:var(--cyan-mid); }
+    .price-cta--dark { background:rgba(12,26,46,0.9); color:#fff; border:none; }
+    .price-cta--dark:hover { background:var(--dark); }
+
+    /* ===== QUOTE GENERATOR ===== */
+    #quote { background:var(--cream); padding:clamp(3rem,6vw,5rem) var(--gutter) clamp(4rem,7vw,6rem); }
+    .quote-wrap { max-width:800px; margin:0 auto; }
+    .quote-treatments { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-top:32px; margin-bottom:20px; }
+    @media(min-width:640px){ .quote-treatments{ grid-template-columns:repeat(4,1fr); } }
+    .qt-item { border:1px solid var(--border); border-radius:14px; padding:16px 10px 14px; cursor:pointer; transition:all 0.22s cubic-bezier(0.16,1,0.3,1); background:#fff; text-align:center; box-shadow:0 2px 8px rgba(0,0,0,0.04); }
+    .qt-item:hover { border-color:var(--cyan); background:var(--surface); transform:translateY(-2px); box-shadow:0 8px 24px rgba(8,145,178,0.12); }
+    .qt-item.selected { border-color:var(--cyan); background:var(--surface); box-shadow:0 0 0 3px rgba(8,145,178,0.1),0 8px 24px rgba(8,145,178,0.15); transform:translateY(-1px); }
+    .qt-icon { font-size:1.7rem; margin-bottom:8px; }
+    .qt-name { font-size:0.72rem; font-weight:700; color:var(--dark); }
+    .qt-controls { display:none; align-items:center; gap:8px; margin-top:10px; justify-content:center; }
+    .qt-item.selected .qt-controls { display:flex; }
+    .qt-btn { width:26px; height:26px; border-radius:50%; border:1px solid var(--border); background:#fff; font-size:0.9rem; display:flex; align-items:center; justify-content:center; cursor:pointer; font-family:inherit; transition:all 0.15s; line-height:1; }
+    .qt-btn:hover { border-color:var(--cyan); color:var(--cyan); background:var(--surface); }
+    .qt-qty { font-size:0.78rem; font-weight:700; color:var(--dark); min-width:20px; text-align:center; }
+    .quote-result { background:var(--dark); border:1px solid rgba(6,182,212,0.2); border-radius:20px; padding:28px 32px; margin-top:20px; box-shadow:0 24px 60px rgba(12,26,46,0.12),inset 0 1px 0 rgba(255,255,255,0.06); display:flex; align-items:center; gap:24px; flex-wrap:wrap; }
+    .quote-result-left { flex:1; min-width:160px; }
+    .qt-est-label { font-size:0.6rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.35); margin-bottom:8px; }
+    .quote-range { font-size:2.6rem; font-weight:800; color:#fff; line-height:1; letter-spacing:-0.02em; }
+    .quote-note { font-size:0.7rem; color:rgba(255,255,255,0.3); margin-top:8px; margin-bottom:0; }
+    .quote-ctas { display:flex; flex-wrap:wrap; gap:10px; }
+
+    /* ===== REVIEWS PREVIEW ===== */
+    #reviews { background:#fff; padding:clamp(5rem,9vw,8rem) var(--gutter); }
+    .reviews-grid { display:grid; grid-template-columns:1fr; gap:20px; max-width:var(--max-w); margin:0 auto; }
+    @media(min-width:640px){ .reviews-grid{ grid-template-columns:repeat(3,1fr); } }
+    .rv-card { background:var(--cream); border:1px solid var(--border); border-radius:16px; padding:24px; display:flex; flex-direction:column; }
+    .rv-stars { display:flex; gap:2px; margin-bottom:14px; }
+    .rv-text { font-size:0.85rem; color:var(--ink-mid); line-height:1.8; font-style:italic; flex:1; margin-bottom:18px; }
+    .rv-author { display:flex; align-items:center; gap:12px; padding-top:14px; border-top:1px solid var(--border); }
+    .rv-avatar { width:36px; height:36px; border-radius:50%; background:var(--cyan); color:#fff; font-weight:700; font-size:0.85rem; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .rv-name { font-size:0.8rem; font-weight:600; color:var(--dark); }
+    .rv-meta { font-size:0.68rem; color:var(--ink-mid); }
+
+    /* ===== CTA STRIP ===== */
+    #cta { background:linear-gradient(135deg,var(--dark) 0%,rgba(8,145,178,0.25) 100%); padding:clamp(4rem,7vw,6rem) var(--gutter); border-top:1px solid rgba(6,182,212,0.15); }
+    .cta-inner { max-width:var(--max-w); margin:0 auto; display:grid; grid-template-columns:1fr; gap:48px; align-items:center; }
+    @media(min-width:768px){ .cta-inner{ grid-template-columns:3fr 2fr; } }
+    .cta-trust-box { background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:20px; padding:32px; text-align:center; }
+    .cta-trust-rating { font-size:3.5rem; font-weight:800; color:#fff; line-height:1; margin-bottom:8px; }
+    .cta-trust-stars { display:flex; justify-content:center; gap:4px; margin-bottom:8px; }
+    .cta-trust-label { font-size:0.75rem; color:rgba(255,255,255,0.4); margin-top:6px; }
+
+    /* ===== SECTION HEADER HELPERS ===== */
+    .section-header { max-width:var(--max-w); margin:0 auto 3.5rem; }
+    .section-header--center { text-align:center; }
+    .section-header--row { display:flex; align-items:flex-end; justify-content:space-between; gap:24px; flex-wrap:wrap; }
+    .reviews-score-badge { display:inline-flex; align-items:center; gap:10px; padding:10px 18px; background:var(--surface); border:1px solid var(--border); border-radius:12px; flex-shrink:0; }
+    .rsb-num { font-size:1.4rem; font-weight:800; color:var(--dark); }
+    .rsb-stars { display:flex; gap:2px; }
+    .rsb-label { font-size:0.65rem; color:var(--ink-mid); white-space:pre-line; }
+
+    /* ===== SERVICES MORE LINK ===== */
+    .services-more { text-align:center; margin-top:2.5rem; }
+    .services-more a { font-size:0.82rem; font-weight:600; color:#0369A1; text-decoration:none; transition:opacity 0.2s; }
+    .services-more a:hover { opacity:0.75; }
+
+    /* ===== REVIEWS VIEW ALL ===== */
+    .reviews-more { text-align:center; margin-top:2.5rem; }
+    .reviews-more a { font-size:0.82rem; font-weight:600; color:#0369A1; text-decoration:none; transition:opacity 0.2s; }
+    .reviews-more a:hover { opacity:0.75; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <img src="assets/logo.png" alt="Spavas Dental Studio" height="48" style="width:auto;display:block;object-fit:contain;">
+      <div class="nav__logo-text-main" style="white-space:nowrap;letter-spacing:0.08em;">Spavas Dental Studio</div>
+    </a>
+    <nav class="nav__links">
+      <a href="services.html" data-t="nav.services">Servizi</a>
+      <a href="about.html" data-t="nav.about">Chi Siamo</a>
+      <a href="gallery.html" data-t="nav.gallery">Galleria</a>
+      <a href="reviews.html" data-t="nav.reviews">Recensioni</a>
+      <a href="contact.html" data-t="nav.contact">Contatti</a>
+    </nav>
+    <div class="nav__right">
+      <div class="nav__lang">
+        <button onclick="setLang('it')" id="lang-it">IT</button>
+        <button onclick="setLang('sq')" id="lang-sq">AL</button>
+        <button onclick="setLang('en')" id="lang-en">EN</button>
+      </div>
+      <a href="contact.html" class="btn btn--cyan nav__book" data-t="nav.book">Prenota</a>
+      <button class="nav__hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="nav__mobile" id="mobile-menu">
+  <a href="services.html" data-t="nav.services">Servizi</a>
+  <a href="about.html" data-t="nav.about">Chi Siamo</a>
+  <a href="gallery.html" data-t="nav.gallery">Galleria</a>
+  <a href="reviews.html" data-t="nav.reviews">Recensioni</a>
+  <a href="contact.html" data-t="nav.contact">Contatti</a>
+  <a href="contact.html" class="nav__mobile-book" data-t="nav.book">Prenota</a>
+</div>
+
+<!-- ===== 1. HERO ===== -->
+<section class="hero">
+  <div class="hero__bg">
+    <picture>
+      <source media="(max-width:767px)" srcset="assets/hero-mobile.jpeg">
+      <img src="assets/hero-desktop.jpeg" alt="Spavas Dental Studio" fetchpriority="high">
+    </picture>
+  </div>
+  <div class="hero__overlay"></div>
+  <div class="hero__inner">
+    <!-- LEFT: hero text -->
+    <div class="hero__left">
+      <div class="hero__mobile-clinic-name">Spavas Dental Studio</div>
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        <span class="hero__badge-text" data-t="hero.badge">Clinica Dentale · Vlorë, Albania</span>
+      </div>
+      <h1 class="hero__h1" id="hero-h1">
+        Il Tuo Sorriso<br>Merita il <span data-t="hero.h1b">Meglio</span>
+      </h1>
+      <p class="hero__sub" data-t="hero.sub">Cure dentali d'eccellenza nel cuore di Valona. Implantologia, faccette, sbiancamento e molto altro, con prezzi accessibili e qualità europea.</p>
+      <div class="hero__actions">
+        <a href="contact.html" class="btn btn--cyan" data-t="hero.cta1">Prenota Visita Gratuita</a>
+        <a href="https://wa.me/355698422428" target="_blank" rel="noopener noreferrer" class="btn btn--wa">
+          <svg viewBox="0 0 24 24" fill="white" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span data-t="hero.cta2">Scrivi su WhatsApp</span>
+        </a>
+      </div>
+      <div class="hero__score">
+        <div class="hero__score-num">4.9</div>
+        <div>
+          <div class="hero__score-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#06B6D4" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#06B6D4" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#06B6D4" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#06B6D4" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#06B6D4" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="hero__score-label" id="hero-score-label">293 recensioni su Google</div>
+        </div>
+      </div>
+    </div>
+    <!-- RIGHT: inline quote widget -->
+    <div class="hero__right">
+      <div class="hq-card">
+        <div class="hq-title" id="hq-label">Preventivo Istantaneo</div>
+        <div class="hq-subtitle" id="hq-subtitle">Seleziona i trattamenti</div>
+        <div class="hq-grid" id="hq-pills"></div>
+        <div class="hq-result" id="hq-result">
+          <div class="hq-result-inner">
+            <div class="hq-est-left">
+              <div class="hq-est-label" id="hq-est-label">Stima del preventivo</div>
+              <div class="hq-est-range" id="hq-est-range">€0</div>
+              <div class="hq-est-note" id="hq-est-note">* Stima indicativa</div>
+            </div>
+            <div class="hq-est-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="hq-ctas">
+          <a href="contact.html" class="hq-cta hq-cta--book" id="hq-cta">Prenota</a>
+          <a href="https://wa.me/355698422428" target="_blank" rel="noopener noreferrer" class="hq-cta hq-cta--wa" id="hq-cta-wa">
+            <svg viewBox="0 0 24 24" fill="white" width="14" height="14"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span id="hq-cta-wa-text">WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 2. BEFORE & AFTER ===== -->
+<section id="ba">
+  <div class="section-header section-header--center">
+    <div class="section-label" data-t="ba.label">Risultati Reali</div>
+    <h2 class="section-h2">
+      <span data-t="ba.h2a">Prima &amp;</span> <span class="text-cyan" data-t="ba.h2b">Dopo</span>
+    </h2>
+    <p class="section-sub" data-t="ba.sub">Risultati reali di pazienti reali. Ogni trasformazione è documentata e verificata.</p>
+  </div>
+  <div class="ba-grid">
+    <div class="ba-card reveal">
+      <div class="ba-img-wrap">
+        <img src="https://res.cloudinary.com/dr63qmw21/image/upload/f_auto,q_auto/v1781992997/IMG_6426_hrgy9t.jpg" alt="Prima e Dopo - Impianto Singolo" loading="lazy" width="1200" height="800">
+        <div class="ba-labels">
+          <span class="ba-label ba-label--before" data-t="ba.before">Prima</span>
+          <span class="ba-label ba-label--after" data-t="ba.after">Dopo</span>
+        </div>
+      </div>
+      <div class="ba-footer">
+        <span class="ba-title">Impianto Singolo</span>
+        <span class="ba-badge" data-t="ba.badge">✓ VERIFICATO REALE</span>
+      </div>
+    </div>
+    <div class="ba-card reveal d1">
+      <div class="ba-img-wrap">
+        <img src="https://res.cloudinary.com/dr63qmw21/image/upload/f_auto,q_auto/v1781992997/IMG_6425_iox1ho.jpg" alt="Prima e Dopo - Sbiancamento" loading="lazy" width="1200" height="800">
+        <div class="ba-labels">
+          <span class="ba-label ba-label--before" data-t="ba.before">Prima</span>
+          <span class="ba-label ba-label--after" data-t="ba.after">Dopo</span>
+        </div>
+      </div>
+      <div class="ba-footer">
+        <span class="ba-title">Sbiancamento</span>
+        <span class="ba-badge" data-t="ba.badge">✓ VERIFICATO REALE</span>
+      </div>
+    </div>
+    <div class="ba-card reveal d2">
+      <div class="ba-img-wrap">
+        <img src="https://res.cloudinary.com/dr63qmw21/image/upload/f_auto,q_auto/v1781992997/IMG_6427_v9sz23.jpg" alt="Prima e Dopo - Faccette" loading="lazy" width="1200" height="800">
+        <div class="ba-labels">
+          <span class="ba-label ba-label--before" data-t="ba.before">Prima</span>
+          <span class="ba-label ba-label--after" data-t="ba.after">Dopo</span>
+        </div>
+      </div>
+      <div class="ba-footer">
+        <span class="ba-title">Faccette in Porcellana</span>
+        <span class="ba-badge" data-t="ba.badge">✓ VERIFICATO REALE</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. STATS BAR ===== -->
+<section id="stats">
+  <div class="stats-grid">
+    <div class="stat-cell reveal">
+      <div class="stat-num" id="stat0">293+</div>
+      <div class="stat-label" data-t="stats.0.label">Recensioni Google</div>
+    </div>
+    <div class="stat-cell reveal d1">
+      <div class="stat-num" id="stat1">10+</div>
+      <div class="stat-label" data-t="stats.1.label">Anni di Esperienza</div>
+    </div>
+    <div class="stat-cell reveal d2">
+      <div class="stat-num" id="stat2">2.000+</div>
+      <div class="stat-label" data-t="stats.2.label">Pazienti Soddisfatti</div>
+    </div>
+    <div class="stat-cell reveal d3">
+      <div class="stat-num" id="stat3">Gratuita</div>
+      <div class="stat-label" data-t="stats.3.label">Prima Visita</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. HOW IT WORKS ===== -->
+<section id="process">
+  <div class="section-header section-header--center">
+    <h2 class="section-h2">
+      <span data-t="process.h2a">In 3 Semplici</span> <span class="text-cyan" data-t="process.h2b">Passi</span>
+    </h2>
+    <p class="section-sub" data-t="process.sub">Dalla prima chiamata al sorriso perfetto: il percorso è semplice e trasparente.</p>
+  </div>
+  <div class="process-steps">
+    <!-- Step 1 -->
+    <div class="process-step reveal">
+      <span class="step-num">1</span>
+      <div class="step-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+      </div>
+      <div class="step-title" data-t="process.steps.0.title">Contattaci</div>
+      <div class="step-desc" data-t="process.steps.0.desc">Chiamaci o scrivici su WhatsApp. Ti risponderemo entro poche ore per fissare la tua visita gratuita.</div>
+    </div>
+    <!-- Step 2 -->
+    <div class="process-step reveal d1">
+      <span class="step-num">2</span>
+      <div class="step-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="18" rx="2"/>
+          <line x1="16" y1="2" x2="16" y2="6"/>
+          <line x1="8" y1="2" x2="8" y2="6"/>
+          <line x1="3" y1="10" x2="21" y2="10"/>
+        </svg>
+      </div>
+      <div class="step-title" data-t="process.steps.1.title">Visita Gratuita</div>
+      <div class="step-desc" data-t="process.steps.1.desc">Vieni in clinica per una valutazione completa gratuita. Il dottore elabora il tuo piano di trattamento personalizzato.</div>
+    </div>
+    <!-- Step 3 -->
+    <div class="process-step reveal d2">
+      <span class="step-num">3</span>
+      <div class="step-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+          <line x1="9" y1="9" x2="9.01" y2="9"/>
+          <line x1="15" y1="9" x2="15.01" y2="9"/>
+        </svg>
+      </div>
+      <div class="step-title" data-t="process.steps.2.title">Sorriso!</div>
+      <div class="step-desc" data-t="process.steps.2.desc">Inizia il trattamento e scopri la differenza. I nostri pazienti ci danno 4.9★ su Google.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. SERVICES PREVIEW ===== -->
+<section id="services">
+  <div class="section-header section-header--center">
+    <h2 class="section-h2">
+      <span data-t="services.h2a">Trattamenti</span> <span class="text-cyan" data-t="services.h2b">di Eccellenza</span>
+    </h2>
+    <p class="section-sub" data-t="services.sub">Dalla prevenzione all'estetica avanzata, tutto in un'unica clinica moderna a Valona.</p>
+  </div>
+  <div class="services-grid">
+    <!-- 1. Implantologia -->
+    <a href="services.html" class="srv-card reveal">
+      <div class="srv-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2C8.5 2 6 4.5 6 7c0 2 .5 3.5 1 5 .5 1.5 1 4 1 4h1.5s.5-3 1-4c.3-.7.5-1 1-1s.7.3 1 1c.5 1 1 4 1 4H14s.5-2.5 1-4c.5-1.5 1-3 1-5 0-2.5-2.5-5-4-5z"/>
+        </svg>
+      </div>
+      <div class="srv-name">Implantologia</div>
+      <div class="srv-desc">Impianti dentali permanenti di alta qualità per sostituire i denti mancanti.</div>
+      <div class="srv-link">Scopri →</div>
+    </a>
+    <!-- 2. Sbiancamento LED -->
+    <a href="services.html" class="srv-card reveal d1">
+      <div class="srv-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+        </svg>
+      </div>
+      <div class="srv-name">Sbiancamento LED</div>
+      <div class="srv-desc">Trattamento professionale per un sorriso fino a 8 tonalità più bianco.</div>
+      <div class="srv-link">Scopri →</div>
+    </a>
+    <!-- 3. Faccette in Porcellana -->
+    <a href="services.html" class="srv-card reveal d2">
+      <div class="srv-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+          <polyline points="2 17 12 22 22 17"/>
+          <polyline points="2 12 12 17 22 12"/>
+        </svg>
+      </div>
+      <div class="srv-name">Faccette in Porcellana</div>
+      <div class="srv-desc">Faccette ultra-sottili per correggere forma, colore e allineamento.</div>
+      <div class="srv-link">Scopri →</div>
+    </a>
+    <!-- 4. All-on-4 -->
+    <a href="services.html" class="srv-card reveal d3">
+      <div class="srv-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="6 3 18 3 22 9 12 22 2 9 6 3"/>
+          <line x1="2" y1="9" x2="22" y2="9"/>
+          <line x1="12" y1="3" x2="12" y2="22"/>
+        </svg>
+      </div>
+      <div class="srv-name">All-on-4</div>
+      <div class="srv-desc">Protesi fissa completa su soli 4 impianti. Denti fissi in un giorno.</div>
+      <div class="srv-link">Scopri →</div>
+    </a>
+    <!-- 5. Invisalign -->
+    <a href="services.html" class="srv-card reveal d4">
+      <div class="srv-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </div>
+      <div class="srv-name">Invisalign</div>
+      <div class="srv-desc">Allineatori trasparenti per raddrizzare i denti senza apparecchio.</div>
+      <div class="srv-link">Scopri →</div>
+    </a>
+    <!-- 6. Igiene Dentale -->
+    <a href="services.html" class="srv-card reveal d5">
+      <div class="srv-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+      </div>
+      <div class="srv-name">Igiene Dentale</div>
+      <div class="srv-desc">Pulizia professionale e prevenzione per mantenere il sorriso sano.</div>
+      <div class="srv-link">Scopri →</div>
+    </a>
+  </div>
+  <div class="services-more">
+    <a href="services.html" data-t="services.more">Scopri tutti i servizi →</a>
+  </div>
+</section>
+
+<!-- ===== 6. PRICING ===== -->
+<section id="pricing">
+  <div class="section-header section-header--center">
+    <div class="section-label" style="color:#06B6D4" data-t="pricing.label">Prezzi Trasparenti</div>
+    <h2 class="section-h2" style="color:#fff">
+      <span data-t="pricing.h2a">Tariffe</span> <span style="color:#06B6D4" data-t="pricing.h2b">Chiare</span>
+    </h2>
+    <p class="section-sub" style="color:rgba(255,255,255,0.5)" data-t="pricing.sub">Nessuna sorpresa. I prezzi sono fissi e comunicati prima di qualsiasi trattamento.</p>
+  </div>
+  <div class="pricing-grid">
+    <!-- 1. Visita Specialistica -->
+    <div class="price-card reveal">
+      <div class="price-name">Visita Specialistica</div>
+      <div class="price-desc">Valutazione completa senza impegno</div>
+      <div class="price-amount price-amount--free">Gratuita</div>
+      <div class="price-unit">per visita</div>
+      <a href="contact.html" class="price-cta price-cta--outline" data-t="pricing.bookBtn">Prenota</a>
+    </div>
+    <!-- 2. Sbiancamento LED -->
+    <div class="price-card reveal d1">
+      <div class="price-name">Sbiancamento LED</div>
+      <div class="price-desc">Risultati immediati e duraturi</div>
+      <div class="price-amount">€150</div>
+      <div class="price-unit">per trattamento</div>
+      <a href="contact.html" class="price-cta price-cta--outline" data-t="pricing.bookBtn">Prenota</a>
+    </div>
+    <!-- 3. Impianto Singolo -->
+    <div class="price-card reveal d2">
+      <div class="price-name">Impianto Singolo</div>
+      <div class="price-desc">Titanio di alta qualità, garanzia a vita</div>
+      <div class="price-amount">€350</div>
+      <div class="price-unit">per impianto</div>
+      <a href="contact.html" class="price-cta price-cta--outline" data-t="pricing.bookBtn">Prenota</a>
+    </div>
+    <!-- 4. All-on-4 (HIGHLIGHT) -->
+    <div class="price-card price-card--highlight reveal d3">
+      <div class="price-pop" data-t="pricing.popular">PIÙ SCELTO</div>
+      <div class="price-name">All-on-4</div>
+      <div class="price-desc">Denti fissi completi in un giorno</div>
+      <div class="price-amount">€3.200</div>
+      <div class="price-unit">per arcata</div>
+      <a href="contact.html" class="price-cta price-cta--dark" data-t="pricing.bookBtn">Prenota</a>
+    </div>
+    <!-- 5. Faccette -->
+    <div class="price-card reveal d4">
+      <div class="price-name">Faccette in Porcellana</div>
+      <div class="price-desc">Estetica dentale di alta precisione</div>
+      <div class="price-amount">€220</div>
+      <div class="price-unit">per dente</div>
+      <a href="contact.html" class="price-cta price-cta--outline" data-t="pricing.bookBtn">Prenota</a>
+    </div>
+    <!-- 6. Invisalign -->
+    <div class="price-card reveal d5">
+      <div class="price-name">Invisalign</div>
+      <div class="price-desc">Allineamento invisibile e confortevole</div>
+      <div class="price-amount">€1.500</div>
+      <div class="price-unit">per trattamento</div>
+      <a href="contact.html" class="price-cta price-cta--outline" data-t="pricing.bookBtn">Prenota</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7. QUOTE GENERATOR ===== -->
+<section id="quote" class="reveal">
+  <div style="max-width:var(--max-w);margin:0 auto;text-align:center;">
+    <h2 class="section-h2"><span data-t="quote.h2">Calcola il Tuo </span><span class="text-cyan" data-t="quote.h2b">Preventivo</span></h2>
+    <p class="section-sub" style="margin:12px auto 0;" data-t="quote.sub">Seleziona i trattamenti e ottieni una stima immediata. Gratuita e senza impegno.</p>
+  </div>
+  <div class="quote-wrap">
+    <div class="quote-treatments" id="qt-grid"></div>
+    <div class="quote-result" id="qt-result">
+      <div class="quote-result-left">
+        <div class="qt-est-label" data-t="quote.estimate">Stima del Preventivo</div>
+        <div class="quote-range" id="qt-range">€0</div>
+        <div class="quote-note" data-t="quote.note">* Stima indicativa. Il prezzo esatto viene definito dopo la visita gratuita.</div>
+      </div>
+      <div class="quote-ctas">
+        <a href="contact.html" class="hq-cta hq-cta--book" data-t="quote.bookBtn">Prenota per Confermare</a>
+        <a href="https://wa.me/355698422428" class="hq-cta hq-cta--wa" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="white" width="14" height="14"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span data-t="quote.waBtn">Invia su WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8. REVIEWS PREVIEW ===== -->
+<section id="reviews">
+  <div class="section-header section-header--row" style="max-width:var(--max-w);margin:0 auto 3.5rem;">
+    <div>
+      <h2 class="section-h2" style="margin-bottom:0">
+        <span data-t="reviews.h2a">Recensioni</span> <span class="text-cyan" data-t="reviews.h2b">Reali</span>
+      </h2>
+    </div>
+    <div class="reviews-score-badge">
+      <div class="rsb-num">4.9</div>
+      <div>
+        <div class="rsb-stars">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="#0891B2" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="#0891B2" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="#0891B2" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="#0891B2" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="#0891B2" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div class="rsb-label" id="rsb-label">293 recensioni&#10;su Google</div>
+      </div>
+    </div>
+  </div>
+  <div class="reviews-grid" id="reviews-grid"></div>
+  <div class="reviews-more">
+    <a href="reviews.html" id="reviews-viewall" data-t="reviews.viewAll">Leggi tutte le 293 recensioni →</a>
+  </div>
+</section>
+
+<!-- ===== 9. CTA STRIP ===== -->
+<section id="cta">
+  <div class="cta-inner">
+    <div>
+      <h2 class="section-h2" style="color:#fff;margin-bottom:16px" data-t="cta.h2">Pronto per il Sorriso che Meriti?</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:1rem;line-height:1.75;margin-bottom:36px" data-t="cta.sub">Prenota la tua visita gratuita oggi. Nessun obbligo, solo un sorriso migliore.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;">
+        <a href="contact.html" class="btn btn--cyan" data-t="cta.btn1">Prenota Visita Gratuita</a>
+        <a href="https://wa.me/355698422428" target="_blank" rel="noopener noreferrer" class="btn btn--wa">
+          <svg viewBox="0 0 24 24" fill="white" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span data-t="cta.btn2">Scrivi su WhatsApp</span>
+        </a>
+      </div>
+    </div>
+    <div class="cta-trust-box reveal">
+      <div class="cta-trust-rating">4.9</div>
+      <div class="cta-trust-stars">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#06B6D4" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#06B6D4" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#06B6D4" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#06B6D4" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#06B6D4" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      </div>
+      <div style="color:#fff;font-size:0.9rem;font-weight:600;margin-bottom:4px;">293 recensioni Google</div>
+      <div class="cta-trust-label">Pazienti soddisfatti da 10 anni</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 10. FOOTER ===== -->
+<footer class="footer">
+  <div class="footer__grid">
+    <div>
+      <div class="footer__brand">
+        <img src="assets/logo.png" alt="Spavas Dental Studio" height="36" style="width:auto;display:block;object-fit:contain;">
+        <div>
+          <div class="footer__brand-name">Spavas Dental Studio</div>
+          <div class="footer__brand-sub">Vlorë, Albania</div>
+        </div>
+      </div>
+      <p class="footer__tagline" data-t="footer.tagline">Cure dentali di eccellenza nel cuore di Valona.</p>
+      <div class="footer__socials">
+        <a href="https://www.instagram.com/spavasdentalstudio/" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.facebook.com/SpavasDentalStudio.al/" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Facebook">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="https://wa.me/355698422428" target="_blank" rel="noopener noreferrer" class="footer__social footer__social--wa" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="white" width="15" height="15"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="footer__col-title" data-t="footer.links">Link Rapidi</div>
+      <div class="footer__links">
+        <a href="services.html" data-t="nav.services">Servizi</a>
+        <a href="about.html" data-t="nav.about">Chi Siamo</a>
+        <a href="gallery.html" data-t="nav.gallery">Galleria</a>
+        <a href="reviews.html" data-t="nav.reviews">Recensioni</a>
+        <a href="contact.html" data-t="nav.contact">Contatti</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer__col-title" data-t="footer.contact">Contatti</div>
+      <div class="footer__contact-list">
+        <a href="tel:+355698422428" class="footer__contact-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          069 842 2428
+        </a>
+        <a href="https://wa.me/355698422428" target="_blank" rel="noopener noreferrer" class="footer__contact-item footer__contact-wa">
+          <span style="color:#25D366;font-size:0.8rem">●</span> WhatsApp
+        </a>
+        <div class="footer__contact-item footer__contact-addr">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span id="footer-addr">Di fronte al Bar Rinia, Vlorë</span>
+        </div>
+        <div class="footer__hours" id="footer-hours">Lun–Ven: 08:00–20:00<br>Sabato: 08:00–14:00</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span class="footer__rights" data-t="footer.rights">© 2025 Spavas Dental Studio. Tutti i diritti riservati.</span>
+    <span class="footer__crafted" id="footer-crafted">Progettato con cura</span>
+  </div>
+</footer>
+
+<!-- WA FLOAT -->
+<a class="wa-float" id="wa-float" href="https://wa.me/355698422428" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+/* ===== TRANSLATIONS ===== */
+const T = {
+  it: {
+    nav: { services:'Servizi', about:'Chi Siamo', gallery:'Galleria', reviews:'Recensioni', contact:'Contatti', book:'Prenota' },
+    footer: { tagline:'Cure dentali di eccellenza nel cuore di Valona.', rights:'© 2025 Spavas Dental Studio. Tutti i diritti riservati.', links:'Link Rapidi', contact:'Contatti', crafted:'Progettato con cura' },
+    hero: { badge:'Clinica Dentale · Vlorë, Albania', h1a:'Il Tuo Sorriso<br>Merita il ', h1b:'Meglio', sub:'Cure dentali d\'eccellenza nel cuore di Valona. Implantologia, faccette, sbiancamento e molto altro — con prezzi accessibili e qualità europea.', cta1:'Prenota Visita Gratuita', cta2:'Scrivi su WhatsApp', scoreLabel:'293 recensioni su Google' },
+    stats: { 0:{label:'Recensioni Google'}, 1:{label:'Anni di Esperienza'}, 2:{label:'Pazienti Soddisfatti'}, 3:{label:'Prima Visita'} },
+    process: { label:'Come Funziona', h2a:'In 3 Semplici', h2b:'Passi', sub:'Dalla prima chiamata al sorriso perfetto — il percorso è semplice e trasparente.', steps:[ {title:'1. Contattaci', desc:'Chiamaci o scrivici su WhatsApp. Ti risponderemo entro poche ore per fissare la tua visita gratuita.'}, {title:'2. Visita Gratuita', desc:'Vieni in clinica per una valutazione completa gratuita. Il dottore elabora il tuo piano di trattamento personalizzato.'}, {title:'3. Sorrido!', desc:'Inizia il trattamento e scopri la differenza. I nostri pazienti ci danno 4.9★ su Google.'} ] },
+    services: { label:'I Nostri Servizi', h2a:'Trattamenti', h2b:'di Eccellenza', sub:'Dalla prevenzione all\'estetica avanzata — tutto in un\'unica clinica moderna a Valona.', more:'Scopri tutti i servizi →', items:[ {name:'Implantologia', desc:'Impianti dentali permanenti di alta qualità per sostituire i denti mancanti.'}, {name:'Sbiancamento LED', desc:'Trattamento professionale per un sorriso fino a 8 tonalità più bianco.'}, {name:'Faccette in Porcellana', desc:'Faccette ultra-sottili per correggere forma, colore e allineamento.'}, {name:'All-on-4', desc:'Protesi fissa completa su soli 4 impianti. Denti fissi in un giorno.'}, {name:'Invisalign', desc:'Allineatori trasparenti per raddrizzare i denti senza apparecchio.'}, {name:'Igiene Dentale', desc:'Pulizia professionale e prevenzione per mantenere il sorriso sano.'} ] },
+    ba: { label:'Risultati Reali', h2a:'Prima &', h2b:'Dopo', sub:'Risultati reali di pazienti reali. Ogni trasformazione è documentata e verificata.', before:'Prima', after:'Dopo', badge:'✓ VERIFICATO REALE', items:[ {title:'Impianto Singolo'}, {title:'Sbiancamento'}, {title:'Faccette'} ] },
+    pricing: { label:'Prezzi Trasparenti', h2a:'Tariffe', h2b:'Chiare', sub:'Nessuna sorpresa. I prezzi sono fissi e comunicati prima di qualsiasi trattamento.', popular:'PIÙ SCELTO', bookBtn:'Prenota', free:'Gratuita', items:[ {name:'Visita Specialistica', desc:'Valutazione completa senza impegno', unit:'per visita'}, {name:'Sbiancamento LED', desc:'Risultati immediati e duraturi', unit:'per trattamento'}, {name:'Impianto Singolo', desc:'Titanio di alta qualità, garanzia a vita', unit:'per impianto'}, {name:'All-on-4', desc:'Denti fissi completi in un giorno', unit:'per arcata'}, {name:'Faccette in Porcellana', desc:'Estetica dentale di alta precisione', unit:'per dente'}, {name:'Invisalign', desc:'Allineamento invisibile e confortevole', unit:'per trattamento'} ] },
+    quote: { label:'Preventivo Istantaneo', h2:'Calcola il Tuo ', h2b:'Preventivo', sub:'Seleziona i trattamenti e ottieni una stima immediata. Gratuita e senza impegno.', estimate:'Stima del Preventivo', note:'* Stima indicativa. Il prezzo esatto viene definito dopo la visita gratuita.', bookBtn:'Prenota per Confermare', waBtn:'Invia su WhatsApp' },
+    treatment: { 0:{name:'Impianto Singolo'}, 1:{name:'All-on-4'}, 2:{name:'All-on-6'}, 3:{name:'Faccette in Porcellana'}, 4:{name:'Invisalign'}, 5:{name:'Sbiancamento'}, 6:{name:'Corona in Ceramica'}, 7:{name:'Visita Specialistica'} },
+    reviews: { label:'Cosa Dicono i Pazienti', h2a:'Recensioni', h2b:'Reali', viewAll:'Leggi tutte le 293 recensioni →', basedOn:'recensioni\nsu Google' },
+    cta: { h2:'Pronto per il Sorriso che Meriti?', sub:'Prenota la tua visita gratuita oggi. Nessun obbligo, solo un sorriso migliore.', btn1:'Prenota Visita Gratuita', btn2:'Scrivi su WhatsApp' }
+  },
+  en: {
+    nav: { services:'Services', about:'About', gallery:'Gallery', reviews:'Reviews', contact:'Contact', book:'Book Now' },
+    footer: { tagline:'Advanced dental care in the heart of Vlorë.', rights:'© 2025 Spavas Dental Studio. All rights reserved.', links:'Quick Links', contact:'Contact', crafted:'Designed with care' },
+    hero: { badge:'Dental Clinic · Vlorë, Albania', h1a:'Your Smile<br>Deserves the ', h1b:'Best', sub:'World-class dental care in the heart of Vlorë, Albania. Implants, veneers, whitening and more — at unbeatable prices.', cta1:'Book Free Consultation', cta2:'WhatsApp Us', scoreLabel:'293 reviews on Google' },
+    stats: { 0:{label:'Google Reviews'}, 1:{label:'Years of Experience'}, 2:{label:'Happy Patients'}, 3:{label:'First Visit'} },
+    process: { label:'How It Works', h2a:'In 3 Simple', h2b:'Steps', sub:'From first contact to your perfect smile — simple and transparent.', steps:[ {title:'1. Contact Us', desc:'Call us or message on WhatsApp. We\'ll reply within hours to schedule your free visit.'}, {title:'2. Free Consultation', desc:'Come in for a complete free evaluation. Your doctor creates a personalized treatment plan.'}, {title:'3. Smile!', desc:'Start treatment and see the difference. Our patients rate us 4.9★ on Google.'} ] },
+    services: { label:'Our Services', h2a:'Excellence in', h2b:'Dental Care', sub:'From prevention to advanced aesthetics — all in one modern clinic in Vlorë.', more:'View all services →', items:[ {name:'Implantology', desc:'High-quality permanent dental implants to replace missing teeth.'}, {name:'LED Whitening', desc:'Professional treatment for a smile up to 8 shades whiter.'}, {name:'Porcelain Veneers', desc:'Ultra-thin veneers to correct shape, color and alignment.'}, {name:'All-on-4', desc:'Full fixed prosthesis on just 4 implants. Fixed teeth in one day.'}, {name:'Invisalign', desc:'Clear aligners to straighten teeth without braces.'}, {name:'Dental Hygiene', desc:'Professional cleaning and prevention to keep your smile healthy.'} ] },
+    ba: { label:'Real Results', h2a:'Before &', h2b:'After', sub:'Real results from real patients. Every transformation is documented and verified.', before:'Before', after:'After', badge:'✓ VERIFIED REAL', items:[ {title:'Single Implant'}, {title:'Whitening'}, {title:'Veneers'} ] },
+    pricing: { label:'Transparent Pricing', h2a:'Clear', h2b:'Pricing', sub:'No surprises. Prices are fixed and communicated before any treatment.', popular:'MOST POPULAR', bookBtn:'Book', free:'Free', items:[ {name:'Specialist Visit', desc:'Complete evaluation with no commitment', unit:'per visit'}, {name:'LED Whitening', desc:'Immediate and long-lasting results', unit:'per treatment'}, {name:'Single Implant', desc:'High-quality titanium, lifetime guarantee', unit:'per implant'}, {name:'All-on-4', desc:'Complete fixed teeth in one day', unit:'per arch'}, {name:'Porcelain Veneers', desc:'High-precision dental aesthetics', unit:'per tooth'}, {name:'Invisalign', desc:'Invisible and comfortable alignment', unit:'per treatment'} ] },
+    quote: { label:'Instant Quote', h2:'Calculate Your ', h2b:'Quote', sub:'Select treatments and get an instant estimate. Free and no commitment.', estimate:'Estimate', note:'* Indicative estimate. Exact price confirmed after free consultation.', bookBtn:'Book to Confirm', waBtn:'Send on WhatsApp' },
+    treatment: { 0:{name:'Single Implant'}, 1:{name:'All-on-4'}, 2:{name:'All-on-6'}, 3:{name:'Porcelain Veneers'}, 4:{name:'Invisalign'}, 5:{name:'Whitening'}, 6:{name:'Ceramic Crown'}, 7:{name:'Specialist Visit'} },
+    reviews: { label:'What Patients Say', h2a:'Real', h2b:'Reviews', viewAll:'Read all 293 reviews →', basedOn:'reviews\non Google' },
+    cta: { h2:'Ready for the Smile You Deserve?', sub:'Book your free consultation today. No obligation, just a better smile.', btn1:'Book Free Consultation', btn2:'WhatsApp Us' }
+  },
+  sq: {
+    nav: { services:'Shërbimet', about:'Rreth Nesh', gallery:'Galeria', reviews:'Recensionet', contact:'Kontakt', book:'Rezervo' },
+    footer: { tagline:'Kujdes dentar i avancuar në zemër të Vlorës.', rights:'© 2025 Spavas Dental Studio. Të gjitha të drejtat e rezervuara.', links:'Lidhje të Shpejta', contact:'Kontakt', crafted:'Dizajnuar me kujdes' },
+    hero: { badge:'Klinikë Dentare · Vlorë, Shqipëri', h1a:'Buzëqeshja Jote<br>Meriton ', h1b:'më të Mirën', sub:'Kujdes dentar i nivelit botëror në zemër të Vlorës. Implantime, faceta, zbardhim dhe më shumë — me çmime të përballueshme.', cta1:'Rezervo Vizitë Falas', cta2:'Shkruaj në WhatsApp', scoreLabel:'293 recensione në Google' },
+    stats: { 0:{label:'Recensione Google'}, 1:{label:'Vite Eksperiencë'}, 2:{label:'Pacientë të Kënaqur'}, 3:{label:'Vizita e Parë'} },
+    process: { label:'Si Funksionon', h2a:'Në 3 Hapa', h2b:'të Thjeshtë', sub:'Nga kontakti i parë deri te buzëqeshja perfekte — rruga është e thjeshtë dhe transparente.', steps:[ {title:'1. Na Kontakto', desc:'Na telefono ose shkruaj në WhatsApp. Do të përgjigjemi brenda disa orësh për të caktuar vizitën tuaj falas.'}, {title:'2. Vizitë Falas', desc:'Ejani në klinikë për një vlerësim të plotë falas. Mjeku harton planin tuaj të trajtimit.'}, {title:'3. Buzëqesh!', desc:'Filloni trajtimin dhe shihni ndryshimin. Pacientët tanë na vlerësojnë 4.9★ në Google.'} ] },
+    services: { label:'Shërbimet Tona', h2a:'Trajtim', h2b:'i Shkëlqyer', sub:'Nga parandalimi deri te estetika e avancuar — gjithçka në një klinikë moderne në Vlorë.', more:'Shiko të gjitha shërbimet →', items:[ {name:'Implantologji', desc:'Implantime dentare të cilësisë së lartë për të zëvendësuar dhëmbët e munguar.'}, {name:'Zbardhim LED', desc:'Trajtim profesional për një buzëqeshje deri në 8 nuanca më të bardhë.'}, {name:'Faceta Porcelani', desc:'Faceta ultra-të holla për të korrigjuar formën, ngjyrën dhe rreshtimin.'}, {name:'All-on-4', desc:'Protezë e fiksuar e plotë mbi vetëm 4 implantime. Dhëmbë të fiksuar në një ditë.'}, {name:'Invisalign', desc:'Mbushëse transparente për të drejtuar dhëmbët pa aparate.'}, {name:'Higjienë Dentare', desc:'Pastrim profesional dhe parandalim për të ruajtur buzëqeshjen tuaj të shëndetshme.'} ] },
+    ba: { label:'Rezultate Reale', h2a:'Para &', h2b:'Pas', sub:'Rezultate reale nga pacientë realë. Çdo transformim është i dokumentuar dhe i verifikuar.', before:'Para', after:'Pas', badge:'✓ VERIFIKUAR REAL', items:[ {title:'Implant i Vetëm'}, {title:'Zbardhim'}, {title:'Faceta'} ] },
+    pricing: { label:'Çmime Transparente', h2a:'Çmime', h2b:'të Qarta', sub:'Asnjë surprizë. Çmimet janë fikse dhe komunikohen para çdo trajtimi.', popular:'MË I ZGJEDHURI', bookBtn:'Rezervo', free:'Falas', items:[ {name:'Vizitë Specialiste', desc:'Vlerësim i plotë pa asnjë detyrim', unit:'për vizitë'}, {name:'Zbardhim LED', desc:'Rezultate të menjëhershme dhe afatgjata', unit:'për trajtim'}, {name:'Implant i Vetëm', desc:'Titan i cilësisë së lartë, garanci gjatë gjithë jetës', unit:'për implant'}, {name:'All-on-4', desc:'Dhëmbë të fiksuar të plotë në një ditë', unit:'për hark'}, {name:'Faceta Porcelani', desc:'Estetikë dentare me precizion të lartë', unit:'për dhëmb'}, {name:'Invisalign', desc:'Rreshtim i padukshëm dhe i rehatshëm', unit:'për trajtim'} ] },
+    quote: { label:'Kuotë e Menjëhershme', h2:'Llogarit ', h2b:'Preventivën', sub:'Zgjidhni trajtimet dhe merrni një vlerësim të menjëhershëm. Falas dhe pa detyrim.', estimate:'Vlerësim', note:'* Vlerësim tregues. Çmimi i saktë konfirmohet pas vizitës falas.', bookBtn:'Rezervo për Konfirmim', waBtn:'Dërgoni në WhatsApp' },
+    treatment: { 0:{name:'Implant i Vetëm'}, 1:{name:'All-on-4'}, 2:{name:'All-on-6'}, 3:{name:'Faceta Porcelani'}, 4:{name:'Invisalign'}, 5:{name:'Zbardhim'}, 6:{name:'Kurorë Qeramike'}, 7:{name:'Vizitë Specialiste'} },
+    reviews: { label:'Çfarë Thonë Pacientët', h2a:'Recensione', h2b:'Reale', viewAll:'Lexo të gjitha 293 recensionet →', basedOn:'recensione\nnë Google' },
+    cta: { h2:'Gati për Buzëqeshjen që Meriton?', sub:'Rezervo vizitën tënde falas sot. Asnjë detyrim, vetëm një buzëqeshje më e mirë.', btn1:'Rezervo Vizitë Falas', btn2:'Shkruaj në WhatsApp' }
+  }
+};
+
+/* ===== REVIEWS DATA ===== */
+const REVIEWS = {
+  it: [
+    { name:'Marco F.', text:'"Clinica fantastica! Ho fatto un impianto e il risultato è perfetto, senza dolore. Consiglio vivamente!"', meta:'Milano · Google' },
+    { name:'Giulia R.', text:'"Servizio eccellente. L\'ambiente è pulito e moderno. Il team è meraviglioso."', meta:'Roma · Google' },
+    { name:'Arta M.', text:'"Klinikë fantastike! Dr. Anxhela është shumë profesionale. Implanti doli perfekt!"', meta:'Vlorë · Google' }
+  ],
+  en: [
+    { name:'Marco F.', text:'"Fantastic clinic! I had an implant and the result is perfect, no pain. Highly recommended!"', meta:'Milan · Google' },
+    { name:'Giulia R.', text:'"Excellent service. The environment is clean and modern. The team is wonderful."', meta:'Rome · Google' },
+    { name:'Arta M.', text:'"Fantastic clinic! Dr. Anxhela is very professional. My implant turned out perfect!"', meta:'Vlorë · Google' }
+  ],
+  sq: [
+    { name:'Marco F.', text:'"Klinikë fantastike! Bëra një implant dhe rezultati është perfekt, pa dhimbje. Rekomandoj fuqishëm!"', meta:'Milano · Google' },
+    { name:'Giulia R.', text:'"Shërbim i shkëlqyer. Ambienti është i pastër dhe modern. Ekipi është i mrekullueshëm."', meta:'Roma · Google' },
+    { name:'Arta M.', text:'"Klinikë fantastike! Dr. Anxhela është shumë profesionale. Implanti doli perfekt!"', meta:'Vlorë · Google' }
+  ]
+};
+
+/* ===== QUOTE TREATMENTS ===== */
+const TREATMENTS = [
+  {id:0,icon:'🦷',min:350,max:500,hasQty:true,maxQty:10,qty:1},
+  {id:1,icon:'✨',min:3200,max:4500,hasQty:true,maxQty:2,qty:1},
+  {id:2,icon:'💎',min:3800,max:5500,hasQty:true,maxQty:2,qty:1},
+  {id:3,icon:'🌟',min:220,max:350,hasQty:true,maxQty:20,qty:1},
+  {id:4,icon:'😁',min:1500,max:2500,hasQty:false,maxQty:1,qty:1},
+  {id:5,icon:'⚡',min:150,max:250,hasQty:false,maxQty:1,qty:1},
+  {id:6,icon:'👑',min:200,max:320,hasQty:true,maxQty:10,qty:1},
+  {id:7,icon:'🩺',min:0,max:0,hasQty:false,maxQty:1,qty:1},
+];
+
+/* ===== STATE ===== */
+let lang = localStorage.getItem('spavas_lang') || 'it';
+let selected = new Set();
+let heroSelected = new Set();
+
+/* ===== HELPERS ===== */
+function t(p){
+  let o = T[lang];
+  for (const k of p.split('.')) {
+    if (o == null) return '';
+    o = isNaN(k) ? o[k] : o[parseInt(k)];
+  }
+  return o ?? '';
+}
+
+function setLang(l) {
+  lang = l;
+  localStorage.setItem('spavas_lang', l);
+  applyTranslations();
+  updateLangBtns();
+  renderTreatments();
+  heroRenderTreatments();
+  renderReviews();
+}
+
+function updateLangBtns() {
+  ['it','sq','en'].forEach(l => {
+    const b = document.getElementById('lang-' + l);
+    if (b) b.classList.toggle('active', l === lang);
+    const sb = document.getElementById('sb-lang-' + l);
+    if (sb) { sb.style.background = l === lang ? '#0369A1' : 'transparent'; sb.style.color = l === lang ? '#fff' : 'rgba(255,255,255,0.5)'; }
+  });
+}
+
+function toggleMenu() {
+  document.getElementById('mobile-menu').classList.toggle('open');
+}
+
+function applyTranslations() {
+  document.querySelectorAll('[data-t]').forEach(el => {
+    const v = t(el.dataset.t);
+    if (v && typeof v === 'string') el.textContent = v;
+  });
+
+  // Hero H1 (has HTML)
+  const h1 = document.getElementById('hero-h1');
+  if (h1) {
+    const prefix = lang === 'it' ? 'Il Tuo Sorriso<br>Merita il ' : lang === 'sq' ? 'Buzëqeshja Jote<br>Meriton ' : 'Your Smile<br>Deserves the ';
+    h1.innerHTML = prefix + `<span>${t('hero.h1b')}</span>`;
+  }
+
+  // Hero score label
+  const sl = document.getElementById('hero-score-label');
+  if (sl) sl.textContent = t('hero.scoreLabel');
+
+  // Reviews score badge label
+  const rsb = document.getElementById('rsb-label');
+  if (rsb) rsb.textContent = t('reviews.basedOn');
+
+  // Footer address
+  const fa = document.getElementById('footer-addr');
+  if (fa) fa.textContent = lang === 'it' ? 'Di fronte al Bar Rinia, Vlorë' : lang === 'sq' ? 'Përballë Bar Rinia, Vlorë' : 'Opposite Bar Rinia, Vlorë';
+
+  // Footer hours
+  const fh = document.getElementById('footer-hours');
+  if (fh) fh.innerHTML = lang === 'it' ? 'Lun–Ven: 08:00–20:00<br>Sabato: 08:00–14:00' : lang === 'sq' ? 'E Hënë–E Premte: 08:00–20:00<br>E Shtunë: 08:00–14:00' : 'Mon–Fri: 08:00–20:00<br>Saturday: 08:00–14:00';
+
+  // Footer crafted
+  const fc = document.getElementById('footer-crafted');
+  if (fc) fc.textContent = t('footer.crafted');
+
+  // Stat 3 (free)
+  const s3 = document.getElementById('stat3');
+  if (s3) s3.textContent = lang === 'it' ? 'Gratuita' : lang === 'sq' ? 'Falas' : 'Free';
+
+  // Pricing free amount
+  document.querySelectorAll('.price-amount--free').forEach(el => { el.textContent = t('pricing.free'); });
+
+  // Services more link
+  document.querySelectorAll('.srv-link').forEach(el => { el.textContent = t('services.more'); });
+  const srvMore = document.querySelector('.services-more a');
+  if (srvMore) srvMore.textContent = t('services.more');
+
+  // BA labels
+  document.querySelectorAll('.ba-label--before').forEach(el => { el.textContent = t('ba.before'); });
+  document.querySelectorAll('.ba-label--after').forEach(el => { el.textContent = t('ba.after'); });
+  document.querySelectorAll('.ba-badge').forEach(el => { el.textContent = t('ba.badge'); });
+  document.querySelectorAll('.ba-title').forEach((el, i) => { el.textContent = t(`ba.items.${i}.title`) || ''; });
+
+  // Service names/descs
+  document.querySelectorAll('.srv-name').forEach((el, i) => { el.textContent = t(`services.items.${i}.name`) || ''; });
+  document.querySelectorAll('.srv-desc').forEach((el, i) => { el.textContent = t(`services.items.${i}.desc`) || ''; });
+
+  // Pricing names/descs/units
+  document.querySelectorAll('.price-name').forEach((el, i) => { el.textContent = t(`pricing.items.${i}.name`) || ''; });
+  document.querySelectorAll('.price-desc').forEach((el, i) => { el.textContent = t(`pricing.items.${i}.desc`) || ''; });
+  document.querySelectorAll('.price-unit').forEach((el, i) => { el.textContent = t(`pricing.items.${i}.unit`) || ''; });
+  document.querySelectorAll('.price-pop').forEach(el => { el.textContent = t('pricing.popular'); });
+
+  // Process steps
+  document.querySelectorAll('.step-title').forEach((el, i) => { el.textContent = t(`process.steps.${i}.title`) || ''; });
+  document.querySelectorAll('.step-desc').forEach((el, i) => { el.textContent = t(`process.steps.${i}.desc`) || ''; });
+
+  // Reviews view all
+  const rva = document.getElementById('reviews-viewall');
+  if (rva) rva.textContent = t('reviews.viewAll');
+}
+
+/* ===== HERO INLINE QUOTE ===== */
+function heroRenderTreatments() {
+  const grid = document.getElementById('hq-pills');
+  if (!grid) return;
+  grid.innerHTML = TREATMENTS.map((tr, i) => `
+    <div class="hq-item${heroSelected.has(i) ? ' selected' : ''}" onclick="heroToggle(${i})">
+      <div class="hq-item-icon">${tr.icon}</div>
+      <div class="hq-item-name">${t('treatment.' + i + '.name')}</div>
+      ${tr.hasQty ? `<div class="hq-item-controls">
+        <button class="hq-qty-btn" onclick="event.stopPropagation();heroQty(${i},-1)">−</button>
+        <span class="hq-qty-num">${tr.qty}</span>
+        <button class="hq-qty-btn" onclick="event.stopPropagation();heroQty(${i},1)">+</button>
+      </div>` : ''}
+    </div>
+  `).join('');
+  // update labels
+  const lbl = document.getElementById('hq-label');
+  if (lbl) lbl.textContent = t('quote.label');
+  const elbl = document.getElementById('hq-est-label');
+  if (elbl) elbl.textContent = t('quote.estimate');
+  const note = document.getElementById('hq-est-note');
+  if (note) note.textContent = lang === 'it' ? '* Stima indicativa' : lang === 'sq' ? '* Vlerësim tregues' : '* Indicative estimate';
+  const cta = document.getElementById('hq-cta');
+  if (cta) cta.textContent = lang === 'it' ? 'Prenota' : lang === 'sq' ? 'Rezervo' : 'Book Now';
+  const ctaWa = document.getElementById('hq-cta-wa-text');
+  if (ctaWa) ctaWa.textContent = 'WhatsApp';
+}
+
+function heroToggle(i) {
+  if (heroSelected.has(i)) heroSelected.delete(i); else heroSelected.add(i);
+  heroRenderTreatments();
+  heroUpdateQuote();
+}
+
+function heroQty(i, delta) {
+  const tr = TREATMENTS[i];
+  tr.qty = Math.max(1, Math.min(tr.maxQty, tr.qty + delta));
+  heroRenderTreatments();
+  heroUpdateQuote();
+  // keep main quote in sync
+  if (selected.has(i)) updateQuote();
+}
+
+function heroUpdateQuote() {
+  const result = document.getElementById('hq-result');
+  const range = document.getElementById('hq-est-range');
+  if (!result || !range) return;
+  if (heroSelected.size === 0) { result.classList.remove('show'); return; }
+  let minTotal = 0, maxTotal = 0;
+  heroSelected.forEach(i => {
+    const tr = TREATMENTS[i];
+    minTotal += tr.min * tr.qty;
+    maxTotal += tr.max * tr.qty;
+  });
+  range.textContent = maxTotal === 0 ? t('pricing.free') : '€' + minTotal.toLocaleString('it-IT') + ' – €' + maxTotal.toLocaleString('it-IT');
+  result.classList.add('show');
+}
+
+/* ===== QUOTE GENERATOR ===== */
+function renderTreatments() {
+  const grid = document.getElementById('qt-grid');
+  if (!grid) return;
+  grid.innerHTML = TREATMENTS.map((tr, i) => `
+    <div class="qt-item${selected.has(i) ? ' selected' : ''}" onclick="toggleTreatment(${i})">
+      <div class="qt-icon">${tr.icon}</div>
+      <div class="qt-name">${t('treatment.' + i + '.name')}</div>
+      ${tr.hasQty ? `<div class="qt-controls">
+        <button class="qt-btn" onclick="event.stopPropagation();changeQty(${i},-1)">−</button>
+        <span class="qt-qty">${tr.qty}</span>
+        <button class="qt-btn" onclick="event.stopPropagation();changeQty(${i},1)">+</button>
+      </div>` : ''}
+    </div>
+  `).join('');
+}
+
+function toggleTreatment(i) {
+  if (selected.has(i)) selected.delete(i); else selected.add(i);
+  renderTreatments();
+  updateQuote();
+}
+
+function changeQty(i, delta) {
+  const tr = TREATMENTS[i];
+  tr.qty = Math.max(1, Math.min(tr.maxQty, tr.qty + delta));
+  renderTreatments();
+  updateQuote();
+}
+
+function updateQuote() {
+  const range = document.getElementById('qt-range');
+  if (!range) return;
+  if (selected.size === 0) { range.textContent = '€0'; return; }
+  let minTotal = 0, maxTotal = 0;
+  selected.forEach(i => {
+    const tr = TREATMENTS[i];
+    minTotal += tr.min * tr.qty;
+    maxTotal += tr.max * tr.qty;
+  });
+  range.textContent = maxTotal === 0
+    ? t('pricing.free')
+    : '€' + minTotal.toLocaleString('it-IT') + ' – €' + maxTotal.toLocaleString('it-IT');
+}
+
+/* ===== REVIEWS RENDER ===== */
+function renderReviews() {
+  const grid = document.getElementById('reviews-grid');
+  if (!grid) return;
+  const reviews = REVIEWS[lang] || REVIEWS.it;
+  grid.innerHTML = reviews.map(r => `
+    <div class="rv-card">
+      <div class="rv-stars">
+        ${[1,2,3,4,5].map(() => '<svg width="13" height="13" viewBox="0 0 24 24" fill="#0891B2" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>').join('')}
+      </div>
+      <p class="rv-text">${r.text}</p>
+      <div class="rv-author">
+        <div class="rv-avatar">${r.name[0]}</div>
+        <div>
+          <div class="rv-name">${r.name}</div>
+          <div class="rv-meta">${r.meta}</div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+/* ===== NAV SCROLL ===== */
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+});
+
+/* ===== INIT ===== */
+document.addEventListener('DOMContentLoaded', () => {
+  applyTranslations();
+  updateLangBtns();
+
+  requestAnimationFrame(() => {
+    renderTreatments();
+    heroRenderTreatments();
+    renderReviews();
+
+    // Intersection observer for reveal animations
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('active');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => obs.observe(el));
+
+    // WA float
+    setTimeout(() => {
+      const w = document.getElementById('wa-float');
+      if (w) {
+        w.classList.add('show');
+        setTimeout(() => w.classList.add('pulse'), 800);
+      }
+    }, 1200);
+  });
+});
+</script>
+</body>
+</html>
