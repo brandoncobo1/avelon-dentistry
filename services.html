@@ -1,1076 +1,1052 @@
 ﻿<!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>I Nostri Servizi — Spavas Dental Studio | Vlorë, Albania</title>
-  <meta name="description" content="Scopri i 7 servizi dentali premium di Spavas Dental Studio a Vlorë, Albania. Implantologia, sbiancamento, faccette, All-on-4, Invisalign e molto altro." />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Montgomery Dentistry | Montgomery, Alabama</title>
+  <meta name="description" content="Explore all dental services at Montgomery Dentistry — preventive care, cosmetic dentistry, implants, whitening, clear aligners, emergency dentistry & more. Montgomery, AL.">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2" fetchpriority="high">
-
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
   <style>
     @font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400 800;font-display:swap;src:url('https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+    /* ── SHARED DESIGN SYSTEM ── */
     :root{--cyan:#0891B2;--cyan-mid:#06B6D4;--cyan-light:rgba(8,145,178,0.12);--cyan-pale:rgba(8,145,178,0.06);--dark:#0C1A2E;--dark2:#111F35;--ink:#1E3A5F;--ink-mid:#4A6880;--ink-light:#7A9AB0;--cream:#F5FAFB;--cream2:#EAF4F8;--surface:#EAF4F8;--white:#ffffff;--border:#C8DFE9;--green:#25D366;--max-w:1200px;--gutter:clamp(1rem,5vw,3rem);--nav-h:72px;--radius:10px;--radius-lg:16px;--ease:cubic-bezier(0.25,0.46,0.45,0.94);--ease-out:cubic-bezier(0.16,1,0.3,1);}
-    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}body{background:var(--cream);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:400;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;}img{display:block;width:100%;object-fit:cover;}a{text-decoration:none;color:inherit;}ul{list-style:none;}button{border:none;background:none;cursor:pointer;font-family:inherit;}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--cream);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:400;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+    img{display:block;width:100%;object-fit:cover;}
+    a{text-decoration:none;color:inherit;}
+    ul{list-style:none;}
+    button{border:none;background:none;cursor:pointer;font-family:inherit;}
     .container{max-width:var(--max-w);margin:0 auto;padding:0 var(--gutter);}
-    .section-label{display:inline-block;font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:600;padding:6px 14px;border-radius:999px;background:var(--cyan-light);color:#0369A1;margin-bottom:16px;}.section-label--dark{background:rgba(6,182,212,0.12);color:var(--cyan-mid);}
-    .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.65s var(--ease),transform 0.65s var(--ease);}.reveal.active{opacity:1;transform:none;}.reveal-left{opacity:0;transform:translateX(-32px);transition:opacity 0.75s var(--ease),transform 0.75s var(--ease);}.reveal-left.active{opacity:1;transform:none;}.reveal-right{opacity:0;transform:translateX(32px);transition:opacity 0.75s var(--ease),transform 0.75s var(--ease);}.reveal-right.active{opacity:1;transform:none;}.reveal-scale{opacity:0;transform:scale(0.94);transition:opacity 0.65s var(--ease),transform 0.65s var(--ease);}.reveal-scale.active{opacity:1;transform:none;}
+    .section-label{display:inline-block;font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:600;padding:6px 14px;border-radius:999px;background:var(--cyan-light);color:#0369A1;margin-bottom:16px;}
+    .section-label--dark{background:rgba(6,182,212,0.12);color:var(--cyan-mid);}
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.65s var(--ease),transform 0.65s var(--ease);}
+    .reveal.active{opacity:1;transform:none;}
+    .reveal-left{opacity:0;transform:translateX(-32px);transition:opacity 0.75s var(--ease),transform 0.75s var(--ease);}
+    .reveal-left.active{opacity:1;transform:none;}
+    .reveal-right{opacity:0;transform:translateX(32px);transition:opacity 0.75s var(--ease),transform 0.75s var(--ease);}
+    .reveal-right.active{opacity:1;transform:none;}
+    .reveal-scale{opacity:0;transform:scale(0.94);transition:opacity 0.65s var(--ease),transform 0.65s var(--ease);}
+    .reveal-scale.active{opacity:1;transform:none;}
     .d1{transition-delay:0.08s}.d2{transition-delay:0.16s}.d3{transition-delay:0.24s}.d4{transition-delay:0.32s}.d5{transition-delay:0.40s}.d6{transition-delay:0.48s}
-    @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:none;}}@keyframes waPulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,0.5);}50%{box-shadow:0 0 0 14px rgba(37,211,102,0);}}@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0);}50%{transform:translateX(-50%) translateY(8px);}}
-    .nav{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--nav-h);transition:background 0.3s ease,backdrop-filter 0.3s ease,border-bottom 0.3s ease;}.nav.scrolled{background:rgba(12,26,46,0.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(6,182,212,0.15);}
-    .nav__inner{height:100%;display:flex;align-items:center;justify-content:space-between;max-width:var(--max-w);margin:0 auto;padding:0 var(--gutter);}.nav__logo{display:flex;align-items:center;gap:10px;cursor:pointer;}.nav__logo-text-main{font-size:0.95rem;font-weight:700;color:#fff;line-height:1;}.nav__logo-text-sub{font-size:0.62rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--cyan-mid);}
-    .nav__links{display:flex;align-items:center;gap:32px;}.nav__links a{font-size:0.73rem;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;color:rgba(255,255,255,0.6);transition:color 0.2s ease;}.nav__links a:hover,.nav__links a.active{color:var(--cyan-mid);}
-    .nav__right{display:flex;align-items:center;gap:12px;}.nav__lang{display:flex;border-radius:6px;overflow:hidden;border:1px solid rgba(6,182,212,0.3);}.nav__lang button{padding:4px 10px;font-size:0.63rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5);background:transparent;transition:all 0.2s ease;}.nav__lang button.active{background:#0369A1;color:#fff;}
-    .nav__book{display:none;padding:8px 18px;border-radius:var(--radius);font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;background:#0369A1;color:#fff;transition:transform 0.2s ease,box-shadow 0.2s ease;}.nav__book:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(3,105,161,0.4);}
-    .nav__hamburger{display:flex;flex-direction:column;gap:5px;padding:4px;}.nav__hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;transition:all 0.3s ease;}
-    .nav__mobile{display:none;position:fixed;top:var(--nav-h);left:0;right:0;z-index:49;background:var(--dark);border-bottom:1px solid rgba(6,182,212,0.12);padding:24px var(--gutter);}.nav__mobile.open{display:flex;flex-direction:column;gap:4px;}.nav__mobile a,.nav__mobile button{display:block;padding:12px 0;border-bottom:1px solid rgba(6,182,212,0.08);font-size:0.88rem;color:rgba(255,255,255,0.75);letter-spacing:0.08em;text-transform:uppercase;text-align:left;width:100%;transition:color 0.2s;}.nav__mobile a:hover{color:var(--cyan-mid);}.nav__mobile-book{margin-top:12px;padding:14px;border-radius:var(--radius);background:var(--cyan);color:#fff!important;text-align:center!important;font-weight:700;border:none!important;}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:var(--radius);font-size:0.82rem;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;cursor:pointer;transition:transform 0.25s ease,box-shadow 0.25s ease;border:none;}.btn:hover{transform:translateY(-2px);}.btn--cyan{background:#0369A1;color:#fff;}.btn--cyan:hover{box-shadow:0 12px 40px rgba(3,105,161,0.4);}.btn--wa{background:#15803D;color:#fff;}.btn--wa:hover{box-shadow:0 12px 40px rgba(21,128,61,0.35);}.btn--outline{background:transparent;color:var(--cyan);border:1.5px solid var(--cyan);}.btn--outline:hover{background:var(--cyan-light);}.btn--ghost{background:rgba(6,182,212,0.12);color:var(--cyan-mid);border:1px solid rgba(6,182,212,0.2);}
-    .section-h2{font-size:clamp(2rem,5vw,3rem);font-weight:800;letter-spacing:-0.02em;line-height:1.1;color:var(--dark);}.section-h2 span{color:var(--cyan);}.section-h2--light{color:#fff;}.section-h2--light span{color:var(--cyan-mid);}
-    .card{background:var(--cream2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;transition:transform 0.3s ease,box-shadow 0.3s ease,border-color 0.3s ease;}.card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(8,145,178,0.1);border-color:var(--cyan);}
-    .wa-float{position:fixed;bottom:24px;right:24px;z-index:50;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);opacity:0;transform:scale(0.8);transition:opacity 0.4s ease,transform 0.4s ease;text-decoration:none;}.wa-float.show{opacity:1;transform:scale(1);}.wa-float.pulse{animation:waPulse 2.2s ease-in-out infinite;}
-    .footer{background:#070F1C;border-top:1px solid rgba(6,182,212,0.1);padding:56px var(--gutter) 32px;}.footer__grid{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;margin-bottom:48px;}.footer__brand-name{font-size:0.95rem;font-weight:700;color:#fff;}.footer__brand-sub{font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--cyan-mid);}.footer__tagline{font-size:0.83rem;color:rgba(255,255,255,0.65);line-height:1.8;margin:16px 0 20px;}
-    .footer__socials{display:flex;gap:10px;}.footer__social{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.55);transition:background 0.2s ease;}.footer__social:hover{background:var(--cyan);color:#fff;}.footer__social--wa{background:#25D366;color:#fff;}
-    .footer__col-title{font-size:0.72rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:20px;}.footer__links{display:flex;flex-direction:column;gap:12px;}.footer__links a,.footer__links button{font-size:0.85rem;color:rgba(255,255,255,0.72);transition:color 0.2s ease;text-align:left;width:100%;}.footer__links a:hover,.footer__links button:hover{color:var(--cyan-mid);}
-    .footer__contact-item{display:flex;align-items:flex-start;gap:10px;font-size:0.85rem;color:rgba(255,255,255,0.72);margin-bottom:10px;}.footer__contact-item a{color:rgba(255,255,255,0.72);transition:color 0.2s;}.footer__contact-item a:hover{color:var(--cyan-mid);}.footer__bottom{max-width:var(--max-w);margin:0 auto;border-top:1px solid rgba(255,255,255,0.06);padding-top:24px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}.footer__rights{font-size:0.72rem;color:rgba(255,255,255,0.5);}.footer__crafted{font-size:0.72rem;color:rgba(255,255,255,0.45);}.footer__hours{color:rgba(255,255,255,0.72);}
-    .field{display:flex;flex-direction:column;gap:6px;}.field label{font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mid);}.field input,.field select,.field textarea{width:100%;padding:12px 16px;border-radius:var(--radius);border:1px solid var(--border);background:var(--cream2);color:var(--ink);font-family:inherit;font-size:0.88rem;outline:none;transition:border-color 0.2s ease;}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--cyan);}.field textarea{resize:none;}
-    .page-hero{background:var(--dark);padding:calc(var(--nav-h) + 3rem) var(--gutter) 2.5rem;text-align:center;}.page-hero__label{color:var(--cyan-mid);}.page-hero__h1{font-size:clamp(2.4rem,6vw,4rem);font-weight:800;letter-spacing:-0.03em;color:#fff;line-height:1.05;margin-bottom:16px;}.page-hero__h1 span{color:var(--cyan-mid);}.page-hero__sub{font-size:1rem;color:rgba(255,255,255,0.55);max-width:520px;margin:0 auto;line-height:1.8;}
-    @media(min-width:768px){.nav__book{display:inline-flex;margin-left:20px;}.nav__hamburger{display:none;}.hide-md{display:none!important;}.nav__logo img{height:56px!important;margin-left:-55px;}.nav__logo-text-main{margin-left:5px;}.nav__inner{gap:19px;}.nav__right{gap:19px;}}@media(max-width:767px){.nav__links{display:none;}.nav__logo-text-main{display:none;}.nav__inner{position:relative;}.nav__lang{position:absolute;left:110px;}.nav__book{margin-right:38px;}.show-mobile-only{display:block;}.footer__grid{grid-template-columns:1fr;gap:32px;}}
-    /* ── PAGE HERO ───────────────────────────────────── */
-    .page-hero {
-      position:relative;
-      background:var(--dark);
-      padding:calc(var(--nav-h) + 5rem) var(--gutter) 5rem;
-      overflow:hidden;
-      text-align:center;
-    }
-    .page-hero__grid {
-      position:absolute; inset:0; pointer-events:none;
-      background-image:
-        linear-gradient(rgba(6,182,212,0.06) 1px,transparent 1px),
-        linear-gradient(90deg,rgba(6,182,212,0.06) 1px,transparent 1px);
-      background-size:60px 60px;
-      opacity:0.35;
-    }
-    .page-hero__glow {
-      position:absolute; top:-120px; left:50%; transform:translateX(-50%);
-      width:700px; height:400px;
-      background:radial-gradient(ellipse,rgba(6,182,212,0.18) 0%,transparent 70%);
-      pointer-events:none;
-    }
-    .page-hero__label {
-      display:inline-block;
-      font-size:0.68rem; letter-spacing:0.22em; text-transform:uppercase;
-      font-weight:600; padding:6px 16px; border-radius:999px;
-      background:rgba(6,182,212,0.12); color:var(--cyan-mid);
-      margin-bottom:1.25rem;
-    }
-    .page-hero h1 {
-      font-size:clamp(2.2rem,5.5vw,3.6rem);
-      font-weight:800; letter-spacing:-0.03em; line-height:1.1;
-      color:#fff; margin-bottom:1.25rem;
-    }
-    .page-hero h1 span { color:var(--cyan-mid); }
-    .page-hero__sub {
-      font-size:clamp(1rem,2vw,1.12rem);
-      color:rgba(255,255,255,0.62); line-height:1.7;
-      max-width:600px; margin:0 auto;
-    }
+    @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:none;}}
+    @keyframes waPulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,0.5);}50%{box-shadow:0 0 0 14px rgba(37,211,102,0);}}
 
-    /* ── SERVICE CARDS ───────────────────────────────── */
-    .services-grid {
-      display:grid;
-      grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
-      gap:1.5rem;
-    }
-    .svc-card {
-      background:#fff;
-      border:1px solid var(--border);
-      border-radius:var(--radius-lg);
-      padding:2rem;
-      display:flex; flex-direction:column; gap:1rem;
-      transition:transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    }
-    .svc-card:hover {
-      transform:translateY(-5px);
-      box-shadow:0 20px 56px rgba(8,145,178,0.12);
-      border-color:var(--cyan);
-    }
-    .svc-card__icon {
-      width:52px; height:52px; border-radius:12px;
-      background:var(--cyan); display:flex; align-items:center; justify-content:center;
-      flex-shrink:0;
-    }
-    .svc-card__icon svg { stroke:#fff; fill:none; }
-    .svc-card__header { display:flex; align-items:flex-start; gap:1rem; }
-    .svc-card__title {
-      font-size:1.05rem; font-weight:700; color:var(--dark); line-height:1.3;
-      flex:1;
-    }
-    .svc-card__price {
-      display:inline-block;
-      font-size:0.72rem; font-weight:700; letter-spacing:0.08em;
-      padding:3px 10px; border-radius:999px;
-      background:var(--cyan-light); color:var(--cyan);
-      white-space:nowrap; flex-shrink:0;
-    }
-    .svc-card__price--free { background:rgba(34,197,94,0.1); color:#16a34a; }
-    .svc-card__desc {
-      font-size:0.875rem; color:var(--ink-mid); line-height:1.65;
-    }
-    .svc-card__features {
-      list-style:none; display:flex; flex-direction:column; gap:8px;
-      margin-top:0.25rem;
-    }
-    .svc-card__features li {
-      display:flex; align-items:center; gap:8px;
-      font-size:0.82rem; color:var(--ink-mid); font-weight:500;
-    }
-    .svc-card__features li svg { flex-shrink:0; }
-    .svc-card__link {
-      display:inline-flex; align-items:center; gap:6px;
-      font-size:0.82rem; font-weight:700; color:var(--cyan);
-      letter-spacing:0.04em; margin-top:auto; padding-top:0.5rem;
-      border-top:1px solid var(--border); transition:gap 0.2s ease;
-    }
-    .svc-card:hover .svc-card__link { gap:10px; }
+    /* ── NAV ── */
+    .nav{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--nav-h);transition:background 0.3s ease,backdrop-filter 0.3s ease,border-bottom 0.3s ease;}
+    .nav.scrolled{background:rgba(12,26,46,0.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(6,182,212,0.15);}
+    .nav__inner{height:100%;display:flex;align-items:center;justify-content:space-between;max-width:var(--max-w);margin:0 auto;padding:0 var(--gutter);}
+    .nav__logo{display:flex;align-items:center;gap:10px;cursor:pointer;}
+    .nav__logo-text-main{font-size:0.95rem;font-weight:700;color:#fff;line-height:1;}
+    .nav__links{display:flex;align-items:center;gap:32px;}
+    .nav__links a{font-size:0.73rem;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;color:rgba(255,255,255,0.6);transition:color 0.2s ease;}
+    .nav__links a:hover,.nav__links a.active{color:var(--cyan-mid);}
+    .nav__right{display:flex;align-items:center;gap:12px;}
+    .nav__lang{display:flex;border-radius:6px;overflow:hidden;border:1px solid rgba(6,182,212,0.3);}
+    .nav__lang button{padding:4px 10px;font-size:0.63rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5);background:transparent;transition:all 0.2s ease;}
+    .nav__lang button.active{background:#0369A1;color:#fff;}
+    .nav__book{display:none;padding:8px 18px;border-radius:var(--radius);font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;background:#0369A1;color:#fff;transition:transform 0.2s ease,box-shadow 0.2s ease;}
+    .nav__book:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(3,105,161,0.4);}
+    .nav__hamburger{display:flex;flex-direction:column;gap:5px;padding:4px;}
+    .nav__hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;transition:all 0.3s ease;}
+    .nav__mobile{display:none;position:fixed;top:var(--nav-h);left:0;right:0;z-index:49;background:var(--dark);border-bottom:1px solid rgba(6,182,212,0.12);padding:24px var(--gutter);}
+    .nav__mobile.open{display:flex;flex-direction:column;gap:4px;}
+    .nav__mobile a,.nav__mobile button{display:block;padding:12px 0;border-bottom:1px solid rgba(6,182,212,0.08);font-size:0.88rem;color:rgba(255,255,255,0.75);letter-spacing:0.08em;text-transform:uppercase;text-align:left;width:100%;transition:color 0.2s;}
+    .nav__mobile a:hover{color:var(--cyan-mid);}
+    .nav__mobile-book{margin-top:12px;padding:14px;border-radius:var(--radius);background:var(--cyan);color:#fff!important;text-align:center!important;font-weight:700;border:none!important;}
 
-    /* ── STATS STRIP ─────────────────────────────────── */
-    .stats-strip {
-      background:var(--dark);
-      padding:clamp(2.5rem,5vw,3.5rem) var(--gutter);
-    }
-    .stats-strip__grid {
-      max-width:var(--max-w); margin:0 auto;
-      display:grid; grid-template-columns:repeat(4,1fr);
-      gap:1rem; text-align:center;
-    }
-    .stats-strip__item { padding:1rem; }
-    .stats-strip__num {
-      font-size:clamp(2rem,4vw,2.8rem);
-      font-weight:800; color:var(--cyan-mid); line-height:1;
-      margin-bottom:0.4rem;
-    }
-    .stats-strip__label {
-      font-size:0.82rem; color:rgba(255,255,255,0.55); font-weight:500;
-    }
+    /* ── BUTTONS ── */
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:var(--radius);font-size:0.82rem;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;cursor:pointer;transition:transform 0.25s ease,box-shadow 0.25s ease;border:none;}
+    .btn:hover{transform:translateY(-2px);}
+    .btn--cyan{background:#0369A1;color:#fff;}
+    .btn--cyan:hover{box-shadow:0 12px 40px rgba(3,105,161,0.4);}
+    .btn--wa{background:#15803D;color:#fff;}
+    .btn--wa:hover{box-shadow:0 12px 40px rgba(21,128,61,0.35);}
+    .btn--outline{background:transparent;color:var(--cyan);border:1.5px solid var(--cyan);}
+    .btn--outline:hover{background:var(--cyan-light);}
+    .btn--ghost{background:rgba(6,182,212,0.12);color:var(--cyan-mid);border:1px solid rgba(6,182,212,0.2);}
 
-    /* ── PROCESS ─────────────────────────────────────── */
-    .process-section {
-      background:var(--dark2);
-      padding:clamp(4rem,8vw,6rem) var(--gutter);
-    }
-    .process-steps {
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:1.5rem;
-      margin-top:3rem;
-    }
-    .process-step {
-      text-align:center;
-      padding:2rem 1.5rem;
-      background:rgba(255,255,255,0.04);
-      border:1px solid rgba(6,182,212,0.15);
-      border-radius:var(--radius-lg);
-    }
-    .process-step__num {
-      width:48px; height:48px; border-radius:50%;
-      background:var(--cyan); color:#fff;
-      font-size:1.2rem; font-weight:800;
-      display:inline-flex; align-items:center; justify-content:center;
-      margin-bottom:1rem;
-    }
-    .process-step__title {
-      font-size:1rem; font-weight:700; color:#fff; margin-bottom:0.5rem;
-    }
-    .process-step__desc {
-      font-size:0.85rem; color:rgba(255,255,255,0.5); line-height:1.65;
-    }
+    /* ── TYPOGRAPHY ── */
+    .section-h2{font-size:clamp(2rem,5vw,3rem);font-weight:800;letter-spacing:-0.02em;line-height:1.1;color:var(--dark);}
+    .section-h2 span{color:var(--cyan);}
+    .section-h2--light{color:#fff;}
+    .section-h2--light span{color:var(--cyan-mid);}
 
-    /* ── PRICING TABLE ───────────────────────────────── */
-    .pricing-section {
-      background:var(--surface);
-      padding:clamp(4rem,8vw,7rem) var(--gutter);
-    }
-    .pricing-table {
-      max-width:640px; margin:2.5rem auto 0;
-      background:#fff; border:1px solid var(--border);
-      border-radius:var(--radius-lg); overflow:hidden;
-    }
-    .pricing-row {
-      display:flex; align-items:center; justify-content:space-between;
-      padding:1rem 1.5rem;
-      border-bottom:1px solid var(--border);
-      transition:background 0.2s;
-    }
-    .pricing-row:last-child { border-bottom:none; }
-    .pricing-row:hover { background:var(--cream); }
-    .pricing-row__name {
-      font-size:0.9rem; color:var(--ink); font-weight:500;
-    }
-    .pricing-row__price {
-      font-size:0.9rem; font-weight:700; color:var(--cyan);
-      white-space:nowrap;
-    }
-    .pricing-row__price--free { color:#16a34a; }
-    .pricing-note {
-      text-align:center; font-size:0.8rem; color:var(--ink-light);
-      margin-top:1rem; font-style:italic;
-    }
-    .pricing-cta {
-      text-align:center; margin-top:2rem;
-    }
+    /* ── CARD ── */
+    .card{background:var(--cream2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;transition:transform 0.3s ease,box-shadow 0.3s ease,border-color 0.3s ease;}
+    .card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(8,145,178,0.1);border-color:var(--cyan);}
 
-    /* ── CTA STRIP ───────────────────────────────────── */
-    .cta-strip {
-      background:var(--dark);
-      padding:clamp(4rem,8vw,6rem) var(--gutter);
-      text-align:center;
-    }
+    /* ── WA FLOAT ── */
+    .wa-float{position:fixed;bottom:24px;right:24px;z-index:50;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);opacity:0;transform:scale(0.8);transition:opacity 0.4s ease,transform 0.4s ease;text-decoration:none;}
+    .wa-float.show{opacity:1;transform:scale(1);}
+    .wa-float.pulse{animation:waPulse 2.2s ease-in-out infinite;}
 
-    /* ── RESPONSIVE ──────────────────────────────────── */
-    @media (max-width:768px) {
-      .stats-strip__grid { grid-template-columns:repeat(2,1fr); }
-      .process-steps { grid-template-columns:1fr; }
-    }
-    @media (max-width:480px) {
-      .stats-strip__grid { grid-template-columns:repeat(2,1fr); }
-    }
-    @media (min-width:768px) {
-      .nav__links   { display:flex !important; }
-      .nav__book    { display:inline-flex !important; }
-      .nav__hamburger { display:none !important; }
-    }
-    @media (max-width:767px) {
-      .nav__links  { display:none; }
-      .nav__book   { display:none; }
-    }
+    /* ── FOOTER ── */
+    .footer{background:#070F1C;border-top:1px solid rgba(6,182,212,0.1);padding:56px var(--gutter) 32px;}
+    .footer__grid{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;margin-bottom:48px;}
+    .footer__brand-name{font-size:0.95rem;font-weight:700;color:#fff;}
+    .footer__brand-sub{font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--cyan-mid);}
+    .footer__tagline{font-size:0.83rem;color:rgba(255,255,255,0.65);line-height:1.8;margin:16px 0 20px;}
+    .footer__socials{display:flex;gap:10px;}
+    .footer__social{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.55);transition:background 0.2s ease;}
+    .footer__social:hover{background:var(--cyan);color:#fff;}
+    .footer__social--wa{background:#25D366;color:#fff;}
+    .footer__col-title{font-size:0.72rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:20px;}
+    .footer__links{display:flex;flex-direction:column;gap:12px;}
+    .footer__links a,.footer__links button{font-size:0.85rem;color:rgba(255,255,255,0.72);transition:color 0.2s ease;text-align:left;width:100%;}
+    .footer__links a:hover,.footer__links button:hover{color:var(--cyan-mid);}
+    .footer__contact-item{display:flex;align-items:flex-start;gap:10px;font-size:0.85rem;color:rgba(255,255,255,0.72);margin-bottom:10px;}
+    .footer__contact-item a{color:rgba(255,255,255,0.72);transition:color 0.2s;}
+    .footer__contact-item a:hover{color:var(--cyan-mid);}
+    .footer__bottom{max-width:var(--max-w);margin:0 auto;border-top:1px solid rgba(255,255,255,0.06);padding-top:24px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}
+    .footer__rights{font-size:0.72rem;color:rgba(255,255,255,0.5);}
+    .footer__crafted{font-size:0.72rem;color:rgba(255,255,255,0.45);}
+    .footer__hours{color:rgba(255,255,255,0.72);font-size:0.85rem;}
+    .field{display:flex;flex-direction:column;gap:6px;}
+    .field label{font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mid);}
+    .field input,.field select,.field textarea{width:100%;padding:12px 16px;border-radius:var(--radius);border:1px solid var(--border);background:var(--cream2);color:var(--ink);font-family:inherit;font-size:0.88rem;outline:none;transition:border-color 0.2s ease;}
+    .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--cyan);}
+    .field textarea{resize:none;}
 
-    /* Nav active link */
-    .nav__links a.active {
-      color:var(--cyan-mid);
-    }
+    /* ── SECTION HEADER ── */
+    .section-header{max-width:var(--max-w);margin:0 auto 3.5rem;}
+    .section-header--center{text-align:center;}
 
-    @media (prefers-reduced-motion:reduce) {
-      .reveal,.reveal-left,.reveal-right,.reveal-scale {
-        opacity:1; transform:none; transition:none;
-      }
-      .wa-float { animation:none !important; }
-    }
+    /* ── MEDIA QUERIES ── */
+    @media(min-width:768px){.nav__book{display:inline-flex;margin-left:20px;}.nav__hamburger{display:none;}.nav__logo img{height:40px!important;}.nav__inner{gap:19px;}.nav__right{gap:19px;}}
+    @media(max-width:767px){.nav__links{display:none;}.nav__logo-text-main{display:none;}.nav__inner{position:relative;}.nav__lang{position:absolute;left:110px;}.nav__book{margin-right:38px;}.footer__grid{grid-template-columns:1fr;gap:32px;}}
+
+    /* ── PAGE HERO ── */
+    .page-hero{position:relative;background:var(--dark);padding:calc(var(--nav-h) + 5rem) var(--gutter) 5rem;overflow:hidden;text-align:center;}
+    .page-hero__glow{position:absolute;top:-80px;left:50%;transform:translateX(-50%);width:700px;height:400px;background:radial-gradient(ellipse,rgba(6,182,212,0.18) 0%,transparent 70%);pointer-events:none;}
+    .page-hero__grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(6,182,212,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(6,182,212,0.06) 1px,transparent 1px);background-size:60px 60px;opacity:0.35;}
+    .page-hero__label{display:inline-block;font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:600;padding:6px 16px;border-radius:999px;background:rgba(6,182,212,0.12);color:var(--cyan-mid);margin-bottom:1.25rem;}
+    .page-hero h1{font-size:clamp(2.2rem,5.5vw,3.6rem);font-weight:800;letter-spacing:-0.03em;line-height:1.1;color:#fff;margin-bottom:1.25rem;}
+    .page-hero h1 span{color:var(--cyan-mid);}
+    .page-hero__sub{font-size:clamp(0.95rem,2vw,1.1rem);color:rgba(255,255,255,0.62);line-height:1.7;max-width:600px;margin:0 auto;}
+
+    /* ── SERVICES MAIN ── */
+    #services-main{background:var(--cream);padding:clamp(5rem,9vw,8rem) var(--gutter);}
+    .svc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;max-width:var(--max-w);margin:0 auto;}
+    .svc-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);padding:2rem;display:flex;flex-direction:column;gap:1rem;transition:transform 0.3s ease,box-shadow 0.3s ease,border-color 0.3s ease;}
+    .svc-card:hover{transform:translateY(-5px);box-shadow:0 20px 56px rgba(8,145,178,0.12);border-color:var(--cyan);}
+    .svc-icon{width:52px;height:52px;border-radius:14px;background:var(--cyan-light);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--cyan);}
+    .svc-title{font-size:1.05rem;font-weight:700;color:var(--dark);}
+    .svc-desc{font-size:0.875rem;color:var(--ink-mid);line-height:1.65;flex:1;}
+    .svc-btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 20px;border-radius:var(--radius);background:var(--cyan-light);color:var(--cyan);font-size:0.78rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;border:none;cursor:pointer;transition:all 0.2s;font-family:inherit;margin-top:auto;}
+    .svc-btn:hover{background:var(--cyan);color:#fff;}
+
+    /* ── PRICING SECTION ── */
+    #pricing-section{background:var(--dark);padding:clamp(5rem,9vw,8rem) var(--gutter);}
+    .pricing-table{max-width:640px;margin:2.5rem auto 0;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius-lg);overflow:hidden;}
+    .pricing-row{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.5rem;border-bottom:1px solid rgba(255,255,255,0.07);transition:background 0.2s;gap:12px;}
+    .pricing-row:last-child{border-bottom:none;}
+    .pricing-row:hover{background:rgba(255,255,255,0.04);}
+    .pricing-row__name{font-size:0.9rem;color:rgba(255,255,255,0.82);font-weight:500;}
+    .pricing-row__price{font-size:0.9rem;font-weight:700;color:var(--cyan-mid);white-space:nowrap;}
+    .pricing-row__price--free{color:#4ade80;}
+    .pricing-note{text-align:center;font-size:0.78rem;color:rgba(255,255,255,0.35);margin-top:1rem;font-style:italic;}
+
+    /* ── CTA STRIP ── */
+    #cta-strip{background:linear-gradient(135deg,var(--dark) 0%,rgba(8,145,178,0.25) 100%);padding:clamp(4rem,7vw,6rem) var(--gutter);text-align:center;border-top:1px solid rgba(6,182,212,0.15);}
+    .cta-btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:2rem;}
+
+    /* ── CHAT WIDGET ── */
+    .chat-float-btn{position:fixed;bottom:90px;right:24px;width:56px;height:56px;background:linear-gradient(135deg,#0369A1,#06B6D4);border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(6,182,212,0.45);z-index:998;transform:scale(0);opacity:0;transition:transform 0.3s,opacity 0.3s,box-shadow 0.2s;}
+    .chat-float-btn.show{transform:scale(1);opacity:1;}
+    .chat-float-btn:hover{box-shadow:0 6px 28px rgba(6,182,212,0.6);transform:scale(1.1);}
+    .chat-float-btn .chat-badge{position:absolute;top:-2px;right:-2px;width:13px;height:13px;background:#ef4444;border-radius:50%;border:2px solid white;animation:chatpulse 1.8s infinite;}
+    @keyframes chatpulse{0%,100%{transform:scale(1)}50%{transform:scale(1.3)}}
+    .chat-widget{position:fixed;bottom:160px;right:24px;width:360px;max-height:540px;background:#fff;border-radius:18px;box-shadow:0 12px 48px rgba(0,0,0,0.18);z-index:1001;display:flex;flex-direction:column;overflow:hidden;transform:translateY(16px) scale(0.97);opacity:0;pointer-events:none;transition:transform 0.28s cubic-bezier(.34,1.56,.64,1),opacity 0.22s ease;}
+    .chat-widget.open{transform:translateY(0) scale(1);opacity:1;pointer-events:all;}
+    @media(max-width:480px){.chat-widget{width:calc(100vw - 24px);right:12px;bottom:0;border-radius:18px 18px 0 0;max-height:85vh;}.chat-float-btn{bottom:80px;right:16px;}}
+    .chat-hdr{background:linear-gradient(135deg,#0369A1,#06B6D4);padding:14px 18px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;}
+    .chat-hdr-left{display:flex;align-items:center;gap:11px;}
+    .chat-avatar{width:38px;height:38px;background:rgba(255,255,255,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:0.78rem;letter-spacing:0.03em;overflow:hidden;}
+    .chat-avatar img{width:100%;height:100%;object-fit:cover;}
+    .chat-hdr-name{color:#fff;font-weight:700;font-size:0.92rem;}
+    .chat-hdr-status{color:rgba(255,255,255,0.75);font-size:0.73rem;margin-top:1px;}
+    .chat-close-btn{background:none;border:none;color:rgba(255,255,255,0.8);font-size:1.5rem;cursor:pointer;line-height:1;padding:0 2px;transition:color 0.15s;}
+    .chat-close-btn:hover{color:#fff;}
+    .chat-msgs{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;min-height:180px;max-height:260px;scroll-behavior:smooth;}
+    .chat-msgs::-webkit-scrollbar{width:4px;}
+    .chat-msgs::-webkit-scrollbar-thumb{background:#e2e8f0;border-radius:2px;}
+    .cmsg{max-width:82%;}
+    .cmsg.bot{align-self:flex-start;}
+    .cmsg.usr{align-self:flex-end;}
+    .cmsg-bubble{padding:9px 13px;border-radius:12px;font-size:0.85rem;line-height:1.55;}
+    .cmsg.bot .cmsg-bubble{background:#f1f5f9;color:#1e293b;border-bottom-left-radius:3px;}
+    .cmsg.usr .cmsg-bubble{background:#0369A1;color:#fff;border-bottom-right-radius:3px;}
+    .cmsg-typing .cmsg-bubble{display:flex;gap:4px;align-items:center;padding:12px 16px;}
+    .dot-t{width:7px;height:7px;background:#94a3b8;border-radius:50%;animation:typing 1.2s infinite;}
+    .dot-t:nth-child(2){animation-delay:0.2s}.dot-t:nth-child(3){animation-delay:0.4s}
+    @keyframes typing{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-5px)}}
+    .chat-chips-wrap{padding:0 12px 8px;display:flex;flex-wrap:wrap;gap:7px;flex-shrink:0;}
+    .chat-chip{padding:6px 13px;border:1.5px solid #06B6D4;border-radius:20px;font-size:0.78rem;font-weight:600;color:#0369A1;background:#fff;cursor:pointer;transition:all 0.15s;font-family:inherit;}
+    .chat-chip:hover{background:#0369A1;color:#fff;border-color:#0369A1;}
+    .chat-cal{padding:0 14px 8px;flex-shrink:0;}
+    .chat-cal-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;font-weight:700;font-size:0.82rem;color:#1e293b;}
+    .cal-nav{background:none;border:none;cursor:pointer;font-size:1rem;color:#0369A1;padding:2px 6px;}
+    .chat-cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;}
+    .cal-cell{aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:0.72rem;border-radius:6px;cursor:default;user-select:none;}
+    .cal-cell.hdr{font-weight:700;color:#94a3b8;font-size:0.68rem;}
+    .cal-cell.avail{color:#1e293b;cursor:pointer;}
+    .cal-cell.avail:hover{background:#0369A1;color:#fff;}
+    .cal-cell.past,.cal-cell.wknd,.cal-cell.empty{color:#e2e8f0;}
+    .chat-input-row{padding:11px 14px;border-top:1px solid #f1f5f9;display:flex;gap:8px;flex-shrink:0;}
+    .chat-input-row input{flex:1;padding:9px 13px;border:1.5px solid #e2e8f0;border-radius:9px;font-size:0.85rem;outline:none;font-family:inherit;color:#1e293b;transition:border-color 0.2s;}
+    .chat-input-row input:focus{border-color:#06B6D4;}
+    .chat-send-btn{padding:9px 15px;background:#0369A1;color:#fff;border:none;border-radius:9px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:background 0.2s;font-family:inherit;}
+    .chat-send-btn:hover{background:#06B6D4;}
   </style>
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════════════════════
-     TRANSLATIONS
-═══════════════════════════════════════════════════════ -->
-<script>
-var LANG = localStorage.getItem('spavas_lang') || 'it';
-
-var T = {
-  it: {
-    nav: { home:"Home", services:"Servizi", about:"Chi Siamo", gallery:"Galleria", reviews:"Recensioni", contact:"Contatti", book:"Prenota" },
-    hero: {
-      label:"I Nostri Servizi",
-      h1a:"Cure Dentali",
-      h1b:"Complete",
-      sub:"Dalla visita di routine all'implantologia avanzata — ogni trattamento eseguito con precisione, cura e tecnologia all'avanguardia."
-    },
-    stats: [
-      { num:"10+", label:"Anni di Esperienza" },
-      { num:"7",   label:"Servizi Dentali" },
-      { num:"5.0★",label:"Rating Google" },
-      { num:"100%",label:"Pazienti Soddisfatti" }
-    ],
-    process: {
-      label:"Come Funziona",
-      h2a:"Il Tuo Percorso",
-      h2b:"Verso il Sorriso Perfetto",
-      sub:"Tre semplici passi per iniziare il tuo trattamento.",
-      steps:[
-        { title:"Consulenza Gratuita", desc:"Scrivici su WhatsApp o compila il modulo: ti rispondiamo in pochi minuti e organizziamo una visita senza impegno." },
-        { title:"Piano Personalizzato", desc:"Il nostro team elabora un piano di trattamento su misura, con preventivo chiaro, materiali premium e tempi certi." },
-        { title:"Trattamento & Sorriso", desc:"Eseguiamo il tuo trattamento con tecnologia all'avanguardia e usci dalla clinica con un sorriso completamente rinnovato." }
-      ]
-    },
-    pricing: {
-      label:"Prezzi Trasparenti",
-      h2a:"Lista",
-      h2b:"Prezzi",
-      sub:"Prezzi indicativi. Visita specialistica e preventivo sempre gratuiti.",
-      note:"* Tutti i prezzi sono indicativi. Visita e preventivo gratuiti.",
-      cta:"Ottieni il tuo preventivo gratuito →",
-      rows:[
-        { name:"Visita Specialistica", price:"Gratuita", free:true },
-        { name:"Sbiancamento LED",      price:"da €150" },
-        { name:"Impianto Singolo",      price:"da €350" },
-        { name:"All-on-4",             price:"da €3.200/arcata" },
-        { name:"Faccette in Porcellana",price:"da €220/dente" },
-        { name:"Invisalign",           price:"da €1.500" },
-        { name:"Corona in Ceramica",   price:"da €200" }
-      ]
-    },
-    cta: {
-      h2:"Pronto a Trasformare il Tuo Sorriso?",
-      sub:"La prima visita è gratuita e senza impegno. Siamo qui per aiutarti.",
-      btn1:"Prenota una Visita",
-      btn2:"Scrivi su WhatsApp"
-    },
-    footer: {
-      tagline:"Eccellenza dentale europea a Vlorë, Albania.",
-      links:"Link Rapidi",
-      contact:"Contatti",
-      rights:"© 2025 Spavas Dental Studio. Tutti i diritti riservati.",
-      address:"Di fronte al Bar Rinia, Vlorë",
-      hours:"Lun–Ven: 08:00–20:00 · Sab: 08:00–14:00",
-      crafted:"Progettato con cura"
-    },
-    services: [
-      {
-        name:"Implantologia",
-        price:"da €350/impianto",
-        desc:"Impianto in titanio premium per sostituire i denti mancanti in modo permanente. La soluzione più naturale ed efficace per recuperare il sorriso completo.",
-        features:["Impianto titanio premium","Corona ceramica inclusa","Garanzia scritta 10 anni"],
-        link:"Prenota questo servizio →"
-      },
-      {
-        name:"Sbiancamento Dentale",
-        price:"da €150",
-        desc:"Sbiancamento professionale LED con prodotti premium certificati per un sorriso luminoso e smagliante. Risultato immediato e duraturo fino a 24 mesi.",
-        features:["LED professionale in studio","Prodotti premium certificati","Risultato immediato visibile"],
-        link:"Prenota questo servizio →"
-      },
-      {
-        name:"Faccette in Porcellana",
-        price:"da €220/dente",
-        desc:"Faccette estetiche ultraottili in porcellana per un sorriso perfetto, naturale e Hollywood. Coprono imperfezioni, macchie e discromie in modo permanente.",
-        features:["Porcellana premium ultra-sottile","100% aspetto naturale","Durata 15+ anni garantita"],
-        link:"Prenota questo servizio →"
-      },
-      {
-        name:"All-on-4",
-        price:"da €3.200/arcata",
-        desc:"Soluzione permanente per arcate dentali complete con soli 4 impianti. Evita l'innesto osseo nella maggior parte dei casi. Protesi fissa il giorno stesso.",
-        features:["4 impianti per arcata intera","Protesi fissa permanente inclusa","Soluzione definitiva in tempi brevi"],
-        link:"Prenota questo servizio →"
-      },
-      {
-        name:"Invisalign",
-        price:"da €1.500",
-        desc:"Allineatori trasparenti e rimovibili per una correzione ortodontica invisibile. Nessun filo metallico, nessun disagio estetico. Certified Invisalign Provider.",
-        features:["Invisibile e completamente removibile","Certified Invisalign Provider","Risultati in 6–18 mesi"],
-        link:"Prenota questo servizio →"
-      },
-      {
-        name:"Terapia Dentale",
-        price:"da €80",
-        desc:"Otturazioni estetiche, devitalizzazioni e trattamenti conservativi con i materiali biocompatibili più avanzati. Nessun dolore, risultati duraturi nel tempo.",
-        features:["Materiali biocompatibili certificati","Trattamento completamente senza dolore","Risultati duraturi garantiti"],
-        link:"Prenota questo servizio →"
-      },
-      {
-        name:"Ortodonzia",
-        price:"da €1.200",
-        desc:"Apparecchi fissi e mobili per denti perfettamente allineati. Adatta a ogni età, dai bambini agli adulti. Controlli periodici inclusi nel piano di trattamento.",
-        features:["Fisso, mobile e trasparente","Controlli periodici inclusi","Per bambini, adolescenti e adulti"],
-        link:"Prenota questo servizio →"
-      }
-    ]
-  },
-  en: {
-    nav: { home:"Home", services:"Services", about:"About", gallery:"Gallery", reviews:"Reviews", contact:"Contact", book:"Book Now" },
-    hero: {
-      label:"Our Services",
-      h1a:"Complete",
-      h1b:"Dental Care",
-      sub:"From routine check-ups to advanced implantology — every treatment delivered with precision, care, and cutting-edge technology."
-    },
-    stats: [
-      { num:"10+", label:"Years of Experience" },
-      { num:"7",   label:"Dental Services" },
-      { num:"5.0★",label:"Google Rating" },
-      { num:"100%",label:"Satisfied Patients" }
-    ],
-    process: {
-      label:"How It Works",
-      h2a:"Your Journey",
-      h2b:"To the Perfect Smile",
-      sub:"Three simple steps to start your treatment.",
-      steps:[
-        { title:"Free Consultation", desc:"Message us on WhatsApp or fill in the form — we reply within minutes and arrange a no-obligation visit." },
-        { title:"Personalised Plan", desc:"Our team prepares a tailored treatment plan with a clear quote, premium materials and realistic timelines." },
-        { title:"Treatment & Smile", desc:"We carry out your treatment with cutting-edge technology and you leave the clinic with a brand new smile." }
-      ]
-    },
-    pricing: {
-      label:"Transparent Pricing",
-      h2a:"Price",
-      h2b:"List",
-      sub:"Indicative prices. Specialist visit and quote always free.",
-      note:"* All prices are indicative. Visit and quote are free.",
-      cta:"Get your free quote →",
-      rows:[
-        { name:"Specialist Visit",    price:"Free", free:true },
-        { name:"LED Whitening",       price:"from €150" },
-        { name:"Single Implant",      price:"from €350" },
-        { name:"All-on-4",            price:"from €3,200/arch" },
-        { name:"Porcelain Veneers",   price:"from €220/tooth" },
-        { name:"Invisalign",          price:"from €1,500" },
-        { name:"Ceramic Crown",       price:"from €200" }
-      ]
-    },
-    cta: {
-      h2:"Ready to Transform Your Smile?",
-      sub:"First visit is free and with no commitment. We're here to help.",
-      btn1:"Book a Visit",
-      btn2:"WhatsApp Us"
-    },
-    footer: {
-      tagline:"European dental excellence in Vlorë, Albania.",
-      links:"Quick Links",
-      contact:"Contact",
-      rights:"© 2025 Spavas Dental Studio. All rights reserved.",
-      address:"Opposite Bar Rinia, Vlorë",
-      hours:"Mon–Fri: 08:00–20:00 · Sat: 08:00–14:00",
-      crafted:"Designed with care"
-    },
-    services: [
-      {
-        name:"Implantology",
-        price:"from €350/implant",
-        desc:"Premium titanium implant to permanently replace missing teeth. The most natural and effective solution to restore your complete smile with lasting results.",
-        features:["Premium titanium implant","Ceramic crown included","10-year written warranty"],
-        link:"Book this service →"
-      },
-      {
-        name:"Teeth Whitening",
-        price:"from €150",
-        desc:"Professional LED whitening with certified premium products for a bright, radiant smile. Immediate, lasting results for up to 24 months.",
-        features:["Professional in-clinic LED","Certified premium products","Immediate visible result"],
-        link:"Book this service →"
-      },
-      {
-        name:"Porcelain Veneers",
-        price:"from €220/tooth",
-        desc:"Ultra-thin porcelain aesthetic veneers for a perfect, natural Hollywood smile. Permanently corrects imperfections, stains and discolouration.",
-        features:["Ultra-thin premium porcelain","100% natural appearance","15+ year guaranteed durability"],
-        link:"Book this service →"
-      },
-      {
-        name:"All-on-4",
-        price:"from €3,200/arch",
-        desc:"Permanent solution for full dental arches using only 4 implants. Avoids bone grafts in most cases. Fixed prosthesis fitted the same day.",
-        features:["4 implants for a full arch","Permanent fixed prosthesis included","Definitive solution in a short time"],
-        link:"Book this service →"
-      },
-      {
-        name:"Invisalign",
-        price:"from €1,500",
-        desc:"Clear removable aligners for invisible orthodontic correction. No metal wires, no aesthetic discomfort. Certified Invisalign Provider.",
-        features:["Invisible and fully removable","Certified Invisalign Provider","Results in 6–18 months"],
-        link:"Book this service →"
-      },
-      {
-        name:"Dental Therapy",
-        price:"from €80",
-        desc:"Aesthetic fillings, root canals and conservative treatments using the most advanced biocompatible materials. Pain-free, durable results.",
-        features:["Certified biocompatible materials","Completely pain-free treatment","Guaranteed lasting results"],
-        link:"Book this service →"
-      },
-      {
-        name:"Orthodontics",
-        price:"from €1,200",
-        desc:"Fixed and removable braces for perfectly aligned teeth. Suitable for all ages, from children to adults. Periodic check-ups included.",
-        features:["Fixed, removable and clear options","Periodic check-ups included","For children, teens and adults"],
-        link:"Book this service →"
-      }
-    ]
-  },
-  sq: {
-    nav: { home:"Kreu", services:"Shërbimet", about:"Rreth Nesh", gallery:"Galeria", reviews:"Recensionet", contact:"Kontakt", book:"Rezervo" },
-    hero: {
-      label:"Shërbimet Tona",
-      h1a:"Shërbime",
-      h1b:"Dentare Complete",
-      sub:"Nga kontrollet rutinë deri te implantologjia e avancuar — çdo shërbim me profesionalizëm dhe kujdes."
-    },
-    stats: [
-      { num:"10+", label:"Vjet Eksperiencë" },
-      { num:"7",   label:"Shërbime Dentare" },
-      { num:"5.0★",label:"Vlerësim Google" },
-      { num:"100%",label:"Pacientë të Kënaqur" }
-    ],
-    process: {
-      label:"Si Funksionon",
-      h2a:"Udhëtimi Juaj",
-      h2b:"Drejt Buzëqeshjes Perfekte",
-      sub:"Tre hapa të thjeshtë për të filluar trajtimin tuaj.",
-      steps:[
-        { title:"Konsultë Falas", desc:"Na shkruani në WhatsApp ose plotësoni formularin — ju përgjigjemi brenda minutave dhe organizojmë një vizitë pa angazhim." },
-        { title:"Plan i Personalizuar", desc:"Ekipi ynë përgatit një plan trajtimi të përshtatur me ofertë të qartë, materiale premium dhe afate realiste." },
-        { title:"Trajtim & Buzëqeshje", desc:"Kryejmë trajtimin tuaj me teknologji të fundit dhe dilni nga klinika me një buzëqeshje krejtësisht të re." }
-      ]
-    },
-    pricing: {
-      label:"Çmime Transparente",
-      h2a:"Lista e",
-      h2b:"Çmimeve",
-      sub:"Çmime orientuese. Vizita specialiste dhe oferta gjithmonë falas.",
-      note:"* Të gjitha çmimet janë orientuese. Vizita dhe oferta janë falas.",
-      cta:"Merrni ofertën tuaj falas →",
-      rows:[
-        { name:"Vizitë Specialiste",   price:"Falas", free:true },
-        { name:"Zbardhim LED",         price:"nga €150" },
-        { name:"Implantet i Vetëm",    price:"nga €350" },
-        { name:"All-on-4",             price:"nga €3.200/hark" },
-        { name:"Faceta Porcelani",     price:"nga €220/dhëmb" },
-        { name:"Invisalign",           price:"nga €1.500" },
-        { name:"Kurorë Qeramike",      price:"nga €200" }
-      ]
-    },
-    cta: {
-      h2:"Gati për të Transformuar Buzëqeshjen Tuaj?",
-      sub:"Vizita e parë është falas dhe pa angazhim. Jemi këtu për t'ju ndihmuar.",
-      btn1:"Rezervo një Vizitë",
-      btn2:"Shkruaj në WhatsApp"
-    },
-    footer: {
-      tagline:"Ekselencë dentare europiane në Vlorë, Shqipëri.",
-      links:"Lidhje të Shpejta",
-      contact:"Kontakt",
-      rights:"© 2025 Spavas Dental Studio. Të gjitha të drejtat e rezervuara.",
-      address:"Përballë Bar Rinia, Vlorë",
-      hours:"Hën–Pre: 08:00–20:00 · Sht: 08:00–14:00",
-      crafted:"Dizajnuar me kujdes"
-    },
-    services: [
-      {
-        name:"Implantologji",
-        price:"nga €350/implantet",
-        desc:"Implantet titanik premium për të zëvendësuar dhëmbët e munguar në mënyrë të përhershme. Zgjidhja më natyrore dhe efektive për të rikthyer buzëqeshjen e plotë.",
-        features:["Implantet titanik premium","Kurorë qeramike e përfshirë","Garanci me shkrim 10 vjet"],
-        link:"Rezervo këtë shërbim →"
-      },
-      {
-        name:"Zbardhim Dhëmbësh",
-        price:"nga €150",
-        desc:"Zbardhim profesional LED me produkte premium të certifikuara për një buzëqeshje të ndritur dhe shkëlqyese. Rezultat i menjëhershëm dhe i qëndrueshëm deri në 24 muaj.",
-        features:["LED profesional në studio","Produkte premium të certifikuara","Rezultat i menjëhershëm i dukshëm"],
-        link:"Rezervo këtë shërbim →"
-      },
-      {
-        name:"Faceta Porcelani",
-        price:"nga €220/dhëmb",
-        desc:"Faceta estetike ultratë porcelani për një buzëqeshje perfekte, natyrore dhe Hollywood. Korrigjon në mënyrë të përhershme papërsosjet, njollat dhe çngjyrimin.",
-        features:["Porcelan premium ultratë","100% pamje natyrore","Qëndrueshmëri e garantuar 15+ vjet"],
-        link:"Rezervo këtë shërbim →"
-      },
-      {
-        name:"All-on-4",
-        price:"nga €3.200/hark",
-        desc:"Zgjidhje e përhershme për harqet e plota dentare me vetëm 4 implantetë. Shmang graftimin e kockës në shumicën e rasteve. Proteza fikse në të njëjtën ditë.",
-        features:["4 implantetë për hark të plotë","Proteza fikse e përhershme e përfshirë","Zgjidhje definitive në kohë të shkurtër"],
-        link:"Rezervo këtë shërbim →"
-      },
-      {
-        name:"Invisalign",
-        price:"nga €1.500",
-        desc:"Rregullatorë transparent dhe të heqshëm për korrigjim ortodontik të padukshëm. Asnjë tel metalik, asnjë shqetësim estetik. Certified Invisalign Provider.",
-        features:["I padukshëm dhe plotësisht i heqshëm","Certified Invisalign Provider","Rezultate në 6–18 muaj"],
-        link:"Rezervo këtë shërbim →"
-      },
-      {
-        name:"Terapi Dentare",
-        price:"nga €80",
-        desc:"Mbushje estetike, devitalizime dhe trajtime konservative me materialet biokompatibël më të avancuara. Pa dhimbje, rezultate të qëndrueshme.",
-        features:["Materiale biokompatibël të certifikuara","Trajtim plotësisht pa dhimbje","Rezultate të garantuara afatgjata"],
-        link:"Rezervo këtë shërbim →"
-      },
-      {
-        name:"Ortodonci",
-        price:"nga €1.200",
-        desc:"Aparate fikse dhe të lëvizshme për dhëmbë të rreshtuar perfektisht. E përshtatshme për të gjitha moshat. Kontrollet periodike të përfshira.",
-        features:["Fiks, i lëvizshëm dhe transparent","Kontrolle periodike të përfshira","Për fëmijë, adoleshentë dhe të rritur"],
-        link:"Rezervo këtë shërbim →"
-      }
-    ]
-  }
-};
-
-function t(path) {
-  var keys = path.split('.');
-  var val = T[LANG];
-  for (var i=0; i<keys.length; i++) {
-    if (val == null) return path;
-    var idx = parseInt(keys[i], 10);
-    val = isNaN(idx) ? val[keys[i]] : val[idx];
-  }
-  return val != null ? val : path;
-}
-
-function setLang(l) {
-  LANG = l;
-  localStorage.setItem('spavas_lang', LANG);
-  renderPage();
-}
-</script>
-
-<!-- ═══════════════════════════════════════════════════════
-     NAV
-═══════════════════════════════════════════════════════ -->
+<!-- NAV -->
 <header class="nav" id="nav">
   <div class="nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="Spavas Dental Studio — Home">
-      <img src="assets/logo.png" alt="Spavas Dental Studio" height="48" style="width:auto;display:block;object-fit:contain;">
-      <div class="nav__logo-text-main" style="white-space:nowrap;letter-spacing:0.08em;">Spavas Dental Studio</div>
+    <a href="index.html" class="nav__logo" aria-label="Montgomery Dentistry — Home">
+      <img src="https://res.cloudinary.com/dr63qmw21/image/upload/f_auto,q_auto,h_48/montgomery-dentistry/logo.png" alt="Montgomery Dentistry logo" height="42" style="width:auto;display:block;object-fit:contain;">
+      <div class="nav__logo-text-main" style="white-space:nowrap;letter-spacing:0.08em;">Montgomery Dentistry</div>
     </a>
     <nav class="nav__links">
-      <a href="index.html"    id="nl-home"     data-t="nav.home">Home</a>
-      <a href="services.html" id="nl-services" data-t="nav.services" class="active">Servizi</a>
-      <a href="about.html"    id="nl-about"    data-t="nav.about">Chi Siamo</a>
-      <a href="gallery.html"  id="nl-gallery"  data-t="nav.gallery">Galleria</a>
-      <a href="reviews.html"  id="nl-reviews"  data-t="nav.reviews">Recensioni</a>
-      <a href="contact.html"  id="nl-contact"  data-t="nav.contact">Contatti</a>
+      <a href="index.html" id="nl-home" data-t="nav.home">Home</a>
+      <a href="services.html" id="nl-services" data-t="nav.services" class="active">Services</a>
+      <a href="about.html" id="nl-about" data-t="nav.about">About Us</a>
+      <a href="gallery.html" id="nl-gallery" data-t="nav.gallery">Gallery</a>
+      <a href="reviews.html" id="nl-reviews" data-t="nav.reviews">Reviews</a>
+      <a href="contact.html" id="nl-contact" data-t="nav.contact">Contact</a>
     </nav>
     <div class="nav__right">
       <div class="nav__lang" role="group" aria-label="Select language">
-        <button onclick="setLang('it')" id="lang-it" aria-label="Italiano">IT</button>
-        <button onclick="setLang('sq')" id="lang-sq" aria-label="Shqip">AL</button>
         <button onclick="setLang('en')" id="lang-en" aria-label="English">EN</button>
+        <button onclick="setLang('fr')" id="lang-fr" aria-label="Français">FR</button>
+        <button onclick="setLang('it')" id="lang-it" aria-label="Italiano">IT</button>
       </div>
-      <a href="contact.html" class="btn btn--cyan nav__book" id="nav-book-btn" data-t="nav.book">Prenota</a>
+      <button onclick="openChat()" class="btn btn--cyan nav__book" id="nav-book-btn" data-t="nav.book">Book Now</button>
       <button class="nav__hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 <div class="nav__mobile" id="mobile-menu">
-  <a href="index.html"    id="ml-home"     data-t="nav.home">Home</a>
-  <a href="services.html" id="ml-services" data-t="nav.services">Servizi</a>
-  <a href="about.html"    id="ml-about"    data-t="nav.about">Chi Siamo</a>
-  <a href="gallery.html"  id="ml-gallery"  data-t="nav.gallery">Galleria</a>
-  <a href="reviews.html"  id="ml-reviews"  data-t="nav.reviews">Recensioni</a>
-  <a href="contact.html"  id="ml-contact"  data-t="nav.contact">Contatti</a>
-  <a href="contact.html"  id="ml-book"     class="nav__mobile-book" data-t="nav.book">Prenota</a>
+  <a href="index.html" id="ml-home" data-t="nav.home">Home</a>
+  <a href="services.html" id="ml-services" data-t="nav.services">Services</a>
+  <a href="about.html" id="ml-about" data-t="nav.about">About Us</a>
+  <a href="gallery.html" id="ml-gallery" data-t="nav.gallery">Gallery</a>
+  <a href="reviews.html" id="ml-reviews" data-t="nav.reviews">Reviews</a>
+  <a href="contact.html" id="ml-contact" data-t="nav.contact">Contact</a>
+  <button onclick="openChat();toggleMenu()" class="nav__mobile-book" data-t="nav.book">Book Now</button>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════
-     PAGE HERO
-═══════════════════════════════════════════════════════ -->
+<!-- PAGE HERO -->
 <section class="page-hero">
-  <div class="page-hero__grid" aria-hidden="true"></div>
-  <div class="page-hero__glow" aria-hidden="true"></div>
-  <div style="position:relative;z-index:1;max-width:var(--max-w);margin:0 auto;">
-    <span class="page-hero__label reveal d1" id="hero-label"></span>
-    <h1 class="reveal d2">
-      <span id="hero-h1a"></span> <span id="hero-h1b"></span>
+  <div class="page-hero__glow"></div>
+  <div class="page-hero__grid"></div>
+  <div style="position:relative;z-index:2;">
+    <div class="page-hero__label" data-t="svcPage.label">Our Services</div>
+    <h1>
+      <span data-t="svcPage.h1a">Comprehensive Dental</span> <span data-t="svcPage.h1b">Care</span>
     </h1>
-    <p class="page-hero__sub reveal d3" id="hero-sub"></p>
+    <p class="page-hero__sub" data-t="svcPage.sub">Complete dental care for your entire family at 4790 Woodmere Blvd, Montgomery, Alabama — trusted by the River Region for over 55 years.</p>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════
-     SERVICES GRID
-═══════════════════════════════════════════════════════ -->
-<section style="background:#fff;padding:clamp(5rem,9vw,8rem) var(--gutter);">
+<!-- SERVICES GRID -->
+<section id="services-main">
+  <div class="section-header section-header--center reveal">
+    <h2 class="section-h2"><span data-t="svcPage.gridTitle">Everything Your Smile Needs</span></h2>
+    <p style="font-size:1rem;color:var(--ink-mid);margin-top:1rem;line-height:1.7;" data-t="svcPage.gridSub">From routine cleanings to complete smile makeovers — we're here for every step of your dental journey.</p>
+  </div>
+  <div class="svc-grid">
+
+    <!-- 1. Preventive Care -->
+    <div class="svc-card reveal">
+      <div class="svc-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+      </div>
+      <div class="svc-title" data-t="svc.0.name">Preventive Care</div>
+      <div class="svc-desc" data-t="svc.0.desc">Exams, cleanings, X-rays, and fluoride treatments. Keep your smile healthy for life.</div>
+      <button class="svc-btn" onclick="openChat()" data-t="svcPage.bookBtn">Book Now</button>
+    </div>
+
+    <!-- 2. Cosmetic Dentistry -->
+    <div class="svc-card reveal d1">
+      <div class="svc-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+        </svg>
+      </div>
+      <div class="svc-title" data-t="svc.1.name">Cosmetic Dentistry</div>
+      <div class="svc-desc" data-t="svc.1.desc">Veneers, bonding, and smile makeovers for a beautiful, confident smile you'll love.</div>
+      <button class="svc-btn" onclick="openChat()" data-t="svcPage.bookBtn">Book Now</button>
+    </div>
+
+    <!-- 3. Teeth Whitening -->
+    <div class="svc-card reveal d2">
+      <div class="svc-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+        </svg>
+      </div>
+      <div class="svc-title" data-t="svc.2.name">Teeth Whitening</div>
+      <div class="svc-desc" data-t="svc.2.desc">Professional take-home and in-office whitening. Fast, effective, and safe results.</div>
+      <button class="svc-btn" onclick="openChat()" data-t="svcPage.bookBtn">Book Now</button>
+    </div>
+
+    <!-- 4. Dental Crowns & Bridges -->
+    <div class="svc-card reveal d3">
+      <div class="svc-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="6 3 18 3 22 9 12 22 2 9 6 3"/>
+          <line x1="2" y1="9" x2="22" y2="9"/>
+          <line x1="12" y1="3" x2="12" y2="22"/>
+        </svg>
+      </div>
+      <div class="svc-title" data-t="svc.3.name">Dental Crowns &amp; Bridges</div>
+      <div class="svc-desc" data-t="svc.3.desc">High-quality restorations that look, feel, and function like your natural teeth.</div>
+      <button class="svc-btn" onclick="openChat()" data-t="svcPage.bookBtn">Book Now</button>
+    </div>
+
+    <!-- 5. Dental Implants -->
+    <div class="svc-card reveal d4">
+      <div class="svc-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2C8.5 2 6 4.5 6 7c0 2 .5 3.5 1 5 .5 1.5 1 4 1 4h1.5s.5-3 1-4c.3-.7.5-1 1-1s.7.3 1 1c.5 1 1 4 1 4H14s.5-2.5 1-4c.5-1.5 1-3 1-5 0-2.5-2.5-5-4-5z"/>
+        </svg>
+      </div>
+      <div class="svc-title" data-t="svc.4.name">Dental Implants</div>
+      <div class="svc-desc" data-t="svc.4.desc">Permanent solution for missing teeth with a natural look, feel, and lasting durability.</div>
+      <button class="svc-btn" onclick="openChat()" data-t="svcPage.bookBtn">Book Now</button>
+    </div>
+
+    <!-- 6. Clear Aligners -->
+    <div class="svc-card reveal d5">
+      <div class="svc-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+        </svg>
+      </div>
+      <div class="svc-title" data-t="svc.5.name">Clear Aligners</div>
+      <div class="svc-desc" data-t="svc.5.desc">Straighten your teeth discreetly with comfortable, removable clear aligners.</div>
+      <button class="svc-btn" onclick="openChat()" data-t="svcPage.bookBtn">Book Now</button>
+    </div>
+
+    <!-- 7. Emergency Dentistry -->
+    <div class="svc-card reveal">
+      <div class="svc-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="8" x2="12" y2="12"/>
+          <line x1="12" y1="16" x2="12.01" y2="16"/>
+        </svg>
+      </div>
+      <div class="svc-title" data-t="svc.6.name">Emergency Dentistry</div>
+      <div class="svc-desc" data-t="svc.6.desc">Dental emergencies welcome. Same-day care when you need it most — call us first.</div>
+      <button class="svc-btn" onclick="openChat()" data-t="svcPage.bookBtn">Book Now</button>
+    </div>
+
+    <!-- 8. Root Canal Therapy -->
+    <div class="svc-card reveal d1">
+      <div class="svc-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+          <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+          <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+          <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+        </svg>
+      </div>
+      <div class="svc-title" data-t="svc.7.name">Root Canal Therapy</div>
+      <div class="svc-desc" data-t="svc.7.desc">Comfortable, effective root canal treatment to save your natural tooth and relieve pain.</div>
+      <button class="svc-btn" onclick="openChat()" data-t="svcPage.bookBtn">Book Now</button>
+    </div>
+
+    <!-- 9. Periodontal Care -->
+    <div class="svc-card reveal d2">
+      <div class="svc-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+      </div>
+      <div class="svc-title" data-t="svc.8.name">Periodontal Care</div>
+      <div class="svc-desc" data-t="svc.8.desc">Expert diagnosis and treatment of gum disease to protect your teeth and overall health.</div>
+      <button class="svc-btn" onclick="openChat()" data-t="svcPage.bookBtn">Book Now</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRICING SECTION -->
+<section id="pricing-section">
+  <div class="section-header section-header--center reveal">
+    <div class="section-label section-label--dark" data-t="svcPage.pricingLabel">Transparent Pricing</div>
+    <h2 class="section-h2 section-h2--light"><span data-t="svcPage.pricingH2a">Clear</span> <span data-t="svcPage.pricingH2b">Pricing</span></h2>
+    <p style="font-size:1rem;color:rgba(255,255,255,0.5);margin-top:1rem;line-height:1.7;" data-t="svcPage.pricingSub">We accept most insurance plans. No surprises — prices are discussed before any treatment begins.</p>
+  </div>
+
+  <div class="pricing-table reveal">
+    <div class="pricing-row">
+      <span class="pricing-row__name" data-t="svcPage.price.0.name">New Patient Exam</span>
+      <span class="pricing-row__price pricing-row__price--free" data-t="svcPage.price.0.price">Free</span>
+    </div>
+    <div class="pricing-row">
+      <span class="pricing-row__name" data-t="svcPage.price.1.name">Teeth Whitening</span>
+      <span class="pricing-row__price" data-t="svcPage.price.1.price">$299</span>
+    </div>
+    <div class="pricing-row">
+      <span class="pricing-row__name" data-t="svcPage.price.2.name">Dental Crown</span>
+      <span class="pricing-row__price" data-t="svcPage.price.2.price">$1,000 – $1,500</span>
+    </div>
+    <div class="pricing-row">
+      <span class="pricing-row__name" data-t="svcPage.price.3.name">Dental Bridge</span>
+      <span class="pricing-row__price" data-t="svcPage.price.3.price">$1,500 – $2,500</span>
+    </div>
+    <div class="pricing-row">
+      <span class="pricing-row__name" data-t="svcPage.price.4.name">Porcelain Veneers</span>
+      <span class="pricing-row__price" data-t="svcPage.price.4.price">$800 – $1,200</span>
+    </div>
+    <div class="pricing-row">
+      <span class="pricing-row__name" data-t="svcPage.price.5.name">Dental Implant</span>
+      <span class="pricing-row__price" data-t="svcPage.price.5.price">$1,500</span>
+    </div>
+  </div>
+  <p class="pricing-note" data-t="svcPage.pricingNote">* Prices are indicative. Exact costs confirmed at your consultation. Most insurance accepted.</p>
+</section>
+
+<!-- CTA STRIP -->
+<section id="cta-strip">
   <div style="max-width:var(--max-w);margin:0 auto;">
-    <div class="services-grid" id="services-grid">
-      <!-- Rendered by JS -->
+    <div class="reveal">
+      <h2 class="section-h2 section-h2--light" style="margin-bottom:1rem;" data-t="svcPage.ctaH2">Ready to Get Started?</h2>
+      <p style="font-size:1rem;color:rgba(255,255,255,0.6);line-height:1.75;max-width:560px;margin:0 auto;" data-t="svcPage.ctaSub">Schedule your appointment today. New patients welcome. Emergency visits available.</p>
     </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════
-     STATS STRIP
-═══════════════════════════════════════════════════════ -->
-<section class="stats-strip">
-  <div class="stats-strip__grid" id="stats-grid">
-    <!-- Rendered by JS -->
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════
-     PROCESS
-═══════════════════════════════════════════════════════ -->
-<section class="process-section">
-  <div style="max-width:var(--max-w);margin:0 auto;text-align:center;">
-    <span class="section-label section-label--dark reveal d1" id="process-label"></span>
-    <h2 class="section-h2 section-h2--light reveal d2">
-      <span id="process-h2a"></span> <span id="process-h2b"></span>
-    </h2>
-    <p class="reveal d3" style="color:rgba(255,255,255,0.5);font-size:0.95rem;line-height:1.7;max-width:520px;margin:1rem auto 0;" id="process-sub"></p>
-    <div class="process-steps" id="process-steps">
-      <!-- Rendered by JS -->
-    </div>
-    <div class="reveal" style="margin-top:2.5rem;">
-      <a href="https://wa.me/39695584588" target="_blank" rel="noopener noreferrer"
-        class="btn btn--wa" style="margin:0 auto;">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        <span id="process-wa-cta">Inizia con WhatsApp — È Gratuito</span>
+    <div class="cta-btns reveal d1">
+      <button onclick="openChat()" class="btn btn--cyan" data-t="svcPage.ctaBtn1">Book an Appointment</button>
+      <a href="tel:+13342790760" class="btn btn--wa">
+        <svg viewBox="0 0 24 24" fill="white" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span data-t="svcPage.ctaBtn2">Call 334.279.0760</span>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════
-     PRICING TABLE
-═══════════════════════════════════════════════════════ -->
-<section class="pricing-section">
-  <div style="max-width:var(--max-w);margin:0 auto;text-align:center;">
-    <span class="section-label reveal d1" id="pricing-label"></span>
-    <h2 class="section-h2 reveal d2">
-      <span id="pricing-h2a"></span> <span style="color:var(--cyan);" id="pricing-h2b"></span>
-    </h2>
-    <p class="reveal d3" style="color:var(--ink-mid);font-size:0.95rem;margin-top:0.75rem;" id="pricing-sub"></p>
-
-    <div class="pricing-table reveal">
-      <!-- Rendered by JS -->
-    </div>
-
-    <p class="pricing-note reveal" id="pricing-note"></p>
-    <div class="pricing-cta reveal">
-      <a href="contact.html" id="pricing-cta-link"
-        style="display:inline-flex;align-items:center;gap:8px;font-size:0.92rem;font-weight:700;color:var(--cyan);border-bottom:2px solid var(--cyan);padding-bottom:2px;transition:gap 0.2s;"
-        onmouseover="this.style.gap='12px'" onmouseout="this.style.gap='8px'"></a>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════
-     CTA STRIP
-═══════════════════════════════════════════════════════ -->
-<section class="cta-strip">
-  <div style="max-width:640px;margin:0 auto;">
-    <h2 class="section-h2 section-h2--light reveal" id="cta-h2" style="margin-bottom:1rem;"></h2>
-    <p class="reveal d1" style="color:rgba(255,255,255,0.55);font-size:0.95rem;line-height:1.7;margin-bottom:2rem;" id="cta-sub"></p>
-    <div class="reveal d2" style="display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;">
-      <a href="contact.html" class="btn btn--cyan" id="cta-btn1"></a>
-      <a href="https://wa.me/39695584588" target="_blank" rel="noopener noreferrer" class="btn btn--wa" id="cta-btn2">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        <span id="cta-btn2-text"></span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════
-     FOOTER
-═══════════════════════════════════════════════════════ -->
+<!-- FOOTER -->
 <footer class="footer">
   <div class="footer__grid">
-
-    <!-- Brand -->
     <div>
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:0;">
-        <img src="assets/logo.png" alt="Spavas Dental Studio" height="36" style="width:auto;display:block;object-fit:contain;">
-        <div>
-          <div class="footer__brand-name">Spavas</div>
-          <div class="footer__brand-sub">Dental Clinic</div>
-        </div>
+      <div class="footer__brand" style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+        <div><div class="footer__brand-name">Montgomery Dentistry</div><div class="footer__brand-sub">Montgomery, Alabama</div></div>
       </div>
-      <p class="footer__tagline" id="footer-tagline"></p>
+      <p class="footer__tagline" data-t="footer.tagline">Trusted dental care in Montgomery, Alabama for over 55 years.</p>
       <div class="footer__socials">
-        <a href="https://wa.me/39695584588" target="_blank" rel="noopener noreferrer" class="footer__social footer__social--wa" aria-label="WhatsApp">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <a href="https://www.facebook.com/166202688935" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Facebook">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
         </a>
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Facebook">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Instagram">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        <a href="tel:+13342790760" class="footer__social footer__social--wa" aria-label="Call us" style="background:#0369A1;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         </a>
       </div>
     </div>
-
-    <!-- Quick links -->
     <div>
-      <p class="footer__col-title" id="footer-links-title"></p>
-      <ul class="footer__links">
-        <li><a href="index.html"    id="fl-home"></a></li>
-        <li><a href="services.html" id="fl-services" style="color:var(--cyan-mid);"></a></li>
-        <li><a href="about.html"    id="fl-about"></a></li>
-        <li><a href="gallery.html"  id="fl-gallery"></a></li>
-        <li><a href="reviews.html"  id="fl-reviews"></a></li>
-        <li><a href="contact.html"  id="fl-contact"></a></li>
-      </ul>
+      <div class="footer__col-title" data-t="footer.links">Quick Links</div>
+      <div class="footer__links">
+        <a href="services.html" data-t="nav.services">Services</a>
+        <a href="about.html" data-t="nav.about">About Us</a>
+        <a href="gallery.html" data-t="nav.gallery">Gallery</a>
+        <a href="reviews.html" data-t="nav.reviews">Reviews</a>
+        <a href="contact.html" data-t="nav.contact">Contact</a>
+      </div>
     </div>
-
-    <!-- Contact info -->
     <div>
-      <p class="footer__col-title" id="footer-contact-title"></p>
-      <div class="footer__contact-item">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-mid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <span id="footer-address"></span>
-      </div>
-      <div class="footer__contact-item">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-mid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 17z"/></svg>
-        <a href="tel:+39695584588">+39 069 558 4588</a>
-      </div>
-      <div class="footer__contact-item">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-mid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        <span id="footer-hours"></span>
+      <div class="footer__col-title" data-t="footer.contact">Contact</div>
+      <div class="footer__contact-list">
+        <a href="tel:+13342790760" class="footer__contact-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          334.279.0760
+        </a>
+        <a href="#" onclick="openChat();return false;" class="footer__contact-item">
+          <span style="color:#06B6D4;font-size:0.8rem">●</span> <span data-t="footer.schedule">Schedule Online</span>
+        </a>
+        <div class="footer__contact-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>4790 Woodmere Blvd, Montgomery, AL 36106</span>
+        </div>
+        <div class="footer__hours" id="footer-hours">Mon–Tue: 8AM–5PM | Wed: 9AM–5PM<br>Thu: 8AM–3:30PM | Fri: 8AM–12PM</div>
       </div>
     </div>
   </div>
-
   <div class="footer__bottom">
-    <span class="footer__rights" id="footer-rights"></span>
-    <span class="footer__crafted" id="footer-crafted"></span>
+    <span class="footer__rights" data-t="footer.rights">© 2025 Montgomery Dentistry. All rights reserved.</span>
+    <span class="footer__crafted" id="footer-crafted">Designed with care</span>
   </div>
 </footer>
 
-<!-- ═══════════════════════════════════════════════════════
-     FLOATING WHATSAPP
-═══════════════════════════════════════════════════════ -->
-<a href="https://wa.me/39695584588" target="_blank" rel="noopener noreferrer"
-  class="wa-float" id="wa-float" aria-label="WhatsApp">
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+<!-- CHAT FLOAT BUTTON -->
+<button class="chat-float-btn" id="chat-float-btn" onclick="openChat()" aria-label="Book Appointment">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+  <span class="chat-badge" id="chat-badge"></span>
+</button>
+
+<!-- CHAT WIDGET -->
+<div class="chat-widget" id="chat-widget">
+  <div class="chat-hdr">
+    <div class="chat-hdr-left">
+      <div class="chat-avatar"><img src="https://res.cloudinary.com/dr63qmw21/image/upload/f_auto,q_auto,h_80/montgomery-dentistry/logo.png" alt="MD"></div>
+      <div><div class="chat-hdr-name">Montgomery Dentistry</div><div class="chat-hdr-status" id="chat-hdr-status">● Available now</div></div>
+    </div>
+    <button class="chat-close-btn" onclick="closeChat()">×</button>
+  </div>
+  <div class="chat-msgs" id="chat-msgs"></div>
+  <div class="chat-chips-wrap" id="chat-chips"></div>
+  <div class="chat-cal" id="chat-cal" style="display:none;"></div>
+  <div class="chat-input-row" id="chat-input-row" style="display:none;">
+    <input type="text" id="chat-input" autocomplete="off">
+    <button class="chat-send-btn" id="chat-send-btn" onclick="chatSend()">Send</button>
+  </div>
+</div>
+
+<!-- WA FLOAT -->
+<a class="wa-float" id="wa-float" href="tel:+13342790760" aria-label="Call Montgomery Dentistry">
+  <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="28" height="28"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
 </a>
 
-<!-- ═══════════════════════════════════════════════════════
-     SCRIPTS
-═══════════════════════════════════════════════════════ -->
 <script>
-// ── Service icons (SVG paths for 7 services) ──────────────
-var SVC_ICONS = [
-  // 1. Implantologia — pillar/tooth implant
-  '<svg width="26" height="26" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9 2 7 4.5 7 7c0 2 .8 3.5 1.5 5C9.5 14.5 10 17 10 19h4c0-2 .5-4.5 1.5-7C16.2 10.5 17 9 17 7c0-2.5-2-5-5-5z"/><path d="M10 19c0 1.5-.5 3 2 3s2-1.5 2-3"/></svg>',
-  // 2. Sbiancamento — sun/shine
-  '<svg width="26" height="26" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>',
-  // 3. Faccette — gem/star
-  '<svg width="26" height="26" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>',
-  // 4. All-on-4 — full arch / teeth row
-  '<svg width="26" height="26" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="4" height="10" rx="2"/><rect x="7" y="5" width="4" height="12" rx="2"/><rect x="13" y="5" width="4" height="12" rx="2"/><rect x="18" y="7" width="4" height="10" rx="2"/></svg>',
-  // 5. Invisalign — smile
-  '<svg width="26" height="26" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>',
-  // 6. Terapia dentale — tooth
-  '<svg width="26" height="26" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.5 2 6 5 6 8c0 4 2 8 3.5 10.5.5 1 1.5 1.5 2.5 1.5s2-.5 2.5-1.5C16 16 18 12 18 8c0-3-2.5-6-6-6z"/><path d="M9 8h6"/></svg>',
-  // 7. Ortodonzia — braces/align
-  '<svg width="26" height="26" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="3" height="6" rx="1.5"/><rect x="7" y="8" width="3" height="8" rx="1.5"/><rect x="11" y="8" width="2" height="8" rx="1"/><rect x="14" y="8" width="3" height="8" rx="1.5"/><rect x="18" y="9" width="3" height="6" rx="1.5"/><path d="M4.5 12h15"/></svg>'
-];
+/* ===== TRANSLATIONS ===== */
+const T = {
+  en: {
+    nav:{ home:'Home', services:'Services', about:'About Us', gallery:'Gallery', reviews:'Reviews', contact:'Contact', book:'Book Now' },
+    footer:{ tagline:'Trusted dental care in Montgomery, Alabama for over 55 years.', rights:'© 2025 Montgomery Dentistry. All rights reserved.', links:'Quick Links', contact:'Contact', crafted:'Designed with care', schedule:'Schedule Online' },
+    svcPage:{
+      label:'Our Services',
+      h1a:'Comprehensive Dental',
+      h1b:'Care',
+      sub:'Complete dental care for your entire family at 4790 Woodmere Blvd, Montgomery, Alabama — trusted by the River Region for over 55 years.',
+      gridTitle:'Everything Your Smile Needs',
+      gridSub:'From routine cleanings to complete smile makeovers — we\'re here for every step of your dental journey.',
+      bookBtn:'Book Now',
+      pricingLabel:'Transparent Pricing',
+      pricingH2a:'Clear',
+      pricingH2b:'Pricing',
+      pricingSub:'We accept most insurance plans. No surprises — prices are discussed before any treatment begins.',
+      pricingNote:'* Prices are indicative. Exact costs confirmed at your consultation. Most insurance accepted.',
+      price:[
+        {name:'New Patient Exam', price:'Free'},
+        {name:'Teeth Whitening', price:'$299'},
+        {name:'Dental Crown', price:'$1,000 – $1,500'},
+        {name:'Dental Bridge', price:'$1,500 – $2,500'},
+        {name:'Porcelain Veneers', price:'$800 – $1,200'},
+        {name:'Dental Implant', price:'$1,500'}
+      ],
+      ctaH2:'Ready to Get Started?',
+      ctaSub:'Schedule your appointment today. New patients welcome. Emergency visits available.',
+      ctaBtn1:'Book an Appointment',
+      ctaBtn2:'Call 334.279.0760'
+    },
+    svc:[
+      {name:'Preventive Care', desc:'Exams, cleanings, X-rays, and fluoride treatments. Keep your smile healthy for life.'},
+      {name:'Cosmetic Dentistry', desc:'Veneers, bonding, and smile makeovers for a beautiful, confident smile you\'ll love.'},
+      {name:'Teeth Whitening', desc:'Professional take-home and in-office whitening. Fast, effective, and safe results.'},
+      {name:'Dental Crowns & Bridges', desc:'High-quality restorations that look, feel, and function like your natural teeth.'},
+      {name:'Dental Implants', desc:'Permanent solution for missing teeth with a natural look, feel, and lasting durability.'},
+      {name:'Clear Aligners', desc:'Straighten your teeth discreetly with comfortable, removable clear aligners.'},
+      {name:'Emergency Dentistry', desc:'Dental emergencies welcome. Same-day care when you need it most — call us first.'},
+      {name:'Root Canal Therapy', desc:'Comfortable, effective root canal treatment to save your natural tooth and relieve pain.'},
+      {name:'Periodontal Care', desc:'Expert diagnosis and treatment of gum disease to protect your teeth and overall health.'}
+    ]
+  },
+  fr: {
+    nav:{ home:'Accueil', services:'Services', about:'À Propos', gallery:'Galerie', reviews:'Avis', contact:'Contact', book:'Réserver' },
+    footer:{ tagline:'Des soins dentaires de confiance à Montgomery, Alabama depuis plus de 55 ans.', rights:'© 2025 Montgomery Dentistry. Tous droits réservés.', links:'Liens Rapides', contact:'Contact', crafted:'Conçu avec soin', schedule:'Prendre Rendez-vous' },
+    svcPage:{
+      label:'Nos Services',
+      h1a:'Soins Dentaires',
+      h1b:'Complets',
+      sub:'Des soins dentaires complets pour toute votre famille au 4790 Woodmere Blvd, Montgomery, Alabama — la confiance de la River Region depuis plus de 55 ans.',
+      gridTitle:'Tout ce que Votre Sourire Mérite',
+      gridSub:'Des nettoyages de routine aux transformations complètes — nous sommes là à chaque étape de votre parcours dentaire.',
+      bookBtn:'Réserver',
+      pricingLabel:'Tarifs Transparents',
+      pricingH2a:'Tarifs',
+      pricingH2b:'Clairs',
+      pricingSub:'Nous acceptons la plupart des assurances. Aucune surprise — les prix sont communiqués avant tout traitement.',
+      pricingNote:'* Les prix sont indicatifs. Le coût exact est confirmé lors de votre consultation. La plupart des assurances acceptées.',
+      price:[
+        {name:'Examen Nouveau Patient', price:'Gratuit'},
+        {name:'Blanchiment Dentaire', price:'299 $'},
+        {name:'Couronne Dentaire', price:'1 000 $ – 1 500 $'},
+        {name:'Bridge Dentaire', price:'1 500 $ – 2 500 $'},
+        {name:'Facettes Porcelaine', price:'800 $ – 1 200 $'},
+        {name:'Implant Dentaire', price:'1 500 $'}
+      ],
+      ctaH2:'Prêt à Commencer?',
+      ctaSub:'Prenez rendez-vous aujourd\'hui. Nouveaux patients bienvenus. Urgences disponibles.',
+      ctaBtn1:'Prendre Rendez-vous',
+      ctaBtn2:'Appeler 334.279.0760'
+    },
+    svc:[
+      {name:'Soins Préventifs', desc:'Examens, nettoyages, radiographies et traitements au fluor. Gardez votre sourire en bonne santé pour la vie.'},
+      {name:'Dentisterie Cosmétique', desc:'Facettes, collage et relooking du sourire pour un sourire beau et confiant que vous adorerez.'},
+      {name:'Blanchiment Dentaire', desc:'Blanchiment professionnel à domicile et en cabinet. Résultats rapides, efficaces et sûrs.'},
+      {name:'Couronnes & Bridges', desc:'Restaurations de haute qualité qui ressemblent, se sentent et fonctionnent comme vos dents naturelles.'},
+      {name:'Implants Dentaires', desc:'Solution permanente pour les dents manquantes avec un aspect, une sensation et une durabilité naturels.'},
+      {name:'Aligneurs Transparents', desc:'Redressez vos dents discrètement avec des aligneurs transparents confortables et amovibles.'},
+      {name:'Urgences Dentaires', desc:'Urgences dentaires bienvenues. Soins le jour même quand vous en avez le plus besoin — appelez-nous d\'abord.'},
+      {name:'Traitement des Canaux', desc:'Traitement de canal radiculaire confortable et efficace pour sauver votre dent naturelle et soulager la douleur.'},
+      {name:'Soins Parodontaux', desc:'Diagnostic et traitement expert des maladies des gencives pour protéger vos dents et votre santé globale.'}
+    ]
+  },
+  it: {
+    nav:{ home:'Home', services:'Servizi', about:'Chi Siamo', gallery:'Galleria', reviews:'Recensioni', contact:'Contatti', book:'Prenota' },
+    footer:{ tagline:'Cure dentali di eccellenza a Montgomery, Alabama da oltre 55 anni.', rights:'© 2025 Montgomery Dentistry. Tutti i diritti riservati.', links:'Link Rapidi', contact:'Contatti', crafted:'Progettato con cura', schedule:'Prenota Online' },
+    svcPage:{
+      label:'I Nostri Servizi',
+      h1a:'Cure Dentali',
+      h1b:'Complete',
+      sub:'Cure dentali complete per tutta la famiglia al 4790 Woodmere Blvd, Montgomery, Alabama — la fiducia della River Region da oltre 55 anni.',
+      gridTitle:'Tutto ciò che il Tuo Sorriso Merita',
+      gridSub:'Dalle pulizie di routine alle trasformazioni complete del sorriso — siamo qui per ogni fase del tuo percorso dentale.',
+      bookBtn:'Prenota',
+      pricingLabel:'Prezzi Trasparenti',
+      pricingH2a:'Prezzi',
+      pricingH2b:'Chiari',
+      pricingSub:'Accettiamo la maggior parte delle assicurazioni. Nessuna sorpresa — i prezzi vengono discussi prima di qualsiasi trattamento.',
+      pricingNote:'* I prezzi sono indicativi. Il costo esatto viene confermato durante la consulenza. La maggior parte delle assicurazioni accettate.',
+      price:[
+        {name:'Visita Nuovo Paziente', price:'Gratuita'},
+        {name:'Sbiancamento Dentale', price:'299 $'},
+        {name:'Corona Dentale', price:'1.000 $ – 1.500 $'},
+        {name:'Bridge Dentale', price:'1.500 $ – 2.500 $'},
+        {name:'Faccette in Porcellana', price:'800 $ – 1.200 $'},
+        {name:'Impianto Dentale', price:'1.500 $'}
+      ],
+      ctaH2:'Pronto per Iniziare?',
+      ctaSub:'Prenota il tuo appuntamento oggi. Nuovi pazienti benvenuti. Visite d\'urgenza disponibili.',
+      ctaBtn1:'Prenota un Appuntamento',
+      ctaBtn2:'Chiama 334.279.0760'
+    },
+    svc:[
+      {name:'Cure Preventive', desc:'Esami, pulizie, radiografie e trattamenti al fluoro. Mantieni il tuo sorriso sano per tutta la vita.'},
+      {name:'Odontoiatria Cosmetica', desc:'Faccette, bonding e rifacimento del sorriso per un sorriso bello e sicuro che amerai.'},
+      {name:'Sbiancamento Dentale', desc:'Sbiancamento professionale a domicilio e in studio. Risultati rapidi, efficaci e sicuri.'},
+      {name:'Corone & Bridge', desc:'Restauri di alta qualità che sembrano, si sentono e funzionano come i tuoi denti naturali.'},
+      {name:'Impianti Dentali', desc:'Soluzione permanente per i denti mancanti con un aspetto, una sensazione e una durata naturali.'},
+      {name:'Allineatori Trasparenti', desc:'Raddrizza i denti in modo discreto con allineatori trasparenti comodi e rimovibili.'},
+      {name:'Urgenze Dentali', desc:'Urgenze dentali benvenute. Cure in giornata quando ne hai più bisogno — chiamaci prima.'},
+      {name:'Terapia del Canale', desc:'Trattamento canalare confortevole ed efficace per salvare il tuo dente naturale e alleviare il dolore.'},
+      {name:'Cure Parodontali', desc:'Diagnosi e trattamento esperto delle malattie gengivali per proteggere i tuoi denti e la salute generale.'}
+    ]
+  }
+};
 
-function checkmark() {
-  return '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>';
+/* ===== CHAT TRANSLATIONS ===== */
+const CHAT_T = {
+  en: {
+    status:'● Available now',
+    welcome:"Hello! 👋 Thank you for contacting Montgomery Dentistry. I'm Amy, your scheduling assistant at Montgomery Dentistry. What's your name?",
+    serviceQ:n=>`Nice to meet you, ${n}! What can we help you with today?`,
+    dateQ:s=>`Great choice! Which day works best for your ${s} appointment?`,
+    timeQ:d=>`Perfect! What time works for you on ${d}?`,
+    phoneQ:n=>`Almost done, ${n}! What's the best phone number to reach you?`,
+    confirmMsg:(n,s,d,ti,p)=>`✅ You're all set, <strong>${n}</strong>! I've reserved <strong>${d} at ${ti}</strong> for <strong>${s}</strong>. Our team will call <strong>${p}</strong> to confirm. We look forward to seeing you!`,
+    moreQ:"Is there anything else I can help you with?",
+    bye:"Thank you for choosing Montgomery Dentistry! Have a wonderful day! 😊",
+    placeholder:"Type your message...", send:"Send",
+    services:["Routine Cleaning","Teeth Whitening","Dental Crown","Dental Bridge","Porcelain Veneers","Emergency Visit","Implant Consult","Free Consultation"],
+    times:["8:00 AM","9:00 AM","10:00 AM","11:00 AM","1:00 PM","2:00 PM","3:00 PM"],
+    yes:"Yes, book another!", no:"No, I'm all set — thank you!",
+    days:["Su","Mo","Tu","We","Th","Fr","Sa"],
+    months:["January","February","March","April","May","June","July","August","September","October","November","December"]
+  },
+  fr: {
+    status:'● Disponible maintenant',
+    welcome:"Bonjour! 👋 Merci de contacter Montgomery Dentistry. Je suis Amy, votre assistante de planification chez Montgomery Dentistry. Puis-je avoir votre prénom?",
+    serviceQ:n=>`Ravi de vous rencontrer, ${n}! Que pouvons-nous faire pour vous aujourd'hui?`,
+    dateQ:s=>`Excellent! Quel jour vous convient pour votre rendez-vous ${s}?`,
+    timeQ:d=>`Parfait! À quelle heure le ${d}?`,
+    phoneQ:n=>`Presque fini, ${n}! Quel est le meilleur numéro pour vous joindre?`,
+    confirmMsg:(n,s,d,ti,p)=>`✅ C'est confirmé, <strong>${n}</strong>! J'ai réservé le <strong>${d} à ${ti}</strong> pour <strong>${s}</strong>. Notre équipe appellera le <strong>${p}</strong> pour confirmer. À bientôt!`,
+    moreQ:"Puis-je vous aider avec autre chose?",
+    bye:"Merci de choisir Montgomery Dentistry! Bonne journée! 😊",
+    placeholder:"Écrivez votre message...", send:"Envoyer",
+    services:["Nettoyage de routine","Blanchiment","Couronne dentaire","Bridge dentaire","Facettes porcelaine","Urgence dentaire","Consultation implant","Consultation gratuite"],
+    times:["8h00","9h00","10h00","11h00","13h00","14h00","15h00"],
+    yes:"Oui, un autre!", no:"Non, merci — c'est tout!",
+    days:["Di","Lu","Ma","Me","Je","Ve","Sa"],
+    months:["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"]
+  },
+  it: {
+    status:'● Disponibile ora',
+    welcome:"Ciao! 👋 Grazie per aver contattato Montgomery Dentistry. Sono Amy, la tua assistente di prenotazione di Montgomery Dentistry. Come ti chiami?",
+    serviceQ:n=>`Piacere, ${n}! Come possiamo aiutarti oggi?`,
+    dateQ:s=>`Ottima scelta! Quale giorno preferisci per ${s}?`,
+    timeQ:d=>`Perfetto! A che ora il ${d}?`,
+    phoneQ:n=>`Quasi fatto, ${n}! Qual è il miglior numero per contattarti?`,
+    confirmMsg:(n,s,d,ti,p)=>`✅ Tutto confermato, <strong>${n}</strong>! Ho prenotato <strong>${d} alle ${ti}</strong> per <strong>${s}</strong>. Il nostro team chiamerà il <strong>${p}</strong> per confermare. A presto!`,
+    moreQ:"C'è altro con cui posso aiutarti?",
+    bye:"Grazie per aver scelto Montgomery Dentistry! Buona giornata! 😊",
+    placeholder:"Scrivi il tuo messaggio...", send:"Invia",
+    services:["Pulizia di routine","Sbiancamento","Corona dentale","Bridge dentale","Faccette in porcellana","Visita d'urgenza","Consulenza impianto","Consulenza gratuita"],
+    times:["8:00","9:00","10:00","11:00","13:00","14:00","15:00"],
+    yes:"Sì, prenota un altro!", no:"No, grazie — è tutto!",
+    days:["Do","Lu","Ma","Me","Gi","Ve","Sa"],
+    months:["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"]
+  }
+};
+
+/* ===== STATE ===== */
+let lang = localStorage.getItem('montgomery_lang') || 'en';
+
+/* ===== HELPERS ===== */
+function t(p) {
+  let o = T[lang];
+  const keys = p.split('.');
+  for (const k of keys) {
+    if (o == null) return '';
+    o = isNaN(k) ? o[k] : o[parseInt(k)];
+  }
+  return o ?? '';
 }
 
-function renderPage() {
-  var d = T[LANG];
+/* ===== LANG ===== */
+function setLang(l) {
+  lang = l;
+  localStorage.setItem('montgomery_lang', l);
+  applyTranslations();
+  updateLangBtns();
+  updateChatLangUI();
+}
 
-  // ── Hero ──────────────────────────────────────────────
-  setTxt('hero-label',   d.hero.label);
-  setTxt('hero-h1a',     d.hero.h1a);
-  setTxt('hero-h1b',     d.hero.h1b);
-  setTxt('hero-sub',     d.hero.sub);
-
-  // ── Services grid ─────────────────────────────────────
-  var grid = document.getElementById('services-grid');
-  if (grid) {
-    grid.innerHTML = d.services.map(function(s, i) {
-      return '<article class="svc-card reveal d'+(Math.min(i%3+1,6)+'')+'">' +
-        '<div class="svc-card__header">' +
-          '<div class="svc-card__icon" aria-hidden="true">' + SVC_ICONS[i] + '</div>' +
-          '<div style="flex:1;">' +
-            '<h3 class="svc-card__title">' + s.name + '</h3>' +
-            '<span class="svc-card__price">' + s.price + '</span>' +
-          '</div>' +
-        '</div>' +
-        '<p class="svc-card__desc">' + s.desc + '</p>' +
-        '<ul class="svc-card__features">' +
-          s.features.map(function(f) {
-            return '<li>' + checkmark() + f + '</li>';
-          }).join('') +
-        '</ul>' +
-        '<a href="contact.html" class="svc-card__link">' + s.link + '</a>' +
-      '</article>';
-    }).join('');
-  }
-
-  // ── Stats strip ───────────────────────────────────────
-  var sg = document.getElementById('stats-grid');
-  if (sg) {
-    sg.innerHTML = d.stats.map(function(s) {
-      return '<div class="stats-strip__item reveal">' +
-        '<div class="stats-strip__num">' + s.num + '</div>' +
-        '<div class="stats-strip__label">' + s.label + '</div>' +
-      '</div>';
-    }).join('');
-  }
-
-  // ── Process ───────────────────────────────────────────
-  setTxt('process-label', d.process.label);
-  setTxt('process-h2a',   d.process.h2a);
-  setTxt('process-h2b',   d.process.h2b);
-  setTxt('process-sub',   d.process.sub);
-  var ps = document.getElementById('process-steps');
-  if (ps) {
-    ps.innerHTML = d.process.steps.map(function(s, i) {
-      return '<div class="process-step reveal d'+(i+2)+'">' +
-        '<div class="process-step__num">' + (i+1) + '</div>' +
-        '<h3 class="process-step__title">' + s.title + '</h3>' +
-        '<p class="process-step__desc">' + s.desc + '</p>' +
-      '</div>';
-    }).join('');
-  }
-  var waCta = { it:'Inizia con WhatsApp — È Gratuito', en:'Start on WhatsApp — It\'s Free', sq:'Fillo me WhatsApp — Falas' };
-  setTxt('process-wa-cta', waCta[LANG]);
-
-  // ── Pricing ───────────────────────────────────────────
-  setTxt('pricing-label', d.pricing.label);
-  setTxt('pricing-h2a',   d.pricing.h2a);
-  setTxt('pricing-h2b',   d.pricing.h2b);
-  setTxt('pricing-sub',   d.pricing.sub);
-  setTxt('pricing-note',  d.pricing.note);
-  var ptLink = document.getElementById('pricing-cta-link');
-  if (ptLink) ptLink.textContent = d.pricing.cta;
-  var pt = document.querySelector('.pricing-table');
-  if (pt) {
-    pt.innerHTML = d.pricing.rows.map(function(r) {
-      return '<div class="pricing-row">' +
-        '<span class="pricing-row__name">' + r.name + '</span>' +
-        '<span class="pricing-row__price' + (r.free ? ' pricing-row__price--free' : '') + '">' + r.price + '</span>' +
-      '</div>';
-    }).join('');
-  }
-
-  // ── CTA strip ─────────────────────────────────────────
-  setTxt('cta-h2',       d.cta.h2);
-  setTxt('cta-sub',      d.cta.sub);
-  setTxt('cta-btn1',     d.cta.btn1);
-  setTxt('cta-btn2-text',d.cta.btn2);
-
-  // ── Footer ────────────────────────────────────────────
-  setTxt('footer-tagline',       d.footer.tagline);
-  setTxt('footer-links-title',   d.footer.links);
-  setTxt('footer-contact-title', d.footer.contact);
-  setTxt('footer-address',       d.footer.address);
-  setTxt('footer-hours',         d.footer.hours);
-  setTxt('footer-rights',        d.footer.rights);
-  setTxt('footer-crafted',       d.footer.crafted);
-  // Footer links
-  setTxt('fl-home',     d.nav.home);
-  setTxt('fl-services', d.nav.services);
-  setTxt('fl-about',    d.nav.about);
-  setTxt('fl-gallery',  d.nav.gallery);
-  setTxt('fl-reviews',  d.nav.reviews);
-  setTxt('fl-contact',  d.nav.contact);
-
-  // ── Nav links ─────────────────────────────────────────
-  setTxt('nl-home',     d.nav.home);
-  setTxt('nl-services', d.nav.services);
-  setTxt('nl-about',    d.nav.about);
-  setTxt('nl-gallery',  d.nav.gallery);
-  setTxt('nl-reviews',  d.nav.reviews);
-  setTxt('nl-contact',  d.nav.contact);
-  setTxt('nav-book-btn',d.nav.book);
-  // Mobile menu
-  setTxt('ml-home',     d.nav.home);
-  setTxt('ml-services', d.nav.services);
-  setTxt('ml-about',    d.nav.about);
-  setTxt('ml-gallery',  d.nav.gallery);
-  setTxt('ml-reviews',  d.nav.reviews);
-  setTxt('ml-contact',  d.nav.contact);
-  setTxt('ml-book',     d.nav.book);
-
-  // ── Lang buttons ──────────────────────────────────────
-  ['it','sq','en'].forEach(function(l) {
-    var btn = document.getElementById('lang-'+l);
-    if (btn) btn.classList.toggle('active', l === LANG);
+function updateLangBtns() {
+  ['en','fr','it'].forEach(l => {
+    const b = document.getElementById('lang-' + l);
+    if (b) b.classList.toggle('active', l === lang);
   });
-  document.documentElement.lang = LANG;
-
-  // ── Re-observe new reveal elements ────────────────────
-  setTimeout(initReveal, 50);
 }
 
-function setTxt(id, val) {
-  var el = document.getElementById(id);
-  if (el && val != null) el.textContent = val;
-}
-
-// ── Nav scroll behaviour ─────────────────────────────────
-(function() {
-  var nav = document.getElementById('nav');
-  function onScroll() {
-    if (window.scrollY > 40) nav.classList.add('scrolled');
-    else nav.classList.remove('scrolled');
-  }
-  window.addEventListener('scroll', onScroll, { passive:true });
-  onScroll();
-})();
-
-// ── Reveal intersection observer ─────────────────────────
-function initReveal() {
-  var els = document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale');
-  if (!els.length) return;
-  var obs = new IntersectionObserver(function(entries) {
-    entries.forEach(function(e) {
-      if (e.isIntersecting) {
-        e.target.classList.add('active');
-        obs.unobserve(e.target);
-      }
-    });
-  }, { threshold:0.1, rootMargin:'0px 0px -30px 0px' });
-  els.forEach(function(el) {
-    if (!el.classList.contains('active')) obs.observe(el);
-  });
-}
-
-// ── Mobile menu ───────────────────────────────────────────
-var menuOpen = false;
 function toggleMenu() {
-  menuOpen = !menuOpen;
-  var menu = document.getElementById('mobile-menu');
-  var hb = document.getElementById('hamburger');
-  var h1 = document.getElementById('hb1');
-  var h2 = document.getElementById('hb2');
-  var h3 = document.getElementById('hb3');
-  if (menuOpen) {
-    menu.classList.add('open');
-    hb.setAttribute('aria-expanded','true');
-    h1.style.transform='rotate(45deg) translate(5px,5px)';
-    h2.style.opacity='0';
-    h3.style.transform='rotate(-45deg) translate(5px,-5px)';
-    h3.style.width='22px'; h3.style.marginLeft='0';
-  } else {
-    closeMenu();
-  }
-}
-function closeMenu() {
-  menuOpen = false;
-  var menu = document.getElementById('mobile-menu');
-  var hb = document.getElementById('hamburger');
-  var h1 = document.getElementById('hb1');
-  var h2 = document.getElementById('hb2');
-  var h3 = document.getElementById('hb3');
-  menu.classList.remove('open');
-  hb.setAttribute('aria-expanded','false');
-  h1.style.transform='none';
-  h2.style.opacity='1';
-  h3.style.transform='none';
-  h3.style.width='16px'; h3.style.marginLeft='auto';
+  document.getElementById('mobile-menu').classList.toggle('open');
 }
 
-// ── Init ──────────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', function() {
-  renderPage();
-  // Nav always scrolled since page has dark bg
-  document.getElementById('nav').classList.add('scrolled');
-  // Trigger hero reveals immediately
-  setTimeout(function() {
-    document.querySelectorAll('.page-hero .reveal,.page-hero .reveal-left,.page-hero .reveal-right,.page-hero .reveal-scale').forEach(function(el) {
-      el.classList.add('active');
-    });
-  }, 100);
-  // WA float
-  var waFloat = document.getElementById('wa-float');
-  if (waFloat) {
-    setTimeout(function() { waFloat.classList.add('show'); }, 1200);
-    setTimeout(function() { waFloat.classList.add('pulse'); }, 2200);
+/* ===== APPLY TRANSLATIONS ===== */
+function applyTranslations() {
+  // All data-t elements
+  document.querySelectorAll('[data-t]').forEach(el => {
+    const key = el.dataset.t;
+    const v = t(key);
+    if (v && typeof v === 'string') el.textContent = v;
+  });
+
+  // Service card titles (data-t already handles these, but explicit for safety)
+  document.querySelectorAll('.svc-title').forEach((el, i) => {
+    const v = t('svc.' + i + '.name');
+    if (v) el.textContent = v;
+  });
+  document.querySelectorAll('.svc-desc').forEach((el, i) => {
+    const v = t('svc.' + i + '.desc');
+    if (v) el.textContent = v;
+  });
+
+  // Pricing rows
+  document.querySelectorAll('.pricing-row__name').forEach((el, i) => {
+    const v = t('svcPage.price.' + i + '.name');
+    if (v) el.textContent = v;
+  });
+  document.querySelectorAll('.pricing-row__price').forEach((el, i) => {
+    const v = t('svcPage.price.' + i + '.price');
+    if (v) el.textContent = v;
+  });
+
+  // Footer hours
+  const fh = document.getElementById('footer-hours');
+  if (fh) fh.innerHTML = lang === 'it'
+    ? 'Lun–Mar: 8–17 | Mer: 9–17<br>Gio: 8–15:30 | Ven: 8–12'
+    : lang === 'fr'
+    ? 'Lun–Mar: 8h–17h | Mer: 9h–17h<br>Jeu: 8h–15h30 | Ven: 8h–12h'
+    : 'Mon–Tue: 8AM–5PM | Wed: 9AM–5PM<br>Thu: 8AM–3:30PM | Fri: 8AM–12PM';
+
+  // Footer crafted
+  const fc = document.getElementById('footer-crafted');
+  if (fc) fc.textContent = t('footer.crafted');
+}
+
+/* ===== CHAT BOT ===== */
+let chatState = 'idle';
+let chatData = {};
+let chatCalY, chatCalM;
+let chatInitiated = false;
+
+function ct() { return CHAT_T[lang] || CHAT_T.en; }
+
+function openChat() {
+  document.getElementById('chat-widget').classList.add('open');
+  const badge = document.getElementById('chat-badge');
+  if (badge) badge.style.display = 'none';
+  if (!chatInitiated) {
+    chatInitiated = true;
+    chatState = 'name';
+    showTyping();
+    setTimeout(() => { removeTyping(); addBotMsg(ct().welcome); updateChatInput(); }, 900);
   }
-  // Observe all reveals
-  initReveal();
+}
+
+function closeChat() {
+  document.getElementById('chat-widget').classList.remove('open');
+}
+
+function addBotMsg(html) {
+  const el = document.createElement('div');
+  el.className = 'cmsg bot';
+  el.innerHTML = `<div class="cmsg-bubble">${html}</div>`;
+  document.getElementById('chat-msgs').appendChild(el);
+  scrollChat();
+}
+
+function addUserMsg(text) {
+  const el = document.createElement('div');
+  el.className = 'cmsg usr';
+  el.innerHTML = `<div class="cmsg-bubble">${text}</div>`;
+  document.getElementById('chat-msgs').appendChild(el);
+  scrollChat();
+}
+
+function showTyping() {
+  const el = document.createElement('div');
+  el.className = 'cmsg bot cmsg-typing';
+  el.id = 'typing-indicator';
+  el.innerHTML = '<div class="cmsg-bubble"><span class="dot-t"></span><span class="dot-t"></span><span class="dot-t"></span></div>';
+  document.getElementById('chat-msgs').appendChild(el);
+  scrollChat();
+}
+
+function removeTyping() {
+  const ti = document.getElementById('typing-indicator');
+  if (ti) ti.remove();
+}
+
+function scrollChat() {
+  const m = document.getElementById('chat-msgs');
+  if (m) m.scrollTop = m.scrollHeight;
+}
+
+function showChips(items, cb) {
+  const wrap = document.getElementById('chat-chips');
+  wrap.innerHTML = items.map((item, i) =>
+    `<button class="chat-chip" onclick="chatChip(this,'${item.replace(/'/g,"&#39;")}',${i})">${item}</button>`
+  ).join('');
+  window._chatChipCb = cb;
+}
+
+function chatChip(el, val, idx) {
+  document.getElementById('chat-chips').innerHTML = '';
+  addUserMsg(val);
+  if (window._chatChipCb) setTimeout(() => window._chatChipCb(val, idx), 220);
+}
+
+function clearChips() { document.getElementById('chat-chips').innerHTML = ''; }
+
+function updateChatInput() {
+  const row = document.getElementById('chat-input-row');
+  const inp = document.getElementById('chat-input');
+  const btn = document.getElementById('chat-send-btn');
+  const show = (chatState === 'name' || chatState === 'phone');
+  row.style.display = show ? 'flex' : 'none';
+  if (show) {
+    inp.placeholder = ct().placeholder;
+    btn.textContent = ct().send;
+    setTimeout(() => inp.focus(), 100);
+  }
+}
+
+function updateChatLangUI() {
+  const hdrStatus = document.getElementById('chat-hdr-status');
+  if (hdrStatus) hdrStatus.textContent = ct().status;
+  updateChatInput();
+}
+
+function chatSend() {
+  const inp = document.getElementById('chat-input');
+  const val = inp.value.trim();
+  if (!val) return;
+  inp.value = '';
+  addUserMsg(val);
+
+  if (chatState === 'name') {
+    chatData.name = val;
+    chatState = 'service';
+    updateChatInput();
+    showTyping();
+    setTimeout(() => {
+      removeTyping();
+      addBotMsg(ct().serviceQ(chatData.name));
+      showChips(ct().services, (svc) => {
+        chatData.service = svc;
+        chatState = 'date';
+        showTyping();
+        setTimeout(() => {
+          removeTyping();
+          addBotMsg(ct().dateQ(svc));
+          showCal();
+        }, 400);
+      });
+    }, 600);
+
+  } else if (chatState === 'phone') {
+    chatData.phone = val;
+    chatState = 'confirm';
+    updateChatInput();
+    showTyping();
+    setTimeout(() => {
+      removeTyping();
+      addBotMsg(ct().confirmMsg(chatData.name, chatData.service, chatData.date, chatData.time, chatData.phone));
+      setTimeout(() => {
+        showTyping();
+        setTimeout(() => {
+          removeTyping();
+          addBotMsg(ct().moreQ);
+          showChips([ct().yes, ct().no], (choice, idx) => {
+            if (idx === 1) {
+              chatState = 'done';
+              showTyping();
+              setTimeout(() => { removeTyping(); addBotMsg(ct().bye); }, 500);
+            } else {
+              chatData = { name: chatData.name };
+              chatState = 'service';
+              showTyping();
+              setTimeout(() => {
+                removeTyping();
+                addBotMsg(ct().serviceQ(chatData.name));
+                showChips(ct().services, (svc) => {
+                  chatData.service = svc;
+                  chatState = 'date';
+                  showTyping();
+                  setTimeout(() => { removeTyping(); addBotMsg(ct().dateQ(svc)); showCal(); }, 400);
+                });
+              }, 600);
+            }
+          });
+        }, 800);
+      }, 1200);
+    }, 600);
+  }
+}
+
+/* ===== CALENDAR ===== */
+function showCal() {
+  hideCal();
+  const today = new Date();
+  chatCalY = today.getFullYear();
+  chatCalM = today.getMonth();
+  renderCal();
+  document.getElementById('chat-cal').style.display = 'block'; scrollChat();
+}
+
+function hideCal() {
+  document.getElementById('chat-cal').style.display = 'none';
+  document.getElementById('chat-cal').innerHTML = '';
+}
+
+function renderCal() {
+  const c = ct();
+  const today = new Date(); today.setHours(0,0,0,0);
+  const first = new Date(chatCalY, chatCalM, 1).getDay();
+  const dim = new Date(chatCalY, chatCalM + 1, 0).getDate();
+  let html = `<div class="chat-cal-hdr">
+    <button class="cal-nav" onclick="chatCalNav(-1)">&#8249;</button>
+    <span>${c.months[chatCalM]} ${chatCalY}</span>
+    <button class="cal-nav" onclick="chatCalNav(1)">&#8250;</button>
+  </div><div class="chat-cal-grid">`;
+  html += c.days.map(d => `<div class="cal-cell hdr">${d}</div>`).join('');
+  html += Array(first).fill('<div class="cal-cell empty"></div>').join('');
+  for (let d = 1; d <= dim; d++) {
+    const date = new Date(chatCalY, chatCalM, d);
+    const dow = date.getDay();
+    const isPast = date < today;
+    const isWknd = dow === 0 || dow === 6;
+    if (isPast || isWknd) {
+      html += `<div class="cal-cell ${isPast ? 'past' : 'wknd'}">${d}</div>`;
+    } else {
+      const ds = `${c.months[chatCalM]} ${d}, ${chatCalY}`;
+      html += `<div class="cal-cell avail" onclick="chatPickDate('${ds}')">${d}</div>`;
+    }
+  }
+  html += '</div>';
+  document.getElementById('chat-cal').innerHTML = html;
+}
+
+function chatCalNav(dir) {
+  chatCalM += dir;
+  if (chatCalM < 0) { chatCalM = 11; chatCalY--; }
+  if (chatCalM > 11) { chatCalM = 0; chatCalY++; }
+  renderCal();
+}
+
+function chatPickDate(ds) {
+  hideCal();
+  addUserMsg(ds);
+  chatData.date = ds;
+  chatState = 'time';
+  showTyping();
+  setTimeout(() => {
+    removeTyping();
+    addBotMsg(ct().timeQ(ds));
+    showChips(ct().times, (time) => {
+      chatData.time = time;
+      chatState = 'phone';
+      showTyping();
+      setTimeout(() => { removeTyping(); addBotMsg(ct().phoneQ(chatData.name)); updateChatInput(); }, 400);
+    });
+  }, 400);
+}
+
+/* ===== NAV SCROLL ===== */
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+});
+
+/* ===== INIT ===== */
+document.addEventListener('DOMContentLoaded', () => {
+  applyTranslations();
+  updateLangBtns();
+
+  requestAnimationFrame(() => {
+    // Intersection observer for reveal animations
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('active');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => obs.observe(el));
+
+    // WA float
+    setTimeout(() => {
+      const w = document.getElementById('wa-float');
+      if (w) {
+        w.classList.add('show');
+        setTimeout(() => w.classList.add('pulse'), 800);
+      }
+    }, 1200);
+
+    // Chat float
+    setTimeout(() => {
+      const cb = document.getElementById('chat-float-btn');
+      if (cb) cb.classList.add('show');
+    }, 1800);
+
+    // Chat input enter key
+    const ci = document.getElementById('chat-input');
+    if (ci) ci.addEventListener('keydown', e => { if (e.key === 'Enter') chatSend(); });
+
+    // Chat status language
+    updateChatLangUI();
+  });
 });
 </script>
 </body>

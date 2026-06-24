@@ -1,14 +1,14 @@
 ﻿<!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spavas Dental Studio — Implantologia & Estetica Dentale | Vlorë, Albania</title>
-  <meta name="description" content="Spavas Dental Studio a Valona, Albania. Specialisti in implantologia, sbiancamento, faccette e ortodonzia. 293 recensioni 5★ su Google. Visita gratuita.">
+  <title>Montgomery Dentistry — Trusted Dental Care | Montgomery, Alabama</title>
+  <meta name="description" content="Montgomery Dentistry in Montgomery, Alabama. Trusted dental care for 55+ years. Cleanings, cosmetics, emergencies, implants & more. 1,400+ five-star Google reviews.">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2" fetchpriority="high">
-  <link rel="preload" as="image" href="assets/hero-desktop.jpeg" media="(min-width:768px)" fetchpriority="high">
-  <link rel="preload" as="image" href="assets/hero-mobile.jpeg" media="(max-width:767px)" fetchpriority="high">
+  <link rel="preload" as="image" href="https://res.cloudinary.com/dr63qmw21/image/upload/f_auto,q_auto,w_1920/montgomery-dentistry/hero-team.jpg" media="(min-width:768px)" fetchpriority="high">
+  <link rel="preload" as="image" href="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHT3rzxDrrfmEJV71Iu6ecwxfn_rvg_FKiWFwElljjkGfOq9jTHdbc2Bw6WvYxYDOT1bGW1bmCbOOlmFe2Q1sXqbWbspkAq2izwIpA7NIiLfOtu8LavRVKbU1NLhAn0MbfJxDt1=w1080-h1440-k-no" media="(max-width:767px)" fetchpriority="high">
   <style>
     @font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400 800;font-display:swap;src:url('https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
     /* ── SHARED DESIGN SYSTEM ── */
@@ -105,7 +105,7 @@
     .page-hero__h1{font-size:clamp(2.4rem,6vw,4rem);font-weight:800;letter-spacing:-0.03em;color:#fff;line-height:1.05;margin-bottom:16px;}
     .page-hero__h1 span{color:var(--cyan-mid);}
     .page-hero__sub{font-size:1rem;color:rgba(255,255,255,0.55);max-width:520px;margin:0 auto;line-height:1.8;}
-    @media(min-width:768px){.nav__book{display:inline-flex;margin-left:20px;}.nav__hamburger{display:none;}.hide-md{display:none!important;}.nav__logo img{height:56px!important;margin-left:-55px;}.nav__logo-text-main{margin-left:5px;}.nav__inner{gap:19px;}.nav__right{gap:19px;}}
+    @media(min-width:768px){.nav__book{display:inline-flex;margin-left:20px;}.nav__hamburger{display:none;}.hide-md{display:none!important;}.nav__logo img{height:40px!important;}.nav__inner{gap:19px;}.nav__right{gap:19px;}}
     @media(max-width:767px){.nav__links{display:none;}.nav__logo-text-main{display:none;}.nav__inner{position:relative;}.nav__lang{position:absolute;left:110px;}.nav__book{margin-right:38px;}.show-mobile-only{display:block;}.footer__grid{grid-template-columns:1fr;gap:32px;}}
     /* ===== HERO ===== */
     .hero { position:relative; min-height:100vh; display:flex; align-items:center; overflow:hidden; }
@@ -114,6 +114,27 @@
     .hero__overlay { position:absolute; inset:0; background:linear-gradient(135deg, rgba(12,26,46,0.88) 0%, rgba(8,145,178,0.18) 100%); }
     .hero__inner { position:relative; z-index:2; max-width:var(--max-w); margin:0 auto; padding:calc(var(--nav-h) + 3rem) var(--gutter) 5rem; width:100%; display:grid; grid-template-columns:1fr; gap:2.5rem; align-items:center; }
     @media(min-width:900px){ .hero__inner{ grid-template-columns:1fr 380px; padding-bottom:6rem; gap:3.5rem; } .hero__left{ margin-left:-60px; } .hero__right{ margin-right:-60px; } .hero__h1{ font-size:clamp(2.4rem,6vw,4.2rem); } }
+
+    /* ── CURTAIN ── */
+    @keyframes curtainRetract { from{transform:scaleX(1)} to{transform:scaleX(0)} }
+    .hero-curtain-l, .hero-curtain-r {
+      position:absolute; top:0; bottom:0; width:50.5%;
+      background:var(--dark); z-index:6; pointer-events:none;
+      animation:curtainRetract 1.35s cubic-bezier(0.76,0,0.24,1) 0.1s forwards;
+    }
+    .hero-curtain-l { left:0; transform-origin:left center; }
+    .hero-curtain-r { right:0; transform-origin:right center; }
+
+    /* ── HERO ENTRANCE ANIMATIONS ── */
+    @keyframes heroFadeUp     { from{opacity:0;transform:translateY(26px)} to{opacity:1;transform:none} }
+    @keyframes heroSlideRight { from{transform:translateX(40px)} to{transform:none} }
+
+    .hero__badge    { opacity:0; animation:heroFadeUp 0.7s var(--ease-out) 1.45s forwards; }
+    .hero__h1       { opacity:0; animation:heroFadeUp 0.75s var(--ease-out) 1.65s forwards; }
+    .hero__sub      { opacity:0; animation:heroFadeUp 0.7s var(--ease-out) 1.85s forwards; }
+    .hero__actions  { opacity:0; animation:heroFadeUp 0.7s var(--ease-out) 2.05s forwards; }
+    .hero__score    { opacity:0; animation:heroFadeUp 0.65s var(--ease-out) 2.2s forwards; }
+    .hero__right    { animation:heroSlideRight 0.85s var(--ease-out) 1.5s backwards; }
     /* Hero inline quote widget */
     .hq-card { background:linear-gradient(145deg,rgba(255,255,255,0.10) 0%,rgba(255,255,255,0.05) 100%); backdrop-filter:blur(32px); -webkit-backdrop-filter:blur(32px); border:1px solid rgba(255,255,255,0.16); border-radius:24px; padding:24px; box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 32px 80px rgba(0,0,0,0.4); }
     .hq-title { font-size:1.1rem; font-weight:800; letter-spacing:-0.01em; color:#fff; margin-bottom:4px; display:flex; align-items:center; gap:8px; }
@@ -290,6 +311,115 @@
     .reviews-more { text-align:center; margin-top:2.5rem; }
     .reviews-more a { font-size:0.82rem; font-weight:600; color:#0369A1; text-decoration:none; transition:opacity 0.2s; }
     .reviews-more a:hover { opacity:0.75; }
+
+    /* ===== CHAT WIDGET ===== */
+    .chat-float-btn {
+      position:fixed; bottom:90px; right:24px; width:56px; height:56px;
+      background:linear-gradient(135deg,#0369A1,#06B6D4); border-radius:50%; border:none;
+      cursor:pointer; display:flex; align-items:center; justify-content:center;
+      box-shadow:0 4px 20px rgba(6,182,212,0.45); z-index:998;
+      transform:scale(0); opacity:0; transition:transform 0.3s,opacity 0.3s,box-shadow 0.2s;
+    }
+    .chat-float-btn.show { transform:scale(1); opacity:1; }
+    .chat-float-btn:hover { box-shadow:0 6px 28px rgba(6,182,212,0.6); transform:scale(1.1); }
+    .chat-float-btn .chat-badge {
+      position:absolute; top:-2px; right:-2px; width:13px; height:13px;
+      background:#ef4444; border-radius:50%; border:2px solid white;
+      animation:chatpulse 1.8s infinite;
+    }
+    @keyframes chatpulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.3)} }
+
+    .chat-widget {
+      position:fixed; bottom:160px; right:24px; width:360px; max-height:540px;
+      background:#fff; border-radius:18px; box-shadow:0 12px 48px rgba(0,0,0,0.18);
+      z-index:1001; display:flex; flex-direction:column; overflow:hidden;
+      transform:translateY(16px) scale(0.97); opacity:0; pointer-events:none;
+      transition:transform 0.28s cubic-bezier(.34,1.56,.64,1),opacity 0.22s ease;
+    }
+    .chat-widget.open { transform:translateY(0) scale(1); opacity:1; pointer-events:all; }
+    @media(max-width:480px){
+      .chat-widget { width:calc(100vw - 24px); right:12px; bottom:0; border-radius:18px 18px 0 0; max-height:85vh; }
+      .chat-float-btn { bottom:80px; right:16px; }
+    }
+
+    .chat-hdr {
+      background:linear-gradient(135deg,#0369A1,#06B6D4); padding:14px 18px;
+      display:flex; align-items:center; justify-content:space-between; flex-shrink:0;
+    }
+    .chat-hdr-left { display:flex; align-items:center; gap:11px; }
+    .chat-avatar {
+      width:38px; height:38px; background:rgba(255,255,255,0.2); border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      font-weight:800; color:#fff; font-size:0.78rem; letter-spacing:0.03em;
+      overflow:hidden;
+    }
+    .chat-avatar img { width:100%; height:100%; object-fit:cover; }
+    .chat-hdr-name { color:#fff; font-weight:700; font-size:0.92rem; }
+    .chat-hdr-status { color:rgba(255,255,255,0.75); font-size:0.73rem; margin-top:1px; }
+    .chat-close-btn {
+      background:none; border:none; color:rgba(255,255,255,0.8); font-size:1.5rem;
+      cursor:pointer; line-height:1; padding:0 2px; transition:color 0.15s;
+    }
+    .chat-close-btn:hover { color:#fff; }
+
+    .chat-msgs {
+      flex:1; overflow-y:auto; padding:16px; display:flex; flex-direction:column;
+      gap:10px; min-height:180px; max-height:260px; scroll-behavior:smooth;
+    }
+    .chat-msgs::-webkit-scrollbar { width:4px; }
+    .chat-msgs::-webkit-scrollbar-thumb { background:#e2e8f0; border-radius:2px; }
+
+    .cmsg { max-width:82%; }
+    .cmsg.bot { align-self:flex-start; }
+    .cmsg.usr { align-self:flex-end; }
+    .cmsg-bubble {
+      padding:9px 13px; border-radius:12px; font-size:0.85rem; line-height:1.55;
+    }
+    .cmsg.bot .cmsg-bubble { background:#f1f5f9; color:#1e293b; border-bottom-left-radius:3px; }
+    .cmsg.usr .cmsg-bubble { background:#0369A1; color:#fff; border-bottom-right-radius:3px; }
+    .cmsg-typing .cmsg-bubble { display:flex; gap:4px; align-items:center; padding:12px 16px; }
+    .dot-t { width:7px; height:7px; background:#94a3b8; border-radius:50%; animation:typing 1.2s infinite; }
+    .dot-t:nth-child(2){animation-delay:0.2s} .dot-t:nth-child(3){animation-delay:0.4s}
+    @keyframes typing{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-5px)}}
+
+    .chat-chips-wrap { padding:0 12px 8px; display:flex; flex-wrap:wrap; gap:7px; flex-shrink:0; }
+    .chat-chip {
+      padding:6px 13px; border:1.5px solid #06B6D4; border-radius:20px; font-size:0.78rem;
+      font-weight:600; color:#0369A1; background:#fff; cursor:pointer; transition:all 0.15s;
+      font-family:inherit;
+    }
+    .chat-chip:hover { background:#0369A1; color:#fff; border-color:#0369A1; }
+
+    .chat-cal { padding:0 14px 8px; flex-shrink:0; }
+    .chat-cal-hdr {
+      display:flex; align-items:center; justify-content:space-between;
+      margin-bottom:8px; font-weight:700; font-size:0.82rem; color:#1e293b;
+    }
+    .cal-nav { background:none; border:none; cursor:pointer; font-size:1rem; color:#0369A1; padding:2px 6px; }
+    .chat-cal-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:2px; }
+    .cal-cell {
+      aspect-ratio:1; display:flex; align-items:center; justify-content:center;
+      font-size:0.72rem; border-radius:6px; cursor:default; user-select:none;
+    }
+    .cal-cell.hdr { font-weight:700; color:#94a3b8; font-size:0.68rem; }
+    .cal-cell.avail { color:#1e293b; cursor:pointer; }
+    .cal-cell.avail:hover { background:#0369A1; color:#fff; }
+    .cal-cell.past,.cal-cell.wknd,.cal-cell.empty { color:#e2e8f0; }
+
+    .chat-input-row {
+      padding:11px 14px; border-top:1px solid #f1f5f9; display:flex; gap:8px; flex-shrink:0;
+    }
+    .chat-input-row input {
+      flex:1; padding:9px 13px; border:1.5px solid #e2e8f0; border-radius:9px;
+      font-size:0.85rem; outline:none; font-family:inherit; color:#1e293b;
+      transition:border-color 0.2s;
+    }
+    .chat-input-row input:focus { border-color:#06B6D4; }
+    .chat-send-btn {
+      padding:9px 15px; background:#0369A1; color:#fff; border:none; border-radius:9px;
+      font-size:0.82rem; font-weight:700; cursor:pointer; transition:background 0.2s; font-family:inherit;
+    }
+    .chat-send-btn:hover { background:#06B6D4; }
   </style>
 </head>
 <body>
@@ -297,9 +427,9 @@
 <!-- NAV -->
 <header class="nav" id="nav">
   <div class="nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="Spavas Dental Studio — Home">
-      <img src="assets/logo.png" alt="Spavas Dental Studio" height="48" style="width:auto;display:block;object-fit:contain;">
-      <div class="nav__logo-text-main" style="white-space:nowrap;letter-spacing:0.08em;">Spavas Dental Studio</div>
+    <a href="index.html" class="nav__logo" aria-label="Montgomery Dentistry — Home">
+      <img src="https://res.cloudinary.com/dr63qmw21/image/upload/f_auto,q_auto,h_48/montgomery-dentistry/logo.png" alt="Montgomery Dentistry logo" height="42" style="width:auto;display:block;object-fit:contain;">
+      <div class="nav__logo-text-main" style="white-space:nowrap;letter-spacing:0.08em;">Montgomery Dentistry</div>
     </a>
     <nav class="nav__links">
       <a href="index.html"    id="nl-home"     data-t="nav.home" class="active">Home</a>
@@ -311,11 +441,11 @@
     </nav>
     <div class="nav__right">
       <div class="nav__lang" role="group" aria-label="Select language">
-        <button onclick="setLang('it')" id="lang-it" aria-label="Italiano">IT</button>
-        <button onclick="setLang('sq')" id="lang-sq" aria-label="Shqip">AL</button>
         <button onclick="setLang('en')" id="lang-en" aria-label="English">EN</button>
+        <button onclick="setLang('fr')" id="lang-fr" aria-label="Français">FR</button>
+        <button onclick="setLang('it')" id="lang-it" aria-label="Italiano">IT</button>
       </div>
-      <a href="contact.html" class="btn btn--cyan nav__book" id="nav-book-btn" data-t="nav.book">Prenota</a>
+      <button onclick="openChat()" class="btn btn--cyan nav__book" id="nav-book-btn" data-t="nav.book">Book Now</button>
       <button class="nav__hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -327,22 +457,23 @@
   <a href="gallery.html"  id="ml-gallery"  data-t="nav.gallery">Galleria</a>
   <a href="reviews.html"  id="ml-reviews"  data-t="nav.reviews">Recensioni</a>
   <a href="contact.html"  id="ml-contact"  data-t="nav.contact">Contatti</a>
-  <a href="contact.html"  id="ml-book"     class="nav__mobile-book" data-t="nav.book">Prenota</a>
+  <button onclick="openChat();toggleMenu()" id="ml-book" class="nav__mobile-book" data-t="nav.book">Book Now</button>
 </div>
 
 <!-- ===== 1. HERO ===== -->
 <section class="hero">
+  <div class="hero-curtain-l"></div>
+  <div class="hero-curtain-r"></div>
   <div class="hero__bg">
     <picture>
-      <source media="(max-width:767px)" srcset="assets/hero-mobile.jpeg">
-      <img src="assets/hero-desktop.jpeg" alt="Spavas Dental Studio" fetchpriority="high">
+      <source media="(max-width:767px)" srcset="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHT3rzxDrrfmEJV71Iu6ecwxfn_rvg_FKiWFwElljjkGfOq9jTHdbc2Bw6WvYxYDOT1bGW1bmCbOOlmFe2Q1sXqbWbspkAq2izwIpA7NIiLfOtu8LavRVKbU1NLhAn0MbfJxDt1=w1080-h1440-k-no">
+      <img src="https://res.cloudinary.com/dr63qmw21/image/upload/f_auto,q_auto,w_1920/montgomery-dentistry/hero-team.jpg" alt="Montgomery Dentistry team" fetchpriority="high">
     </picture>
   </div>
   <div class="hero__overlay"></div>
   <div class="hero__inner">
     <!-- LEFT: hero text -->
     <div class="hero__left">
-      <div class="hero__mobile-clinic-name">Spavas Dental Studio</div>
       <div class="hero__badge">
         <span class="hero__badge-dot"></span>
         <span class="hero__badge-text" data-t="hero.badge">Clinica Dentale · Vlorë, Albania</span>
@@ -352,14 +483,14 @@
       </h1>
       <p class="hero__sub" data-t="hero.sub">Cure dentali d'eccellenza nel cuore di Valona. Implantologia, faccette, sbiancamento e molto altro, con prezzi accessibili e qualità europea.</p>
       <div class="hero__actions">
-        <a href="contact.html" class="btn btn--cyan" data-t="hero.cta1">Prenota Visita Gratuita</a>
-        <a href="https://wa.me/39695584588" target="_blank" rel="noopener noreferrer" class="btn btn--wa">
-          <svg viewBox="0 0 24 24" fill="white" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          <span data-t="hero.cta2">Scrivi su WhatsApp</span>
+        <button onclick="openChat()" class="btn btn--cyan" data-t="hero.cta1">Schedule an Appointment</button>
+        <a href="tel:+13342790760" class="btn btn--wa">
+          <svg viewBox="0 0 24 24" fill="white" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span data-t="hero.cta2">Call Us Now</span>
         </a>
       </div>
       <div class="hero__score">
-        <div class="hero__score-num">4.9</div>
+        <div class="hero__score-num">4.8</div>
         <div>
           <div class="hero__score-stars">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="#06B6D4" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
@@ -368,21 +499,21 @@
             <svg width="14" height="14" viewBox="0 0 24 24" fill="#06B6D4" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="#06B6D4" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           </div>
-          <div class="hero__score-label" id="hero-score-label">293 recensioni su Google</div>
+          <div class="hero__score-label" id="hero-score-label">1,400+ reviews on Google</div>
         </div>
       </div>
     </div>
     <!-- RIGHT: inline quote widget -->
     <div class="hero__right">
       <div class="hq-card">
-        <div class="hq-title" id="hq-label">Preventivo Istantaneo</div>
-        <div class="hq-subtitle" id="hq-subtitle">Seleziona i trattamenti</div>
+        <div class="hq-title" id="hq-label">Quick Estimate</div>
+        <div class="hq-subtitle" id="hq-subtitle">Select treatments</div>
         <div class="hq-grid" id="hq-pills"></div>
         <div class="hq-result" id="hq-result">
           <div class="hq-result-inner">
             <div class="hq-est-left">
-              <div class="hq-est-label" id="hq-est-label">Stima del preventivo</div>
-              <div class="hq-est-range" id="hq-est-range">€0</div>
+              <div class="hq-est-label" id="hq-est-label">Estimate</div>
+              <div class="hq-est-range" id="hq-est-range">$0</div>
               <div class="hq-est-note" id="hq-est-note">* Stima indicativa</div>
             </div>
             <div class="hq-est-icon">
@@ -391,10 +522,10 @@
           </div>
         </div>
         <div class="hq-ctas">
-          <a href="contact.html" class="hq-cta hq-cta--book" id="hq-cta">Prenota</a>
-          <a href="https://wa.me/39695584588" target="_blank" rel="noopener noreferrer" class="hq-cta hq-cta--wa" id="hq-cta-wa">
-            <svg viewBox="0 0 24 24" fill="white" width="14" height="14"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            <span id="hq-cta-wa-text">WhatsApp</span>
+          <button onclick="openChat()" class="hq-cta hq-cta--book" id="hq-cta">Book Now</button>
+          <a href="tel:+13342790760" class="hq-cta hq-cta--wa" id="hq-cta-wa">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span id="hq-cta-wa-text">Call Now</span>
           </a>
         </div>
       </div>
@@ -458,20 +589,20 @@
 <section id="stats">
   <div class="stats-grid">
     <div class="stat-cell reveal">
-      <div class="stat-num" id="stat0">293+</div>
-      <div class="stat-label" data-t="stats.0.label">Recensioni Google</div>
+      <div class="stat-num" id="stat0">1,400+</div>
+      <div class="stat-label" data-t="stats.0.label">Google Reviews</div>
     </div>
     <div class="stat-cell reveal d1">
-      <div class="stat-num" id="stat1">10+</div>
-      <div class="stat-label" data-t="stats.1.label">Anni di Esperienza</div>
+      <div class="stat-num" id="stat1">55+</div>
+      <div class="stat-label" data-t="stats.1.label">Years of Experience</div>
     </div>
     <div class="stat-cell reveal d2">
-      <div class="stat-num" id="stat2">2.000+</div>
-      <div class="stat-label" data-t="stats.2.label">Pazienti Soddisfatti</div>
+      <div class="stat-num" id="stat2">18+</div>
+      <div class="stat-label" data-t="stats.2.label">Team Members</div>
     </div>
     <div class="stat-cell reveal d3">
-      <div class="stat-num" id="stat3">Gratuita</div>
-      <div class="stat-label" data-t="stats.3.label">Prima Visita</div>
+      <div class="stat-num" id="stat3">Free</div>
+      <div class="stat-label" data-t="stats.3.label">First Visit</div>
     </div>
   </div>
 </section>
@@ -624,77 +755,77 @@
     <p class="section-sub" style="color:rgba(255,255,255,0.5)" data-t="pricing.sub">Nessuna sorpresa. I prezzi sono fissi e comunicati prima di qualsiasi trattamento.</p>
   </div>
   <div class="pricing-grid">
-    <!-- 1. Visita Specialistica -->
+    <!-- 1. New Patient Exam -->
     <div class="price-card reveal">
-      <div class="price-name">Visita Specialistica</div>
-      <div class="price-desc">Valutazione completa senza impegno</div>
-      <div class="price-amount price-amount--free">Gratuita</div>
-      <div class="price-unit">per visita</div>
-      <a href="contact.html" class="price-cta price-cta--outline" data-t="pricing.bookBtn">Prenota</a>
+      <div class="price-name">New Patient Exam</div>
+      <div class="price-desc">Complete evaluation, X-rays included</div>
+      <div class="price-amount price-amount--free">Free</div>
+      <div class="price-unit">per visit</div>
+      <a href="#" onclick="openChat();return false;" class="price-cta price-cta--outline" data-t="pricing.bookBtn">Book</a>
     </div>
-    <!-- 2. Sbiancamento LED -->
+    <!-- 2. Teeth Whitening -->
     <div class="price-card reveal d1">
-      <div class="price-name">Sbiancamento LED</div>
-      <div class="price-desc">Risultati immediati e duraturi</div>
-      <div class="price-amount">€150</div>
-      <div class="price-unit">per trattamento</div>
-      <a href="contact.html" class="price-cta price-cta--outline" data-t="pricing.bookBtn">Prenota</a>
+      <div class="price-name">Teeth Whitening</div>
+      <div class="price-desc">Professional take-home whitening kit</div>
+      <div class="price-amount">$399</div>
+      <div class="price-unit">per treatment</div>
+      <a href="#" onclick="openChat();return false;" class="price-cta price-cta--outline" data-t="pricing.bookBtn">Book</a>
     </div>
-    <!-- 3. Impianto Singolo -->
+    <!-- 3. Porcelain Crown -->
     <div class="price-card reveal d2">
-      <div class="price-name">Impianto Singolo</div>
-      <div class="price-desc">Titanio di alta qualità, garanzia a vita</div>
-      <div class="price-amount">€350</div>
-      <div class="price-unit">per impianto</div>
-      <a href="contact.html" class="price-cta price-cta--outline" data-t="pricing.bookBtn">Prenota</a>
+      <div class="price-name">Porcelain Crown</div>
+      <div class="price-desc">High-quality, natural-looking restoration</div>
+      <div class="price-amount">$1,200</div>
+      <div class="price-unit">per tooth</div>
+      <a href="#" onclick="openChat();return false;" class="price-cta price-cta--outline" data-t="pricing.bookBtn">Book</a>
     </div>
-    <!-- 4. All-on-4 (HIGHLIGHT) -->
+    <!-- 4. Dental Bridge (HIGHLIGHT) -->
     <div class="price-card price-card--highlight reveal d3">
-      <div class="price-pop" data-t="pricing.popular">PIÙ SCELTO</div>
-      <div class="price-name">All-on-4</div>
-      <div class="price-desc">Denti fissi completi in un giorno</div>
-      <div class="price-amount">€3.200</div>
-      <div class="price-unit">per arcata</div>
-      <a href="contact.html" class="price-cta price-cta--dark" data-t="pricing.bookBtn">Prenota</a>
+      <div class="price-pop" data-t="pricing.popular">MOST POPULAR</div>
+      <div class="price-name">Dental Bridge</div>
+      <div class="price-desc">Fixed solution for missing teeth</div>
+      <div class="price-amount">$1,800</div>
+      <div class="price-unit">per bridge</div>
+      <a href="#" onclick="openChat();return false;" class="price-cta price-cta--dark" data-t="pricing.bookBtn">Book</a>
     </div>
-    <!-- 5. Faccette -->
+    <!-- 5. Porcelain Veneers -->
     <div class="price-card reveal d4">
-      <div class="price-name">Faccette in Porcellana</div>
-      <div class="price-desc">Estetica dentale di alta precisione</div>
-      <div class="price-amount">€220</div>
-      <div class="price-unit">per dente</div>
-      <a href="contact.html" class="price-cta price-cta--outline" data-t="pricing.bookBtn">Prenota</a>
+      <div class="price-name">Porcelain Veneers</div>
+      <div class="price-desc">Custom-crafted for a perfect smile</div>
+      <div class="price-amount">$900</div>
+      <div class="price-unit">per tooth</div>
+      <a href="#" onclick="openChat();return false;" class="price-cta price-cta--outline" data-t="pricing.bookBtn">Book</a>
     </div>
-    <!-- 6. Invisalign -->
+    <!-- 6. Dental Implant -->
     <div class="price-card reveal d5">
-      <div class="price-name">Invisalign</div>
-      <div class="price-desc">Allineamento invisibile e confortevole</div>
-      <div class="price-amount">€1.500</div>
-      <div class="price-unit">per trattamento</div>
-      <a href="contact.html" class="price-cta price-cta--outline" data-t="pricing.bookBtn">Prenota</a>
+      <div class="price-name">Dental Implant</div>
+      <div class="price-desc">Permanent solution with crown included</div>
+      <div class="price-amount">$1,500</div>
+      <div class="price-unit">per implant</div>
+      <a href="#" onclick="openChat();return false;" class="price-cta price-cta--outline" data-t="pricing.bookBtn">Book</a>
     </div>
   </div>
 </section>
 
 <!-- ===== 7. QUOTE GENERATOR ===== -->
-<section id="quote" class="reveal">
-  <div style="max-width:var(--max-w);margin:0 auto;text-align:center;">
+<section id="quote">
+  <div class="reveal" style="max-width:var(--max-w);margin:0 auto;text-align:center;">
     <h2 class="section-h2"><span data-t="quote.h2">Calcola il Tuo </span><span class="text-cyan" data-t="quote.h2b">Preventivo</span></h2>
     <p class="section-sub" style="margin:12px auto 0;" data-t="quote.sub">Seleziona i trattamenti e ottieni una stima immediata. Gratuita e senza impegno.</p>
   </div>
   <div class="quote-wrap">
-    <div class="quote-treatments" id="qt-grid"></div>
-    <div class="quote-result" id="qt-result">
+    <div class="quote-treatments reveal d1" id="qt-grid"></div>
+    <div class="quote-result reveal d2" id="qt-result">
       <div class="quote-result-left">
         <div class="qt-est-label" data-t="quote.estimate">Stima del Preventivo</div>
-        <div class="quote-range" id="qt-range">€0</div>
-        <div class="quote-note" data-t="quote.note">* Stima indicativa. Il prezzo esatto viene definito dopo la visita gratuita.</div>
+        <div class="quote-range" id="qt-range">$0</div>
+        <div class="quote-note" data-t="quote.note">* Indicative estimate. Exact price confirmed after your consultation.</div>
       </div>
       <div class="quote-ctas">
-        <a href="contact.html" class="hq-cta hq-cta--book" data-t="quote.bookBtn">Prenota per Confermare</a>
-        <a href="https://wa.me/39695584588" class="hq-cta hq-cta--wa" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" fill="white" width="14" height="14"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          <span data-t="quote.waBtn">Invia su WhatsApp</span>
+        <button onclick="openChat()" class="hq-cta hq-cta--book" data-t="quote.bookBtn">Book to Confirm</button>
+        <a href="tel:+13342790760" class="hq-cta hq-cta--wa">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span data-t="quote.waBtn">Call Now</span>
         </a>
       </div>
     </div>
@@ -710,7 +841,7 @@
       </h2>
     </div>
     <div class="reviews-score-badge">
-      <div class="rsb-num">4.9</div>
+      <div class="rsb-num">4.8</div>
       <div>
         <div class="rsb-stars">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="#0891B2" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
@@ -719,13 +850,13 @@
           <svg width="13" height="13" viewBox="0 0 24 24" fill="#0891B2" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           <svg width="13" height="13" viewBox="0 0 24 24" fill="#0891B2" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </div>
-        <div class="rsb-label" id="rsb-label">293 recensioni&#10;su Google</div>
+        <div class="rsb-label" id="rsb-label">1,400+ reviews&#10;on Google</div>
       </div>
     </div>
   </div>
   <div class="reviews-grid" id="reviews-grid"></div>
   <div class="reviews-more">
-    <a href="reviews.html" id="reviews-viewall" data-t="reviews.viewAll">Leggi tutte le 293 recensioni →</a>
+    <a href="https://www.google.com/maps/place/Montgomery+Dentistry" target="_blank" rel="noopener noreferrer" id="reviews-viewall" data-t="reviews.viewAll">Read all 1,400+ reviews →</a>
   </div>
 </section>
 
@@ -736,15 +867,15 @@
       <h2 class="section-h2" style="color:#fff;margin-bottom:16px" data-t="cta.h2">Pronto per il Sorriso che Meriti?</h2>
       <p style="color:rgba(255,255,255,0.55);font-size:1rem;line-height:1.75;margin-bottom:36px" data-t="cta.sub">Prenota la tua visita gratuita oggi. Nessun obbligo, solo un sorriso migliore.</p>
       <div style="display:flex;flex-wrap:wrap;gap:14px;">
-        <a href="contact.html" class="btn btn--cyan" data-t="cta.btn1">Prenota Visita Gratuita</a>
-        <a href="https://wa.me/39695584588" target="_blank" rel="noopener noreferrer" class="btn btn--wa">
-          <svg viewBox="0 0 24 24" fill="white" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          <span data-t="cta.btn2">Scrivi su WhatsApp</span>
+        <button onclick="openChat()" class="btn btn--cyan" data-t="cta.btn1">Schedule an Appointment</button>
+        <a href="tel:+13342790760" class="btn btn--wa">
+          <svg viewBox="0 0 24 24" fill="white" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span data-t="cta.btn2">Call 334.279.0760</span>
         </a>
       </div>
     </div>
     <div class="cta-trust-box reveal">
-      <div class="cta-trust-rating">4.9</div>
+      <div class="cta-trust-rating">4.8</div>
       <div class="cta-trust-stars">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="#06B6D4" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         <svg width="22" height="22" viewBox="0 0 24 24" fill="#06B6D4" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
@@ -752,8 +883,8 @@
         <svg width="22" height="22" viewBox="0 0 24 24" fill="#06B6D4" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         <svg width="22" height="22" viewBox="0 0 24 24" fill="#06B6D4" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
       </div>
-      <div style="color:#fff;font-size:0.9rem;font-weight:600;margin-bottom:4px;">293 recensioni Google</div>
-      <div class="cta-trust-label">Pazienti soddisfatti da 10 anni</div>
+      <div style="color:#fff;font-size:0.9rem;font-weight:600;margin-bottom:4px;" data-t="cta.trustReviews">1,400+ Google Reviews</div>
+      <div class="cta-trust-label" data-t="cta.trustLabel">Trusted by the River Region for 55+ years</div>
     </div>
   </div>
 </section>
@@ -762,145 +893,173 @@
 <footer class="footer">
   <div class="footer__grid">
     <div>
-      <div class="footer__brand">
-        <img src="assets/logo.png" alt="Spavas Dental Studio" height="36" style="width:auto;display:block;object-fit:contain;">
+      <div class="footer__brand" style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
         <div>
-          <div class="footer__brand-name">Spavas Dental Studio</div>
-          <div class="footer__brand-sub">Vlorë, Albania</div>
+          <div class="footer__brand-name">Montgomery Dentistry</div>
+          <div class="footer__brand-sub">Montgomery, Alabama</div>
         </div>
       </div>
-      <p class="footer__tagline" data-t="footer.tagline">Cure dentali di eccellenza nel cuore di Valona.</p>
+      <p class="footer__tagline" data-t="footer.tagline">Trusted dental care in Montgomery, Alabama for over 55 years.</p>
       <div class="footer__socials">
-        <a href="https://www.instagram.com/spavasdentalstudio/" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Instagram">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-        </a>
-        <a href="https://www.facebook.com/SpavasDentalStudio.al/" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Facebook">
+        <a href="https://www.facebook.com/166202688935" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Facebook">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
         </a>
-        <a href="https://wa.me/39695584588" target="_blank" rel="noopener noreferrer" class="footer__social footer__social--wa" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24" fill="white" width="15" height="15"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <a href="tel:+13342790760" class="footer__social footer__social--wa" aria-label="Call us" style="background:#0369A1;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         </a>
       </div>
     </div>
     <div>
-      <div class="footer__col-title" data-t="footer.links">Link Rapidi</div>
+      <div class="footer__col-title" data-t="footer.links">Quick Links</div>
       <div class="footer__links">
-        <a href="services.html" data-t="nav.services">Servizi</a>
-        <a href="about.html" data-t="nav.about">Chi Siamo</a>
-        <a href="gallery.html" data-t="nav.gallery">Galleria</a>
-        <a href="reviews.html" data-t="nav.reviews">Recensioni</a>
-        <a href="contact.html" data-t="nav.contact">Contatti</a>
+        <a href="services.html" data-t="nav.services">Services</a>
+        <a href="about.html" data-t="nav.about">About Us</a>
+        <a href="gallery.html" data-t="nav.gallery">Gallery</a>
+        <a href="reviews.html" data-t="nav.reviews">Reviews</a>
+        <a href="contact.html" data-t="nav.contact">Contact</a>
       </div>
     </div>
     <div>
-      <div class="footer__col-title" data-t="footer.contact">Contatti</div>
+      <div class="footer__col-title" data-t="footer.contact">Contact</div>
       <div class="footer__contact-list">
-        <a href="tel:+39695584588" class="footer__contact-item">
+        <a href="tel:+13342790760" class="footer__contact-item">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          069 842 2428
+          334.279.0760
         </a>
-        <a href="https://wa.me/39695584588" target="_blank" rel="noopener noreferrer" class="footer__contact-item footer__contact-wa">
-          <span style="color:#25D366;font-size:0.8rem">●</span> WhatsApp
+        <a href="#" onclick="openChat();return false;" class="footer__contact-item">
+          <span style="color:#06B6D4;font-size:0.8rem">●</span> <span data-t="footer.schedule">Schedule Online</span>
         </a>
         <div class="footer__contact-item footer__contact-addr">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span id="footer-addr">Di fronte al Bar Rinia, Vlorë</span>
+          <span id="footer-addr">4790 Woodmere Blvd, Montgomery, AL 36106</span>
         </div>
-        <div class="footer__hours" id="footer-hours">Lun–Ven: 08:00–20:00<br>Sabato: 08:00–14:00</div>
+        <div class="footer__hours" id="footer-hours">Mon–Tue: 8AM–5PM | Wed: 9AM–5PM<br>Thu: 8AM–3:30PM | Fri: 8AM–12PM</div>
       </div>
     </div>
   </div>
   <div class="footer__bottom">
-    <span class="footer__rights" data-t="footer.rights">© 2025 Spavas Dental Studio. Tutti i diritti riservati.</span>
-    <span class="footer__crafted" id="footer-crafted">Progettato con cura</span>
+    <span class="footer__rights" data-t="footer.rights">© 2025 Montgomery Dentistry. All rights reserved.</span>
+    <span class="footer__crafted" id="footer-crafted">Designed with care</span>
   </div>
 </footer>
 
+<!-- CHAT FLOAT BUTTON -->
+<button class="chat-float-btn" id="chat-float-btn" onclick="openChat()" aria-label="Book Appointment">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+  <span class="chat-badge" id="chat-badge"></span>
+</button>
+
+<!-- CHAT WIDGET -->
+<div class="chat-widget" id="chat-widget">
+  <div class="chat-hdr">
+    <div class="chat-hdr-left">
+      <div class="chat-avatar">
+        <img src="https://res.cloudinary.com/dr63qmw21/image/upload/f_auto,q_auto,h_80/montgomery-dentistry/logo.png" alt="MD">
+      </div>
+      <div>
+        <div class="chat-hdr-name" id="chat-hdr-name">Montgomery Dentistry</div>
+        <div class="chat-hdr-status" id="chat-hdr-status">● Available now</div>
+      </div>
+    </div>
+    <button class="chat-close-btn" onclick="closeChat()" aria-label="Close chat">×</button>
+  </div>
+  <div class="chat-msgs" id="chat-msgs"></div>
+  <div class="chat-chips-wrap" id="chat-chips"></div>
+  <div class="chat-cal" id="chat-cal" style="display:none;"></div>
+  <div class="chat-input-row" id="chat-input-row" style="display:none;">
+    <input type="text" id="chat-input" autocomplete="off">
+    <button class="chat-send-btn" id="chat-send-btn" onclick="chatSend()">Send</button>
+  </div>
+</div>
+
 <!-- WA FLOAT -->
-<a class="wa-float" id="wa-float" href="https://wa.me/39695584588" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+<a class="wa-float" id="wa-float" href="tel:+13342790760" aria-label="Call Montgomery Dentistry">
+  <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="28" height="28"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
 </a>
 
 <script>
 /* ===== TRANSLATIONS ===== */
 const T = {
+  en: {
+    nav: { home:'Home', services:'Services', about:'About Us', gallery:'Gallery', reviews:'Reviews', contact:'Contact', book:'Book Now' },
+    footer: { tagline:'Trusted dental care in Montgomery, Alabama for over 55 years.', rights:'© 2025 Montgomery Dentistry. All rights reserved.', links:'Quick Links', contact:'Contact', crafted:'Designed with care', schedule:'Schedule Online' },
+    hero: { badge:'Dental Practice · Montgomery, Alabama', h1a:'Your Smile<br>Deserves the ', h1b:'Best', sub:'Excellence in dental care at the heart of Montgomery, Alabama. Cleanings, cosmetics, emergencies, and more — trusted by the River Region for 55+ years.', cta1:'Schedule an Appointment', cta2:'Call Us Now', scoreLabel:'1,400+ reviews on Google' },
+    stats: { 0:{label:'Google Reviews'}, 1:{label:'Years of Experience'}, 2:{label:'Team Members'}, 3:{label:'First Visit'} },
+    process: { label:'How It Works', h2a:'In 3 Simple', h2b:'Steps', sub:'From your first call to your perfect smile — simple and transparent.', steps:[ {title:'1. Call Us', desc:'Call 334.279.0760. We welcome new patients and dental emergencies.'}, {title:'2. Your Visit', desc:'Come in for a complete evaluation. Our doctors create your personalized treatment plan.'}, {title:'3. Smile!', desc:'Start treatment and see the difference. Our patients rate us 4.8★ on Google.'} ] },
+    services: { label:'Our Services', h2a:'Excellence in', h2b:'Dental Care', sub:'From prevention to advanced cosmetics — all under one roof at 4790 Woodmere Blvd.', more:'View all services →', items:[ {name:'Cleaning & Prevention', desc:'Dental exams, professional cleanings, and X-rays to keep your smile healthy.'}, {name:'Cosmetic Dentistry', desc:'Veneers, whitening, composite fillings, and crowns for a beautiful smile.'}, {name:'Emergency Dentistry', desc:'Dental emergencies welcome. Our team is here when you need us most.'}, {name:'Periodontal Care', desc:'Diagnosis, treatment, and maintenance of gum disease by our specialists.'}, {name:'Restorations', desc:'Crowns, bridges, implants, root canals, dentures — complete restorative care.'}, {name:'Teeth Whitening', desc:'Professional whitening treatment for a brighter, more confident smile.'} ] },
+    ba: { label:'Real Results', h2a:'Before &', h2b:'After', sub:'Real transformations from real patients. Every result is documented and verified.', before:'Before', after:'After', badge:'✓ VERIFIED REAL', items:[ {title:'Single Implant'}, {title:'Whitening'}, {title:'Veneers'} ] },
+    pricing: { label:'Our Services', h2a:'Transparent', h2b:'Pricing', sub:'We accept most insurance plans. Call us for pricing details on any service.', popular:'MOST POPULAR', bookBtn:'Book', free:'Free', items:[ {name:'New Patient Exam', desc:'Complete evaluation, X-rays included', unit:'per visit'}, {name:'Teeth Whitening', desc:'Professional take-home whitening kit', unit:'per treatment'}, {name:'Porcelain Crown', desc:'High-quality, natural-looking restoration', unit:'per tooth'}, {name:'Dental Bridge', desc:'Fixed solution for missing teeth', unit:'per bridge'}, {name:'Porcelain Veneers', desc:'Custom-crafted for a perfect smile', unit:'per tooth'}, {name:'Dental Implant', desc:'Permanent solution with crown included', unit:'per implant'} ] },
+    quote: { label:'Quick Estimate', h2:'Get Your ', h2b:'Estimate', sub:'Select treatments and get an instant estimate. Free, no obligation.', pick:'Select treatments', estimate:'Estimate', note:'* Indicative estimate. Exact price confirmed after your consultation.', bookBtn:'Book to Confirm', waBtn:'Call Now' },
+    treatment: { 0:{name:'Cleaning'}, 1:{name:'Crown'}, 2:{name:'Bridge'}, 3:{name:'Veneers'}, 4:{name:'Clear Aligners'}, 5:{name:'Whitening'}, 6:{name:'Root Canal'}, 7:{name:'Consultation'} },
+    reviews: { label:'What Patients Say', h2a:'Real', h2b:'Reviews', viewAll:'Read all 1,400+ reviews →', basedOn:'reviews\non Google' },
+    cta: { h2:'Ready for the Smile You Deserve?', sub:'Schedule an appointment today. We welcome new patients and dental emergencies.', btn1:'Schedule an Appointment', btn2:'Call 334.279.0760', trustReviews:'1,400+ Google Reviews', trustLabel:'Trusted by the River Region for 55+ years' },
+    blog: { label:'Dental Health Tips', h2a:'From Our', h2b:'Blog', readMore:'Read More →' }
+  },
+  fr: {
+    nav: { home:'Accueil', services:'Services', about:'À Propos', gallery:'Galerie', reviews:'Avis', contact:'Contact', book:'Réserver' },
+    footer: { tagline:'Des soins dentaires de confiance à Montgomery, Alabama depuis plus de 55 ans.', rights:'© 2025 Montgomery Dentistry. Tous droits réservés.', links:'Liens Rapides', contact:'Contact', crafted:'Conçu avec soin', schedule:'Prendre Rendez-vous' },
+    hero: { badge:'Cabinet Dentaire · Montgomery, Alabama', h1a:'Votre Sourire<br>Mérite le ', h1b:'Meilleur', sub:'Excellence en soins dentaires au cœur de Montgomery, Alabama. Nettoyage, cosmétique, urgences et bien plus — la confiance de la River Region depuis 55+ ans.', cta1:'Prendre Rendez-vous', cta2:'Appeler Maintenant', scoreLabel:'1 400+ avis sur Google' },
+    stats: { 0:{label:'Avis Google'}, 1:{label:'Années d\'expérience'}, 2:{label:'Membres de l\'Équipe'}, 3:{label:'Première Visite'} },
+    process: { label:'Comment ça marche', h2a:'En 3 étapes', h2b:'simples', sub:'Du premier appel à votre sourire parfait — simple et transparent.', steps:[ {title:'1. Appelez-nous', desc:'Appelez le 334.279.0760. Nous accueillons les nouveaux patients et les urgences dentaires.'}, {title:'2. Votre Visite', desc:'Venez pour une évaluation complète. Nos médecins créent votre plan de traitement personnalisé.'}, {title:'3. Souriez!', desc:'Commencez le traitement et voyez la différence. Nos patients nous donnent 4.8★ sur Google.'} ] },
+    services: { label:'Nos Services', h2a:'Excellence en', h2b:'Soins Dentaires', sub:'De la prévention à l\'esthétique avancée — tout au même endroit au 4790 Woodmere Blvd.', more:'Voir tous les services →', items:[ {name:'Nettoyage & Prévention', desc:'Examens, nettoyages professionnels et radiographies pour garder votre sourire en santé.'}, {name:'Dentisterie Cosmétique', desc:'Facettes, blanchiment, obturations et couronnes pour un sourire parfait.'}, {name:'Urgences Dentaires', desc:'Urgences acceptées. Notre équipe est là quand vous en avez le plus besoin.'}, {name:'Soins Parodontaux', desc:'Diagnostic, traitement et maintenance des maladies des gencives.'}, {name:'Restaurations', desc:'Couronnes, bridges, implants, endodontie, prothèses — soins complets.'}, {name:'Blanchiment Dentaire', desc:'Traitement professionnel pour un sourire plus lumineux et plus blanc.'} ] },
+    ba: { label:'Résultats Réels', h2a:'Avant &', h2b:'Après', sub:'De vraies transformations de vrais patients. Chaque résultat est documenté.', before:'Avant', after:'Après', badge:'✓ VÉRIFIÉ RÉEL', items:[ {title:'Implant unique'}, {title:'Blanchiment'}, {title:'Facettes'} ] },
+    pricing: { label:'Nos Services', h2a:'Tarifs', h2b:'Transparents', sub:'Nous acceptons la plupart des assurances. Appelez-nous pour les tarifs.', popular:'LE PLUS POPULAIRE', bookBtn:'Réserver', free:'Gratuit', items:[ {name:'Examen Nouveau Patient', desc:'Évaluation complète, radiographies incluses', unit:'par visite'}, {name:'Blanchiment Dentaire', desc:'Kit de blanchiment professionnel à domicile', unit:'par traitement'}, {name:'Couronne Porcelaine', desc:'Restauration de haute qualité, aspect naturel', unit:'par dent'}, {name:'Bridge Dentaire', desc:'Solution fixe pour les dents manquantes', unit:'par bridge'}, {name:'Facettes Porcelaine', desc:'Sur mesure pour un sourire parfait', unit:'par dent'}, {name:'Implant Dentaire', desc:'Solution permanente avec couronne incluse', unit:'par implant'} ] },
+    quote: { label:'Estimation Rapide', h2:'Calculez votre ', h2b:'Devis', sub:'Sélectionnez des traitements et obtenez une estimation. Gratuit, sans engagement.', pick:'Sélectionner les soins', estimate:'Estimation', note:'* Estimation indicative. Le prix exact est confirmé lors de la consultation.', bookBtn:'Réserver pour Confirmer', waBtn:'Appeler' },
+    treatment: { 0:{name:'Nettoyage'}, 1:{name:'Couronne'}, 2:{name:'Bridge'}, 3:{name:'Facettes'}, 4:{name:'Aligneurs'}, 5:{name:'Blanchiment'}, 6:{name:'Canal'}, 7:{name:'Consultation'} },
+    reviews: { label:'Avis de nos Patients', h2a:'Vrais', h2b:'Avis', viewAll:'Lire les 1 400+ avis →', basedOn:'avis\nsur Google' },
+    cta: { h2:'Prêt pour le Sourire que Vous Méritez?', sub:'Prenez rendez-vous aujourd\'hui. Nous accueillons les nouveaux patients et les urgences.', btn1:'Prendre Rendez-vous', btn2:'Appeler 334.279.0760', trustReviews:'1 400+ avis Google', trustLabel:'La confiance de la River Region depuis 55+ ans' },
+    blog: { label:'Conseils Santé Dentaire', h2a:'Notre', h2b:'Blog', readMore:'Lire la Suite →' }
+  },
   it: {
     nav: { home:'Home', services:'Servizi', about:'Chi Siamo', gallery:'Galleria', reviews:'Recensioni', contact:'Contatti', book:'Prenota' },
-    footer: { tagline:'Cure dentali di eccellenza nel cuore di Valona.', rights:'© 2025 Spavas Dental Studio. Tutti i diritti riservati.', links:'Link Rapidi', contact:'Contatti', crafted:'Progettato con cura' },
-    hero: { badge:'Clinica Dentale · Vlorë, Albania', h1a:'Il Tuo Sorriso<br>Merita il ', h1b:'Meglio', sub:'Cure dentali d\'eccellenza nel cuore di Valona. Implantologia, faccette, sbiancamento e molto altro — con prezzi accessibili e qualità europea.', cta1:'Prenota Visita Gratuita', cta2:'Scrivi su WhatsApp', scoreLabel:'293 recensioni su Google' },
-    stats: { 0:{label:'Recensioni Google'}, 1:{label:'Anni di Esperienza'}, 2:{label:'Pazienti Soddisfatti'}, 3:{label:'Prima Visita'} },
-    process: { label:'Come Funziona', h2a:'In 3 Semplici', h2b:'Passi', sub:'Dalla prima chiamata al sorriso perfetto — il percorso è semplice e trasparente.', steps:[ {title:'1. Contattaci', desc:'Chiamaci o scrivici su WhatsApp. Ti risponderemo entro poche ore per fissare la tua visita gratuita.'}, {title:'2. Visita Gratuita', desc:'Vieni in clinica per una valutazione completa gratuita. Il dottore elabora il tuo piano di trattamento personalizzato.'}, {title:'3. Sorrido!', desc:'Inizia il trattamento e scopri la differenza. I nostri pazienti ci danno 4.9★ su Google.'} ] },
-    services: { label:'I Nostri Servizi', h2a:'Trattamenti', h2b:'di Eccellenza', sub:'Dalla prevenzione all\'estetica avanzata — tutto in un\'unica clinica moderna a Valona.', more:'Scopri tutti i servizi →', items:[ {name:'Implantologia', desc:'Impianti dentali permanenti di alta qualità per sostituire i denti mancanti.'}, {name:'Sbiancamento LED', desc:'Trattamento professionale per un sorriso fino a 8 tonalità più bianco.'}, {name:'Faccette in Porcellana', desc:'Faccette ultra-sottili per correggere forma, colore e allineamento.'}, {name:'All-on-4', desc:'Protesi fissa completa su soli 4 impianti. Denti fissi in un giorno.'}, {name:'Invisalign', desc:'Allineatori trasparenti per raddrizzare i denti senza apparecchio.'}, {name:'Igiene Dentale', desc:'Pulizia professionale e prevenzione per mantenere il sorriso sano.'} ] },
-    ba: { label:'Risultati Reali', h2a:'Prima &', h2b:'Dopo', sub:'Risultati reali di pazienti reali. Ogni trasformazione è documentata e verificata.', before:'Prima', after:'Dopo', badge:'✓ VERIFICATO REALE', items:[ {title:'Impianto Singolo'}, {title:'Sbiancamento'}, {title:'Faccette'} ] },
-    pricing: { label:'Prezzi Trasparenti', h2a:'Tariffe', h2b:'Chiare', sub:'Nessuna sorpresa. I prezzi sono fissi e comunicati prima di qualsiasi trattamento.', popular:'PIÙ SCELTO', bookBtn:'Prenota', free:'Gratuita', items:[ {name:'Visita Specialistica', desc:'Valutazione completa senza impegno', unit:'per visita'}, {name:'Sbiancamento LED', desc:'Risultati immediati e duraturi', unit:'per trattamento'}, {name:'Impianto Singolo', desc:'Titanio di alta qualità, garanzia a vita', unit:'per impianto'}, {name:'All-on-4', desc:'Denti fissi completi in un giorno', unit:'per arcata'}, {name:'Faccette in Porcellana', desc:'Estetica dentale di alta precisione', unit:'per dente'}, {name:'Invisalign', desc:'Allineamento invisibile e confortevole', unit:'per trattamento'} ] },
-    quote: { label:'Preventivo Istantaneo', h2:'Calcola il Tuo ', h2b:'Preventivo', sub:'Seleziona i trattamenti e ottieni una stima immediata. Gratuita e senza impegno.', estimate:'Stima del Preventivo', note:'* Stima indicativa. Il prezzo esatto viene definito dopo la visita gratuita.', bookBtn:'Prenota per Confermare', waBtn:'Invia su WhatsApp' },
-    treatment: { 0:{name:'Impianto Singolo'}, 1:{name:'All-on-4'}, 2:{name:'All-on-6'}, 3:{name:'Faccette in Porcellana'}, 4:{name:'Invisalign'}, 5:{name:'Sbiancamento'}, 6:{name:'Corona in Ceramica'}, 7:{name:'Visita Specialistica'} },
-    reviews: { label:'Cosa Dicono i Pazienti', h2a:'Recensioni', h2b:'Reali', viewAll:'Leggi tutte le 293 recensioni →', basedOn:'recensioni\nsu Google' },
-    cta: { h2:'Pronto per il Sorriso che Meriti?', sub:'Prenota la tua visita gratuita oggi. Nessun obbligo, solo un sorriso migliore.', btn1:'Prenota Visita Gratuita', btn2:'Scrivi su WhatsApp' }
-  },
-  en: {
-    nav: { home:'Home', services:'Services', about:'About', gallery:'Gallery', reviews:'Reviews', contact:'Contact', book:'Book Now' },
-    footer: { tagline:'Advanced dental care in the heart of Vlorë.', rights:'© 2025 Spavas Dental Studio. All rights reserved.', links:'Quick Links', contact:'Contact', crafted:'Designed with care' },
-    hero: { badge:'Dental Clinic · Vlorë, Albania', h1a:'Your Smile<br>Deserves the ', h1b:'Best', sub:'World-class dental care in the heart of Vlorë, Albania. Implants, veneers, whitening and more — at unbeatable prices.', cta1:'Book Free Consultation', cta2:'WhatsApp Us', scoreLabel:'293 reviews on Google' },
-    stats: { 0:{label:'Google Reviews'}, 1:{label:'Years of Experience'}, 2:{label:'Happy Patients'}, 3:{label:'First Visit'} },
-    process: { label:'How It Works', h2a:'In 3 Simple', h2b:'Steps', sub:'From first contact to your perfect smile — simple and transparent.', steps:[ {title:'1. Contact Us', desc:'Call us or message on WhatsApp. We\'ll reply within hours to schedule your free visit.'}, {title:'2. Free Consultation', desc:'Come in for a complete free evaluation. Your doctor creates a personalized treatment plan.'}, {title:'3. Smile!', desc:'Start treatment and see the difference. Our patients rate us 4.9★ on Google.'} ] },
-    services: { label:'Our Services', h2a:'Excellence in', h2b:'Dental Care', sub:'From prevention to advanced aesthetics — all in one modern clinic in Vlorë.', more:'View all services →', items:[ {name:'Implantology', desc:'High-quality permanent dental implants to replace missing teeth.'}, {name:'LED Whitening', desc:'Professional treatment for a smile up to 8 shades whiter.'}, {name:'Porcelain Veneers', desc:'Ultra-thin veneers to correct shape, color and alignment.'}, {name:'All-on-4', desc:'Full fixed prosthesis on just 4 implants. Fixed teeth in one day.'}, {name:'Invisalign', desc:'Clear aligners to straighten teeth without braces.'}, {name:'Dental Hygiene', desc:'Professional cleaning and prevention to keep your smile healthy.'} ] },
-    ba: { label:'Real Results', h2a:'Before &', h2b:'After', sub:'Real results from real patients. Every transformation is documented and verified.', before:'Before', after:'After', badge:'✓ VERIFIED REAL', items:[ {title:'Single Implant'}, {title:'Whitening'}, {title:'Veneers'} ] },
-    pricing: { label:'Transparent Pricing', h2a:'Clear', h2b:'Pricing', sub:'No surprises. Prices are fixed and communicated before any treatment.', popular:'MOST POPULAR', bookBtn:'Book', free:'Free', items:[ {name:'Specialist Visit', desc:'Complete evaluation with no commitment', unit:'per visit'}, {name:'LED Whitening', desc:'Immediate and long-lasting results', unit:'per treatment'}, {name:'Single Implant', desc:'High-quality titanium, lifetime guarantee', unit:'per implant'}, {name:'All-on-4', desc:'Complete fixed teeth in one day', unit:'per arch'}, {name:'Porcelain Veneers', desc:'High-precision dental aesthetics', unit:'per tooth'}, {name:'Invisalign', desc:'Invisible and comfortable alignment', unit:'per treatment'} ] },
-    quote: { label:'Instant Quote', h2:'Calculate Your ', h2b:'Quote', sub:'Select treatments and get an instant estimate. Free and no commitment.', estimate:'Estimate', note:'* Indicative estimate. Exact price confirmed after free consultation.', bookBtn:'Book to Confirm', waBtn:'Send on WhatsApp' },
-    treatment: { 0:{name:'Single Implant'}, 1:{name:'All-on-4'}, 2:{name:'All-on-6'}, 3:{name:'Porcelain Veneers'}, 4:{name:'Invisalign'}, 5:{name:'Whitening'}, 6:{name:'Ceramic Crown'}, 7:{name:'Specialist Visit'} },
-    reviews: { label:'What Patients Say', h2a:'Real', h2b:'Reviews', viewAll:'Read all 293 reviews →', basedOn:'reviews\non Google' },
-    cta: { h2:'Ready for the Smile You Deserve?', sub:'Book your free consultation today. No obligation, just a better smile.', btn1:'Book Free Consultation', btn2:'WhatsApp Us' }
-  },
-  sq: {
-    nav: { home:'Kreu', services:'Shërbimet', about:'Rreth Nesh', gallery:'Galeria', reviews:'Recensionet', contact:'Kontakt', book:'Rezervo' },
-    footer: { tagline:'Kujdes dentar i avancuar në zemër të Vlorës.', rights:'© 2025 Spavas Dental Studio. Të gjitha të drejtat e rezervuara.', links:'Lidhje të Shpejta', contact:'Kontakt', crafted:'Dizajnuar me kujdes' },
-    hero: { badge:'Klinikë Dentare · Vlorë, Shqipëri', h1a:'Buzëqeshja Jote<br>Meriton ', h1b:'më të Mirën', sub:'Kujdes dentar i nivelit botëror në zemër të Vlorës. Implantime, faceta, zbardhim dhe më shumë — me çmime të përballueshme.', cta1:'Rezervo Vizitë Falas', cta2:'Shkruaj në WhatsApp', scoreLabel:'293 recensione në Google' },
-    stats: { 0:{label:'Recensione Google'}, 1:{label:'Vite Eksperiencë'}, 2:{label:'Pacientë të Kënaqur'}, 3:{label:'Vizita e Parë'} },
-    process: { label:'Si Funksionon', h2a:'Në 3 Hapa', h2b:'të Thjeshtë', sub:'Nga kontakti i parë deri te buzëqeshja perfekte — rruga është e thjeshtë dhe transparente.', steps:[ {title:'1. Na Kontakto', desc:'Na telefono ose shkruaj në WhatsApp. Do të përgjigjemi brenda disa orësh për të caktuar vizitën tuaj falas.'}, {title:'2. Vizitë Falas', desc:'Ejani në klinikë për një vlerësim të plotë falas. Mjeku harton planin tuaj të trajtimit.'}, {title:'3. Buzëqesh!', desc:'Filloni trajtimin dhe shihni ndryshimin. Pacientët tanë na vlerësojnë 4.9★ në Google.'} ] },
-    services: { label:'Shërbimet Tona', h2a:'Trajtim', h2b:'i Shkëlqyer', sub:'Nga parandalimi deri te estetika e avancuar — gjithçka në një klinikë moderne në Vlorë.', more:'Shiko të gjitha shërbimet →', items:[ {name:'Implantologji', desc:'Implantime dentare të cilësisë së lartë për të zëvendësuar dhëmbët e munguar.'}, {name:'Zbardhim LED', desc:'Trajtim profesional për një buzëqeshje deri në 8 nuanca më të bardhë.'}, {name:'Faceta Porcelani', desc:'Faceta ultra-të holla për të korrigjuar formën, ngjyrën dhe rreshtimin.'}, {name:'All-on-4', desc:'Protezë e fiksuar e plotë mbi vetëm 4 implantime. Dhëmbë të fiksuar në një ditë.'}, {name:'Invisalign', desc:'Mbushëse transparente për të drejtuar dhëmbët pa aparate.'}, {name:'Higjienë Dentare', desc:'Pastrim profesional dhe parandalim për të ruajtur buzëqeshjen tuaj të shëndetshme.'} ] },
-    ba: { label:'Rezultate Reale', h2a:'Para &', h2b:'Pas', sub:'Rezultate reale nga pacientë realë. Çdo transformim është i dokumentuar dhe i verifikuar.', before:'Para', after:'Pas', badge:'✓ VERIFIKUAR REAL', items:[ {title:'Implant i Vetëm'}, {title:'Zbardhim'}, {title:'Faceta'} ] },
-    pricing: { label:'Çmime Transparente', h2a:'Çmime', h2b:'të Qarta', sub:'Asnjë surprizë. Çmimet janë fikse dhe komunikohen para çdo trajtimi.', popular:'MË I ZGJEDHURI', bookBtn:'Rezervo', free:'Falas', items:[ {name:'Vizitë Specialiste', desc:'Vlerësim i plotë pa asnjë detyrim', unit:'për vizitë'}, {name:'Zbardhim LED', desc:'Rezultate të menjëhershme dhe afatgjata', unit:'për trajtim'}, {name:'Implant i Vetëm', desc:'Titan i cilësisë së lartë, garanci gjatë gjithë jetës', unit:'për implant'}, {name:'All-on-4', desc:'Dhëmbë të fiksuar të plotë në një ditë', unit:'për hark'}, {name:'Faceta Porcelani', desc:'Estetikë dentare me precizion të lartë', unit:'për dhëmb'}, {name:'Invisalign', desc:'Rreshtim i padukshëm dhe i rehatshëm', unit:'për trajtim'} ] },
-    quote: { label:'Kuotë e Menjëhershme', h2:'Llogarit ', h2b:'Preventivën', sub:'Zgjidhni trajtimet dhe merrni një vlerësim të menjëhershëm. Falas dhe pa detyrim.', estimate:'Vlerësim', note:'* Vlerësim tregues. Çmimi i saktë konfirmohet pas vizitës falas.', bookBtn:'Rezervo për Konfirmim', waBtn:'Dërgoni në WhatsApp' },
-    treatment: { 0:{name:'Implant i Vetëm'}, 1:{name:'All-on-4'}, 2:{name:'All-on-6'}, 3:{name:'Faceta Porcelani'}, 4:{name:'Invisalign'}, 5:{name:'Zbardhim'}, 6:{name:'Kurorë Qeramike'}, 7:{name:'Vizitë Specialiste'} },
-    reviews: { label:'Çfarë Thonë Pacientët', h2a:'Recensione', h2b:'Reale', viewAll:'Lexo të gjitha 293 recensionet →', basedOn:'recensione\nnë Google' },
-    cta: { h2:'Gati për Buzëqeshjen që Meriton?', sub:'Rezervo vizitën tënde falas sot. Asnjë detyrim, vetëm një buzëqeshje më e mirë.', btn1:'Rezervo Vizitë Falas', btn2:'Shkruaj në WhatsApp' }
+    footer: { tagline:'Cure dentali di eccellenza a Montgomery, Alabama da oltre 55 anni.', rights:'© 2025 Montgomery Dentistry. Tutti i diritti riservati.', links:'Link Rapidi', contact:'Contatti', crafted:'Progettato con cura', schedule:'Prenota Online' },
+    hero: { badge:'Studio Dentistico · Montgomery, Alabama', h1a:'Il Tuo Sorriso<br>Merita il ', h1b:'Meglio', sub:'Eccellenza nelle cure dentali nel cuore di Montgomery, Alabama. Pulizie, cosmetica, urgenze e molto altro — la fiducia della River Region da oltre 55 anni.', cta1:'Prenota un Appuntamento', cta2:'Chiama Ora', scoreLabel:'1.400+ recensioni su Google' },
+    stats: { 0:{label:'Recensioni Google'}, 1:{label:'Anni di Esperienza'}, 2:{label:'Membri del Team'}, 3:{label:'Prima Visita'} },
+    process: { label:'Come Funziona', h2a:'In 3 Semplici', h2b:'Passi', sub:'Dalla prima chiamata al tuo sorriso perfetto — semplice e trasparente.', steps:[ {title:'1. Chiamaci', desc:'Chiama il 334.279.0760. Accettiamo nuovi pazienti e urgenze dentali.'}, {title:'2. La Tua Visita', desc:'Vieni per una valutazione completa. I nostri medici creano il tuo piano di trattamento personalizzato.'}, {title:'3. Sorridi!', desc:'Inizia il trattamento e vedi la differenza. I nostri pazienti ci danno 4.8★ su Google.'} ] },
+    services: { label:'I Nostri Servizi', h2a:'Eccellenza nelle', h2b:'Cure Dentali', sub:'Dalla prevenzione all\'estetica avanzata — tutto sotto un solo tetto al 4790 Woodmere Blvd.', more:'Scopri tutti i servizi →', items:[ {name:'Pulizia & Prevenzione', desc:'Esami, pulizie professionali e radiografie per mantenere il tuo sorriso sano.'}, {name:'Odontoiatria Cosmetica', desc:'Faccette, sbiancamento, otturazioni e corone per un sorriso perfetto.'}, {name:'Urgenze Dentali', desc:'Urgenze benvenute. Il nostro team è qui quando ne hai più bisogno.'}, {name:'Cure Parodontali', desc:'Diagnosi, trattamento e manutenzione delle malattie gengivali.'}, {name:'Restauri', desc:'Corone, bridge, impianti, endodonzia, protesi — cure restaurative complete.'}, {name:'Sbiancamento Dentale', desc:'Trattamento professionale per un sorriso più luminoso e bianco.'} ] },
+    ba: { label:'Risultati Reali', h2a:'Prima &', h2b:'Dopo', sub:'Vere trasformazioni di veri pazienti. Ogni risultato è documentato e verificato.', before:'Prima', after:'Dopo', badge:'✓ VERIFICATO REALE', items:[ {title:'Impianto Singolo'}, {title:'Sbiancamento'}, {title:'Faccette'} ] },
+    pricing: { label:'I Nostri Servizi', h2a:'Prezzi', h2b:'Trasparenti', sub:'Accettiamo la maggior parte delle assicurazioni. Chiamaci per i dettagli sui prezzi.', popular:'PIÙ SCELTO', bookBtn:'Prenota', free:'Gratuita', items:[ {name:'Visita Nuovo Paziente', desc:'Valutazione completa, radiografie incluse', unit:'per visita'}, {name:'Sbiancamento Dentale', desc:'Kit professionale per uso domiciliare', unit:'per trattamento'}, {name:'Corona in Porcellana', desc:'Restauro di alta qualità, aspetto naturale', unit:'per dente'}, {name:'Bridge Dentale', desc:'Soluzione fissa per denti mancanti', unit:'per bridge'}, {name:'Faccette in Porcellana', desc:'Su misura per un sorriso perfetto', unit:'per dente'}, {name:'Impianto Dentale', desc:'Soluzione permanente con corona inclusa', unit:'per impianto'} ] },
+    quote: { label:'Stima Rapida', h2:'Calcola la Tua ', h2b:'Stima', sub:'Seleziona i trattamenti e ottieni una stima immediata. Gratuita e senza impegno.', pick:'Seleziona i trattamenti', estimate:'Stima del Preventivo', note:'* Stima indicativa. Il prezzo esatto viene confermato dopo la tua consulenza.', bookBtn:'Prenota per Confermare', waBtn:'Chiama Ora' },
+    treatment: { 0:{name:'Pulizia'}, 1:{name:'Corona'}, 2:{name:'Bridge'}, 3:{name:'Faccette'}, 4:{name:'Allineatori'}, 5:{name:'Sbiancamento'}, 6:{name:'Endodonzia'}, 7:{name:'Consulenza'} },
+    reviews: { label:'Cosa Dicono i Pazienti', h2a:'Recensioni', h2b:'Reali', viewAll:'Leggi tutte le 1.400+ recensioni →', basedOn:'recensioni\nsu Google' },
+    cta: { h2:'Pronto per il Sorriso che Meriti?', sub:'Prenota un appuntamento oggi. Accettiamo nuovi pazienti e urgenze dentali.', btn1:'Prenota un Appuntamento', btn2:'Chiama il 334.279.0760', trustReviews:'1.400+ recensioni Google', trustLabel:'La fiducia della River Region da 55+ anni' },
+    blog: { label:'Consigli per la Salute Dentale', h2a:'Dal Nostro', h2b:'Blog', readMore:'Leggi di Più →' }
   }
 };
 
 /* ===== REVIEWS DATA ===== */
 const REVIEWS = {
-  it: [
-    { name:'Marco F.', text:'"Clinica fantastica! Ho fatto un impianto e il risultato è perfetto, senza dolore. Consiglio vivamente!"', meta:'Milano · Google' },
-    { name:'Giulia R.', text:'"Servizio eccellente. L\'ambiente è pulito e moderno. Il team è meraviglioso."', meta:'Roma · Google' },
-    { name:'Arta M.', text:'"Klinikë fantastike! Dr. Shkumbin është shumë profesional. Implanti doli perfekt!"', meta:'Vlorë · Google' }
-  ],
   en: [
-    { name:'Marco F.', text:'"Fantastic clinic! I had an implant and the result is perfect, no pain. Highly recommended!"', meta:'Milan · Google' },
-    { name:'Giulia R.', text:'"Excellent service. The environment is clean and modern. The team is wonderful."', meta:'Rome · Google' },
-    { name:'Arta M.', text:'"Fantastic clinic! Dr. Shkumbin is very professional. My implant turned out perfect!"', meta:'Vlorë · Google' }
+    { name:'Jennifer H.', text:'"Montgomery Dentistry has been my family\'s dental home for over 20 years. The staff is warm, professional, and always makes us feel at ease. Truly the best in the River Region!"', meta:'Montgomery, AL · Google' },
+    { name:'Michael T.', text:'"Had a dental emergency on a Friday and they fit me in same day. Fixed my cracked tooth and had me out in under an hour. The whole team was fantastic — highly recommend!"', meta:'Montgomery, AL · Google' },
+    { name:'Sarah K.', text:'"From the front desk to the hygienists and doctors, everyone here is exceptional. My teeth have never looked better. So grateful for a practice that truly cares about their patients."', meta:'Prattville, AL · Google' }
   ],
-  sq: [
-    { name:'Marco F.', text:'"Klinikë fantastike! Bëra një implant dhe rezultati është perfekt, pa dhimbje. Rekomandoj fuqishëm!"', meta:'Milano · Google' },
-    { name:'Giulia R.', text:'"Shërbim i shkëlqyer. Ambienti është i pastër dhe modern. Ekipi është i mrekullueshëm."', meta:'Roma · Google' },
-    { name:'Arta M.', text:'"Klinikë fantastike! Dr. Shkumbin është shumë profesional. Implanti doli perfekt!"', meta:'Vlorë · Google' }
+  fr: [
+    { name:'Jennifer H.', text:'"Montgomery Dentistry est le cabinet dentaire de notre famille depuis plus de 20 ans. Le personnel est chaleureux, professionnel et nous met toujours à l\'aise. Les meilleurs de la River Region!"', meta:'Montgomery, AL · Google' },
+    { name:'Michael T.', text:'"J\'ai eu une urgence dentaire un vendredi et ils m\'ont pris le jour même. Ma dent fissurée a été réparée en moins d\'une heure. Toute l\'équipe était fantastique — je recommande vivement!"', meta:'Montgomery, AL · Google' },
+    { name:'Sarah K.', text:'"De l\'accueil aux hygiénistes et aux médecins, tout le monde ici est exceptionnel. Mes dents n\'ont jamais été aussi belles. Je suis tellement reconnaissante envers ce cabinet."', meta:'Prattville, AL · Google' }
+  ],
+  it: [
+    { name:'Jennifer H.', text:'"Montgomery Dentistry è il nostro studio dentistico di famiglia da oltre 20 anni. Il personale è caldo, professionale e ci mette sempre a nostro agio. I migliori della River Region!"', meta:'Montgomery, AL · Google' },
+    { name:'Michael T.', text:'"Ho avuto un\'emergenza dentale un venerdì e mi hanno ricevuto lo stesso giorno. Il dente lesionato è stato riparato in meno di un\'ora. Tutto il team è stato fantastico — consiglio vivamente!"', meta:'Montgomery, AL · Google' },
+    { name:'Sarah K.', text:'"Dalla reception agli igienisti e ai medici, tutti qui sono eccezionali. I miei denti non sono mai stati così belli. Sono così grata per uno studio che si prende davvero cura dei pazienti."', meta:'Prattville, AL · Google' }
   ]
 };
 
 /* ===== QUOTE TREATMENTS ===== */
 const TREATMENTS = [
-  {id:0,icon:'🦷',min:350,max:500,hasQty:true,maxQty:10,qty:1},
-  {id:1,icon:'✨',min:3200,max:4500,hasQty:true,maxQty:2,qty:1},
-  {id:2,icon:'💎',min:3800,max:5500,hasQty:true,maxQty:2,qty:1},
-  {id:3,icon:'🌟',min:220,max:350,hasQty:true,maxQty:20,qty:1},
-  {id:4,icon:'😁',min:1500,max:2500,hasQty:false,maxQty:1,qty:1},
-  {id:5,icon:'⚡',min:150,max:250,hasQty:false,maxQty:1,qty:1},
-  {id:6,icon:'👑',min:200,max:320,hasQty:true,maxQty:10,qty:1},
+  {id:0,icon:'🦷',min:0,max:0,hasQty:false,maxQty:1,qty:1},
+  {id:1,icon:'👑',min:1000,max:1500,hasQty:true,maxQty:10,qty:1},
+  {id:2,icon:'🔗',min:1500,max:2500,hasQty:true,maxQty:4,qty:1},
+  {id:3,icon:'✨',min:800,max:1200,hasQty:true,maxQty:20,qty:1},
+  {id:4,icon:'😁',min:2000,max:6000,hasQty:false,maxQty:1,qty:1},
+  {id:5,icon:'⚡',min:300,max:500,hasQty:false,maxQty:1,qty:1},
+  {id:6,icon:'🩺',min:700,max:1500,hasQty:true,maxQty:4,qty:1},
   {id:7,icon:'🩺',min:0,max:0,hasQty:false,maxQty:1,qty:1},
 ];
 
 /* ===== STATE ===== */
-let lang = localStorage.getItem('spavas_lang') || 'it';
+let lang = localStorage.getItem('montgomery_lang') || 'en';
 let selected = new Set();
 let heroSelected = new Set();
 
@@ -916,16 +1075,17 @@ function t(p){
 
 function setLang(l) {
   lang = l;
-  localStorage.setItem('spavas_lang', l);
+  localStorage.setItem('montgomery_lang', l);
   applyTranslations();
   updateLangBtns();
   renderTreatments();
   heroRenderTreatments();
   renderReviews();
+  updateChatLangUI();
 }
 
 function updateLangBtns() {
-  ['it','sq','en'].forEach(l => {
+  ['en','fr','it'].forEach(l => {
     const b = document.getElementById('lang-' + l);
     if (b) b.classList.toggle('active', l === lang);
     const sb = document.getElementById('sb-lang-' + l);
@@ -946,7 +1106,7 @@ function applyTranslations() {
   // Hero H1 (has HTML)
   const h1 = document.getElementById('hero-h1');
   if (h1) {
-    const prefix = lang === 'it' ? 'Il Tuo Sorriso<br>Merita il ' : lang === 'sq' ? 'Buzëqeshja Jote<br>Meriton ' : 'Your Smile<br>Deserves the ';
+    const prefix = lang === 'it' ? 'Il Tuo Sorriso<br>Merita il ' : lang === 'fr' ? 'Votre Sourire<br>Mérite le ' : 'Your Smile<br>Deserves the ';
     h1.innerHTML = prefix + `<span>${t('hero.h1b')}</span>`;
   }
 
@@ -960,11 +1120,15 @@ function applyTranslations() {
 
   // Footer address
   const fa = document.getElementById('footer-addr');
-  if (fa) fa.textContent = lang === 'it' ? 'Di fronte al Bar Rinia, Vlorë' : lang === 'sq' ? 'Përballë Bar Rinia, Vlorë' : 'Opposite Bar Rinia, Vlorë';
+  if (fa) fa.textContent = '4790 Woodmere Blvd, Montgomery, AL 36106';
 
   // Footer hours
   const fh = document.getElementById('footer-hours');
-  if (fh) fh.innerHTML = lang === 'it' ? 'Lun–Ven: 08:00–20:00<br>Sabato: 08:00–14:00' : lang === 'sq' ? 'E Hënë–E Premte: 08:00–20:00<br>E Shtunë: 08:00–14:00' : 'Mon–Fri: 08:00–20:00<br>Saturday: 08:00–14:00';
+  if (fh) fh.innerHTML = lang === 'it'
+    ? 'Lun–Mar: 8–17 | Mer: 9–17<br>Gio: 8–15:30 | Ven: 8–12'
+    : lang === 'fr'
+    ? 'Lun–Mar: 8h–17h | Mer: 9h–17h<br>Jeu: 8h–15h30 | Ven: 8h–12h'
+    : 'Mon–Tue: 8AM–5PM | Wed: 9AM–5PM<br>Thu: 8AM–3:30PM | Fri: 8AM–12PM';
 
   // Footer crafted
   const fc = document.getElementById('footer-crafted');
@@ -972,7 +1136,7 @@ function applyTranslations() {
 
   // Stat 3 (free)
   const s3 = document.getElementById('stat3');
-  if (s3) s3.textContent = lang === 'it' ? 'Gratuita' : lang === 'sq' ? 'Falas' : 'Free';
+  if (s3) s3.textContent = lang === 'it' ? 'Gratuita' : lang === 'fr' ? 'Gratuit' : 'Free';
 
   // Pricing free amount
   document.querySelectorAll('.price-amount--free').forEach(el => { el.textContent = t('pricing.free'); });
@@ -1025,14 +1189,16 @@ function heroRenderTreatments() {
   // update labels
   const lbl = document.getElementById('hq-label');
   if (lbl) lbl.textContent = t('quote.label');
+  const sub = document.getElementById('hq-subtitle');
+  if (sub) sub.textContent = t('quote.pick');
   const elbl = document.getElementById('hq-est-label');
   if (elbl) elbl.textContent = t('quote.estimate');
   const note = document.getElementById('hq-est-note');
-  if (note) note.textContent = lang === 'it' ? '* Stima indicativa' : lang === 'sq' ? '* Vlerësim tregues' : '* Indicative estimate';
+  if (note) note.textContent = lang === 'it' ? '* Stima indicativa' : lang === 'fr' ? '* Estimation indicative' : '* Indicative estimate';
   const cta = document.getElementById('hq-cta');
-  if (cta) cta.textContent = lang === 'it' ? 'Prenota' : lang === 'sq' ? 'Rezervo' : 'Book Now';
+  if (cta) cta.textContent = lang === 'it' ? 'Prenota' : lang === 'fr' ? 'Réserver' : 'Book Now';
   const ctaWa = document.getElementById('hq-cta-wa-text');
-  if (ctaWa) ctaWa.textContent = 'WhatsApp';
+  if (ctaWa) ctaWa.textContent = lang === 'it' ? 'Chiama' : lang === 'fr' ? 'Appeler' : 'Call Now';
 }
 
 function heroToggle(i) {
@@ -1061,7 +1227,7 @@ function heroUpdateQuote() {
     minTotal += tr.min * tr.qty;
     maxTotal += tr.max * tr.qty;
   });
-  range.textContent = maxTotal === 0 ? t('pricing.free') : '€' + minTotal.toLocaleString('it-IT') + ' – €' + maxTotal.toLocaleString('it-IT');
+  range.textContent = maxTotal === 0 ? t('pricing.free') : '$' + minTotal.toLocaleString('en-US') + ' – $' + maxTotal.toLocaleString('en-US');
   result.classList.add('show');
 }
 
@@ -1070,7 +1236,7 @@ function renderTreatments() {
   const grid = document.getElementById('qt-grid');
   if (!grid) return;
   grid.innerHTML = TREATMENTS.map((tr, i) => `
-    <div class="qt-item${selected.has(i) ? ' selected' : ''}" onclick="toggleTreatment(${i})">
+    <div class="qt-item${selected.has(i) ? ' selected' : ''}" onclick="toggleTreatment(${i})" style="animation:heroFadeUp 0.5s var(--ease-out) ${0.04 * i}s both">
       <div class="qt-icon">${tr.icon}</div>
       <div class="qt-name">${t('treatment.' + i + '.name')}</div>
       ${tr.hasQty ? `<div class="qt-controls">
@@ -1098,7 +1264,7 @@ function changeQty(i, delta) {
 function updateQuote() {
   const range = document.getElementById('qt-range');
   if (!range) return;
-  if (selected.size === 0) { range.textContent = '€0'; return; }
+  if (selected.size === 0) { range.textContent = '$0'; return; }
   let minTotal = 0, maxTotal = 0;
   selected.forEach(i => {
     const tr = TREATMENTS[i];
@@ -1107,14 +1273,14 @@ function updateQuote() {
   });
   range.textContent = maxTotal === 0
     ? t('pricing.free')
-    : '€' + minTotal.toLocaleString('it-IT') + ' – €' + maxTotal.toLocaleString('it-IT');
+    : '$' + minTotal.toLocaleString('en-US') + ' – $' + maxTotal.toLocaleString('en-US');
 }
 
 /* ===== REVIEWS RENDER ===== */
 function renderReviews() {
   const grid = document.getElementById('reviews-grid');
   if (!grid) return;
-  const reviews = REVIEWS[lang] || REVIEWS.it;
+  const reviews = REVIEWS[lang] || REVIEWS.en;
   grid.innerHTML = reviews.map(r => `
     <div class="rv-card">
       <div class="rv-stars">
@@ -1130,6 +1296,289 @@ function renderReviews() {
       </div>
     </div>
   `).join('');
+}
+
+/* ===== CHAT BOT ===== */
+const CHAT_T = {
+  en: {
+    status:'● Available now',
+    welcome:"Hello! 👋 Thank you for contacting Montgomery Dentistry. I'm Amy, your scheduling assistant at Montgomery Dentistry. What's your name?",
+    serviceQ: n=>`Nice to meet you, ${n}! What can we help you with today?`,
+    dateQ: s=>`Great choice! Which day works best for your ${s} appointment?`,
+    timeQ: d=>`Perfect! What time works for you on ${d}?`,
+    phoneQ: n=>`Almost done, ${n}! What's the best phone number to reach you?`,
+    confirmMsg:(n,s,d,ti,p)=>`✅ You're all set, <strong>${n}</strong>! I've reserved <strong>${d} at ${ti}</strong> for <strong>${s}</strong>. Our team will call <strong>${p}</strong> to confirm. We look forward to seeing you!`,
+    moreQ:"Is there anything else I can help you with?",
+    bye:"Thank you for choosing Montgomery Dentistry! Have a wonderful day! 😊",
+    placeholder:"Type your message...", send:"Send",
+    services:["Routine Cleaning","Teeth Whitening","Dental Crown","Dental Bridge","Porcelain Veneers","Emergency Visit","Implant Consult","Free Consultation"],
+    times:["8:00 AM","9:00 AM","10:00 AM","11:00 AM","1:00 PM","2:00 PM","3:00 PM"],
+    yes:"Yes, book another!", no:"No, I'm all set — thank you!",
+    days:["Su","Mo","Tu","We","Th","Fr","Sa"],
+    months:["January","February","March","April","May","June","July","August","September","October","November","December"]
+  },
+  fr: {
+    status:'● Disponible maintenant',
+    welcome:"Bonjour! 👋 Merci de contacter Montgomery Dentistry. Je suis Amy, votre assistante de planification chez Montgomery Dentistry. Puis-je avoir votre prénom?",
+    serviceQ:n=>`Ravi de vous rencontrer, ${n}! Que pouvons-nous faire pour vous aujourd'hui?`,
+    dateQ:s=>`Excellent! Quel jour vous convient pour votre rendez-vous ${s}?`,
+    timeQ:d=>`Parfait! À quelle heure le ${d}?`,
+    phoneQ:n=>`Presque fini, ${n}! Quel est le meilleur numéro pour vous joindre?`,
+    confirmMsg:(n,s,d,ti,p)=>`✅ C'est confirmé, <strong>${n}</strong>! J'ai réservé le <strong>${d} à ${ti}</strong> pour <strong>${s}</strong>. Notre équipe appellera le <strong>${p}</strong> pour confirmer. À bientôt!`,
+    moreQ:"Puis-je vous aider avec autre chose?",
+    bye:"Merci de choisir Montgomery Dentistry! Bonne journée! 😊",
+    placeholder:"Écrivez votre message...", send:"Envoyer",
+    services:["Nettoyage de routine","Blanchiment","Couronne dentaire","Bridge dentaire","Facettes porcelaine","Urgence dentaire","Consultation implant","Consultation gratuite"],
+    times:["8h00","9h00","10h00","11h00","13h00","14h00","15h00"],
+    yes:"Oui, un autre!", no:"Non, merci — c'est tout!",
+    days:["Di","Lu","Ma","Me","Je","Ve","Sa"],
+    months:["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"]
+  },
+  it: {
+    status:'● Disponibile ora',
+    welcome:"Ciao! 👋 Grazie per aver contattato Montgomery Dentistry. Sono Amy, la tua assistente di prenotazione di Montgomery Dentistry. Come ti chiami?",
+    serviceQ:n=>`Piacere, ${n}! Come possiamo aiutarti oggi?`,
+    dateQ:s=>`Ottima scelta! Quale giorno preferisci per ${s}?`,
+    timeQ:d=>`Perfetto! A che ora il ${d}?`,
+    phoneQ:n=>`Quasi fatto, ${n}! Qual è il miglior numero per contattarti?`,
+    confirmMsg:(n,s,d,ti,p)=>`✅ Tutto confermato, <strong>${n}</strong>! Ho prenotato <strong>${d} alle ${ti}</strong> per <strong>${s}</strong>. Il nostro team chiamerà il <strong>${p}</strong> per confermare. A presto!`,
+    moreQ:"C'è altro con cui posso aiutarti?",
+    bye:"Grazie per aver scelto Montgomery Dentistry! Buona giornata! 😊",
+    placeholder:"Scrivi il tuo messaggio...", send:"Invia",
+    services:["Pulizia di routine","Sbiancamento","Corona dentale","Bridge dentale","Faccette in porcellana","Visita d'urgenza","Consulenza impianto","Consulenza gratuita"],
+    times:["8:00","9:00","10:00","11:00","13:00","14:00","15:00"],
+    yes:"Sì, prenota un altro!", no:"No, grazie — è tutto!",
+    days:["Do","Lu","Ma","Me","Gi","Ve","Sa"],
+    months:["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"]
+  }
+};
+
+let chatState = 'idle';
+let chatData = {};
+let chatCalY, chatCalM;
+let chatInitiated = false;
+
+function ct() { return CHAT_T[lang] || CHAT_T.en; }
+
+function openChat() {
+  document.getElementById('chat-widget').classList.add('open');
+  const badge = document.getElementById('chat-badge');
+  if (badge) badge.style.display = 'none';
+  if (!chatInitiated) {
+    chatInitiated = true;
+    chatState = 'name';
+    showTyping();
+    setTimeout(() => { removeTyping(); addBotMsg(ct().welcome); updateChatInput(); }, 900);
+  }
+}
+
+function closeChat() {
+  document.getElementById('chat-widget').classList.remove('open');
+}
+
+function addBotMsg(html) {
+  const el = document.createElement('div');
+  el.className = 'cmsg bot';
+  el.innerHTML = `<div class="cmsg-bubble">${html}</div>`;
+  document.getElementById('chat-msgs').appendChild(el);
+  scrollChat();
+}
+
+function addUserMsg(text) {
+  const el = document.createElement('div');
+  el.className = 'cmsg usr';
+  el.innerHTML = `<div class="cmsg-bubble">${text}</div>`;
+  document.getElementById('chat-msgs').appendChild(el);
+  scrollChat();
+}
+
+function showTyping() {
+  const el = document.createElement('div');
+  el.className = 'cmsg bot cmsg-typing';
+  el.id = 'typing-indicator';
+  el.innerHTML = '<div class="cmsg-bubble"><span class="dot-t"></span><span class="dot-t"></span><span class="dot-t"></span></div>';
+  document.getElementById('chat-msgs').appendChild(el);
+  scrollChat();
+}
+
+function removeTyping() {
+  const t = document.getElementById('typing-indicator');
+  if (t) t.remove();
+}
+
+function scrollChat() {
+  const m = document.getElementById('chat-msgs');
+  if (m) m.scrollTop = m.scrollHeight;
+}
+
+function showChips(items, cb) {
+  const wrap = document.getElementById('chat-chips');
+  wrap.innerHTML = items.map((item,i) =>
+    `<button class="chat-chip" onclick="chatChip(this,'${item.replace(/'/g,"&#39;")}',${i})">${item}</button>`
+  ).join('');
+  window._chatChipCb = cb;
+}
+
+function chatChip(el, val, idx) {
+  document.getElementById('chat-chips').innerHTML = '';
+  addUserMsg(val);
+  if (window._chatChipCb) setTimeout(() => window._chatChipCb(val, idx), 220);
+}
+
+function clearChips() { document.getElementById('chat-chips').innerHTML = ''; }
+
+function updateChatInput() {
+  const row = document.getElementById('chat-input-row');
+  const inp = document.getElementById('chat-input');
+  const btn = document.getElementById('chat-send-btn');
+  const show = (chatState === 'name' || chatState === 'phone');
+  row.style.display = show ? 'flex' : 'none';
+  if (show) {
+    inp.placeholder = ct().placeholder;
+    btn.textContent = ct().send;
+    setTimeout(() => inp.focus(), 100);
+  }
+}
+
+function updateChatLangUI() {
+  const hdrStatus = document.getElementById('chat-hdr-status');
+  if (hdrStatus) hdrStatus.textContent = ct().status;
+  updateChatInput();
+}
+
+function chatSend() {
+  const inp = document.getElementById('chat-input');
+  const val = inp.value.trim();
+  if (!val) return;
+  inp.value = '';
+  addUserMsg(val);
+
+  if (chatState === 'name') {
+    chatData.name = val;
+    chatState = 'service';
+    updateChatInput();
+    showTyping();
+    setTimeout(() => {
+      removeTyping();
+      addBotMsg(ct().serviceQ(chatData.name));
+      showChips(ct().services, (svc) => {
+        chatData.service = svc;
+        chatState = 'date';
+        showTyping();
+        setTimeout(() => {
+          removeTyping();
+          addBotMsg(ct().dateQ(svc));
+          showCal();
+        }, 400);
+      });
+    }, 600);
+
+  } else if (chatState === 'phone') {
+    chatData.phone = val;
+    chatState = 'confirm';
+    updateChatInput();
+    showTyping();
+    setTimeout(() => {
+      removeTyping();
+      addBotMsg(ct().confirmMsg(chatData.name, chatData.service, chatData.date, chatData.time, chatData.phone));
+      setTimeout(() => {
+        showTyping();
+        setTimeout(() => {
+          removeTyping();
+          addBotMsg(ct().moreQ);
+          showChips([ct().yes, ct().no], (choice, idx) => {
+            if (idx === 1) {
+              chatState = 'done';
+              showTyping();
+              setTimeout(() => { removeTyping(); addBotMsg(ct().bye); }, 500);
+            } else {
+              chatData = { name: chatData.name };
+              chatState = 'service';
+              showTyping();
+              setTimeout(() => {
+                removeTyping();
+                addBotMsg(ct().serviceQ(chatData.name));
+                showChips(ct().services, (svc) => {
+                  chatData.service = svc;
+                  chatState = 'date';
+                  showTyping();
+                  setTimeout(() => { removeTyping(); addBotMsg(ct().dateQ(svc)); showCal(); }, 400);
+                });
+              }, 600);
+            }
+          });
+        }, 800);
+      }, 1200);
+    }, 600);
+  }
+}
+
+/* ===== CALENDAR ===== */
+function showCal() {
+  hideCal();
+  const today = new Date();
+  chatCalY = today.getFullYear();
+  chatCalM = today.getMonth();
+  renderCal();
+  document.getElementById('chat-cal').style.display = 'block'; scrollChat();
+}
+
+function hideCal() {
+  document.getElementById('chat-cal').style.display = 'none';
+  document.getElementById('chat-cal').innerHTML = '';
+}
+
+function renderCal() {
+  const c = ct();
+  const today = new Date(); today.setHours(0,0,0,0);
+  const first = new Date(chatCalY, chatCalM, 1).getDay();
+  const dim = new Date(chatCalY, chatCalM + 1, 0).getDate();
+  let html = `<div class="chat-cal-hdr">
+    <button class="cal-nav" onclick="chatCalNav(-1)">‹</button>
+    <span>${c.months[chatCalM]} ${chatCalY}</span>
+    <button class="cal-nav" onclick="chatCalNav(1)">›</button>
+  </div><div class="chat-cal-grid">`;
+  html += c.days.map(d => `<div class="cal-cell hdr">${d}</div>`).join('');
+  html += Array(first).fill('<div class="cal-cell empty"></div>').join('');
+  for (let d = 1; d <= dim; d++) {
+    const date = new Date(chatCalY, chatCalM, d);
+    const dow = date.getDay();
+    const isPast = date < today;
+    const isWknd = dow === 0 || dow === 6;
+    if (isPast || isWknd) {
+      html += `<div class="cal-cell ${isPast ? 'past' : 'wknd'}">${d}</div>`;
+    } else {
+      const ds = `${c.months[chatCalM]} ${d}, ${chatCalY}`;
+      html += `<div class="cal-cell avail" onclick="chatPickDate('${ds}')">${d}</div>`;
+    }
+  }
+  html += '</div>';
+  document.getElementById('chat-cal').innerHTML = html;
+}
+
+function chatCalNav(dir) {
+  chatCalM += dir;
+  if (chatCalM < 0) { chatCalM = 11; chatCalY--; }
+  if (chatCalM > 11) { chatCalM = 0; chatCalY++; }
+  renderCal();
+}
+
+function chatPickDate(ds) {
+  hideCal();
+  addUserMsg(ds);
+  chatData.date = ds;
+  chatState = 'time';
+  showTyping();
+  setTimeout(() => {
+    removeTyping();
+    addBotMsg(ct().timeQ(ds));
+    showChips(ct().times, (time) => {
+      chatData.time = time;
+      chatState = 'phone';
+      showTyping();
+      setTimeout(() => { removeTyping(); addBotMsg(ct().phoneQ(chatData.name)); updateChatInput(); }, 400);
+    });
+  }, 400);
 }
 
 /* ===== NAV SCROLL ===== */
@@ -1167,6 +1616,19 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => w.classList.add('pulse'), 800);
       }
     }, 1200);
+
+    // Chat float
+    setTimeout(() => {
+      const cb = document.getElementById('chat-float-btn');
+      if (cb) cb.classList.add('show');
+    }, 1800);
+
+    // Chat input enter key
+    const ci = document.getElementById('chat-input');
+    if (ci) ci.addEventListener('keydown', e => { if (e.key === 'Enter') chatSend(); });
+
+    // Chat status language
+    updateChatLangUI();
   });
 });
 </script>
