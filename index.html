@@ -378,7 +378,7 @@
 
     .chat-msgs {
       flex:1; overflow-y:auto; padding:16px; display:flex; flex-direction:column;
-      gap:10px; min-height:180px; max-height:260px; scroll-behavior:smooth;
+      gap:10px; min-height:120px; max-height:300px; scroll-behavior:smooth;
     }
     .chat-msgs::-webkit-scrollbar { width:4px; }
     .chat-msgs::-webkit-scrollbar-thumb { background:#e2e8f0; border-radius:2px; }
@@ -1325,7 +1325,7 @@ function renderReviews() {
 const CHAT_T = {
   en: {
     status:'● Available now',
-    welcome:"Hello! 👋 Thank you for contacting Avelon Dentistry. I'm Amy, your scheduling assistant at Avelon Dentistry. What's your name?",
+    welcome:"Hello! 👋 Thanks for contacting Avelon Dentistry. I'm your scheduling assistant — what's your name?",
     serviceQ: n=>`Nice to meet you, ${n}! What can we help you with today?`,
     dateQ: s=>`Great choice! Which day works best for your ${s} appointment?`,
     timeQ: d=>`Perfect! What time works for you on ${d}?`,
@@ -1342,7 +1342,7 @@ const CHAT_T = {
   },
   fr: {
     status:'● Disponible maintenant',
-    welcome:"Bonjour! 👋 Merci de contacter Avelon Dentistry. Je suis Amy, votre assistante de planification chez Avelon Dentistry. Puis-je avoir votre prénom?",
+    welcome:"Bonjour! 👋 Merci de contacter Avelon Dentistry. Je suis votre assistante de planification — puis-je avoir votre prénom?",
     serviceQ:n=>`Ravi de vous rencontrer, ${n}! Que pouvons-nous faire pour vous aujourd'hui?`,
     dateQ:s=>`Excellent! Quel jour vous convient pour votre rendez-vous ${s}?`,
     timeQ:d=>`Parfait! À quelle heure le ${d}?`,
@@ -1359,7 +1359,7 @@ const CHAT_T = {
   },
   it: {
     status:'● Disponibile ora',
-    welcome:"Ciao! 👋 Grazie per aver contattato Avelon Dentistry. Sono Amy, la tua assistente di prenotazione di Avelon Dentistry. Come ti chiami?",
+    welcome:"Ciao! 👋 Grazie per aver contattato Avelon Dentistry. Sono la tua assistente di prenotazione — come ti chiami?",
     serviceQ:n=>`Piacere, ${n}! Come possiamo aiutarti oggi?`,
     dateQ:s=>`Ottima scelta! Quale giorno preferisci per ${s}?`,
     timeQ:d=>`Perfetto! A che ora il ${d}?`,
