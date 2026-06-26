@@ -239,7 +239,7 @@
   <div style="position:relative;z-index:2;">
     <div class="page-hero__label" data-t="about.heroLabel">About Us</div>
     <h1>
-      <span id="about-h1-prefix" data-t="about.h1">Caring for Montgomery </span><span data-t="about.h1span">Smiles</span>
+      <span id="about-h1-prefix" data-t="about.h1">Caring for Your City </span><span data-t="about.h1span">Smiles</span>
     </h1>
     <p class="page-hero__sub" data-t="about.sub">For 20+ years, Avelon Dentistry has been the trusted dental home for families across the your region.</p>
   </div>
@@ -279,7 +279,7 @@
       <div class="stat-label" data-t="about.stat1">Years of Experience</div>
     </div>
     <div class="stat-cell reveal d2">
-      <div class="stat-num">1,400+</div>
+      <div class="stat-num">500+</div>
       <div class="stat-label" data-t="about.stat2">Google Reviews</div>
     </div>
     <div class="stat-cell reveal d3">
@@ -367,7 +367,7 @@
       </div>
       <p class="footer__tagline" data-t="footer.tagline">Trusted dental care in Your City, Your State for 20+ years.</p>
       <div class="footer__socials">
-        <a href="https://www.facebook.com/166202688935" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Facebook">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Facebook">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
         </a>
         <a href="tel:+10000000000" class="footer__social" aria-label="Call" style="background:#0369A1;">
@@ -397,7 +397,7 @@
         </a>
         <div class="footer__contact-item">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>4790 Woodmere Blvd, Your City, AL 36106</span>
+          <span>123 Smile Street, Your City, ST 00000</span>
         </div>
         <div class="footer__hours" id="footer-hours">Mon&#8211;Tue: 8AM&#8211;5PM | Wed: 9AM&#8211;5PM<br>Thu: 8AM&#8211;3:30PM | Fri: 8AM&#8211;12PM</div>
       </div>
@@ -451,7 +451,7 @@ const T = {
     footer: { tagline:'Trusted dental care in Your City, Your State for 20+ years.', rights:'© 2025 Avelon Dentistry. All rights reserved.', links:'Quick Links', contact:'Contact', crafted:'Designed with care', schedule:'Schedule Online' },
     about: {
       heroLabel:'About Us',
-      h1:'Caring for Montgomery ',
+      h1:'Caring for Your City ',
       h1span:'Smiles',
       sub:'For 20+ years, Avelon Dentistry has been the trusted dental home for families across the your region.',
       storyLabel:'Our Story',
@@ -489,7 +489,7 @@ const T = {
     about: {
       heroLabel:'À Propos',
       h1:'Prendre Soin des Sourires de ',
-      h1span:'Montgomery',
+      h1span:'Your City',
       sub:'Depuis plus de 55 ans, Avelon Dentistry est le cabinet dentaire de confiance pour les familles de toute la your region.',
       storyLabel:'Notre Histoire',
       storyH2a:'55 Ans de',
@@ -526,7 +526,7 @@ const T = {
     about: {
       heroLabel:'Chi Siamo',
       h1:'Ci Prendiamo Cura dei Sorrisi di ',
-      h1span:'Montgomery',
+      h1span:'Your City',
       sub:'Da oltre 55 anni, Avelon Dentistry è la casa dentistica di fiducia per le famiglie di tutta la your region.',
       storyLabel:'La Nostra Storia',
       storyH2a:'55 Anni di',
@@ -657,10 +657,10 @@ function applyTranslations() {
   // Footer hours
   var fh = document.getElementById('footer-hours');
   if (fh) fh.innerHTML = lang === 'it'
-    ? 'Lun–Mar: 8–17 | Mer: 9–17<br>Gio: 8–15:30 | Ven: 8–12'
+    ? 'Lun–Ven: 9–17'
     : lang === 'fr'
-    ? 'Lun–Mar: 8h–17h | Mer: 9h–17h<br>Jeu: 8h–15h30 | Ven: 8h–12h'
-    : 'Mon–Tue: 8AM–5PM | Wed: 9AM–5PM<br>Thu: 8AM–3:30PM | Fri: 8AM–12PM';
+    ? 'Lun–Ven: 9h–17h'
+    : 'Mon–Fri: 9AM–5PM';
 
   // Footer crafted
   var fc = document.getElementById('footer-crafted');

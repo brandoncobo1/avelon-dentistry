@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us — Avelon Dentistry | Your City, Your State</title>
-  <meta name="description" content="Contact Avelon Dentistry at 4790 Woodmere Blvd, Your City, AL. Call 000.000.0000. Walk-ins welcome, emergencies always accepted. Book online today.">
+  <meta name="description" content="Contact Avelon Dentistry at 123 Smile Street, Your City, ST. Call 000.000.0000. Walk-ins welcome, emergencies always accepted. Book online today.">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2" fetchpriority="high">
   <style>
@@ -240,7 +240,7 @@
         </div>
         <div>
           <div class="contact-card__label" data-t="contact.addr.label">Address</div>
-          <div class="contact-card__value">4790 Woodmere Blvd<br>Your City, AL 36106</div>
+          <div class="contact-card__value">123 Smile Street<br>Your City, ST 00000</div>
           <div class="contact-card__note" data-t="contact.addr.note">Free parking available</div>
         </div>
       </div>
@@ -253,7 +253,7 @@
         <div>
           <div class="contact-card__label" data-t="contact.hours.label">Office Hours</div>
           <div class="contact-card__value" id="contact-hours-value" style="font-size:0.87rem;line-height:1.8;font-weight:500;">
-            Mon–Tue: 8AM–5PM<br>Wed: 9AM–5PM<br>Thu: 8AM–3:30PM<br>Fri: 8AM–12PM<br><span style="color:var(--ink-mid);">Sat–Sun: Closed</span>
+            Mon–Fri: 9AM–5PM<br><span style="color:var(--ink-mid);">Sat–Sun: Closed</span>
           </div>
         </div>
       </div>
@@ -275,7 +275,7 @@
     <!-- RIGHT: MAP -->
     <div class="map-wrap reveal-right">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.8!2d-86.2468!3d32.3398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888e72c6cccccccc%3A0xabcdef1234567890!2s4790%20Woodmere%20Blvd%2C%20Montgomery%2C%20AL%2036106!5e0!3m2!1sen!2sus!4v1700000000000"
+        src="https://maps.google.com/maps?q=city%20center&z=12&output=embed"
         width="100%" height="480" style="border:0;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Avelon Dentistry location map">
       </iframe>
     </div>
@@ -323,7 +323,7 @@
       </div>
       <p class="footer__tagline" data-t="footer.tagline">Trusted dental care in Your City, Your State for 20+ years.</p>
       <div class="footer__socials">
-        <a href="https://www.facebook.com/166202688935" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Facebook">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Facebook">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
         </a>
         <a href="tel:+10000000000" class="footer__social" style="background:#0369A1;" aria-label="Call">
@@ -353,9 +353,9 @@
         </a>
         <div class="footer__contact-item">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          4790 Woodmere Blvd, Your City, AL 36106
+          123 Smile Street, Your City, ST 00000
         </div>
-        <div class="footer__hours" id="footer-hours">Mon–Tue: 8AM–5PM | Wed: 9AM–5PM<br>Thu: 8AM–3:30PM | Fri: 8AM–12PM</div>
+        <div class="footer__hours" id="footer-hours">Mon–Fri: 9AM–5PM</div>
       </div>
     </div>
   </div>
@@ -512,10 +512,10 @@ function applyTranslations() {
   // Footer hours
   const fh = document.getElementById('footer-hours');
   if (fh) fh.innerHTML = lang === 'it'
-    ? 'Lun–Mar: 8–17 | Mer: 9–17<br>Gio: 8–15:30 | Ven: 8–12'
+    ? 'Lun–Ven: 9–17'
     : lang === 'fr'
-    ? 'Lun–Mar: 8h–17h | Mer: 9h–17h<br>Jeu: 8h–15h30 | Ven: 8h–12h'
-    : 'Mon–Tue: 8AM–5PM | Wed: 9AM–5PM<br>Thu: 8AM–3:30PM | Fri: 8AM–12PM';
+    ? 'Lun–Ven: 9h–17h'
+    : 'Mon–Fri: 9AM–5PM';
 
   // Footer crafted
   const fc = document.getElementById('footer-crafted');

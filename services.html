@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services — Avelon Dentistry | Your City, Your State</title>
-  <meta name="description" content="Explore all dental services at Avelon Dentistry — preventive care, cosmetic dentistry, implants, whitening, clear aligners, emergency dentistry & more. Your City, AL.">
+  <meta name="description" content="Explore all dental services at Avelon Dentistry — preventive care, cosmetic dentistry, implants, whitening, clear aligners, emergency dentistry & more. Your City, ST.">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2" fetchpriority="high">
   <style>
@@ -250,7 +250,7 @@
     <h1>
       <span data-t="svcPage.h1a">Comprehensive Dental</span> <span data-t="svcPage.h1b">Care</span>
     </h1>
-    <p class="page-hero__sub" data-t="svcPage.sub">Complete dental care for your entire family at 4790 Woodmere Blvd, Your City, Your State — trusted by the your region for 20+ years.</p>
+    <p class="page-hero__sub" data-t="svcPage.sub">Complete dental care for your entire family at 123 Smile Street, Your City, Your State — trusted by the your region for 20+ years.</p>
   </div>
 </section>
 
@@ -444,7 +444,7 @@
       </div>
       <p class="footer__tagline" data-t="footer.tagline">Trusted dental care in Your City, Your State for 20+ years.</p>
       <div class="footer__socials">
-        <a href="https://www.facebook.com/166202688935" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Facebook">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Facebook">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
         </a>
         <a href="tel:+10000000000" class="footer__social footer__social--wa" aria-label="Call us" style="background:#0369A1;">
@@ -474,9 +474,9 @@
         </a>
         <div class="footer__contact-item">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>4790 Woodmere Blvd, Your City, AL 36106</span>
+          <span>123 Smile Street, Your City, ST 00000</span>
         </div>
-        <div class="footer__hours" id="footer-hours">Mon–Tue: 8AM–5PM | Wed: 9AM–5PM<br>Thu: 8AM–3:30PM | Fri: 8AM–12PM</div>
+        <div class="footer__hours" id="footer-hours">Mon–Fri: 9AM–5PM</div>
       </div>
     </div>
   </div>
@@ -525,7 +525,7 @@ const T = {
       label:'Our Services',
       h1a:'Comprehensive Dental',
       h1b:'Care',
-      sub:'Complete dental care for your entire family at 4790 Woodmere Blvd, Your City, Your State — trusted by the your region for 20+ years.',
+      sub:'Complete dental care for your entire family at 123 Smile Street, Your City, Your State — trusted by the your region for 20+ years.',
       gridTitle:'Everything Your Smile Needs',
       gridSub:'From routine cleanings to complete smile makeovers — we\'re here for every step of your dental journey.',
       bookBtn:'Book Now',
@@ -566,7 +566,7 @@ const T = {
       label:'Nos Services',
       h1a:'Soins Dentaires',
       h1b:'Complets',
-      sub:'Des soins dentaires complets pour toute votre famille au 4790 Woodmere Blvd, Your City, Your State — la confiance de la your region depuis plus de 55 ans.',
+      sub:'Des soins dentaires complets pour toute votre famille au 123 Smile Street, Your City, Your State — la confiance de la your region depuis plus de 55 ans.',
       gridTitle:'Tout ce que Votre Sourire Mérite',
       gridSub:'Des nettoyages de routine aux transformations complètes — nous sommes là à chaque étape de votre parcours dentaire.',
       bookBtn:'Réserver',
@@ -607,7 +607,7 @@ const T = {
       label:'I Nostri Servizi',
       h1a:'Cure Dentali',
       h1b:'Complete',
-      sub:'Cure dentali complete per tutta la famiglia al 4790 Woodmere Blvd, Your City, Your State — la fiducia della your region da oltre 55 anni.',
+      sub:'Cure dentali complete per tutta la famiglia al 123 Smile Street, Your City, Your State — la fiducia della your region da oltre 55 anni.',
       gridTitle:'Tutto ciò che il Tuo Sorriso Merita',
       gridSub:'Dalle pulizie di routine alle trasformazioni complete del sorriso — siamo qui per ogni fase del tuo percorso dentale.',
       bookBtn:'Prenota',
@@ -764,10 +764,10 @@ function applyTranslations() {
   // Footer hours
   const fh = document.getElementById('footer-hours');
   if (fh) fh.innerHTML = lang === 'it'
-    ? 'Lun–Mar: 8–17 | Mer: 9–17<br>Gio: 8–15:30 | Ven: 8–12'
+    ? 'Lun–Ven: 9–17'
     : lang === 'fr'
-    ? 'Lun–Mar: 8h–17h | Mer: 9h–17h<br>Jeu: 8h–15h30 | Ven: 8h–12h'
-    : 'Mon–Tue: 8AM–5PM | Wed: 9AM–5PM<br>Thu: 8AM–3:30PM | Fri: 8AM–12PM';
+    ? 'Lun–Ven: 9h–17h'
+    : 'Mon–Fri: 9AM–5PM';
 
   // Footer crafted
   const fc = document.getElementById('footer-crafted');
