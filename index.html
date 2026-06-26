@@ -421,17 +421,18 @@
     .cal-cell.past,.cal-cell.wknd,.cal-cell.empty { color:#e2e8f0; }
 
     .chat-input-row {
-      padding:11px 14px; border-top:1px solid #f1f5f9; display:flex; gap:8px; flex-shrink:0;
+      padding:11px 14px; border-top:1px solid #f1f5f9; display:flex; align-items:center; gap:8px; flex-shrink:0;
     }
     .chat-input-row input {
-      flex:1; padding:9px 13px; border:1.5px solid #e2e8f0; border-radius:9px;
+      flex:1; height:40px; padding:0 13px; border:1.5px solid #e2e8f0; border-radius:9px;
       font-size:16px; outline:none; font-family:inherit; color:#1e293b;
       transition:border-color 0.2s;
     }
     .chat-input-row input:focus { border-color:#06B6D4; }
     .chat-send-btn {
-      padding:9px 15px; background:#0369A1; color:#fff; border:none; border-radius:9px;
+      height:40px; padding:0 18px; flex-shrink:0; background:#0369A1; color:#fff; border:none; border-radius:9px;
       font-size:0.82rem; font-weight:700; cursor:pointer; transition:background 0.2s; font-family:inherit;
+      display:inline-flex; align-items:center; justify-content:center; white-space:nowrap;
     }
     .chat-send-btn:hover { background:#06B6D4; }
   </style>
@@ -1325,7 +1326,7 @@ function renderReviews() {
 const CHAT_T = {
   en: {
     status:'● Available now',
-    welcome:"Hello! 👋 Thanks for contacting Avelon Dentistry. I'm your scheduling assistant — what's your name?",
+    welcome:"Hello! 👋 Thank you for contacting Avelon Dentistry. I'm Amy, your scheduling assistant at Avelon Dentistry. What's your name?",
     serviceQ: n=>`Nice to meet you, ${n}! What can we help you with today?`,
     dateQ: s=>`Great choice! Which day works best for your ${s} appointment?`,
     timeQ: d=>`Perfect! What time works for you on ${d}?`,
@@ -1342,7 +1343,7 @@ const CHAT_T = {
   },
   fr: {
     status:'● Disponible maintenant',
-    welcome:"Bonjour! 👋 Merci de contacter Avelon Dentistry. Je suis votre assistante de planification — puis-je avoir votre prénom?",
+    welcome:"Bonjour! 👋 Merci de contacter Avelon Dentistry. Je suis Amy, votre assistante de planification chez Avelon Dentistry. Puis-je avoir votre prénom?",
     serviceQ:n=>`Ravi de vous rencontrer, ${n}! Que pouvons-nous faire pour vous aujourd'hui?`,
     dateQ:s=>`Excellent! Quel jour vous convient pour votre rendez-vous ${s}?`,
     timeQ:d=>`Parfait! À quelle heure le ${d}?`,
@@ -1359,7 +1360,7 @@ const CHAT_T = {
   },
   it: {
     status:'● Disponibile ora',
-    welcome:"Ciao! 👋 Grazie per aver contattato Avelon Dentistry. Sono la tua assistente di prenotazione — come ti chiami?",
+    welcome:"Ciao! 👋 Grazie per aver contattato Avelon Dentistry. Sono Amy, la tua assistente di prenotazione di Avelon Dentistry. Come ti chiami?",
     serviceQ:n=>`Piacere, ${n}! Come possiamo aiutarti oggi?`,
     dateQ:s=>`Ottima scelta! Quale giorno preferisci per ${s}?`,
     timeQ:d=>`Perfetto! A che ora il ${d}?`,
