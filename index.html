@@ -138,6 +138,9 @@
     .hero__right    { animation:heroSlideRight 0.85s var(--ease-out) 1.5s backwards; }
     /* Hero inline quote widget */
     .hq-card { background:linear-gradient(145deg,rgba(255,255,255,0.10) 0%,rgba(255,255,255,0.05) 100%); backdrop-filter:blur(32px); -webkit-backdrop-filter:blur(32px); border:1px solid rgba(255,255,255,0.16); border-radius:24px; padding:24px; box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 32px 80px rgba(0,0,0,0.4); }
+    /* Mobile-only quote slot below hero (dark bg keeps glass card readable) */
+    #hero-quote-mobile { display:none; }
+    #hero-quote-mobile.has-quote { display:block; background:var(--dark); padding:28px var(--gutter); }
     .hq-title { font-size:1.1rem; font-weight:800; letter-spacing:-0.01em; color:#fff; margin-bottom:4px; display:flex; align-items:center; gap:8px; }
     .hq-title::before { content:''; display:inline-block; width:8px; height:8px; border-radius:50%; background:#06B6D4; box-shadow:0 0 8px rgba(6,182,212,0.8); flex-shrink:0; }
     .hq-subtitle { font-size:0.65rem; font-weight:500; color:rgba(255,255,255,0.4); margin-bottom:18px; padding-left:16px; }
@@ -543,6 +546,9 @@
     </div>
   </div>
 </section>
+
+<!-- Mobile-only slot: quote widget gets moved here below the hero -->
+<div id="hero-quote-mobile"></div>
 
 <!-- ===== 2. BEFORE & AFTER ===== -->
 <section id="ba">
@@ -1647,6 +1653,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // Chat status language
     updateChatLangUI();
   });
+
+  // Move the quote widget below the hero on mobile, keep it in the hero on desktop
+  (function() {
+    const mq = window.matchMedia('(max-width: 767px)');
+    const quote = document.querySelector('.hero__right');
+    const heroInner = document.querySelector('.hero__inner');
+    const slot = document.getElementById('hero-quote-mobile');
+    if (!quote || !heroInner || !slot) return;
+    function placeQuote() {
+      if (mq.matches) {
+        if (quote.parentElement !== slot) { slot.appendChild(quote); slot.classList.add('has-quote'); }
+      } else {
+        if (quote.parentElement !== heroInner) { heroInner.appendChild(quote); slot.classList.remove('has-quote'); }
+      }
+    }
+    placeQuote();
+    mq.addEventListener ? mq.addEventListener('change', placeQuote) : mq.addListener(placeQuote);
+  })();
 });
 </script>
 </body>
