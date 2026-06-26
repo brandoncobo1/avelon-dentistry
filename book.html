@@ -204,9 +204,11 @@
       font-size: 1.1rem;
     }
     .date-nav:hover { border-color: var(--blue); background: var(--blue-light); color: var(--blue); }
-    .date-strip { display: flex; gap: 8px; overflow: hidden; flex: 1; }
+    .date-strip { display: flex; gap: 8px; overflow-x: auto; flex: 1; scroll-behavior: smooth; scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding-bottom: 2px; }
+    .date-strip::-webkit-scrollbar { display: none; }
     .date-pill {
       flex: 0 0 auto;
+      scroll-snap-align: start;
       min-width: 62px;
       padding: 8px 10px;
       border: 1.5px solid var(--border);
@@ -480,6 +482,7 @@
     /* ── RESPONSIVE ── */
     @media (max-width: 820px) {
       .layout { grid-template-columns: 1fr; padding: calc(72px + 24px) 1rem 48px; }
+      .date-nav { display: none; }
       .sidebar { position: static; }
       .sidebar-doctor-card { display: none !important; }
       .doctor-grid { grid-template-columns: repeat(3,1fr); }
@@ -984,7 +987,7 @@
   function buildDates() {
     const strip = document.getElementById('date-strip');
     strip.innerHTML = '';
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < 14; i++) {
       const d = getDateFromOffset(state.dateOffset + i);
       const isSelected = state.date && state.date.toDateString() === d.toDateString();
       const pill = document.createElement('div');
@@ -1007,8 +1010,9 @@
   }
 
   function shiftDates(dir) {
-    state.dateOffset = Math.max(0, state.dateOffset + dir * 7);
-    buildDates();
+    // Scroll the strip horizontally (no re-render, no skipped days)
+    const strip = document.getElementById('date-strip');
+    strip.scrollBy({ left: dir * 280, behavior: 'smooth' });
   }
 
   function selectDate(dateObj, el) {
