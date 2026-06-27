@@ -305,7 +305,8 @@
     .rv-stars { display:flex; gap:2px; margin-bottom:14px; }
     .rv-text { font-size:0.85rem; color:var(--ink-mid); line-height:1.8; font-style:italic; flex:1; margin-bottom:18px; }
     .rv-author { display:flex; align-items:center; gap:12px; padding-top:14px; border-top:1px solid var(--border); }
-    .rv-avatar { width:36px; height:36px; border-radius:50%; background:var(--cyan); color:#fff; font-weight:700; font-size:0.85rem; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .rv-avatar { width:42px; height:42px; border-radius:50%; background:var(--cyan); color:#fff; font-weight:700; font-size:0.95rem; display:flex; align-items:center; justify-content:center; flex-shrink:0; overflow:hidden; }
+    .rv-avatar img { width:100%; height:100%; object-fit:cover; display:block; }
     .rv-name { font-size:0.8rem; font-weight:600; color:var(--dark); }
     .rv-meta { font-size:0.68rem; color:var(--ink-mid); }
 
@@ -464,11 +465,11 @@
     </a>
     <nav class="nav__links">
       <a href="index.html"    id="nl-home"     data-t="nav.home" class="active">Home</a>
-      <a href="services.html" id="nl-services" data-t="nav.services">Servizi</a>
+      <a href="services.html" id="nl-services" data-t="nav.services">Services</a>
       <a href="about.html"    id="nl-about"    data-t="nav.about">Chi Siamo</a>
-      <a href="gallery.html"  id="nl-gallery"  data-t="nav.gallery">Galleria</a>
-      <a href="reviews.html"  id="nl-reviews"  data-t="nav.reviews">Recensioni</a>
-      <a href="contact.html"  id="nl-contact"  data-t="nav.contact">Contatti</a>
+      <a href="gallery.html"  id="nl-gallery"  data-t="nav.gallery">Gallery</a>
+      <a href="reviews.html"  id="nl-reviews"  data-t="nav.reviews">Reviews</a>
+      <a href="contact.html"  id="nl-contact"  data-t="nav.contact">Contact</a>
     </nav>
     <div class="nav__right">
       <a href="book.html" class="btn btn--cyan nav__book" id="nav-book-btn" data-t="nav.book">Book Now</a>
@@ -478,11 +479,11 @@
 </header>
 <div class="nav__mobile" id="mobile-menu">
   <a href="index.html"    id="ml-home"     data-t="nav.home">Home</a>
-  <a href="services.html" id="ml-services" data-t="nav.services">Servizi</a>
+  <a href="services.html" id="ml-services" data-t="nav.services">Services</a>
   <a href="about.html"    id="ml-about"    data-t="nav.about">Chi Siamo</a>
-  <a href="gallery.html"  id="ml-gallery"  data-t="nav.gallery">Galleria</a>
-  <a href="reviews.html"  id="ml-reviews"  data-t="nav.reviews">Recensioni</a>
-  <a href="contact.html"  id="ml-contact"  data-t="nav.contact">Contatti</a>
+  <a href="gallery.html"  id="ml-gallery"  data-t="nav.gallery">Gallery</a>
+  <a href="reviews.html"  id="ml-reviews"  data-t="nav.reviews">Reviews</a>
+  <a href="contact.html"  id="ml-contact"  data-t="nav.contact">Contact</a>
   <a href="book.html" onclick="toggleMenu()" id="ml-book" class="nav__mobile-book" data-t="nav.book">Book Now</a>
 </div>
 
@@ -565,11 +566,11 @@
 <!-- ===== 2. BEFORE & AFTER ===== -->
 <section id="ba">
   <div class="section-header section-header--center">
-    <div class="section-label" data-t="ba.label">Risultati Reali</div>
+    <div class="section-label" data-t="ba.label">Real Results</div>
     <h2 class="section-h2">
-      <span data-t="ba.h2a">Prima &amp;</span> <span class="text-cyan" data-t="ba.h2b">Dopo</span>
+      <span data-t="ba.h2a">Before &amp;</span> <span class="text-cyan" data-t="ba.h2b">After</span>
     </h2>
-    <p class="section-sub" data-t="ba.sub">Risultati reali di pazienti reali. Ogni trasformazione è documentata e verificata.</p>
+    <p class="section-sub" data-t="ba.sub">Real transformations from real patients. Every result is documented and verified.</p>
   </div>
   <div class="ba-grid">
     <div class="ba-card reveal">
@@ -686,9 +687,9 @@
 <section id="process">
   <div class="section-header section-header--center">
     <h2 class="section-h2">
-      <span data-t="process.h2a">In 3 Semplici</span> <span class="text-cyan" data-t="process.h2b">Passi</span>
+      <span data-t="process.h2a">In 3 Simple</span> <span class="text-cyan" data-t="process.h2b">Steps</span>
     </h2>
-    <p class="section-sub" data-t="process.sub">Dalla prima chiamata al sorriso perfetto: il percorso è semplice e trasparente.</p>
+    <p class="section-sub" data-t="process.sub">From your first call to your perfect smile — simple and transparent.</p>
   </div>
   <div class="process-steps">
     <!-- Step 1 -->
@@ -699,8 +700,8 @@
           <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
         </svg>
       </div>
-      <div class="step-title" data-t="process.steps.0.title">Contattaci</div>
-      <div class="step-desc" data-t="process.steps.0.desc">Chiamaci o scrivici su WhatsApp. Ti risponderemo entro poche ore per fissare la tua visita gratuita.</div>
+      <div class="step-title" data-t="process.steps.0.title">1. Call Us</div>
+      <div class="step-desc" data-t="process.steps.0.desc">Call (512) 555-0142. We welcome new patients and dental emergencies.</div>
     </div>
     <!-- Step 2 -->
     <div class="process-step reveal d1">
@@ -713,8 +714,8 @@
           <line x1="3" y1="10" x2="21" y2="10"/>
         </svg>
       </div>
-      <div class="step-title" data-t="process.steps.1.title">Visita Gratuita</div>
-      <div class="step-desc" data-t="process.steps.1.desc">Vieni in clinica per una valutazione completa gratuita. Il dottore elabora il tuo piano di trattamento personalizzato.</div>
+      <div class="step-title" data-t="process.steps.1.title">2. Your Visit</div>
+      <div class="step-desc" data-t="process.steps.1.desc">Come in for a complete evaluation. Our doctors create your personalized treatment plan.</div>
     </div>
     <!-- Step 3 -->
     <div class="process-step reveal d2">
@@ -727,8 +728,8 @@
           <line x1="15" y1="9" x2="15.01" y2="9"/>
         </svg>
       </div>
-      <div class="step-title" data-t="process.steps.2.title">Sorriso!</div>
-      <div class="step-desc" data-t="process.steps.2.desc">Inizia il trattamento e scopri la differenza. I nostri pazienti ci danno 4.9★ su Google.</div>
+      <div class="step-title" data-t="process.steps.2.title">3. Smile!</div>
+      <div class="step-desc" data-t="process.steps.2.desc">Start treatment and see the difference. Our patients rate us 4.8★ on Google.</div>
     </div>
   </div>
 </section>
@@ -737,7 +738,7 @@
 <section id="services">
   <div class="section-header section-header--center">
     <h2 class="section-h2">
-      <span data-t="services.h2a">Trattamenti</span> <span class="text-cyan" data-t="services.h2b">di Eccellenza</span>
+      <span data-t="services.h2a">Excellence in</span> <span class="text-cyan" data-t="services.h2b">Dental Care</span>
     </h2>
     <p class="section-sub" data-t="services.sub">From prevention to advanced cosmetics — comprehensive dental care, all under one roof in Austin, TX.</p>
   </div>
@@ -823,11 +824,11 @@
 <!-- ===== 6. PRICING ===== -->
 <section id="pricing">
   <div class="section-header section-header--center">
-    <div class="section-label" style="color:#06B6D4" data-t="pricing.label">Prezzi Trasparenti</div>
+    <div class="section-label" style="color:#06B6D4" data-t="pricing.label">Our Services</div>
     <h2 class="section-h2" style="color:#fff">
       <span data-t="pricing.h2a">Tariffe</span> <span style="color:#06B6D4" data-t="pricing.h2b">Chiare</span>
     </h2>
-    <p class="section-sub" style="color:rgba(255,255,255,0.5)" data-t="pricing.sub">Nessuna sorpresa. I prezzi sono fissi e comunicati prima di qualsiasi trattamento.</p>
+    <p class="section-sub" style="color:rgba(255,255,255,0.5)" data-t="pricing.sub">We accept most insurance plans. Call us for pricing details on any service.</p>
   </div>
   <div class="pricing-grid">
     <!-- 1. New Patient Exam -->
@@ -885,14 +886,14 @@
 <!-- ===== 7. QUOTE GENERATOR ===== -->
 <section id="quote">
   <div class="reveal" style="max-width:var(--max-w);margin:0 auto;text-align:center;">
-    <h2 class="section-h2"><span data-t="quote.h2">Calcola il Tuo </span><span class="text-cyan" data-t="quote.h2b">Preventivo</span></h2>
-    <p class="section-sub" style="margin:12px auto 0;" data-t="quote.sub">Seleziona i trattamenti e ottieni una stima immediata. Gratuita e senza impegno.</p>
+    <h2 class="section-h2"><span data-t="quote.h2">Get Your </span><span class="text-cyan" data-t="quote.h2b">Estimate</span></h2>
+    <p class="section-sub" style="margin:12px auto 0;" data-t="quote.sub">Select treatments and get an instant estimate. Free, no obligation.</p>
   </div>
   <div class="quote-wrap">
     <div class="quote-treatments reveal d1" id="qt-grid"></div>
     <div class="quote-result reveal d2" id="qt-result">
       <div class="quote-result-left">
-        <div class="qt-est-label" data-t="quote.estimate">Stima del Preventivo</div>
+        <div class="qt-est-label" data-t="quote.estimate">Estimate</div>
         <div class="quote-range" id="qt-range">$0</div>
         <div class="quote-note" data-t="quote.note">* Indicative estimate. Exact price confirmed after your consultation.</div>
       </div>
@@ -912,7 +913,7 @@
   <div class="section-header section-header--row" style="max-width:var(--max-w);margin:0 auto 3.5rem;">
     <div>
       <h2 class="section-h2" style="margin-bottom:0">
-        <span data-t="reviews.h2a">Recensioni</span> <span class="text-cyan" data-t="reviews.h2b">Reali</span>
+        <span data-t="reviews.h2a">Real</span> <span class="text-cyan" data-t="reviews.h2b">Reviews</span>
       </h2>
     </div>
     <div class="reviews-score-badge">
@@ -939,8 +940,8 @@
 <section id="cta">
   <div class="cta-inner">
     <div>
-      <h2 class="section-h2" style="color:#fff;margin-bottom:16px" data-t="cta.h2">Pronto per il Sorriso che Meriti?</h2>
-      <p style="color:rgba(255,255,255,0.55);font-size:1rem;line-height:1.75;margin-bottom:36px" data-t="cta.sub">Prenota la tua visita gratuita oggi. Nessun obbligo, solo un sorriso migliore.</p>
+      <h2 class="section-h2" style="color:#fff;margin-bottom:16px" data-t="cta.h2">Ready for the Smile You Deserve?</h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:1rem;line-height:1.75;margin-bottom:36px" data-t="cta.sub">Schedule an appointment today. We welcome new patients and dental emergencies.</p>
       <div style="display:flex;flex-wrap:wrap;gap:14px;">
         <a href="book.html" class="btn btn--cyan" data-t="cta.btn1">Schedule an Appointment</a>
         <a href="tel:+15125550142" class="btn btn--wa">
@@ -1105,9 +1106,9 @@ const T = {
 /* ===== REVIEWS DATA ===== */
 const REVIEWS = {
   en: [
-    { name:'Jennifer H.', text:'"Avelon Dentistry has been my family\'s dental home for over 20 years. The staff is warm, professional, and always makes us feel at ease. Truly the best in the Austin area!"', meta:'Austin, TX · Google' },
-    { name:'Michael T.', text:'"Had a dental emergency on a Friday and they fit me in same day. Fixed my cracked tooth and had me out in under an hour. The whole team was fantastic — highly recommend!"', meta:'Austin, TX · Google' },
-    { name:'Sarah K.', text:'"From the front desk to the hygienists and doctors, everyone here is exceptional. My teeth have never looked better. So grateful for a practice that truly cares about their patients."', meta:'Prattville, AL · Google' }
+    { name:'Sarah K.', photo:'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&q=80&fm=webp&auto=format', text:'"Dr. Mitchell completely changed how I feel about going to the dentist. I used to dread it. Now my whole family comes here."', meta:'Patient since 2021 · Austin, TX' },
+    { name:'Marcus T.', photo:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&q=80&fm=webp&auto=format', text:'"I came in for whitening and ended up doing veneers. The result is unreal. Compliments every single day."', meta:'Patient since 2023 · Austin, TX' },
+    { name:'Jennifer H.', photo:'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&q=80&fm=webp&auto=format', text:'"Best dental office in Austin. The booking system is so easy and the staff actually remembers your name."', meta:'Patient since 2019 · Austin, TX' }
   ],
   fr: [
     { name:'Jennifer H.', text:'"Avelon Dentistry est le cabinet dentaire de notre famille depuis plus de 20 ans. Le personnel est chaleureux, professionnel et nous met toujours à l\'aise. Les meilleurs de la the Austin area!"', meta:'Austin, TX · Google' },
@@ -1363,7 +1364,7 @@ function renderReviews() {
       </div>
       <p class="rv-text">${r.text}</p>
       <div class="rv-author">
-        <div class="rv-avatar">${r.name[0]}</div>
+        <div class="rv-avatar">${r.photo ? `<img src="${r.photo}" alt="${r.name}" loading="lazy">` : r.name[0]}</div>
         <div>
           <div class="rv-name">${r.name}</div>
           <div class="rv-meta">${r.meta}</div>
